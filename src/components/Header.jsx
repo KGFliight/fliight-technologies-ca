@@ -1,8 +1,11 @@
 import { Link, NavLink } from 'react-router-dom';
+import MobileMenu from './MobileMenu';
 
 function Header() {
   return (
-    <header className="w-full h-20 bg-ft-black flex justify-between items-center pl-12">
+    <header className="w-full bg-ft-black">
+      {/* Desktop Navigation */}
+      <div className="hidden lg:flex w-full h-20 justify-between items-center pl-12">
       {/* Home Logo */}
       <Link to="/" className="w-48 h-8">
         <img src="https://via.placeholder.com/189x31" alt="Logo" />
@@ -19,6 +22,13 @@ function Header() {
       {/* Request a Demo */}
       <div className="h-20 w-52 bg-rose-700 flex items-center justify-center">
         <Link to="/request-demo" className="text-lg font-rajdhani font-semibold uppercase text-zinc-100">Request a Demo</Link>
+      </div>
+
+      </div>
+
+      {/* Mobile Navigation */}
+      <div className="lg:hidden">
+        <MobileMenu />
       </div>
 
       {/* Underline */}
