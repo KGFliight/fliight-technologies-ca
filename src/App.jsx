@@ -9,7 +9,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className="bg-ft-black text-ft-white">
+    <div className="bg-ft-black overflow-x-hidden text-ft-white">
       <Routes>
         <Route path="/" element ={<Home />}/>
         <Route path="/drones" element ={<Drones />}/>
