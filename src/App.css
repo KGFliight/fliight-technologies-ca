@@ -34,3 +34,10 @@ img, svg, video {
   left: 0;
   z-index: 99;
 }
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}

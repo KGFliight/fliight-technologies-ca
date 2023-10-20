@@ -4,11 +4,11 @@ import fliightLogo from "../assets/images/fliight-logo-white.png"
 
 function Header() {
   return (
-    <header className="w-full bg-ft-black ">
+    <header className="fixed-top h-16 w-full bg-ft-black">
       {/* Desktop Navigation */}
       <div className="hidden border-b border-ft-dark-gray lg:flex md:flex w-full h-16 justify-between items-center pl-12">
       {/* Home Logo */}
-      <Link to="/" className="z-50 lg:w-48 lg:h-8 md:w-36 md:h-6">
+      <Link to="/" className="z-50 transition-all duration-300 lg:w-48 lg:h-8 md:w-36 md:h-6">
         <img src={fliightLogo} alt="Logo" />
       </Link>
 
@@ -28,7 +28,7 @@ function Header() {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="md:hidden">
+      <div className="md:hidden h-16 transition-all duration-300">
         <MobileMenu />
       </div>
 
