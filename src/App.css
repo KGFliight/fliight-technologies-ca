@@ -16,18 +16,14 @@ img, svg, video {
 }
 
 .bg-deltaquad {
-  background-image: url('./assets/images/deltaquad-pro.jpeg');
-  background-position: left center;
+  background-image: url('./assets/images/landing-drone.jpeg');
+  background-position: right center;
   mix-blend-mode: multiply;
-  overflow-x: hidden;
   z-index: 0;
-  max-width: 100%;
 }
 
 .vertical-align {
   position: absolute;
-  top: 20%;
-  padding-top:-50%;
   overflow: hidden;
   z-index: 1;
 }
