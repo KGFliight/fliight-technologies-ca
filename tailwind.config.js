@@ -9,7 +9,7 @@ export default {
       colors: {
         'ft-white': '#f2f2f3',
         'ft-grey': '#C5CFDA',
-        'ft-dark-gray': '#4D4A4F',
+        'ft-dark-grey': '#4D4A4F',
         'ft-black': '#1C1F2A',
         'ft-purple': '#8C54FB'
       },
