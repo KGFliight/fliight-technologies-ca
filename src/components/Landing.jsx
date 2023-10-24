@@ -2,6 +2,7 @@ import '../App.css'
 import LandingIcons from './LandingIcons'
 import LandingWorkWithUs from './LandingWorkWithUs'
 import ReviewCarousel from './ReviewCarousel'
+import DronesCarousel from './DronesCarousel'
 import landingWorkshopImage from '../assets/images/landing-workshop-image.jpeg'
 
 function Landing() {
@@ -50,7 +51,9 @@ function Landing() {
       </div>
       <ReviewCarousel />
       <img src={landingWorkshopImage} alt="" className="mix-blend-screen my-12"/>
+ 
     </div>
+    
   )
 }
 

@@ -64,9 +64,9 @@ function ReviewCarousel() {
           <span className="px-12 text-sm font-normal tracking-wide text-ft-grey">
             {currentReview.role}
           </span>
-          <div className="sm:w-full h-auto text-right text-3xl sm:p-4 flex gap-4 justify-end mr-4 sm:mx-1">
-            <button onClick={goToPreviousReview}> &lt; </button>
-            <button onClick={goToNextReview}> &gt; </button>
+          <div className="sm:w-full h-auto text-right text-3xl sm:p-4 flex gap-4 justify-end mr-4 py-3 sm:mx-1">
+            <button className="border border-ft-dark-grey px-3" onClick={goToPreviousReview}> &lt; </button>
+            <button className="border border-ft-dark-grey px-3" onClick={goToNextReview}> &gt; </button>
           </div>
           </div>
         </div>
