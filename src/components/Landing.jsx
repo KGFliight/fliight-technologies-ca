@@ -2,6 +2,7 @@ import '../App.css'
 import LandingIcons from './LandingIcons'
 import LandingWorkWithUs from './LandingWorkWithUs'
 import ReviewCarousel from './ReviewCarousel'
+import landingWorkshopImage from '../assets/images/landing-workshop-image.jpeg'
 
 function Landing() {
   return (
@@ -39,7 +40,7 @@ function Landing() {
       </div>
       <LandingIcons />
       <LandingWorkWithUs />
-      <div className="flex flex-col my-12 items-center justify-center text-center">
+      <div className="flex flex-col items-center justify-center text-center">
         <h2 className="uppercase px-12 text-4xl sm:text-5xl tracking-wide sm:tracking-widest sm:max-w-4xl">
           Class leading innovation
         </h2>
@@ -48,6 +49,7 @@ function Landing() {
         </p>
       </div>
       <ReviewCarousel />
+      <img src={landingWorkshopImage} alt="" className="mix-blend-screen my-12"/>
     </div>
   )
 }

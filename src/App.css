@@ -48,3 +48,19 @@ img, svg, video {
   left: 0;
   z-index: 99;
 }
+
+
+.image-container{
+  position: relative;
+  display: inline-block;
+}
+.image-container::before{
+  content: '';
+  position: absolute; 
+  border: solid 1px red;
+  width: 100%;
+  height: 100%;
+  left: 14px; /* This will be your box shadow x-offset; */
+  top: 14px; /* This will be your box shadow y-offset; */
+  z-index: -1;
+}
