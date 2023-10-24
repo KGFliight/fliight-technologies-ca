@@ -50,11 +50,11 @@ img, svg, video {
 }
 
 
-.image-container{
+.image-container {
   position: relative;
   display: inline-block;
 }
-.image-container::before{
+.image-container::before {
   content: '';
   position: absolute; 
   border: solid 1px red;
@@ -63,4 +63,55 @@ img, svg, video {
   left: 14px; /* This will be your box shadow x-offset; */
   top: 14px; /* This will be your box shadow y-offset; */
   z-index: -1;
+}
+
+.media-scroller {
+  --_spacer: 1rem;
+  display: grid;
+  width: 100vw;
+  grid-auto-flow: column;
+  grid-auto-columns: 80%;
+  gap: var( --_spacer);
+  padding: 0 var( --_spacer) var( --_spacer);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.media-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.media-scroller {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.media-element {
+  display: grid;
+  gap: var( --_spacer);
+  grid-template-rows: min-content;
+  padding: 1rem 0rem;
+  background: #1C1F2A;
+  border-radius: 1rem;
+  box-shadow: #4D4A4F;
+}
+
+
+.media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 4rem;
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start; 
 }
