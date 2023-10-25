@@ -44,19 +44,19 @@ function ReviewCarousel() {
   const currentReview = reviews[currentIndex]
 
   return (
-    <div className="sm:flex sm:justify-center my-16">
-      <div className="container px-4 md:px-8 lg:px-16 sm:flex md:flex-row">
-        <div className="flex flex-col justify-center items-center w-full max-w-2xl">
-          <div className="p-4 relative mx-8 md:mx-0 md:min-h-[300px] md:min-w-[300px] z-50 my-8 md:my-16">
-            <div className="image-container">
-              <img src={currentReview.image} alt={currentReview.alt} />
+    <div className="sm:flex sm:justify-center items-center sm:my-16">
+      <div className="container px-4 md:px-8 lg:px-16 sm:flex md:flex-row items-center justify-center">
+        <div className="flex flex-col justify-center items-center w-fit">
+          <div className="py-4 relative mx-8 md:mx-0 md:min-h-[300px] md:min-w-[300px] min-h-[300px] z-50 my-8 md:my-16">
+            <div className="image-container justify-center">
+              <img src={currentReview.image} alt={currentReview.alt} className="min-h-[300px]"/>
             </div>
           </div>
         </div>
-        <div className="items-center justify-around lg:py-8 flex flex-col sm:w-96 md:w-[30rem] lg:w-[40rem] my-8 sm:my-16">
+        <div className="items-center justify-around lg:py-8 flex flex-col sm:w-96 md:w-[30rem] lg:w-[40rem] mb-8 mt-2 sm:p-8  sm:my-16">
         <div className="flex flex-col w-full mx-6">
-          <p className="px-12 tracking-wide leading-normal font-light text-lg min-h-[8rem] sm:min-h-[4rem] w-full">
-            {currentReview.quote}
+          <p className="px-12 tracking-wide leading-normal font-light text-lg min-h-[10rem] sm:pt-12 sm:min-h-[9rem] w-full">
+            "{currentReview.quote}"
           </p>
         </div>
         <div className="flex flex-col text-left mt-4 sm:mt-8 w-full mx-6">

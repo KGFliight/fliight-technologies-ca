@@ -51,7 +51,7 @@ function Landing() {
         </p>
       </div>
       <ReviewCarousel />
-      <img src={landingWorkshopImage} alt="" className="mix-blend-screen my-12"/>
+      <img src={landingWorkshopImage} alt="" className="mix-blend-screen my-12 min-h-[20rem] min-w-[24rem] "/>
       <DronesCarousel/>
       <SoftwareAppsCarousel/>
     </div>
