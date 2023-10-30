@@ -51,11 +51,36 @@ function Landing() {
         </p>
       </div>
       <ReviewCarousel />
-      <img src={landingWorkshopImage} alt="" className="mix-blend-screen my-12 min-h-[20rem] min-w-[24rem] "/>
-      <DronesCarousel/>
-      <SoftwareAppsCarousel/>
+      <img
+        src={landingWorkshopImage}
+        alt=""
+        className="mix-blend-screen my-12 min-h-[20rem] min-w-[24rem] "
+      />
+      <DronesCarousel />
+      <SoftwareAppsCarousel />
+      <div className="flex flex-col justify-center items-center w-fit">
+        <div className="relative mx-8 md:mx-0 md:min-h-[300px] md:min-w-[300px] z-50 my-4 md:my-16">
+          <div className="image-container flex justify-center mx-6 my-16">
+            <img
+              src={landingWorkshopImage}
+              alt=""
+              className="min-h-auto mx-16"
+            />
+          </div>
+          <h2 className="uppercase px-6 my-8 text-4xl sm:text-5xl tracking-wide leading-10 sm:tracking-widest sm:max-w-4xl">
+            Work with a team leading the way in for uav engineering.
+          </h2>
+          <p className="text-base leading-normal tracking-wide px-6 my-4 sm:max-w-2xl">
+          Our team have been passionate about drones and UAV's right through their evolution. Today, they are among the world's foremost experts in UAV engineering and automation
+        </p>
+        <div className="flex justify-center mt-6 mb-2">
+        <button className="bg-gray-700 uppercase rounded-3xl py-3 w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest">
+            About us
+          </button>
+          </div>
+        </div>
+      </div>
     </div>
-    
   )
 }
 
