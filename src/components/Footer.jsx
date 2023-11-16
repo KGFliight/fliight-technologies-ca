@@ -18,9 +18,7 @@ function Footer() {
         </h2>
         <p className="w-full text-left text-lg my-4 sm:max-w-2xl">
           Our friendly Fliight Crew is here to discuss your needs, no strings
-          attached. 
-          <br/>
-          Let's navigate solving your problem together.
+          attached. Let's navigate solving your problem together.
         </p>
         <div className="gap-3 py-2 justify-center items-center flex-col flex sm:items-start sm:flex-row sm:justify-start">
           <button className="bg-rose-700 uppercase rounded-3xl py-2 w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest">

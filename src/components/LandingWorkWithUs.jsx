@@ -5,19 +5,19 @@ function LandingWorkWithUs() {
   return (
     <div className="flex flex-col items-center justify-center my-32">
       <div className="max-w-xl sm:max-w-full text-center flex flex-col justify-center items-center">
-        <h2 className="uppercase my-16 px-12 text-4xl sm:text-5xl tracking-wide sm:tracking-widest sm:max-w-4xl">
+        <h2 className="uppercase my-16 md:my-8 px-12 text-4xl sm:text-5xl tracking-wide sm:tracking-widest sm:max-w-4xl">
           We Innovate, design, build and implement.
         </h2>
-        <p className="text-lg px-16 my-16 sm:max-w-2xl">
+        <p className="text-lg px-16 my-16 md:my-8 sm:max-w-2xl">
           The field of Unmanned Aerial Vehicles is evolving rapidly. Off the
           shelf solutions cannot keep pace with the fast-changing needs of our
           clients as they seek differentiation and competitive advantage. Many
           clients come to us with problems they don't know how to solve.
         </p>
       </div>
-      <h3 className="uppercase my-3 font-medium">Services</h3>
+      <h3 className="uppercase mt-12 font-medium">Services</h3>
       <div className="md:flex md:flex-wrap justify-center w-full">
-        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-16 md:mx-4 my-8 md:max-w-[33%] lg:max-w-[30%] rounded">
+        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-16 md:mx-4 my-8 md:max-w-[36%] rounded">
           <span>
             {' '}
             <img
@@ -39,7 +39,7 @@ function LandingWorkWithUs() {
             value to your organisation.
           </p>
         </div>
-        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-16 md:mx-4 md:my-8 md:max-w-[33%] lg:max-w-[30%] rounded">
+        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-16 md:mx-4 md:my-8 md:max-w-[36%] rounded">
           <span>
             {' '}
             <img
@@ -63,7 +63,7 @@ function LandingWorkWithUs() {
         </div>
         </div>
         <div className="md:flex md:flex-wrap justify-center w-full">
-        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-16 my-8 md:my-0 md:mx-4 md:max-w-[33%] lg:max-w-[30%] rounded">
+        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-16 my-8 md:my-0 md:mx-4 md:max-w-[36%] rounded">
           <span>
             {' '}
             <img
@@ -83,7 +83,7 @@ function LandingWorkWithUs() {
             your team operating like professionals in no time.
           </p>
         </div>
-        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-16 md:mx-4 md:max-w-[33%] lg:max-w-[30%] rounded">
+        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-16 md:mx-4 md:max-w-[36%] rounded">
           <span>
             {' '}
             <img
