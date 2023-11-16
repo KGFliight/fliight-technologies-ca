@@ -5,6 +5,7 @@ import {
   faMapMarkerAlt,
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
+import { Link, NavLink } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -21,9 +22,11 @@ function Footer() {
           attached. Let's navigate solving your problem together.
         </p>
         <div className="gap-3 py-2 justify-center items-center flex-col flex sm:items-start sm:flex-row sm:justify-start">
+        <NavLink to="/contact">
           <button className="bg-rose-700 uppercase rounded-3xl py-2 w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest">
             Contact us
           </button>
+          </NavLink>
           <button className="bg-gray-700 uppercase rounded-3xl py-3 w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest">
             Book a demo
           </button>

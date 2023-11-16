@@ -3,7 +3,7 @@ import Home from "./pages/Home"
 import Drones from "./pages/Drones"
 import Solutions from "./pages/Solutions"
 import About from "./pages/About"
-import Contact from "./pages/Solutions"
+import Contact from "./pages/Contact"
 import RequestDemo from "./pages/RequestDemo"
 import './App.css'
 

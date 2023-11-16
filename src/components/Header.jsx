@@ -17,15 +17,19 @@ function Header() {
 
         {/* Navigation Links */}
         <nav className="flex-1 lg:space-x-12 md:space-x-8 inline-flex justify-center items-center text-center lg:ml-[-3rem]">
+
           <NavLink to="/drones" activeClassName="text-ft-white">
             Drones
           </NavLink>
+
           <NavLink to="/solutions" activeClassName="text-ft-white">
             Solutions
           </NavLink>
+
           <NavLink to="/about" activeClassName="text-ft-white">
             About
           </NavLink>
+
           <NavLink to="/contact" activeClassName="text-ft-white">
             Contact
           </NavLink>
