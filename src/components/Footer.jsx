@@ -12,7 +12,7 @@ function Footer() {
       <div className="px-12 py-8 mt-8 border-t">
         <div className="lg:flex lg:justify-between">
 
-       <div className="md:pr-8">
+       <div className="md:pr-8 md:p-8">
         <h2 className="uppercase text-4xl sm:text-5xl tracking-wide sm:tracking-widest sm:max-w-4xl">
           READY FOR TAKEOFF?
         </h2>
@@ -32,27 +32,27 @@ function Footer() {
         <div className="flex justify-center">
         <div className="flex my-4 w-full ">
           <div className="flex flex-col w-[50%] sm:w-40">
-            <span className="uppercase my-4 text-sm leading-relaxed font-semibold text-ft-dark-grey">
+            <span className="uppercase my-4 text-sm leading-relaxed font-semibold text-ft-dark-grey md:text-lg">
               Drones
             </span>
-            <ul className="text-sm leading-loose tracking-wide font-normal">
-              <li>DeltaQuad Pro</li>
-              <li>DeltaQuad Evo</li>
+            <ul className="text-sm leading-loose tracking-wide font-normal md:text-lg">
+              <li className="my-4">DeltaQuad Pro</li>
+              <li className="my-4">DeltaQuad Evo</li>
             </ul>
           </div>
           <div className="flex flex-col w-[50%] sm:w-40 ml-[4rem]  leading-loose tracking-wide">
-            <span className="uppercase my-4 text-sm leading-relaxed font-semibold text-ft-dark-grey">
+            <span className="uppercase my-4 text-sm leading-relaxed font-semibold text-ft-dark-grey md:text-lg">
               Software
             </span>
-            <ul className="text-sm leading-loose tracking-wide font-normal">
-              <li>AeroWhere</li>
-              <li>Argus</li>
+            <ul className="text-sm leading-loose tracking-wide font-normal md:text-lg">
+              <li className="my-4">AeroWhere</li>
+              <li className="my-4">Argus</li>
             </ul>
           </div>
           </div>
           </div>
         </div>
-        <div className="">
+        <div className="md:m-8 md:mr-auto">
           <img src={deltaQuad} alt="deltaQuad" className="w-60 mt-8 mb-1" />
           <span className="text-sm font-normal leading-relaxed tracking-wide text-ft-grey">
             |&nbsp;&nbsp; Fliight Technologies is proud to be the official
