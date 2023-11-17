@@ -113,3 +113,14 @@ video {
 .snaps-inline > * {
   scroll-snap-align: start;
 }
+
+.custom-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px; /* Thickness of the border */
+  background: linear-gradient(to right, white 25%, red 25%, red 75%, white 75%);
+  display: block;
+}
