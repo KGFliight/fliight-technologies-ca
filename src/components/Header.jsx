@@ -11,6 +11,11 @@ function Header() {
 
   let closeTimeoutId
 
+  const toggleDropdown = (setDropdownState, currentState) => {
+    clearTimeout(closeTimeoutId);
+    setDropdownState(!currentState); // Toggle state
+  };
+
   const openDropdown = (setDropdownState) => {
     clearTimeout(closeTimeoutId);
     setDropdownState(true);
@@ -51,6 +56,7 @@ function Header() {
             className="relative group"
             onMouseEnter={() => openDropdown(setIsDronesDropdownOpen)}
             onMouseLeave={() => closeDropdown(setIsDronesDropdownOpen)}
+            onClick={() => toggleDropdown(setIsDronesDropdownOpen, isDronesDropdownOpen)} 
           >
             <NavLink to="/drones" className="text-ft-white">
               Drones
@@ -67,6 +73,7 @@ function Header() {
             className="relative group"
             onMouseEnter={() => openDropdown(setIsSolutionsDropdownOpen)}
             onMouseLeave={() => closeDropdown(setIsSolutionsDropdownOpen)}
+            onClick={() => toggleDropdown(setIsSolutionsDropdownOpen, isSolutionsDropdownOpen)} 
           >
             <NavLink to="/solutions" className="text-ft-white">
               Solutions

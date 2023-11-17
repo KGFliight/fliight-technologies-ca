@@ -8,8 +8,8 @@ function Contact() {
       <Header />
       <main className="flex-1 flex items-center justify-center">
         <div className="flex flex-col max-w-full">
-          <h1 className="text-7xl font-medium leading-10 tracking-widest mt-24 py-20 justify-center flex uppercase h-20">
-            LETS TALK
+          <h1 className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-wide md:tracking-widest mt-24 py-20 justify-center flex uppercase h-20">
+            LET'S TALK
           </h1>
           <p className="my-8 md:max-w-[40rem] text-lg font-normal leading-loose tracking-wide text-center">
             Ready for takeoff? Our friendly Fliight Crew is here to discuss your
