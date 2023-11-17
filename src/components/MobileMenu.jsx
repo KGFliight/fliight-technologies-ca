@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import fliightLogo from '../assets/images/fliight-logo-white.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 function MobileMenu() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -35,17 +37,24 @@ function MobileMenu() {
           <div className="flex flex-col my-20 mx-12 gap-8 justify-start h-full text-left uppercase text-5xl">
             <Link
               to=""
-              className="text-white py-2"
+              className="text-white py-2 flex items-center"
               onClick={toggleTechDropdown}
             >
-              Technology
+              Technology &nbsp;
+              <FontAwesomeIcon icon={faChevronDown} className="text-2xl " />
             </Link>
             {techDropdownOpen && (
               <div className="flex flex-col gap-4">
-                <Link to="/drones/deltaquad-pro" className="text-ft-grey py-1 text-3xl">
+                <Link
+                  to="/drones/deltaquad-pro"
+                  className="text-ft-grey py-1 pl-2 text-3xl"
+                >
                   DeltaQuad Pro
                 </Link>
-                <Link to="/drones/deltaquad-evo" className="text-ft-grey py-1 text-3xl">
+                <Link
+                  to="/drones/deltaquad-evo"
+                  className="text-ft-grey py-1 pl-2 text-3xl"
+                >
                   DeltaQuad Evo
                 </Link>
               </div>
@@ -56,21 +65,20 @@ function MobileMenu() {
             <Link to="/contact" className="text-white py-2">
               Contact
             </Link>
-            </div>
-            <div className="absolute bottom-10 flex flex-col items-center w-full p-8 justify-center  gap-4">
-              <Link
-                to="/contact-us"
-                className="bg-red-700 uppercase rounded-3xl py-3 w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest text-center"
-              >
-                Contact Us
-              </Link>
-              <Link
-                to="/book-demo"
-                className="bg-gray-700 uppercase rounded-3xl py-3 w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest text-center"
-              >
-                Book a Demo
-              </Link>
-            
+          </div>
+          <div className="absolute bottom-10 flex flex-col items-center w-full p-8 justify-center  gap-4">
+            <Link
+              to="/contact"
+              className="bg-red-700 uppercase rounded-3xl py-3 w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest text-center"
+            >
+              Contact Us
+            </Link>
+            <Link
+              to="/request-demo"
+              className="bg-gray-700 uppercase rounded-3xl py-3 w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest text-center"
+            >
+              Book a Demo
+            </Link>
           </div>
         </div>
       )}
