@@ -1,5 +1,6 @@
 import '../App.css'
 import iconDrone from '../assets/images/icon-drone.png'
+import { NavLink } from 'react-router-dom'
 
 function LandingWorkWithUs() {
   return (
@@ -17,7 +18,7 @@ function LandingWorkWithUs() {
       </div>
       <h3 className="uppercase mt-12 font-medium">Services</h3>
       <div className="md:flex md:flex-wrap justify-center w-full">
-        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-16 md:mx-4 my-8 md:max-w-[36%] rounded">
+        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-8 md:mx-4 my-8 md:max-w-[36%] rounded">
           <span>
             {' '}
             <img
@@ -39,7 +40,7 @@ function LandingWorkWithUs() {
             value to your organisation.
           </p>
         </div>
-        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-16 md:mx-4 md:my-8 md:max-w-[36%] rounded">
+        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-8 md:mx-4 md:my-8 md:max-w-[36%] rounded">
           <span>
             {' '}
             <img
@@ -63,7 +64,7 @@ function LandingWorkWithUs() {
         </div>
         </div>
         <div className="md:flex md:flex-wrap justify-center w-full">
-        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-16 my-8 md:my-0 md:mx-4 md:max-w-[36%] rounded">
+        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-8 my-8 md:my-0 md:mx-4 md:max-w-[36%] rounded">
           <span>
             {' '}
             <img
@@ -83,7 +84,7 @@ function LandingWorkWithUs() {
             your team operating like professionals in no time.
           </p>
         </div>
-        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-16 md:mx-4 md:max-w-[36%] rounded">
+        <div className="flex flex-col text-left bg-gray-700 p-6 sm:p-8 mx-8 md:mx-4 md:max-w-[36%] rounded">
           <span>
             {' '}
             <img
@@ -103,7 +104,9 @@ function LandingWorkWithUs() {
           </p>
         </div>
       </div>
-      <button className="bg-rose-700 uppercase rounded-3xl px-5 py-3 m-12 w-[75%] sm:w-44 min-h-[2.75rem]">Work with us</button>
+      
+      <button className="bg-rose-700 uppercase rounded-3xl py-3 w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-8 md:mx-6"><NavLink to="/request-demo">Work with us</NavLink></button>
+      
     </div>
   )
 }

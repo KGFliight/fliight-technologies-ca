@@ -2,6 +2,7 @@ import '../App.css'
 import React from 'react'
 import deltaQuad from '../assets/images/deltaquad-pro.jpeg'
 import yellowScan from '../assets/images/evo-yellowscan-payload.jpeg'
+import { NavLink } from 'react-router-dom'
 
 function DronesCarousel() {
   const scrollRef = React.useRef(null)
@@ -34,13 +35,37 @@ function DronesCarousel() {
           className="media-scroller snaps-inline pl-12 md:auto-cols-[42%]"
           ref={scrollRef}          
         >
+          <NavLink to="/drones/deltaquad-pro">
           <li className="media-element lg:px-6 lg:py-12">
+            
             <img
               src={deltaQuad}
               alt="alt"
               className="border border-ft-grey rounded min-h-[10rem] h-auto"
             />
-            <p className="uppercase">Deltaquad pro 1</p>
+            <p className="uppercase">Deltaquad Pro</p>
+            
+          </li>
+          </NavLink>
+          <NavLink to="/drones/deltaquad-evo">
+          <li className="media-element lg:px-6 lg:py-12">
+          
+            <img
+              src={yellowScan}
+              alt="alt"
+              className="bg-ft-grey border border-ft-grey rounded min-h-[10rem] h-auto"
+            />
+            <p className="uppercase">Deltaquad Evo</p>
+          
+          </li>
+          </NavLink>
+          <li className="media-element lg:px-6 lg:py-12">
+            <img
+              src={deltaQuad}
+              alt="alt"
+              className="bg-ft-grey border border-ft-grey rounded min-h-[10rem] h-auto"
+            />
+            <p className="uppercase">Deltaquad Nolink 3</p>
           </li>
           <li className="media-element lg:px-6 lg:py-12">
             <img
@@ -48,7 +73,7 @@ function DronesCarousel() {
               alt="alt"
               className="bg-ft-grey border border-ft-grey rounded min-h-[10rem] h-auto"
             />
-            <p className="uppercase">Deltaquad pro 2</p>
+            <p className="uppercase">Deltaquad Nolink 4</p>
           </li>
           <li className="media-element lg:px-6 lg:py-12">
             <img
@@ -56,7 +81,7 @@ function DronesCarousel() {
               alt="alt"
               className="bg-ft-grey border border-ft-grey rounded min-h-[10rem] h-auto"
             />
-            <p className="uppercase">Deltaquad pro 3</p>
+            <p className="uppercase">Deltaquad Nolink 5</p>
           </li>
           <li className="media-element lg:px-6 lg:py-12">
             <img
@@ -64,23 +89,7 @@ function DronesCarousel() {
               alt="alt"
               className="bg-ft-grey border border-ft-grey rounded min-h-[10rem] h-auto"
             />
-            <p className="uppercase">Deltaquad pro 4</p>
-          </li>
-          <li className="media-element lg:px-6 lg:py-12">
-            <img
-              src={deltaQuad}
-              alt="alt"
-              className="bg-ft-grey border border-ft-grey rounded min-h-[10rem] h-auto"
-            />
-            <p className="uppercase">Deltaquad pro 5</p>
-          </li>
-          <li className="media-element lg:px-6 lg:py-12">
-            <img
-              src={yellowScan}
-              alt="alt"
-              className="bg-ft-grey border border-ft-grey rounded min-h-[10rem] h-auto"
-            />
-            <p className="uppercase">Deltaquad pro 6</p>
+            <p className="uppercase">Deltaquad Nolink 6</p>
           </li>
         </ul>
       </div>

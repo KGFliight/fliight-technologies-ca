@@ -1,6 +1,7 @@
 import '../App.css'
 import React from 'react'
 import software from '../assets/images/software-1.jpeg'
+import { NavLink } from 'react-router-dom'
 
 
 function SoftwareAppsCarousel() {
@@ -34,13 +35,39 @@ function SoftwareAppsCarousel() {
           className="media-scroller snaps-inline pl-12 md:auto-cols-[42%]"
           ref={scrollRef}
         >
+          <NavLink to="/solutions/aerowhere">
           <li className="media-element lg:px-6 lg:py-12">
             <img
               src={software}
               alt="alt"
               className="bg-ft-grey border-ft-grey rounded min-h-[10rem] h-auto"
             />
-            <p className="uppercase font-medium ">AEROWHERE 1</p>
+            <p className="uppercase font-medium ">AEROWHERE</p>
+            <p className="text-sm text-ft-dark-grey mt-[-1rem] leading-tight tracking-wide ">
+              Description
+            </p>
+          </li>
+          </NavLink>
+          <NavLink to="/solutions/argus">
+          <li className="media-element lg:px-6 lg:py-12">
+            <img
+              src={software}
+              alt="alt"
+              className="bg-ft-grey border-ft-grey rounded min-h-[10rem] h-auto"
+            />
+            <p className="uppercase leading-7 font-medium">Argus</p>
+            <p className="text-sm text-ft-dark-grey mt-[-1rem] leading-tight tracking-wide ">
+              Description
+            </p>
+          </li>
+          </NavLink>
+          <li className="media-element lg:px-6 lg:py-12">
+            <img
+              src={software}
+              alt="alt"
+              className="bg-ft-grey border-ft-grey rounded min-h-[10rem] h-auto"
+            />
+            <p className="uppercase leading-7 font-medium">AEROWHERE nolink 3</p>
             <p className="text-sm text-ft-dark-grey mt-[-1rem] leading-tight tracking-wide ">
               Description
             </p>
@@ -51,7 +78,7 @@ function SoftwareAppsCarousel() {
               alt="alt"
               className="bg-ft-grey border-ft-grey rounded min-h-[10rem] h-auto"
             />
-            <p className="uppercase leading-7 font-medium">AEROWHERE 2</p>
+            <p className="uppercase leading-7 font-medium">AEROWHERE nolink 4</p>
             <p className="text-sm text-ft-dark-grey mt-[-1rem] leading-tight tracking-wide ">
               Description
             </p>
@@ -62,7 +89,7 @@ function SoftwareAppsCarousel() {
               alt="alt"
               className="bg-ft-grey border-ft-grey rounded min-h-[10rem] h-auto"
             />
-            <p className="uppercase leading-7 font-medium">AEROWHERE 3</p>
+            <p className="uppercase leading-7 font-medium">AEROWHERE nolink 5</p>
             <p className="text-sm text-ft-dark-grey mt-[-1rem] leading-tight tracking-wide ">
               Description
             </p>
@@ -73,29 +100,7 @@ function SoftwareAppsCarousel() {
               alt="alt"
               className="bg-ft-grey border-ft-grey rounded min-h-[10rem] h-auto"
             />
-            <p className="uppercase leading-7 font-medium">AEROWHERE 4</p>
-            <p className="text-sm text-ft-dark-grey mt-[-1rem] leading-tight tracking-wide ">
-              Description
-            </p>
-          </li>
-          <li className="media-element lg:px-6 lg:py-12">
-            <img
-              src={software}
-              alt="alt"
-              className="bg-ft-grey border-ft-grey rounded min-h-[10rem] h-auto"
-            />
-            <p className="uppercase leading-7 font-medium">AEROWHERE 5</p>
-            <p className="text-sm text-ft-dark-grey mt-[-1rem] leading-tight tracking-wide ">
-              Description
-            </p>
-          </li>
-          <li className="media-element lg:px-6 lg:py-12">
-            <img
-              src={software}
-              alt="alt"
-              className="bg-ft-grey border-ft-grey rounded min-h-[10rem] h-auto"
-            />
-            <p className="uppercase leading-7 font-medium">AEROWHERE 6</p>
+            <p className="uppercase leading-7 font-medium">AEROWHERE nolink 6</p>
             <p className="text-sm text-ft-dark-grey mt-[-1rem] leading-tight tracking-wide ">
               Description
             </p>
