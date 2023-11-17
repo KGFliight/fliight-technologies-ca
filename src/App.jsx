@@ -10,10 +10,13 @@ import DeltaQuadPro from "./pages/DeltaQuadPro"
 import DeltaQuadEvo from "./pages/DeltaQuadEvo"
 import Argus from "./pages/Argus"
 import Aerowhere from "./pages/Aerowhere"
+import { MobileMenuProvider } from './components/MobileMenuContext';
+
 
 function App() {
   return (
     <div className="bg-ft-black overflow-x-hidden text-ft-white">
+      <MobileMenuProvider>
       <Routes>
         
         <Route path="/" element ={<Home />}/>
@@ -27,6 +30,7 @@ function App() {
         <Route path="/contact" element ={<Contact />}/>
         <Route path="/request-demo" element ={<RequestDemo />}/>
       </Routes>
+      </MobileMenuProvider>
     </div>
   )
 }

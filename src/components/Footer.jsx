@@ -7,6 +7,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 
+
 function Footer() {
   return (
     <footer className="border-ft-dark-grey">
@@ -27,9 +28,9 @@ function Footer() {
                 </button>
               </NavLink>
               <NavLink to="/request-demo">
-              <button className="bg-gray-700 uppercase rounded-3xl py-3 w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest">
-                Book a demo
-              </button>
+                <button className="bg-gray-700 uppercase rounded-3xl py-3 w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest">
+                  Book a demo
+                </button>
               </NavLink>
             </div>
           </div>
@@ -53,11 +54,11 @@ function Footer() {
                   Software
                 </span>
                 <ul className="text-sm leading-loose tracking-wide font-normal md:text-lg">
-                <NavLink to="/solutions/aerowhere">
-                  <li className="my-4">AeroWhere</li>
+                  <NavLink to="/solutions/aerowhere">
+                    <li className="my-4">AeroWhere</li>
                   </NavLink>
                   <NavLink to="/solutions/argus">
-                  <li className="my-4">Argus</li>
+                    <li className="my-4">Argus</li>
                   </NavLink>
                 </ul>
               </div>
@@ -76,7 +77,7 @@ function Footer() {
         <div className="flex items-center gap-4 ml-4">
           <FontAwesomeIcon icon={faPhone} className="self-center w-12" />
           <span className="text-sm font-normal leading-loose tracking-widest">
-            +(61) 429 279 876
+            <a href="tel:+61429279876">+(61) 429 279 876</a>
           </span>
         </div>
         <div className="flex items-center gap-4 ml-4">
@@ -88,7 +89,7 @@ function Footer() {
         <div className="flex items-center gap-4 ml-4">
           <FontAwesomeIcon icon={faEnvelope} className="self-center w-12" />
           <span className="text-sm font-normal leading-loose tracking-widest">
-            info@fliight.com.au
+            <a href="mailto:info@fliight.com.au">info@fliight.com.au</a>
           </span>
         </div>
       </div>
@@ -97,7 +98,7 @@ function Footer() {
           <p className="">
             © Fliight Technologies Pty Ltd. All rights reserved.{' '}
           </p>
-          <p className="">Website by jbdev</p>
+          <p className=""><a href="https://jbdev.io" target="_blank" rel="noreferrer noopener">Website by jbdev</a></p>
         </div>
       </div>
     </footer>

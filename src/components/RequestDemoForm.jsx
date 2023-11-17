@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ContactForm() {
+function RequestDemoForm() {
   return (
     <div className="my-12">
       <form className="flex flex-col gap-4">
@@ -32,7 +32,7 @@ function ContactForm() {
           />
         </label>
         <label className="flex flex-col">
-          Reason for getting in touch
+          Date preference*
           <select
             type="text"
             name="why"
@@ -40,10 +40,10 @@ function ContactForm() {
             placeholder="Select"
           >
             <option value="" disabled>Select</option>
-            <option value="general" >General Enquiry</option>
-            <option value="technical" >Technical Support</option>
-            <option value="feedback" >Feedback</option>
-            <option value="requestdemo" >Request a demo</option>
+            <option value="general" >Not</option>
+            <option value="technical" >Sure</option>
+            <option value="feedback" >On a</option>
+            <option value="requestdemo" >date picker yet</option>
           </select>
         </label>
         <label className="flex flex-col">
@@ -66,4 +66,4 @@ function ContactForm() {
   )
 }
 
-export default ContactForm
+export default RequestDemoForm

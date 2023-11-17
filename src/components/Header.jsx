@@ -4,10 +4,13 @@ import fliightLogo from '../assets/images/fliight-logo-white.png'
 import ScrollToTop from '../utilities/ScrollToTop'
 import DropdownMenu from './DropdownMenu'
 import { useState } from 'react'
+import { useContext } from 'react';
+import { MobileMenuContext } from './MobileMenuContext';
 
 function Header() {
   const [isDronesDropdownOpen, setIsDronesDropdownOpen] = useState(false)
   const [isSolutionsDropdownOpen, setIsSolutionsDropdownOpen] = useState(false)
+  const { isMobileMenuOpen, setIsMobileMenuOpen } = useContext(MobileMenuContext);
 
   let closeTimeoutId
 
@@ -96,7 +99,7 @@ function Header() {
         </nav>
 
         {/* Request a Demo */}
-        <div className="h-16 w-52 bg-rose-700 flex items-center justify-center">
+        <div className="h-16 w-52 bg-rose-700 border-b flex items-center justify-center">
           <Link
             to="/request-demo"
             className="text-lg font-rajdhani font-semibold uppercase text-zinc-100"
@@ -108,7 +111,7 @@ function Header() {
 
       {/* Mobile Navigation */}
       <div className="md:hidden h-16 transition-all duration-300">
-        <MobileMenu />
+        <MobileMenu isMenuOpen={isMobileMenuOpen} setMenuOpen={setIsMobileMenuOpen} />
       </div>
 
       {/* Underline 
