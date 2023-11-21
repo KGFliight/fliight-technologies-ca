@@ -26,7 +26,7 @@ function DronesCarousel() {
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full lg:ml-32">
       <div className="">
         <h3 className="ml-12 sm:ml-16 md:ml-24 mt-8 mb-2 text-4xl sm:text-5xl uppercase">
           DRONES

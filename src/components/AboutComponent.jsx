@@ -19,8 +19,8 @@ function AboutComponent() {
           className="image-container w-full max-h-[600px] 2xl:max-h-[800px] object-scale-down object-bottom sm:object-cover"
         />
       </div>
-      <div className="flex flex-col items-center flex-1  p-6">
-        <div className="my-12 md:mx-20">
+      <div className="flex flex-col items-center flex-1 p-6">
+        <div className="my-12 md:mx-20  p-6">
           <h3 className="uppercase text-5xl tracking-widest text-left my-8 ">
             Our approach to UAV
           </h3>
@@ -32,24 +32,24 @@ function AboutComponent() {
           <div className="flex my-12 justify-between max-w-[960px]">
             <div className="">
               <ul className="">
-                <li className="my-8 flex items-center">
+                <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 p-2"
+                    className="text-rose-700 p-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
-                <li className="my-8 flex items-center">
+                <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 p-2"
+                    className="text-rose-700 p-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
-                <li className="my-8 flex items-center">
+                <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 p-2"
+                    className="text-rose-700 p-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
@@ -57,24 +57,24 @@ function AboutComponent() {
             </div>
             <div>
               <ul className="">
-                <li className="my-8 flex items-center">
+                <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 p-2"
+                    className="text-rose-700 p-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
-                <li className="my-8 flex items-center">
+                <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 p-2"
+                    className="text-rose-700 p-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
-                <li className="my-8 flex items-center">
+                <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 p-2"
+                    className="text-rose-700 p-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
@@ -102,7 +102,7 @@ function AboutComponent() {
           <h3 className="uppercase text-5xl tracking-widest text-left my-8 ">
             Our people who make it happen
           </h3>
-          <div className="md:flex justify-between max-w-[860px] my-20 ">
+          <div className="md:flex md:justify-between max-w-[860px] my-20 ">
             <div className="max-w-[368px]">
               <div className="image-container z-50">
                 <img src={kit} className="w-80 h-96" />

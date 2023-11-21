@@ -6,7 +6,7 @@ function RequestDemo() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-1 flex items-center justify-center">
+      <div className="p-6 flex-1 flex items-center justify-center">
         <div className="flex flex-col max-w-full">
           <h1 className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-wide md:tracking-widest mt-24 py-20 flex uppercase h-20 text-left my-12 md:justify-center md:text-center">
             Request a Demo
@@ -16,7 +16,7 @@ function RequestDemo() {
           </p>
           <RequestDemoForm />
         </div>
-      </main>
+      </div>
       <Footer />
     </div>
   )

@@ -26,7 +26,7 @@ function SoftwareAppsCarousel() {
   }
 
   return (
-    <div className="w-full my-8">
+    <div className="w-full my-8 lg:ml-32">
       <div className="">
         <h3 className="ml-12 sm:ml-16 md:ml-24 mt-8 mb-2 text-4xl sm:text-5xl uppercase">
           SOFTWARE + APPS

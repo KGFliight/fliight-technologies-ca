@@ -11,7 +11,7 @@ import { Link, NavLink } from 'react-router-dom'
 function Footer() {
   return (
     <footer className="border-ft-dark-grey">
-      <div className="px-12 py-8 mt-8 border-t">
+      <div className="px-12 lg:px-24 py-8 mt-8 border-t">
         <div className="lg:flex lg:justify-between">
           <div className="md:pr-8 md:p-8">
             <h2 className="uppercase text-4xl sm:text-5xl tracking-wide sm:tracking-widest sm:max-w-4xl">
@@ -93,7 +93,7 @@ function Footer() {
           </span>
         </div>
       </div>
-      <div className="px-12 mb-12 sm:mb-4 text-xs text-ft-grey font-normal leading-loose tracking-wide md:flex-row md:justify-between md:w-full">
+      <div className="px-12 lg:px-32 mb-12 sm:mb-4 text-xs text-ft-grey font-normal leading-loose tracking-wide md:flex-row md:justify-between md:w-full">
         <div className="md:inline-flex md:justify-between  md:w-full">
           <p className="">
             © Fliight Technologies Pty Ltd. All rights reserved.{' '}
