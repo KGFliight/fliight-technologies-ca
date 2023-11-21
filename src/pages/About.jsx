@@ -1,17 +1,15 @@
-import Header from "../components/Header"
-import Footer from "../components/Footer";
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import AboutComponent from '../components/AboutComponent'
 
 function About() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-1 flex flex-col items-center justify-center">
-      <h1 className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-widest mt-24 py-20 justify-center flex uppercase h-20 my-40">About</h1>
-      <p>todo</p>
-      </main>
+      <AboutComponent />
       <Footer />
     </div>
   )
 }
 
-export default About;
+export default About
