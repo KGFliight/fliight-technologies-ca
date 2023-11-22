@@ -29,10 +29,10 @@ function AboutComponent() {
             placeat facere accusantium ad inventore explicabo dicta. Voluptates,
             mollitia modi! Quis in earum perspiciatis
           </p>
-          <div className="flex my-12 justify-between lg:max-w-[960px] xl:max-w-[1200px]">
+          <div className="flex flex-col sm:flex-row my-12 justify-between lg:max-w-[960px] xl:max-w-[1200px]">
             <div className="">
               <ul className="">
-                <li className="my-8 flex items-start leading-loose tracking-wide">
+                <li className="my-8 flex  items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
                     className="text-rose-700 p-2 pr-4"
