@@ -12,15 +12,15 @@ function AboutComponent() {
       <h1 className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-widest mt-24 py-20 justify-center flex uppercase ">
         About
       </h1>
-      <h2 className="flex flex-col items-center mb-20 md:my-12 ">Subheading</h2>
+      <h2 className="flex flex-col items-center mb-8 md:mb-20 md:my-12 ">Subheading</h2>
       <div className="w-screen 2xl:flex 2xl:justify-center flex">
         <img
           src={workWorkshop}
           className="image-container w-full max-h-[600px] 2xl:max-h-[800px] object-scale-down object-bottom sm:object-cover"
         />
       </div>
-      <div className="flex flex-col items-center flex-1 p-6">
-        <div className="my-12 md:mx-20  p-6">
+      <div className="flex flex-col items-center flex-1 p-6 md:my-12">
+        <div className=" md:mx-20 p-6">
           <h3 className="uppercase text-5xl tracking-widest text-left my-8 ">
             Our approach to UAV
           </h3>
@@ -29,7 +29,7 @@ function AboutComponent() {
             placeat facere accusantium ad inventore explicabo dicta. Voluptates,
             mollitia modi! Quis in earum perspiciatis
           </p>
-          <div className="flex my-12 justify-between max-w-[960px]">
+          <div className="flex my-12 justify-between lg:max-w-[960px] xl:max-w-[1200px]">
             <div className="">
               <ul className="">
                 <li className="my-8 flex items-start leading-loose tracking-wide">
@@ -102,7 +102,7 @@ function AboutComponent() {
           <h3 className="uppercase text-5xl tracking-widest text-left my-8 ">
             Our people who make it happen
           </h3>
-          <div className="md:flex md:justify-between max-w-[860px] my-20 ">
+          <div className="flex flex-col sm:items-center lg: items-start lg:flex-row lg:justify-between max-w-[900px] my-20 ">
             <div className="max-w-[368px]">
               <div className="image-container z-50">
                 <img src={kit} className="w-80 h-96" />
@@ -142,7 +142,7 @@ function AboutComponent() {
             </div>
           </div>
           <div className="mt-40 my-12">
-          <p className="text-4xl  leading-10 tracking-wide  text-center justify-center max-w-[48rem] my-20 md:mx-40">
+          <p className="text-4xl  leading-10 tracking-wide  text-center justify-center max-w-[48rem] my-20 lg:mx-40">
             We serve clients worldwide, providing specialised solutions to
             unique problems
           </p>

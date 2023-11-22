@@ -8,7 +8,7 @@ import pypervision from '../assets/images/icons/pypervision.png'
 function LandingIcons() {
   return (
     <div className="flex flex-col justify-center items-center my-20 md:my-4 grayscale">
-      <ul className="flex flex-col md:flex-row md:gap-16 justify-center items-center gap-8">
+      <ul className="flex flex-col lg:flex-row lg:gap-16 justify-center items-center gap-8">
       <li className="w-40 h-20 items-center justify-center flex">
           <img src={pypervision} alt="pypervision logo" />
         </li>
