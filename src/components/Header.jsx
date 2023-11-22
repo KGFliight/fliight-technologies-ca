@@ -1,6 +1,7 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import MobileMenu from './MobileMenu'
 import fliightLogo from '../assets/images/fliight-logo-white.png'
+import fliightLogoBlack from '../assets/images/fliight-logo-black.png'
 import ScrollToTop from '../utilities/ScrollToTop'
 import DropdownMenu from './DropdownMenu'
 import { useState } from 'react'
@@ -11,6 +12,17 @@ function Header() {
   const [isDronesDropdownOpen, setIsDronesDropdownOpen] = useState(false)
   const [isSolutionsDropdownOpen, setIsSolutionsDropdownOpen] = useState(false)
   const { isMobileMenuOpen, setIsMobileMenuOpen } = useContext(MobileMenuContext);
+
+  const location = useLocation();
+  
+  const getHeaderClass = () => {
+    if (location.pathname === '/drones/deltaquad-pro' || location.pathname === '/drones/deltaquad-evo') {
+      return { background: 'bg-white', textColor: 'text-ft-black', image: `${fliightLogoBlack}` };
+    } else {
+      return { background: 'bg-ft-black', textColor: 'text-ft-white', image: `${fliightLogo}` }; // Default color
+    }
+  };
+  const headerClasses = getHeaderClass()
 
   let closeTimeoutId
 
@@ -41,7 +53,7 @@ function Header() {
   ]
 
   return (
-    <header className="fixed-top h-16 w-full bg-ft-black">
+    <header className={`fixed-top h-16 w-full ${headerClasses.background}`}>
       {/* Desktop Navigation */}
       <div className="hidden border-b border-ft-dark-gray lg:flex md:flex w-full h-16 justify-between items-center pl-12">
         {/* Home Logo */}
@@ -50,18 +62,18 @@ function Header() {
           className="z-50 transition-all duration-300 lg:w-48 lg:h-8 md:w-36 md:h-6"
           onClick={<ScrollToTop />}
         >
-          <img src={fliightLogo} alt="Logo" />
+          <img src={headerClasses.image} alt="Logo" />
         </Link>
 
         {/* Navigation Links */}
-        <nav className="flex-1 lg:space-x-12 md:space-x-8 lg:space-x-16 inline-flex justify-center items-center text-center lg:ml-[-3rem]">
+        <nav className="flex-1 md:space-x-8 lg:space-x-16 inline-flex justify-center items-center text-center lg:ml-[-3rem]">
           <div
             className="relative group"
             onMouseEnter={() => openDropdown(setIsDronesDropdownOpen)}
             onMouseLeave={() => closeDropdown(setIsDronesDropdownOpen)}
             onClick={() => toggleDropdown(setIsDronesDropdownOpen, isDronesDropdownOpen)} 
           >
-            <NavLink to="/drones" className="text-ft-white">
+            <NavLink to="/drones" className={headerClasses.textColor}>
               Drones
             </NavLink>
             <DropdownMenu
@@ -78,7 +90,7 @@ function Header() {
             onMouseLeave={() => closeDropdown(setIsSolutionsDropdownOpen)}
             onClick={() => toggleDropdown(setIsSolutionsDropdownOpen, isSolutionsDropdownOpen)} 
           >
-            <NavLink to="/solutions" className="text-ft-white">
+            <NavLink to="/solutions" className={headerClasses.textColor}>
               Solutions
             </NavLink>
             <DropdownMenu
@@ -89,11 +101,11 @@ function Header() {
             />
           </div>
 
-          <NavLink to="/about" className="text-ft-white">
+          <NavLink to="/about" className={headerClasses.textColor}>
             About
           </NavLink>
 
-          <NavLink to="/contact" className="text-ft-white">
+          <NavLink to="/contact" className={headerClasses.textColor}>
             Contact
           </NavLink>
         </nav>

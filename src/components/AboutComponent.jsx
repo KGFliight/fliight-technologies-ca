@@ -102,23 +102,23 @@ function AboutComponent() {
           <h3 className="uppercase text-5xl tracking-widest text-left my-8 ">
             Our people who make it happen
           </h3>
-          <div className="flex flex-col sm:items-center lg: items-start lg:flex-row lg:justify-between max-w-[900px] my-20 ">
-            <div className="max-w-[368px]">
+          <div className="flex flex-col sm:items-center lg:items-start lg:flex-row lg:justify-between max-w-[900px] my-20">
+            <div className="max-w-[368px] mt-0">
               <div className="image-container z-50">
                 <img src={kit} className="w-80 h-96" />
               </div>
 
               <div className="my-8">
-                <p className="my-2">Kihan Garcia</p>
-                <p className="my-2">CEO</p>
-                <p className="my-2 mb-4">
+                <p className="my-2 text-3xl leading-loose tracking-wide">Kihan Garcia</p>
+                <p className="my-2 text-xl leading-loose tracking-wide">CEO</p>
+                <p className="my-2 mb-4 leading-loose tracking-wide">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
                   libero rerum est placeat obcaecati atque, dolorem architecto
                   molestiae suscipit, voluptatibus sapiente minima facere velit
                   nisi nemo omnis expedita sunt? Unde.
                 </p>
                 <span>
-                  <a href="www.linkedin.com">Connect **</a>
+                  <a href="www.linkedin.com" className="leading-loose tracking-wide">Connect **</a>
                 </span>
               </div>
             </div>
@@ -127,16 +127,13 @@ function AboutComponent() {
                 <img src={kit} className="w-80 h-96" />
               </div>
               <div className="my-8">
-                <p className="my-2">Johnathan Clark</p>
-                <p className="my-2">CEO</p>
-                <p className="my-2 mb-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                  libero rerum est placeat obcaecati atque, dolorem architecto
-                  molestiae suscipit, voluptatibus sapiente minima facere velit
-                  nisi nemo omnis expedita sunt? Unde.
+                <p className="my-2 text-3xl leading-loose tracking-wide">Johnathan Clark</p>
+                <p className="my-2 text-xl leading-loose tracking-wide">Research and Development Engineer</p>
+                <p className="my-2 mb-4 leading-loose tracking-wide">
+                Specialises in heavy lift RPAS, VTOL UAV's, custom payloads, and remote sensing. With a six-year journey that spans from project inception to mass production, Johnathan has honed his expertise in project management, CAD, and precision manufacturing, all while ensuring his clients achieve safer, more efficient, and cost-effective business operations.
                 </p>
                 <span>
-                  <a href="www.linkedin.com">Connect **</a>
+                  <a href="www.linkedin.com" className="leading-loose tracking-wide">Connect **</a>
                 </span>
               </div>
             </div>

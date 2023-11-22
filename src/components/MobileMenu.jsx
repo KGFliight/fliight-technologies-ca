@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import fliightLogo from '../assets/images/fliight-logo-white.png'
+import fliightLogoBlack from '../assets/images/fliight-logo-black.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { useContext } from 'react'
@@ -24,11 +25,23 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
     // Add any additional logic here if needed
   }
 
+  const getHeaderClass = () => {
+    if (location.pathname === '/drones/deltaquad-pro' || location.pathname === '/drones/deltaquad-evo') {
+      return { background: 'bg-white', textColor: 'text-ft-black', image: `${fliightLogoBlack}`, menuBackground: 'bg-ft-black' };
+    } else {
+      return { background: 'bg-ft-black', textColor: 'text-ft-white', image: `${fliightLogo}`, menuBackground: 'bg-ft-white' }; // Default color
+    }
+  };
+  const headerClasses = getHeaderClass()
+
+  
+
+
   return (
-    <div className="w-full h-16 px-6 pt-6 pb-5 bg-ft-black flex justify-between items-center">
+    <div className={`w-full h-16 px-6 pt-6 pb-5 ${headerClasses.background} ${headerClasses.textColor} flex justify-between items-center`}>
       {/* Mobile Logo */}
       <Link to="/" className="w-32 h-5 z-50">
-        <img src={fliightLogo} alt="Mobile Logo" />
+        <img src={headerClasses.image} alt="Mobile Logo" />
       </Link>
 
       {/* Hamburger Menu Icon */}
@@ -36,9 +49,9 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
         className="w-5 h-6 flex flex-col justify-between cursor-pointer"
         onClick={toggleMenu}
       >
-        <div className="h-0.5 bg-ft-white"></div>
-        <div className="h-0.5 bg-ft-white"></div>
-        <div className="h-0.5 bg-ft-white"></div>
+        <div className={`h-0.5 ${headerClasses.menuBackground}`}></div>
+        <div className={`h-0.5 ${headerClasses.menuBackground}`}></div>
+        <div className={`h-0.5 ${headerClasses.menuBackground}`}></div>
       </div>
 
       {isMenuOpen && (
