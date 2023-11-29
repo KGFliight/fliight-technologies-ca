@@ -64,6 +64,7 @@ video {
   left: 14px; /* This will be your box shadow x-offset; */
   top: 14px; /* This will be your box shadow y-offset; */
   z-index: -1;
+  border-radius: 4px;
 }
 
 .media-scroller {

@@ -7,6 +7,8 @@ import deltaQuadProImage from '../assets/images/deltaquad-pro.jpeg'
 import DeltaQuadVtol from '../components/DeltaQuadVtol'
 import '../App.css'
 import deltaQuadProBannerImage from '../assets/images/deltaquad-pro-banner.jpg'
+import DeltaQuadProResults from '../components/DeltaQuadXxxResults'
+import DeltaQuadProTechnical from '../components/DeltaQuadXxxTechnical'
 
 function DeltaQuadPro() {
   return (
@@ -22,11 +24,13 @@ function DeltaQuadPro() {
       <div className="flex flex-col items-center my-20">
         <div className="h-auto max-w-[1200px] z-50">
           <div className="image-container mx-8 md:mx-24 ">
-            <img src={deltaQuadProImage} className="object-scale-down " />
+            <img src={deltaQuadProImage} className="object-scale-down rounded" />
           </div>
         </div>
       </div>
       <DeltaQuadVtol />
+      <DeltaQuadProResults/>
+      <DeltaQuadProTechnical/>
       <Footer />
     </div>
   )

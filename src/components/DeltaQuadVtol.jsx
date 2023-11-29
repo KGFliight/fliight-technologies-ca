@@ -46,9 +46,9 @@ function DeltaQuadVtol() {
   ]
 
   return (
-    <div className="m-12 md:m-20 ">
+    <div className="m-12 md:mx-20 ">
       <div className="">
-        <h3 className="text-5xl uppercase tracking-widest font-medium my-12">
+        <h3 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12">
           The complete VTOL Solution
         </h3>
         <p className="tracking-wide leading-loose">
@@ -74,7 +74,7 @@ function DeltaQuadVtol() {
                 alt={`${option.heading} image`}
                 className="w-[380px] h-[380px] inline-flex rounded"
               />
-              <h4 className="uppercase text-4xl leading-10 font-medium my-6">
+              <h4 className="uppercase text-3xl md:text-4xl leading-10 font-medium my-6">
                 #{option.heading}
               </h4>
               <h5 className="uppercase text-xl font-semibold leading-7 my-6">

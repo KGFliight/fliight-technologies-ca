@@ -89,7 +89,7 @@ function Landing() {
              <img
                 src={landingWorkWithImage}
                 alt=""
-                className="min-h-auto mx-16 md:w-[600px] image-container md:h-[600px] 2xl:max-h-[800px] object-none object-left-bottom"
+                className="min-h-auto mx-16 md:w-[600px] image-container md:h-[600px] 2xl:max-h-[800px] object-none object-left-bottom rounded"
               />
             </div>
             <div className="md:flex-col md:justify-center md:align-center md:p-12 xl:w-[38rem]">

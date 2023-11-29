@@ -6,6 +6,7 @@ import deltaQuadEvoBannerImage from '../assets/images/deltaquad-evo-banner.jpg'
 import DeltaQuadProInfo from '../components/DeltaQuadProInfo'
 import DeltaQuadVtol from '../components/DeltaQuadVtol'
 
+
 function DeltaQuadEvo() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -18,7 +19,9 @@ function DeltaQuadEvo() {
         <div className="h-auto max-w-[1200px] z-50">
         </div>
       </div>
+      
       <DeltaQuadVtol />
+      
       <Footer />
     </div>
   )

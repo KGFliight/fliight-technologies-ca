@@ -49,7 +49,7 @@ function ReviewCarousel() {
         <div className="flex flex-col justify-center items-center w-fit">
           <div className="py-4 relative mx-8 md:mx-0 md:min-h-[300px] md:min-w-[300px] min-h-[300px] z-50 my-8 md:my-16">
             <div className="image-container justify-center">
-              <img src={currentReview.image} alt={currentReview.alt} className="min-h-[300px]"/>
+              <img src={currentReview.image} alt={currentReview.alt} className="min-h-[300px] rounded"/>
             </div>
           </div>
         </div>

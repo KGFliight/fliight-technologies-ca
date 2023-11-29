@@ -124,7 +124,7 @@ function AboutComponent() {
             </div>
             <div className="max-w-[368px] mt-24">
               <div className="image-container z-50">
-                <img src={kit} className="w-80 h-96" />
+                <img src={kit} className="w-80 h-96 rounded" />
               </div>
               <div className="my-8">
                 <p className="my-2 text-3xl leading-loose tracking-wide">Johnathan Clark</p>
