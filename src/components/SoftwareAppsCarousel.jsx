@@ -107,7 +107,7 @@ function SoftwareAppsCarousel() {
           </li>
         </ul>
       </div>
-      <div className="max-sm:hidden md:pr-16">
+      <div className="max-sm:hidden md:pr-16 lg:mr-40">
         <div className="sm:w-full mb-auto text-right text-3xl sm:px-4 flex gap-4 justify-end mr-4 my-3 sm:m-0 sm:mx-1">
           <button
             className="border border-ft-dark-grey px-3"
