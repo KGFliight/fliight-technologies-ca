@@ -9,18 +9,18 @@ import LandingIcons from './LandingIcons'
 function AboutComponent() {
   return (
     <div className="flex-1 flex flex-col">
-      <h1 className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-widest mt-24 py-20 justify-center flex uppercase ">
+      <h1 className="text-6xl md:text-8xl font-medium leading md:leading-10 tracking-widest mt-32 py-20 justify-center flex uppercase ">
         About
       </h1>
       <h2 className="flex flex-col items-center mb-8 md:mb-20 md:my-12 ">Subheading</h2>
       <div className="w-screen 2xl:flex 2xl:justify-center flex">
         <img
           src={workWorkshop}
-          className="image-container w-full max-h-[600px] 2xl:max-h-[800px] object-scale-down object-bottom sm:object-cover"
+          className="image-container w-full max-h-[540px] 2xl:max-h-[800px] object-scale-down object-bottom sm:object-cover"
         />
       </div>
       <div className="flex flex-col items-center flex-1 p-6 md:my-12">
-        <div className=" md:mx-20 p-6">
+        <div className=" md:mx-20 mx-0 p-6">
           <h3 className="uppercase text-5xl tracking-widest text-left my-8 ">
             Our approach to UAV
           </h3>
@@ -35,21 +35,21 @@ function AboutComponent() {
                 <li className="my-8 flex  items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 p-2 pr-4"
+                    className="text-rose-700 py-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
                 <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 p-2 pr-4"
+                    className="text-rose-700 py-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
                 <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 p-2 pr-4"
+                    className="text-rose-700 py-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
@@ -60,21 +60,21 @@ function AboutComponent() {
                 <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 p-2 pr-4"
+                    className="text-rose-700 py-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
                 <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 p-2 pr-4"
+                    className="text-rose-700 py-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
                 <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 p-2 pr-4"
+                    className="text-rose-700 py-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>

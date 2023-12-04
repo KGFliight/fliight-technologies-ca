@@ -4,7 +4,7 @@ import evoDrawing from '../assets/images/evo-drawing.jpeg';
 
 function DeltaQuadXxxTechnical() {
   return (
-    <div className="pl-8 md:pl-20 pb-8 bg-white">
+    <div className="p-8 md:p-20 pb-8 bg-white">
       <img
         src={evoDrawing}
         alt="Evo Drawing"
@@ -18,7 +18,7 @@ function DeltaQuadXxxTechnical() {
           <div className="flex-1 mr-2 md:mr-8">
             <div className="uppercase text-ft-black text-2xl md:text-4xl my-4">
               Dimensions
-              <div className="bg-ft-grey p-2 my-2 flex text-lg md:text-xl normal-case rounded">
+              <div className="bg-ft-grey p-2 my-2 flex text-lg md:text-xl normal-case rounded mt-6">
                 <div className="flex-1 ">Wingspan</div>
                 <div className="flex-1">269cm</div>
               </div>
@@ -31,7 +31,7 @@ function DeltaQuadXxxTechnical() {
           <div className="flex-1 mr-2 md:mr-8">
             <div className="uppercase text-ft-black text-2xl md:text-4xl my-4">
               Weight
-              <div className="bg-ft-grey p-2 my-2 flex text-lg md:text-xl normal-case rounded">
+              <div className="bg-ft-grey p-2 my-2 flex text-lg md:text-xl normal-case rounded mt-6">
                 <div className="flex-1">Maximum Takeoff Weight</div>
                 <div className="flex-1">9kg</div>
               </div>
@@ -46,7 +46,7 @@ function DeltaQuadXxxTechnical() {
           <div className="flex-1 mr-2 md:mr-8">
             <div className="uppercase text-ft-black text-2xl md:text-4xl my-4">
               Single Battery performance
-              <div className="bg-ft-grey p-2 my-2 flex text-lg md:text-xl normal-case rounded">
+              <div className="bg-ft-grey p-2 my-2 flex text-lg md:text-xl normal-case rounded mt-6">
                 <div className="flex-1">Maximum Flight Time</div>
                 <div className="flex-1">3 hours</div>
               </div>
@@ -63,7 +63,7 @@ function DeltaQuadXxxTechnical() {
           <div className="flex-1 mr-2 md:mr-8">
             <div className="uppercase text-ft-black text-2xl md:text-4xl my-4">
               Dual Battery performance
-              <div className="bg-ft-grey p-2 my-2 flex text-lg md:text-xl normal-case rounded">
+              <div className="bg-ft-grey p-2 my-2 flex text-lg md:text-xl normal-case rounded mt-6">
                 <div className="flex-1">Maximum Flight Time</div>
                 <div className="flex-1">4.5 hours</div>
               </div>

@@ -74,11 +74,13 @@ function Landing() {
         </p>
       </div>
       <ReviewCarousel />
+      <div className="my-12">
       <img
         src={landingWorkshopImage}
         alt=""
-        className="mix-blend-screen my-12 object-contain"
+        className="mix-blend-screen bg-neutral-800 object-contain w-screen"
       />
+      </div>
       <DronesCarousel />
       <SoftwareAppsCarousel />
 
@@ -89,7 +91,7 @@ function Landing() {
              <img
                 src={landingWorkWithImage}
                 alt=""
-                className="min-h-auto mx-16 md:w-[600px] image-container md:h-[600px] 2xl:max-h-[800px] object-none object-left-bottom rounded"
+                className="min-h-auto mx-16 md:w-[600px] image-container md:h-[600px] 2xl:max-h-[800px] md:object-none md:object-left-bottom rounded"
               />
             </div>
             <div className="md:flex-col md:justify-center md:align-center md:p-12 xl:w-[38rem]">

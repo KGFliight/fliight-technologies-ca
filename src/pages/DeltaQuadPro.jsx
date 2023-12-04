@@ -22,12 +22,12 @@ function DeltaQuadPro() {
         />
       </div>
       <DeltaQuadProInfo />
-      <div className="flex flex-col items-center my-20">
-        <div className="h-auto max-w-[1200px] z-50">
-          <div className="image-container mx-8 md:mx-24 ">
+      <div className="flex flex-col items-center sm:my-20">
+        <div className="h-[600px] bg-white md:bg-ft-black flex items-center md:h-auto max-w-[1200px]">
+          <div className="image-container md:mx-24 md:z-50">
             <img
               src={deltaQuadProImage}
-              className="object-scale-down rounded"
+              className="object-scale-down sm:rounded"
             />
           </div>
         </div>
@@ -35,7 +35,7 @@ function DeltaQuadPro() {
       <DeltaQuadVtol />
       <DeltaQuadProResults />
       <DeltaQuadProTechnical />
-      <div className="flex flex-col items-center text-center uppercase text-5xl tracking-widest my-40">
+      <div className="flex flex-col items-center text-center uppercase text-5xl tracking-widest my-40 mx-8">
         We offer onsite demos
         <div className="normal-case text-lg leading-loose tracking-wide font-normal max-w-lg my-8">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium

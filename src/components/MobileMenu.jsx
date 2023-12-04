@@ -99,14 +99,14 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
             <p className="uppercase text-4xl leading-10">Ready for takeoff?</p>
             <Link
               to="/contact"
-              className="bg-red-700 uppercase rounded-3xl py-3 w-80 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest text-center"
+              className="bg-red-700 uppercase rounded-3xl py-3 w-80 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest text-center text-ft-white"
               onClick={handleMenuItemClick}
             >
               Contact Us
             </Link>
             <Link
               to="/request-demo"
-              className="bg-gray-700 uppercase rounded-3xl py-3 w-80 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest text-center"
+              className="bg-gray-700 uppercase rounded-3xl py-3 w-80 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest text-center text-ft-white"
               onClick={handleMenuItemClick}
             >
               Book a Demo

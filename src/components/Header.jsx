@@ -85,7 +85,7 @@ function Header() {
           </div>
 
           <div
-            className="relative group"
+            className="relative group hidden"
             onMouseEnter={() => openDropdown(setIsSolutionsDropdownOpen)}
             onMouseLeave={() => closeDropdown(setIsSolutionsDropdownOpen)}
             onClick={() => toggleDropdown(setIsSolutionsDropdownOpen, isSolutionsDropdownOpen)} 

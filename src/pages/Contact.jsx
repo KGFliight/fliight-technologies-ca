@@ -6,7 +6,7 @@ function Contact() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="p-6 flex-1 flex items-center justify-center">
+      <div className="px-12 py-6 flex-1 flex items-center justify-center">
         <div className="flex flex-col max-w-full">
           <h1 className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-wide md:tracking-widest mt-24 py-20 flex uppercase h-20 my-12 md:justify-center text-left md:text-center">
             LET'S TALK

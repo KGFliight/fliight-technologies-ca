@@ -7,24 +7,38 @@ const result = [
   {
     image: software,
     alt: "fill",
-    title: "Data Set 1",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo. Doloribus ex explicabo illum provident nisi modi repudiandae rerum maxime nesciunt. Laboriosam."
+    category: "RGB",
+    title: "A74 MARK IV",
+    maker: "Sony",
+    description: "A fully integrated 61 megapixel mapping camera with an interchangeable lens"
   },
   {
     image: software,
     alt: "fill",
-    title: "Data Set 2",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo. Doloribus ex explicabo illum provident nisi modi repudiandae rerum maxime nesciunt. Laboriosam."
+    category: "RGB & MULTISPECTRAL",
+    title: "MICASENSE ALTUM PT",
+    maker: "Ag Eagle",
+    description: "A six band synchronized thermal and multispectral sensor with panchromatic correction"
   },
   {
     image: software,
     alt: "fill",
-    title: "Data Set 3",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo. Doloribus ex explicabo illum provident nisi modi repudiandae rerum maxime nesciunt. Laboriosam."
+    category: "RGB & THERMAL",
+    title: "WRIS PRO",
+    maker: "Workswell",
+    description: "An integrated high-resolution thermal & RGB mapping sensor"
+  },
+  {
+    image: software,
+    alt: "fill",
+    category: "CARGO",
+    title: "PAYLOAD DELIVERY",
+    maker: "DeltaQuad",
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo."
   }
 ]
 
-function DeltaQuadXxxResults() {
+function DeltaQuadPayloadsCarousel() {
   const scrollRef = React.useRef(null)
 
   function slideToTheLeft() {
@@ -46,14 +60,14 @@ function DeltaQuadXxxResults() {
   }
 
   return (
-    <div className="ml-8 md:ml-20">
+    <div className="my-40">
       <div className="">
         <div className="inline-flex items-center w-full justify-between mb-2">
-        <h3 className="text-4xl sm:text-5xl uppercase ml-4 md:ml-0">
-          Results worth sharing
+        <h3 className="text-4xl sm:text-5xl uppercase md:ml-0">
+          Available payloads
         </h3>
         <div className="max-md:hidden flex justify-end ">
-        <div className="mb-auto text-right text-3xl sm:px-4 gap-4 mr-4 my-3 sm:m-0">
+        <div className="mb-auto text-right text-3xl md:px-0 gap-4 mr-4 my-3 sm:m-0">
           <button
             className="border border-ft-dark-grey px-3 mr-2"
             onClick={slideToTheLeft}
@@ -70,7 +84,7 @@ function DeltaQuadXxxResults() {
       </div>
       </div>
         <ul
-          className="media-scroller snaps-inline md:auto-cols-[42%] "
+          className="media-scroller snaps-inline md:auto-cols-[42%] lg:auto-cols-[38%] "
           ref={scrollRef}
         >
           {result.map((item, index) => (
@@ -89,8 +103,9 @@ function DeltaQuadXxxResults() {
         </ul>
       </div>
       
+      
     </div>
   )
 }
 
-export default DeltaQuadXxxResults
+export default DeltaQuadPayloadsCarousel
