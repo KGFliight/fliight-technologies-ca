@@ -9,8 +9,6 @@ import SoftwareAppsCarousel from './SoftwareAppsCarousel'
 import { NavLink } from 'react-router-dom'
 import { useContext } from 'react'
 import { MobileMenuContext } from './MobileMenuContext'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCirclePlay } from '@fortawesome/free-solid-svg-icons'
 import playButton from '../assets/images/icons/playbutton.svg'
 
 function Landing() {
@@ -46,7 +44,7 @@ function Landing() {
         <div className="vertical-align absolute-bottom mb-20 p-12 sm:p-0 lg:px-3 lg:p-0 w-full sm:ml-16 lg:ml-32 max-sm:mt-[28rem] sm:mt-[36rem] md:mt-[36rem] lg:mt-[40rem] sm:w-[28rem] text-lg font-rajdhani font-thin leading-20 tracking-wide  text-ft-white transition-ease duration-300">
           We are a Wollongong based engineering firm at the forefront of design,
           manufacture and modification of custom Unmanned Aerial Vehicles
-          (UAV's)
+          (UAV&apos;s)
         </div>
         <div className="bg-deltaquad min-h-[50%] max-h-screen xl:h-screen max-w-full min-w-full bg-cover flex justify-start items-start mt-44 md:mt-auto ml-auto transition-ease duration-100"></div>
         {!isMobileMenuOpen && (
@@ -70,7 +68,7 @@ function Landing() {
           Class leading innovation
         </h2>
         <p className="text-lg px-16 my-4 sm:max-w-2xl">
-          We didn't say it, they did
+          We didn&apos;t say it, they did
         </p>
       </div>
       <ReviewCarousel />
@@ -99,8 +97,8 @@ function Landing() {
                 Work with a team leading the way in for uav engineering.
               </h2>
               <p className="leading-normal tracking-wide px-6 my-4 sm:max-w-2xl text-lg">
-                Our team have been passionate about drones and UAV's right
-                through their evolution. Today, they are among the world's
+                Our team have been passionate about drones and UAV&apos;s right
+                through their evolution. Today, they are among the world&apos;s
                 foremost experts in UAV engineering and automation
               </p>
               <div className="max-md:flex max-md:justify-center">

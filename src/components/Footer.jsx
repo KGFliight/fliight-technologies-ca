@@ -5,7 +5,7 @@ import {
   faMapMarkerAlt,
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 function Footer() {
@@ -19,7 +19,7 @@ function Footer() {
             </h2>
             <p className="w-full text-left text-lg my-4 sm:max-w-2xl">
               Our friendly Fliight Crew is here to discuss your needs, no
-              strings attached. Let's navigate solving your problem together.
+              strings attached. Let&apos;s navigate solving your problem together.
             </p>
             <div className="gap-3 py-2 justify-center items-center flex-col flex sm:items-start sm:flex-row sm:justify-start">
               <NavLink to="/contact">

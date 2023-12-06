@@ -13,7 +13,7 @@ function LandingWorkWithUs() {
           The field of Unmanned Aerial Vehicles is evolving rapidly. Off the
           shelf solutions cannot keep pace with the fast-changing needs of our
           clients as they seek differentiation and competitive advantage. Many
-          clients come to us with problems they don't know how to solve.
+          clients come to us with problems they don&apos;t know how to solve.
         </p>
       </div>
       <h3 className="uppercase mt-12 font-medium">Services</h3>
@@ -55,7 +55,7 @@ function LandingWorkWithUs() {
           <p className="text-md font-thin leading-snug tracking-wide">
             Whether you come to us with a basic concept, or a working prototype,
             we are able carry out step-by-step custom engineering to your exact
-            specifications. From custom, heavy lift UAV's through to long range
+            specifications. From custom, heavy lift UAV&apos;s through to long range
             aircraft and gas detection systems - we have the experience and the
             know-how to help you identify and develop a solution that works for
             you. From concept to prototype to production, Fliight Technologies
@@ -78,7 +78,7 @@ function LandingWorkWithUs() {
             Fliight Technologies is equipped to assist you in commercialising
             your UAV operations, legally and without interruption. We have
             highly qualified, experienced and properly licenced pilots who can
-            operate your UAV's whilst you sit back and watch from the ground. In
+            operate your UAV&apos;s whilst you sit back and watch from the ground. In
             order to transition your organisation to independent operations,
             Fliight Technologies also offer complete training packages to get
             your team operating like professionals in no time.

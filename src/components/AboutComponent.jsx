@@ -1,4 +1,3 @@
-import React from 'react'
 import workWorkshop from '../assets/images/work-workshop.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
@@ -130,7 +129,7 @@ function AboutComponent() {
                 <p className="my-2 text-3xl leading-loose tracking-wide">Johnathan Clark</p>
                 <p className="my-2 text-xl leading-loose tracking-wide">Research and Development Engineer</p>
                 <p className="my-2 mb-4 leading-loose tracking-wide">
-                Specialises in heavy lift RPAS, VTOL UAV's, custom payloads, and remote sensing. With a six-year journey that spans from project inception to mass production, Johnathan has honed his expertise in project management, CAD, and precision manufacturing, all while ensuring his clients achieve safer, more efficient, and cost-effective business operations.
+                Specialises in heavy lift RPAS, VTOL UAV&apos;s, custom payloads, and remote sensing. With a six-year journey that spans from project inception to mass production, Johnathan has honed his expertise in project management, CAD, and precision manufacturing, all while ensuring his clients achieve safer, more efficient, and cost-effective business operations.
                 </p>
                 <span>
                   <a href="www.linkedin.com" className="leading-loose tracking-wide">Connect **</a>

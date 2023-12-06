@@ -1,4 +1,3 @@
-import React from 'react'
 import map from '../assets/images/dq-vtol-map.jpeg'
 import cargo from '../assets/images/dq-vtol-cargo.jpeg'
 import view from '../assets/images/dq-vtol-view.jpeg'

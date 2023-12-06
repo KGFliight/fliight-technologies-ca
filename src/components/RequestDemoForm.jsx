@@ -1,5 +1,3 @@
-import React from 'react'
-
 function RequestDemoForm() {
   return (
     <div className="my-12">

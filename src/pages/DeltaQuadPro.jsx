@@ -1,7 +1,6 @@
-import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import DeltaQuadBanner from '../components/DeltaQuadXxxBanner'
+import DeltaQuadProBanner from '../components/DeltaQuadXxxBanner'
 import DeltaQuadProInfo from '../components/DeltaQuadProInfo'
 import deltaQuadProImage from '../assets/images/deltaquad-pro.jpeg'
 import DeltaQuadVtol from '../components/DeltaQuadVtol'
@@ -16,7 +15,7 @@ function DeltaQuadPro() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <div className="flex-1 flex flex-col items-center justify-center">
-        <DeltaQuadBanner
+        <DeltaQuadProBanner
           title="DeltaQuad Pro"
           imageSrc={deltaQuadProBannerImage}
         />

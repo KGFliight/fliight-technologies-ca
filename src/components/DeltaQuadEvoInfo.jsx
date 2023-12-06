@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import iconDrone from '../assets/images/icon-drone.png'
 import deltaQuadInfoImage from '../assets/images/dq-evo-info.png'
 import deltaQuadPropellerImage from '../assets/images/dq-evo-info-propeller.png'

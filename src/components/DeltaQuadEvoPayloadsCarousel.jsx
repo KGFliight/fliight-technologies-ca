@@ -1,7 +1,7 @@
 import '../App.css'
 import React from 'react'
 import software from '../assets/images/software-1.jpeg'
-import { NavLink } from 'react-router-dom'
+
 
 const result = [
   {

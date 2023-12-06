@@ -56,7 +56,7 @@ function ReviewCarousel() {
         <div className="items-center justify-around lg:py-8 flex flex-col sm:w-96 md:w-[30rem] lg:w-[40rem] mb-8 mt-2 sm:p-8  sm:my-16">
         <div className="flex flex-col w-full mx-6">
           <p className="px-12 tracking-wide leading-normal font-light text-lg min-h-[10rem] sm:pt-12 sm:min-h-[9rem] w-full">
-            "{currentReview.quote}"
+            &quot;{currentReview.quote} &quot;
           </p>
         </div>
         <div className="flex flex-col text-left mt-4 sm:mt-8 w-full mx-6">

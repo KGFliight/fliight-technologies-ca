@@ -1,4 +1,3 @@
-import React from 'react'
 import deltaQuadProBanner from '../assets/images/deltaquad-pro-banner.jpg'
 
 function ProductBannerTemplate() {

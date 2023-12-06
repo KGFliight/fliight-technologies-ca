@@ -4,13 +4,9 @@ import fliightLogo from '../assets/images/fliight-logo-white.png'
 import fliightLogoBlack from '../assets/images/fliight-logo-black.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { useContext } from 'react'
-import { MobileMenuContext } from './MobileMenuContext'
 
 function MobileMenu({ isMenuOpen, setMenuOpen }) {
   const [techDropdownOpen, setTechDropdownOpen] = useState(false)
-  const { isMobileMenuOpen, setIsMobileMenuOpen } =
-    useContext(MobileMenuContext)
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen)

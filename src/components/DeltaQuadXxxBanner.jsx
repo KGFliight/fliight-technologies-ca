@@ -1,6 +1,3 @@
-import React from 'react'
-
-
 function DeltaQuadProBanner({ title, imageSrc}) {
   return (
     <div className="h-screen w-screen border bg-white">

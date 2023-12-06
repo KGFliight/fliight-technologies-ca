@@ -1,4 +1,3 @@
-import React from 'react'
 import iconDrone from '../assets/images/icon-drone.png'
 
 
