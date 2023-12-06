@@ -46,7 +46,7 @@ function DeltaQuadXxxResults() {
   }
 
   return (
-    <div className="ml-8 md:ml-20">
+    <div className="ml-8 md:ml-20 mb-20">
       <div className="">
         <div className="inline-flex items-center w-full justify-between mb-2">
         <h3 className="text-4xl sm:text-5xl uppercase ml-4 md:ml-0">
@@ -80,8 +80,8 @@ function DeltaQuadXxxResults() {
                 alt={item.alt}
                 className="bg-ft-grey border-ft-grey rounded min-h-[10rem] h-auto"
               />
-              <p className="uppercase font-medium">{item.title}</p>
-              <p className="text-sm text-ft-dark-grey mt-[-1rem] leading-tight tracking-wide ">
+              <p className="uppercase font-medium mt-2">{item.title}</p>
+              <p className="text-base text-ft-grey leading-loose tracking-wide font-thin font-['Inter']">
                 {item.description}
               </p>
             </li>

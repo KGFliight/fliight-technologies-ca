@@ -13,12 +13,16 @@ function DeltaQuadEvo() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <div className="flex-1 flex flex-col items-center justify-center">
-        <DeltaQuadBanner title="DeltaQuad Evo" imageSrc={deltaQuadEvoBannerImage} />
+        <DeltaQuadBanner
+          title="DeltaQuad Evo"
+          imageSrc={deltaQuadEvoBannerImage}
+          subheading="The EVO platform is breaking the limitations of eVTOL UAV flight time and range."
+        />
       </div>
       <DeltaQuadEvoInfo />
-      <DeltaQuadEvoPayloads/>
-      <DeltaQuadEvoResults/>
-      <DeltaQuadEvoTechnical/>
+      <DeltaQuadEvoPayloads />
+      <DeltaQuadEvoResults />
+      <DeltaQuadEvoTechnical />
       <div className="flex flex-col items-center text-center uppercase text-5xl tracking-widest my-40 mx-8">
         We offer onsite demos
         <div className="normal-case text-lg leading-loose tracking-wide font-normal max-w-lg my-8">
@@ -26,9 +30,9 @@ function DeltaQuadEvo() {
           inventore mollitia illum? Corporis, sequi neque.
         </div>
         <NavLink to="/request-demo">
-        <button className="bg-rose-700 uppercase rounded-3xl py-3 w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest">
-          Book a demo
-        </button>
+          <button className="bg-ft-red uppercase rounded-3xl py-3 w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest">
+            Book a demo
+          </button>
         </NavLink>
       </div>
       <Footer />

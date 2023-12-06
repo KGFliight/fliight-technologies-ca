@@ -17,9 +17,9 @@ function Header() {
   
   const getHeaderClass = () => {
     if (location.pathname === '/drones/deltaquad-pro' || location.pathname === '/drones/deltaquad-evo') {
-      return { background: 'bg-white', textColor: 'text-ft-black', image: `${fliightLogoBlack}` };
+      return { background: 'bg-white', textColor: 'text-ft-black', image: `${fliightLogoBlack}`, borderColor: 'border-ft-white'  };
     } else {
-      return { background: 'bg-ft-black', textColor: 'text-ft-white', image: `${fliightLogo}` }; // Default color
+      return { background: 'bg-ft-black', textColor: 'text-ft-white', image: `${fliightLogo}`, borderColor: 'border-ft-dark-grey'  }; // Default color
     }
   };
   const headerClasses = getHeaderClass()
@@ -55,7 +55,7 @@ function Header() {
   return (
     <header className={`fixed-top h-16 w-full ${headerClasses.background}`}>
       {/* Desktop Navigation */}
-      <div className="hidden border-b border-ft-dark-gray lg:flex md:flex w-full h-16 justify-between items-center pl-12">
+      <div className={`hidden border-b ${headerClasses.borderColor} lg:flex md:flex w-full h-16 justify-between items-center pl-12`}>
         {/* Home Logo */}
         <Link
           to="/"
@@ -66,14 +66,14 @@ function Header() {
         </Link>
 
         {/* Navigation Links */}
-        <nav className="flex-1 md:space-x-8 lg:space-x-16 inline-flex justify-center items-center text-center lg:ml-[-3rem]">
+        <nav className="flex-1 md:space-x-8 lg:space-x-24 inline-flex justify-center items-center text-center font-['Inter'] text-base font-light leading-7">
           <div
             className="relative group"
             onMouseEnter={() => openDropdown(setIsDronesDropdownOpen)}
             onMouseLeave={() => closeDropdown(setIsDronesDropdownOpen)}
             onClick={() => toggleDropdown(setIsDronesDropdownOpen, isDronesDropdownOpen)} 
           >
-            <NavLink to="/drones" className={headerClasses.textColor}>
+            <NavLink to="" className={headerClasses.textColor}>
               Drones
             </NavLink>
             <DropdownMenu
@@ -111,7 +111,7 @@ function Header() {
         </nav>
 
         {/* Request a Demo */}
-        <div className="h-16 w-52 bg-ft-red border-b flex items-center justify-center">
+        <div className={`h-16 w-48 lg:w-[240px] bg-ft-red border-b ${headerClasses.borderColor} flex items-center justify-center`}>
           <Link
             to="/request-demo"
             className="text-lg font-rajdhani font-semibold uppercase text-ft-white"

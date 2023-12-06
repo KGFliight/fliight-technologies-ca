@@ -122,6 +122,8 @@ video {
   left: 0;
   right: 0;
   height: 1px; /* Thickness of the border */
-  background: linear-gradient(to right, white 25%, red 25%, red 75%, white 75%);
+  background: linear-gradient(to right, transparent 25%, #ba0c2f 25%, #ba0c2f 75%, transparent 75%);
   display: block;
 }
+
+

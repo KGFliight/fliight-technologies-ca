@@ -88,7 +88,7 @@ function DeltaQuadEvoInfo() {
         <h2 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12">
           A new standard is rising
         </h2>
-        <p className="tracking-wide leading-loose my-6 text-lg font-normal">
+        <p className="tracking-wide leading-loose my-6 text-lg font-light font-['Inter']">
           Equipped with a dual battery, the Evo has been tested to fly for up to
           4.5 hours. This performance sits at the top of the electric drone
           market. Paired with unique radio and LTE VPN connection possibilities
@@ -111,10 +111,10 @@ function DeltaQuadEvoInfo() {
           Game changing technology
         </h3>
 
-        <div className="flex flex-col md:flex-row flex-wrap tracking-wide leading-loose my-6 text-sm md:text-lg uppercase">
+        <div className="flex flex-col md:flex-row flex-wrap tracking-wide leading-loose my-6 text-sm md:text-lg uppercase ">
           {technologyItems.map((item) => (
             <div key={item.id} className="md:w-[44%] lg:w-[48%] my-2 mr-4">
-              <div className="bg-ft-dark-grey p-2 rounded">
+              <div className="bg-ft-dark-grey p-2 rounded text-2xl font-medium">
                 <button
                   onClick={() => toggleTechItem(item.id)}
                   className="flex items-center w-full text-left [&>*:nth-child(3)]:ml-auto [&>*:nth-child(3)]:p-4"
@@ -128,7 +128,7 @@ function DeltaQuadEvoInfo() {
                   <span className="">V</span>
                 </button>
                 {openTechItem === item.id && (
-                  <div className="text-white p-3 normal-case text-base font-normal leading-loose tracking-wide">
+                  <div className="text-white p-3 normal-case text-base leading-loose tracking-wide font-light font-['Inter']">
                     {item.contents}
                   </div>
                 )}
@@ -161,11 +161,11 @@ function DeltaQuadEvoInfo() {
         <h3 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12">
           End-to-end deployment packages
         </h3>
-        <p className="tracking-wide leading-loose my-6">
+        <p className="tracking-wide leading-loose my-6 font-light font-['Inter']">
           Let us enable your vision for long range drone (RPAS) operations via
           our turnkey offerings with:
         </p>
-        <ul className="flex flex-col md:flex-row flex-wrap tracking-wide leading-loose my-6 text-sm md:text-lg">
+        <ul className="flex flex-col md:flex-row flex-wrap tracking-wide leading-loose my-6 text-sm md:text-lg font-light font-['Inter']">
           {endToEndItems.map((item, index) => (
             <li
               key={index}
@@ -184,7 +184,7 @@ function DeltaQuadEvoInfo() {
       <div className="flex flex-col sm:flex-row justify-center gap-20 my-40">
         <div className="w-80 sm:w-[480px] items-center sm:items-start flex flex-col justify-center">
           <h3 className="text-5xl text-left uppercase w-auto my-8">Incredible flexibility</h3>
-          <div className="text-lg leading-loose tracking-wide">
+          <div className="text-lg leading-loose tracking-wide font-light font-['Inter']">
             The DeltaQuad Evo is setting a new standard in payload flexibility
             by incorporating two universal payload bays. The bays can be used to
             combine and simultaneously operate multiple payloads. The dual

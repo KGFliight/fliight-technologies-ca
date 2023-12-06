@@ -50,11 +50,11 @@ function DeltaQuadVtol() {
         <h3 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12">
           The complete VTOL Solution
         </h3>
-        <p className="tracking-wide leading-loose">
+        <p className="tracking-wide leading-loose font-light font-['Inter']">
           Available in three field tested configurations to support your
           organisations unique requirements.
         </p>
-        <p className="tracking-wide leading-loose">
+        <p className="tracking-wide leading-loose font-light font-['Inter']">
           Select the best system for your needs and let our team take care of
           the rest.
         </p>
@@ -67,7 +67,7 @@ function DeltaQuadVtol() {
       <div className="">
         <ul className="flex flex-col md:flex-row justify-between tracking-wide leading-loose mb-12 text-sm md:text-lg">
           {options.map((option, index) => (
-            <li key={index} className="lg:p-4">
+            <li key={index} className="sm:p-4">
               <img
                 src={option.image}
                 alt={`${option.heading} image`}
@@ -79,12 +79,12 @@ function DeltaQuadVtol() {
               <h5 className="uppercase text-xl font-semibold leading-7 my-6">
                 {option.subHeading}
               </h5>
-              <ul className="flex flex-col mb-20">
+              <ul className="flex flex-col mb-20 font-light font-['Inter']">
                 {option.points.map((point, pointIndex) => (
                   <li key={pointIndex} className="py-2">
                     <FontAwesomeIcon
                       icon={faAnglesRight}
-                      className="text-rose-700 pr-4"
+                      className="text-ft-red pr-4"
                     />
                     {point}
                   </li>

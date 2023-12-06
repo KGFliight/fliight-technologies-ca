@@ -94,8 +94,8 @@ function DeltaQuadPayloadsCarousel() {
                 alt={item.alt}
                 className="bg-ft-grey border-ft-grey rounded min-h-[10rem] h-auto"
               />
-              <p className="uppercase font-medium">{item.title}</p>
-              <p className="text-sm text-ft-dark-grey mt-[-1rem] leading-tight tracking-wide ">
+              <p className="uppercase font-medium mt-2">{item.title}</p>
+              <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter']">
                 {item.description}
               </p>
             </li>

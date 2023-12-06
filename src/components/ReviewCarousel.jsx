@@ -55,15 +55,15 @@ function ReviewCarousel() {
         </div>
         <div className="items-center justify-around lg:py-8 flex flex-col sm:w-96 md:w-[30rem] lg:w-[40rem] mb-8 mt-2 sm:p-8  sm:my-16">
         <div className="flex flex-col w-full mx-6">
-          <p className="px-12 tracking-wide leading-normal font-light text-lg min-h-[10rem] sm:pt-12 sm:min-h-[9rem] w-full">
+          <p className="px-12 tracking-wide leading-9 font-light text-2xl min-h-[10rem] sm:pt-12 sm:min-h-[9rem] w-full font-['Inter']">
             &quot;{currentReview.quote} &quot;
           </p>
         </div>
         <div className="flex flex-col text-left mt-4 sm:mt-8 w-full mx-6">
-          <span className="px-12 tracking-wide text-base font-semibold">
+          <span className="px-12 tracking-wide text-xl font-semibold font-['Inter']">
             {currentReview.name}
           </span>
-          <span className="px-12 text-sm font-normal tracking-wide text-ft-grey">
+          <span className="px-12 text-base font-normal tracking-wide text-ft-grey font-['Inter']">
             {currentReview.role}
           </span>
           <div className="sm:w-full mb-auto text-right text-3xl sm:p-4 flex gap-4 justify-end mr-4 my-3 sm:mx-1">
