@@ -8,10 +8,10 @@ export default {
     extend: {
       colors: {
         'ft-white': '#f2f2f3',
-        'ft-grey': '#C5CFDA',
+        'ft-grey': '#c5cfda',
         'ft-dark-grey': '#4D4A4F',
         'ft-black': '#1C1F2A',
-        'ft-purple': '#8C54FB'
+        'ft-red': '#ba0c2f'
       },
     },
   },

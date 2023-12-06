@@ -111,10 +111,10 @@ function Header() {
         </nav>
 
         {/* Request a Demo */}
-        <div className="h-16 w-52 bg-rose-700 border-b flex items-center justify-center">
+        <div className="h-16 w-52 bg-ft-red border-b flex items-center justify-center">
           <Link
             to="/request-demo"
-            className="text-lg font-rajdhani font-semibold uppercase text-zinc-100"
+            className="text-lg font-rajdhani font-semibold uppercase text-ft-white"
           >
             Request a Demo
           </Link>

@@ -35,21 +35,21 @@ function AboutComponent() {
                 <li className="my-8 flex  items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 py-2 pr-4"
+                    className="text-ft-red py-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
                 <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 py-2 pr-4"
+                    className="text-ft-red py-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
                 <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 py-2 pr-4"
+                    className="text-ft-red py-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
@@ -60,21 +60,21 @@ function AboutComponent() {
                 <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 py-2 pr-4"
+                    className="text-ft-red py-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
                 <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 py-2 pr-4"
+                    className="text-ft-red py-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
                 <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
-                    className="text-rose-700 py-2 pr-4"
+                    className="text-ft-red py-2 pr-4"
                   />{' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
