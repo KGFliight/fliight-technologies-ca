@@ -37,7 +37,7 @@ function DeltaQuadPro() {
       <DeltaQuadProTechnical />
       <div className="flex flex-col items-center text-center uppercase text-5xl tracking-widest my-40 mx-8">
         We offer onsite demos
-        <div className="normal-case text-lg leading-loose tracking-wide max-w-lg my-8 font-light font-['Inter'] ">
+        <div className="normal-case text-lg leading-loose tracking-wide max-w-lg my-8 font-light font-['Inter']">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
           inventore mollitia illum? Corporis, sequi neque.
         </div>

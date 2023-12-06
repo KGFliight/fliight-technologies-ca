@@ -62,12 +62,12 @@ function DeltaQuadPayloadsCarousel() {
   return (
     <div className="my-40">
       <div className="">
-        <div className="inline-flex items-center w-full justify-between mb-2">
+        <div className="inline-flex items-center w-full justify-between mb-2 pl-12 md:pl-20">
         <h3 className="text-4xl sm:text-5xl uppercase md:ml-0">
           Available payloads
         </h3>
         <div className="max-md:hidden flex justify-end ">
-        <div className="mb-auto text-right text-3xl md:px-0 gap-4 mr-4 my-3 sm:m-0">
+        <div className="mb-auto text-right text-3xl md:px-0 md:pr-16 gap-4 mr-4 my-3 sm:m-0">
           <button
             className="border border-ft-dark-grey px-3 mr-2"
             onClick={slideToTheLeft}
@@ -84,11 +84,11 @@ function DeltaQuadPayloadsCarousel() {
       </div>
       </div>
         <ul
-          className="media-scroller snaps-inline md:auto-cols-[42%] lg:auto-cols-[38%] "
+          className="media-scroller snaps-inline md:auto-cols-[42%] lg:auto-cols-[38%] pl-12 md:pl-20"
           ref={scrollRef}
         >
           {result.map((item, index) => (
-            <li key={index} className="media-element lg:pr-6 lg:py-12">
+            <li key={index} className="media-element lg:pr-6 lg:py-12 lg:pl-4">
               <img
                 src={item.image}
                 alt={item.alt}

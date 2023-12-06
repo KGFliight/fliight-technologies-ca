@@ -25,10 +25,10 @@ function SoftwareAppsCarousel() {
   }
 
   return (
-    <div className="w-full my-8 overflow-visible">
+    <div className="w-full">
       <div className="">
-        <div className="inline-flex items-center w-full justify-between mb-2 lg:pl-16">
-          <h3 className="ml-11 lg:pl-5 mb-2 text-4xl sm:text-5xl uppercase font-medium tracking-widest">
+        <div className="inline-flex items-center w-full justify-between mb-2 sm:pl-12 md:pl-20">
+          <h3 className="mb-2 text-4xl sm:text-5xl uppercase font-medium tracking-widest md:ml-0 pl-12 md:pl-16">
             SOFTWARE + APPS
           </h3>
           <div className="max-sm:hidden md:pr-16">
@@ -50,9 +50,9 @@ function SoftwareAppsCarousel() {
             </div>
           </div>
         </div>
-        <div className="md:pl-16 overflow-x-visible">
+        <div className="">
           <ul
-            className="media-scroller snaps-inline pl-12 md:auto-cols-[42%]"
+            className="media-scroller snaps-inline  md:auto-cols-[42%] ml-0 pl-20"
             ref={scrollRef}
           >
             <NavLink to="/solutions/aerowhere">

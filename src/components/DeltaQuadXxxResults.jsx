@@ -46,9 +46,9 @@ function DeltaQuadXxxResults() {
   }
 
   return (
-    <div className="ml-8 md:ml-20 mb-20">
+    <div className="mb-20">
       <div className="">
-        <div className="inline-flex items-center w-full justify-between mb-2">
+        <div className="inline-flex items-center w-full justify-between mb-2 pl-8 sm:pl-12 md:pl-20">
         <h3 className="text-4xl sm:text-5xl uppercase ml-4 md:ml-0">
           Results worth sharing
         </h3>
@@ -70,11 +70,11 @@ function DeltaQuadXxxResults() {
       </div>
       </div>
         <ul
-          className="media-scroller snaps-inline md:auto-cols-[42%] "
+          className="media-scroller snaps-inline md:auto-cols-[42%] pl-12 md:pl-20"
           ref={scrollRef}
         >
           {result.map((item, index) => (
-            <li key={index} className="media-element lg:pr-6 lg:py-12">
+            <li key={index} className="media-element lg:pr-6 lg:py-12 lg:pl-4">
               <img
                 src={item.image}
                 alt={item.alt}

@@ -25,12 +25,12 @@ function DeltaQuadEvo() {
       <DeltaQuadEvoTechnical />
       <div className="flex flex-col items-center text-center uppercase text-5xl tracking-widest my-40 mx-8">
         We offer onsite demos
-        <div className="normal-case text-lg leading-loose tracking-wide font-normal max-w-lg my-8">
+        <div className="normal-case text-lg leading-loose tracking-wide max-w-lg my-8 font-light font-['Inter']">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
           inventore mollitia illum? Corporis, sequi neque.
         </div>
         <NavLink to="/request-demo">
-          <button className="bg-ft-red uppercase rounded-3xl py-3 w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest">
+          <button className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest">
             Book a demo
           </button>
         </NavLink>

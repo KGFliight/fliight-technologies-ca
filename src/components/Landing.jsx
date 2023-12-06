@@ -22,7 +22,6 @@ function Landing() {
         <div className="">
           <div className="vertical-align mt-20 px-12 sm:pt-12 sm:p-0 sm:ml-16 md:ml-24 lg:ml-36 w-3/4 overflow-visible lg:w-1/3 h-fit text-4xl sm:text-7xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white items-center transition-ease duration-300">
             UAV SOLUTIONS CUSTOMISED TO WORK FOR YOU
-            
             <div className="md:ml-4 h-60 text-sm md:text-lg lg:text-2xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white transition-ease duration-300 mt-4">
               <a
                 href="https://youtu.be/dQw4w9WgXcQ?si=IfFy6pI1SNqksBtc"
@@ -41,7 +40,7 @@ function Landing() {
           </div>
         </div>
         <br />
-        <div className="vertical-align absolute-bottom mb-8 md:mb-20 p-12 sm:p-0 lg:p-0 w-full sm:ml-16 lg:ml-28 max-sm:mt-[28rem] sm:mt-[36rem] md:mt-[36rem] lg:mt-[40rem] sm:w-[28rem] text-normal font-rajdhani font-thin leading-20 tracking-wide  text-ft-white transition-ease duration-300 font-['Inter'] ">
+        <div className="vertical-align absolute-bottom mb-8 md:mb-20 p-12 sm:p-0 lg:p-0 w-full sm:ml-16 lg:ml-36 max-sm:mt-[28rem] sm:mt-[36rem] md:mt-[36rem] lg:mt-[40rem] sm:w-[28rem] text-normal font-rajdhani font-thin leading-20 tracking-wide  text-ft-white transition-ease duration-300 font-['Inter']">
           We are a Wollongong based engineering firm at the forefront of design,
           manufacture and modification of custom Unmanned Aerial Vehicles
           (UAV&apos;s)
@@ -73,11 +72,11 @@ function Landing() {
       </div>
       <ReviewCarousel />
       <div className="my-20 sm:my-0 sm:mb-20">
-      <img
-        src={landingWorkshopImage}
-        alt=""
-        className="mix-blend-screen bg-neutral-800 object-contain w-screen"
-      />
+        <img
+          src={landingWorkshopImage}
+          alt=""
+          className="mix-blend-screen bg-neutral-800 object-contain w-screen"
+        />
       </div>
       <DronesCarousel />
       <div className="h-24"></div>
@@ -87,7 +86,7 @@ function Landing() {
         <div className="relative mx-8 md:mx-0 md:min-h-[300px] md:min-w-[300px] z-50 my-4">
           <div className="flex flex-col xl:flex-row md:p-12">
             <div className="image-container flex justify-center mx-6 my-12 md:my-16 md:w-[600px]">
-             <img
+              <img
                 src={landingWorkWithImage}
                 alt=""
                 className="min-h-auto mx-16 md:w-[600px] image-container md:h-[600px] 2xl:max-h-[800px] md:object-none md:object-left-bottom rounded"
@@ -106,9 +105,9 @@ function Landing() {
                 <button className="bg-ft-dark-grey uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-8 md:mx-6">
                   <NavLink to="/about">About us</NavLink>
                 </button>
-        </div>
+              </div>
             </div>
-        </div>
+          </div>
           <div className="flex justify-center mt-6 mb-2"></div>
         </div>
       </div>

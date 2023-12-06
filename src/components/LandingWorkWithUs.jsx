@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom'
 
 function LandingWorkWithUs() {
   return (
-    <div className="flex flex-col items-center justify-center my-32 mt-60">
-      <div className="max-w-xl sm:max-w-full text-center flex flex-col justify-center items-center">
+    <div className="flex flex-col items-center justify-center my-32 mt-60 ">
+      <div className="max-w-xl sm:max-w-full text-center flex flex-col justify-center items-center ">
         <h2 className="uppercase font-medium my-16 md:my-8 px-12 text-4xl sm:text-5xl tracking-wide sm:tracking-widest sm:max-w-4xl">
           We Innovate, design, build and implement.
         </h2>
@@ -16,7 +16,7 @@ function LandingWorkWithUs() {
           clients come to us with problems they don&apos;t know how to solve.
         </p>
       </div>
-      <h3 className="uppercase mt-12 mb-6 font-semibold leading-relaxed text-lg">Services</h3>
+      <h3 className="uppercase mt-12 mb-6 font-semibold leading-relaxed text-lg ">Services</h3>
       <div className="md:flex md:flex-wrap justify-center w-full">
         <div className="flex flex-col text-left bg-ft-dark-grey p-6 sm:p-8 mx-8 md:mx-4 my-8 md:max-w-[36%] rounded">
           <span>
