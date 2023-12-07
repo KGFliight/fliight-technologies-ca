@@ -30,7 +30,7 @@ function DeltaQuadEvo() {
           inventore mollitia illum? Corporis, sequi neque.
         </div>
         <NavLink to="/request-demo">
-          <button className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest">
+          <button className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest hover:opacity-90 hover:hover:bg-[#5b172c] transition duration-300">
             Book a demo
           </button>
         </NavLink>

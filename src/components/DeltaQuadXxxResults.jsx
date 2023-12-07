@@ -53,15 +53,15 @@ function DeltaQuadXxxResults() {
           Results worth sharing
         </h3>
         <div className="max-md:hidden flex justify-end ">
-        <div className="mb-auto text-right text-3xl sm:px-4 gap-4 mr-4 my-3 sm:m-0">
+        <div className="mb-auto text-right text-3xl sm:px-4 gap-4 mr-4 my-3 sm:m-0 sm:mr-20">
           <button
-            className="border border-ft-dark-grey px-3 mr-2"
+            className="border border-ft-dark-grey px-3 mr-2 hover:bg-ft-red hover:opacity-90  transition duration-300 active:-translate-y-1"
             onClick={slideToTheLeft}
           >
             &lt;
           </button>
           <button
-            className="border border-ft-dark-grey px-3"
+            className="border border-ft-dark-grey px-3 hover:bg-ft-red hover:opacity-90  transition duration-300 active:-translate-y-1"
             onClick={slideToTheRight}
           >
             &gt;

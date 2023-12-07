@@ -5,41 +5,55 @@ import fliightLogoBlack from '../assets/images/fliight-logo-black.png'
 import ScrollToTop from '../utilities/ScrollToTop'
 import DropdownMenu from './DropdownMenu'
 import { useState } from 'react'
-import { useContext } from 'react';
-import { MobileMenuContext } from './MobileMenuContext';
+import { useContext } from 'react'
+import { MobileMenuContext } from './MobileMenuContext'
 
 function Header() {
   const [isDronesDropdownOpen, setIsDronesDropdownOpen] = useState(false)
   const [isSolutionsDropdownOpen, setIsSolutionsDropdownOpen] = useState(false)
-  const { isMobileMenuOpen, setIsMobileMenuOpen } = useContext(MobileMenuContext);
+  const { isMobileMenuOpen, setIsMobileMenuOpen } =
+    useContext(MobileMenuContext)
 
-  const location = useLocation();
-  
+  const location = useLocation()
+
   const getHeaderClass = () => {
-    if (location.pathname === '/drones/deltaquad-pro' || location.pathname === '/drones/deltaquad-evo') {
-      return { background: 'bg-white', textColor: 'text-ft-black', image: `${fliightLogoBlack}`, borderColor: 'border-ft-white'  };
+    if (
+      location.pathname === '/drones/deltaquad-pro' ||
+      location.pathname === '/drones/deltaquad-evo'
+    ) {
+      return {
+        background: 'bg-white',
+        textColor: 'text-ft-black',
+        image: `${fliightLogoBlack}`,
+        borderColor: 'border-ft-white',
+      }
     } else {
-      return { background: 'bg-ft-black', textColor: 'text-ft-white', image: `${fliightLogo}`, borderColor: 'border-ft-dark-grey'  }; // Default color
+      return {
+        background: 'bg-ft-black',
+        textColor: 'text-ft-white',
+        image: `${fliightLogo}`,
+        borderColor: 'border-ft-dark-grey',
+      } // Default color
     }
-  };
+  }
   const headerClasses = getHeaderClass()
 
   let closeTimeoutId
 
   const toggleDropdown = (setDropdownState, currentState) => {
-    clearTimeout(closeTimeoutId);
-    setDropdownState(!currentState); // Toggle state
-  };
+    clearTimeout(closeTimeoutId)
+    setDropdownState(!currentState) // Toggle state
+  }
 
   const openDropdown = (setDropdownState) => {
-    clearTimeout(closeTimeoutId);
-    setDropdownState(true);
+    clearTimeout(closeTimeoutId)
+    setDropdownState(true)
   }
 
   const closeDropdown = (setDropdownState) => {
     closeTimeoutId = setTimeout(() => {
-      setDropdownState(false);
-    }, 100); // Adjust delay as needed
+      setDropdownState(false)
+    }, 100) // Adjust delay as needed
   }
 
   const dronesDropdownItems = [
@@ -55,27 +69,35 @@ function Header() {
   return (
     <header className={`fixed-top h-16 w-full ${headerClasses.background}`}>
       {/* Desktop Navigation */}
-      <div className={`hidden border-b ${headerClasses.borderColor} lg:flex md:flex w-full h-16 justify-between items-center pl-12`}>
+      <div
+        className={`hidden border-b ${headerClasses.borderColor} lg:flex md:flex w-full h-16 justify-between items-center pl-12 `}
+      >
         {/* Home Logo */}
         <Link
           to="/"
-          className="z-50 transition-all duration-300 lg:w-48 lg:h-8 md:w-36 md:h-6"
+          className="z-50 transition-all duration-300 lg:w-48 lg:h-8 md:w-36 md:h-6 hover:opacity-80 "
           onClick={<ScrollToTop />}
         >
           <img src={headerClasses.image} alt="Logo" />
         </Link>
 
         {/* Navigation Links */}
-        <nav className="flex-1 md:space-x-8 lg:space-x-24 inline-flex justify-center items-center text-center font-['Inter'] text-base font-light leading-7">
+        <nav className="flex-1 md:space-x-8 lg:space-x-24 inline-flex justify-center items-center text-center font-['Inter'] text-base font-light leading-7 ">
           <div
             className="relative group"
             onMouseEnter={() => openDropdown(setIsDronesDropdownOpen)}
             onMouseLeave={() => closeDropdown(setIsDronesDropdownOpen)}
-            onClick={() => toggleDropdown(setIsDronesDropdownOpen, isDronesDropdownOpen)} 
+            onClick={() =>
+              toggleDropdown(setIsDronesDropdownOpen, isDronesDropdownOpen)
+            }
           >
-            <NavLink to="" className={headerClasses.textColor}>
+            <NavLink
+              to=""
+              className={`hover:opacity-80 ${headerClasses.textColor} transition duration-200`}
+            >
               Drones
             </NavLink>
+            {/* Dropdown Menu props */}
             <DropdownMenu
               title="Drones"
               items={dronesDropdownItems}
@@ -88,9 +110,17 @@ function Header() {
             className="relative group hidden"
             onMouseEnter={() => openDropdown(setIsSolutionsDropdownOpen)}
             onMouseLeave={() => closeDropdown(setIsSolutionsDropdownOpen)}
-            onClick={() => toggleDropdown(setIsSolutionsDropdownOpen, isSolutionsDropdownOpen)} 
+            onClick={() =>
+              toggleDropdown(
+                setIsSolutionsDropdownOpen,
+                isSolutionsDropdownOpen
+              )
+            }
           >
-            <NavLink to="/solutions" className={headerClasses.textColor}>
+            <NavLink
+              to="/solutions"
+              className={`hover:opacity-80 ${headerClasses.textColor}`}
+            >
               Solutions
             </NavLink>
             <DropdownMenu
@@ -101,17 +131,25 @@ function Header() {
             />
           </div>
 
-          <NavLink to="/about" className={headerClasses.textColor}>
+          <NavLink
+            to="/about"
+            className={`hover:opacity-80 ${headerClasses.textColor} transition duration-200`}
+          >
             About
           </NavLink>
 
-          <NavLink to="/contact" className={headerClasses.textColor}>
+          <NavLink
+            to="/contact"
+            className={`hover:opacity-80 ${headerClasses.textColor} transition duration-200`}
+          >
             Contact
           </NavLink>
         </nav>
 
         {/* Request a Demo */}
-        <div className={`h-16 w-48 lg:w-[240px] bg-ft-red border-b ${headerClasses.borderColor} flex items-center justify-center`}>
+        <div
+          className={`h-16 w-48 lg:w-[240px] bg-ft-red border-b ${headerClasses.borderColor} flex items-center justify-center hover:opacity-80 transition duration-300`}
+        >
           <Link
             to="/request-demo"
             className="text-lg font-rajdhani font-semibold uppercase text-ft-white"
@@ -123,7 +161,10 @@ function Header() {
 
       {/* Mobile Navigation */}
       <div className="md:hidden h-16 transition-all duration-300">
-        <MobileMenu isMenuOpen={isMobileMenuOpen} setMenuOpen={setIsMobileMenuOpen} />
+        <MobileMenu
+          isMenuOpen={isMobileMenuOpen}
+          setMenuOpen={setIsMobileMenuOpen}
+        />
       </div>
 
       {/* Underline 

@@ -11,7 +11,7 @@ import { NavLink } from 'react-router-dom'
 function Footer() {
   return (
     <footer className="border-ft-dark-grey">
-      <div className="px-12 lg:px-24 py-8 mt-8 border-t">
+      <div className="px-12 lg:px-24 py-8 mt-8 border-t border-ft-dark-grey">
         <div className="lg:flex lg:justify-between">
           <div className="md:pr-8 md:p-8">
             <h2 className="uppercase text-4xl sm:text-5xl tracking-wide sm:tracking-widest sm:max-w-4xl">
@@ -23,42 +23,42 @@ function Footer() {
             </p>
             <div className="gap-3 py-2 justify-center items-center flex-col flex sm:items-start sm:flex-row sm:justify-start">
               <NavLink to="/contact">
-                <button className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest">
+                <button className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest hover:bg-[#5b172c] hover:opacity-90  transition duration-300 active:-translate-y-1">
                   Contact us
                 </button>
               </NavLink>
               <NavLink to="/request-demo">
-                <button className="bg-ft-dark-grey uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest">
+                <button className="bg-ft-dark-grey uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest hover:opacity-90 hover:bg-black transition duration-300">
                   Book a demo
                 </button>
               </NavLink>
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="flex my-4 w-full ">
+            <div className="flex my-4 w-full md:mx-8">
               <div className="flex flex-col w-[50%] sm:w-40">
-                <span className="uppercase mt-4 sm:my-4 text-sm leading-relaxed font-semibold text-ft-dark-grey md:text-lg">
+                <span className="uppercase mt-4 sm:my-4 text-sm leading-relaxed font-semibold text-ft-grey md:text-lg opacity-50">
                   Drones
                 </span>
                 <ul className="text-sm leading-loose tracking-wide md:text-lg font-['Inter'] font-light">
                   <NavLink to="/drones/deltaquad-pro">
-                    <li className="my-4">DeltaQuad Pro</li>
+                    <li className="my-4 hover:opacity-50  transition duration-300">DeltaQuad Pro</li>
                   </NavLink>
                   <NavLink to="/drones/deltaquad-evo">
-                    <li className="my-4">DeltaQuad Evo</li>
+                    <li className="my-4 hover:opacity-50 transition duration-300">DeltaQuad Evo</li>
                   </NavLink>
                 </ul>
               </div>
               <div className="flex flex-col w-[50%] sm:w-40 ml-[4rem]  leading-loose tracking-wide">
-                <span className="uppercase mt-4 sm:my-4 text-sm leading-relaxed font-semibold text-ft-dark-grey md:text-lg">
+                <span className="uppercase mt-4 sm:my-4 text-sm leading-relaxed font-semibold text-ft-grey md:text-lg opacity-50 ">
                   Software
                 </span>
                 <ul className="text-sm leading-loose tracking-wide md:text-lg font-['Inter'] font-light">
                   <NavLink to="/solutions/aerowhere">
-                    <li className="my-4">AeroWhere</li>
+                    <li className="my-4 hover:opacity-50 transition duration-300">AeroWhere</li>
                   </NavLink>
                   <NavLink to="/solutions/argus">
-                    <li className="my-4">Argus</li>
+                    <li className="my-4 hover:opacity-50 transition duration-300">Argus</li>
                   </NavLink>
                 </ul>
               </div>
@@ -76,7 +76,7 @@ function Footer() {
       <div className="flex flex-col md:flex-row md:justify-around md:px-30 lg:px-40 bg-ft-dark-grey w-screen mb-4 py-8 px-6 gap-3 font-['Inter'] font-light">
         <div className="flex items-center gap-4 ml-4">
           <FontAwesomeIcon icon={faPhone} className="self-center w-12" />
-          <span className="text-sm leading-loose tracking-widest">
+          <span className="text-sm leading-loose tracking-wides hover:opacity-50 transition duration-300t">
             <a href="tel:+61429279876">+(61) 429 279 876</a>
           </span>
         </div>
@@ -88,7 +88,7 @@ function Footer() {
         </div>
         <div className="flex items-center gap-4 ml-4">
           <FontAwesomeIcon icon={faEnvelope} className="self-center w-12" />
-          <span className="text-sm leading-loose tracking-widest">
+          <span className="text-sm leading-loose tracking-widest hover:opacity-50 transition duration-300">
             <a href="mailto:info@fliight.com.au">info@fliight.com.au</a>
           </span>
         </div>
@@ -98,7 +98,7 @@ function Footer() {
           <p className="">
             © Fliight Technologies Pty Ltd. All rights reserved.{' '}
           </p>
-          <p className=""><a href="https://jbdev.io" target="_blank" rel="noreferrer noopener">Website by jbdev</a></p>
+          <p className="hover:opacity-50 transition duration-300"><a href="https://jbdev.io" target="_blank" rel="noreferrer noopener">Website by jbdev</a></p>
         </div>
       </div>
     </footer>

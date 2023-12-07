@@ -29,7 +29,7 @@ function DropdownMenu({ title, items, isOpen, setIsOpen }) {
         <Link
           key={index}
           to={item.path}
-          className={`block px-4 py-2 text-sm w-40 ${headerClasses.textColor} text-left leading-loose tracking-widest ${headerClasses.hoverColor} ${headerClasses.hoverTextColor}`}
+          className={`block px-4 py-2 text-sm w-40 ${headerClasses.textColor} text-left leading-loose tracking-widest ${headerClasses.hoverColor} ${headerClasses.hoverTextColor} transition duration-200`}
         >
           {item.name}
         </Link>

@@ -4,19 +4,24 @@ import { NavLink } from 'react-router-dom'
 
 function LandingWorkWithUs() {
   return (
-    <div className="flex flex-col items-center justify-center my-32 mt-60 ">
-      <div className="max-w-xl sm:max-w-full text-center flex flex-col justify-center items-center ">
-        <h2 className="uppercase font-medium my-16 md:my-8 px-12 text-4xl sm:text-5xl tracking-wide sm:tracking-widest sm:max-w-4xl">
+    <div className="flex flex-col items-center justify-center my-32 mt-40 ">
+      <div className="max-w-xl sm:max-w-full text-center flex flex-col justify-center items-center p-8">
+        <h2 className="uppercase font-medium my-16 md:my-8 px-14 text-4xl sm:text-5xl tracking-wide leading-10 sm:tracking-widest sm:max-w-4xl">
           We Innovate, design, build and implement.
         </h2>
-        <p className="text-lg px-16 my-16 md:my-8 sm:max-w-2xl leading-7 tracking-wide font-['Inter'] font-light">
+        <p className="text-lg px-18 my-16 md:my-8 md:max-w-2xl leading-7 tracking-wide font-['Inter'] font-light">
           The field of Unmanned Aerial Vehicles is evolving rapidly. Off the
           shelf solutions cannot keep pace with the fast-changing needs of our
           clients as they seek differentiation and competitive advantage. Many
-          clients come to us with problems they don&apos;t know how to solve.
+          clients come to us with challenges, we provide solutions.
+          <br />
+          <br />
+          It&apos;s what we do.
         </p>
       </div>
-      <h3 className="uppercase mt-12 mb-6 font-semibold leading-relaxed text-lg ">Services</h3>
+      <h3 className="uppercase mt-12 mb-6 font-semibold leading-relaxed text-lg ">
+        Services
+      </h3>
       <div className="md:flex md:flex-wrap justify-center w-full">
         <div className="flex flex-col text-left bg-ft-dark-grey p-6 sm:p-8 mx-8 md:mx-4 my-8 md:max-w-[36%] rounded">
           <span>
@@ -109,7 +114,7 @@ function LandingWorkWithUs() {
         </div>
       </div>
 
-      <button className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-12 md:mx-6">
+      <button className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-12 md:mx-6 hover:bg-[#5b172c] hover:opacity-90  transition duration-300 active:-translate-y-1">
         <NavLink to="/request-demo">Work with us</NavLink>
       </button>
     </div>

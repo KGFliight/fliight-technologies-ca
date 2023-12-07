@@ -3,6 +3,8 @@ import React from 'react'
 import deltaQuad from '../assets/images/deltaquad-pro.jpeg'
 import yellowScan from '../assets/images/evo-yellowscan-payload.jpeg'
 import { NavLink } from 'react-router-dom'
+import deltaQuadProImage from '../assets/images/deltaquad-pro-banner.jpg'
+import deltaQuadEvoImage from '../assets/images/deltaquad-evo-banner.jpg'
 
 function DronesCarousel() {
   const scrollRef = React.useRef(null)
@@ -49,36 +51,40 @@ function DronesCarousel() {
             </button>
           </div>
         </div>
-        </div>
-        <ul
-          className="media-scroller snaps-inline pl-32 md:auto-cols-[42%] w-full"
-          ref={scrollRef}
-        >
-          <NavLink to="/drones/deltaquad-pro">
-            <li className="media-element lg:px-6 lg:py-12">
+      </div>
+      <ul
+        className="media-scroller snaps-inline pl-32 md:auto-cols-[42%] w-full"
+        ref={scrollRef}
+      >
+        <NavLink to="/drones/deltaquad-pro">
+          <li className="media-element lg:px-4 lg:py-12 hover:opacity-80 hover:-translate-y-1 transition duration-300">
+            <div className="bg-white rounded min-h-[10rem] sm:min-h-[300px] w-full flex items-center px-4">
               <img
-                src={deltaQuad}
+                src={deltaQuadProImage}
                 alt="alt"
-                className="border-ft-grey rounded min-h-[10rem] h-auto"
+                className="border-ft-grey rounded min-h-[10rem] bg-white w-full object-contain sm:object-fit"
               />
-              <p className="uppercase leading-10 text-2xl sm:text-4xl font-medium">
-                Deltaquad Pro
-              </p>
-            </li>
-          </NavLink>
-          <NavLink to="/drones/deltaquad-evo">
-            <li className="media-element lg:px-6 lg:py-12">
+            </div>
+            <p className="uppercase leading-10 text-2xl sm:text-4xl font-medium">
+              Deltaquad Pro
+            </p>
+          </li>
+        </NavLink>
+        <NavLink to="/drones/deltaquad-evo">
+          <li className="media-element lg:px-4 lg:py-12 hover:opacity-80 hover:-translate-y-1 transition duration-300">
+            <div className="bg-white border-ft-grey border rounded min-h-[10rem] sm:min-h-[300px] w-full flex items-center spx-4">
               <img
-                src={yellowScan}
+                src={deltaQuadEvoImage}
                 alt="alt"
-                className="bg-ft-grey border border-ft-grey rounded min-h-[10rem] h-auto"
+                className="bg-white rounded min-h-[10rem] h-auto object-contain sm:object-fit"
               />
-              <p className="uppercase leading-10 text-2xl sm:text-4xl font-medium">
-                Deltaquad Evo
-              </p>
-            </li>
-          </NavLink>
-          {/*<li className="media-element lg:px-6 lg:py-12">
+            </div>
+            <p className="uppercase leading-10 text-2xl sm:text-4xl font-medium">
+              Deltaquad Evo
+            </p>
+          </li>
+        </NavLink>
+        {/*<li className="media-element lg:px-6 lg:py-12">
             <img
               src={deltaQuad}
               alt="alt"
@@ -111,8 +117,8 @@ function DronesCarousel() {
             <p className="uppercase">Deltaquad Nolink 6</p>
           </li>
           */}
-        </ul>
-      
+      </ul>
+
       <div className="hidden md:pr-16 lg:mr-40">
         <div className="sm:w-full mb-auto text-right text-3xl sm:px-4 flex gap-4 justify-end mr-4 my-3 sm:m-0 sm:mx-1">
           <button

@@ -16,14 +16,14 @@ const reviews = [
   {
     image: emily,
     alt: 'Another User',
-    quote: "This is absolute jibberish random words that i'm saying!",
+    quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem perferendis reprehenderit nostrum, tenetur asperiores tempora.",
     name: 'Jenna Smith',
     role: 'Film Director',
   },
   {
     image: john,
     alt: 'Someone Else',
-    quote: 'I love bohemian rhapsody!',
+    quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, odit.",
     name: 'Spooky Man',
     role: 'Slender Mans Manager',
   },
@@ -44,8 +44,8 @@ function ReviewCarousel() {
   const currentReview = reviews[currentIndex]
 
   return (
-    <div className="sm:flex sm:justify-center items-center sm:my-16">
-      <div className="container px-4 md:px-8 lg:px-16 sm:flex md:flex-row items-center justify-center">
+    <div className="sm:flex sm:justify-center items-center sm:my-0 ">
+      <div className="container px-4 md:px-8 lg:px-16 sm:flex md:flex-row items-center justify-center sm:h-[480px] mb-40">
         <div className="flex flex-col justify-center items-center w-fit">
           <div className="py-4 relative mx-8 md:mx-0 md:min-h-[300px] md:min-w-[300px] min-h-[300px] z-50 my-8 md:my-16">
             <div className="image-container justify-center">
@@ -53,13 +53,13 @@ function ReviewCarousel() {
             </div>
           </div>
         </div>
-        <div className="items-center justify-around lg:py-8 flex flex-col sm:w-96 md:w-[30rem] lg:w-[40rem] mb-8 mt-2 sm:p-8  sm:my-16">
+        <div className="items-center justify-around lg:py-8 flex flex-col sm:w-96 md:w-[30rem] lg:w-[88rem] mb-8 mt-2 sm:p-8  sm:my-16">
         <div className="flex flex-col w-full mx-6">
-          <p className="px-12 tracking-wide leading-9 font-light text-2xl min-h-[10rem] sm:pt-12 sm:min-h-[9rem] w-full font-['Inter']">
-            &quot;{currentReview.quote} &quot;
+          <p className="pl-12 pr-8 tracking-wide leading-9 font-light text-2xl min-h-[18rem] sm:pt-6 sm:min-h-[12rem] w-full font-['Inter']  flex items-center">
+            &quot;{currentReview.quote}&quot;
           </p>
         </div>
-        <div className="flex flex-col text-left mt-4 sm:mt-8 w-full mx-6">
+        <div className="flex flex-col text-left mt-4 sm:mt-4 w-full mx-6">
           <span className="px-12 tracking-wide text-xl font-semibold font-['Inter']">
             {currentReview.name}
           </span>
@@ -67,8 +67,8 @@ function ReviewCarousel() {
             {currentReview.role}
           </span>
           <div className="sm:w-full mb-auto text-right text-3xl sm:p-4 flex gap-4 justify-end mr-4 my-3 sm:mx-1">
-            <button className="border border-ft-dark-grey px-3" onClick={goToPreviousReview}> &lt; </button>
-            <button className="border border-ft-dark-grey px-3" onClick={goToNextReview}> &gt; </button>
+            <button className="border border-ft-dark-grey px-3 hover:bg-ft-red hover:border-ft-dark-grey  transition duration-300 rounded active:-translate-y-1" onClick={goToPreviousReview}> &lt; </button>
+            <button className="border border-ft-dark-grey px-3 hover:bg-ft-red hover:border-ft-dark-grey transition duration-300 rounded active:-translate-y-1" onClick={goToNextReview}> &gt; </button>
           </div>
           </div>
         </div>
