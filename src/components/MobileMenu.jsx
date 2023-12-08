@@ -4,6 +4,10 @@ import fliightLogo from '../assets/images/fliight-logo-white.png'
 import fliightLogoBlack from '../assets/images/fliight-logo-black.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faTimes } from '@fortawesome/free-solid-svg-icons'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+AOS.init()
 
 function MobileMenu({ isMenuOpen, setMenuOpen }) {
   const [techDropdownOpen, setTechDropdownOpen] = useState(false)
@@ -22,19 +26,31 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
   }
 
   const getHeaderClass = () => {
-    if (location.pathname === '/drones/deltaquad-pro' || location.pathname === '/drones/deltaquad-evo') {
-      return { background: 'bg-white', textColor: 'text-ft-black', image: `${fliightLogoBlack}`, menuBackground: 'bg-ft-black' };
+    if (
+      location.pathname === '/drones/deltaquad-pro' ||
+      location.pathname === '/drones/deltaquad-evo'
+    ) {
+      return {
+        background: 'bg-white',
+        textColor: 'text-ft-black',
+        image: `${fliightLogoBlack}`,
+        menuBackground: 'bg-ft-black',
+      }
     } else {
-      return { background: 'bg-ft-black', textColor: 'text-ft-white', image: `${fliightLogo}`, menuBackground: 'bg-ft-white' }; // Default color
+      return {
+        background: 'bg-ft-black',
+        textColor: 'text-ft-white',
+        image: `${fliightLogo}`,
+        menuBackground: 'bg-ft-white',
+      } // Default color
     }
-  };
+  }
   const headerClasses = getHeaderClass()
 
-  
-
-
   return (
-    <div className={`w-full h-16 px-6 pt-6 pb-5 ${headerClasses.background} ${headerClasses.textColor} flex justify-between items-center`}>
+    <div
+      className={`w-full h-16 px-6 pt-6 pb-5 ${headerClasses.background} ${headerClasses.textColor} flex justify-between items-center`}
+    >
       {/* Mobile Logo */}
       <Link to="/" className="w-32 h-5 z-50">
         <img src={headerClasses.image} alt="Mobile Logo" />
@@ -51,7 +67,13 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
       </div>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-ft-black bg-opacity-99 z-50 h-full">
+        <div
+          className="fixed inset-0 bg-ft-black bg-opacity-99 z-50 h-full"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-back"
+          data-aos-offset="0"
+          data-aos-delay="0"
+        >
           <div className="absolute top-5 right-5 text-white text-3xl cursor-pointer">
             <FontAwesomeIcon icon={faTimes} onClick={toggleMenu} />
           </div>
@@ -60,6 +82,7 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
               to=""
               className="text-white py-2"
               onClick={toggleTechDropdown}
+              
             >
               <span className="">
                 Technology&nbsp;
@@ -71,23 +94,37 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
                 <Link
                   to="/drones/deltaquad-pro"
                   className="text-ft-grey py-1 pl-2 text-3xl"
-                  onClick={handleMenuItemClick}
+                  onClick={handleMenuItemClick} data-aos="fade-down"
+                  data-aos-easing="ease"
+                  data-aos-offset="0"
+                  data-aos-delay="0"
                 >
                   DeltaQuad Pro
                 </Link>
                 <Link
                   to="/drones/deltaquad-evo"
                   className="text-ft-grey py-1 pl-2 text-3xl"
-                  onClick={handleMenuItemClick}
+                  onClick={handleMenuItemClick} data-aos="fade-down"
+                  data-aos-easing="ease"
+                  data-aos-offset="0"
+                  data-aos-delay="0"
                 >
                   DeltaQuad Evo
                 </Link>
               </div>
             )}
-            <Link to="/about" className="text-white py-2" onClick={handleMenuItemClick}>
+            <Link
+              to="/about"
+              className="text-white py-2"
+              onClick={handleMenuItemClick}
+            >
               About
             </Link>
-            <Link to="/contact" className="text-white py-2" onClick={handleMenuItemClick}>
+            <Link
+              to="/contact"
+              className="text-white py-2"
+              onClick={handleMenuItemClick}
+            >
               Contact
             </Link>
           </div>

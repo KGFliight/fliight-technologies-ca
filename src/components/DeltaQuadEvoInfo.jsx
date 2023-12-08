@@ -3,6 +3,11 @@ import iconDrone from '../assets/images/icon-drone.png'
 import deltaQuadInfoImage from '../assets/images/dq-evo-info.png'
 import deltaQuadPropellerImage from '../assets/images/dq-evo-info-propeller.png'
 import '../App.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+AOS.init()
+
 
 function DeltaQuadEvoInfo() {
   /*const technologyItems = [
@@ -96,12 +101,12 @@ function DeltaQuadEvoInfo() {
           any flying mission.
         </p>
       </div>
-      <div className="flex flex-col items-center my-20">
-        <div className="h-auto max-w-[1200px] z-50">
-          <div className="image-container m-0 md:mx-24 my-12">
+      <div className="flex flex-col items-center my-24">
+        <div className="flex flex-col items-center z-50">
+          <div className="image-container m-0 md:mx-24 my-12 ">
             <img
               src={deltaQuadInfoImage}
-              className="object-scale-down rounded"
+              className="object-contain sm:object-cover rounded h-auto sm:h-[480px] w-full"
             />
           </div>
         </div>
@@ -184,7 +189,7 @@ function DeltaQuadEvoInfo() {
       <div className="flex flex-col sm:flex-row justify-center gap-20 my-40">
         <div className="w-80 sm:w-[480px] items-center sm:items-start flex flex-col justify-center">
           <h3 className="text-5xl text-left uppercase w-auto my-8">Incredible flexibility</h3>
-          <div className="text-lg leading-loose tracking-wide font-light font-['Inter']">
+          <div className="text-lg leading-loose tracking-wide font-light font-['Inter'] pr-6">
             The DeltaQuad Evo is setting a new standard in payload flexibility
             by incorporating two universal payload bays. The bays can be used to
             combine and simultaneously operate multiple payloads. The dual

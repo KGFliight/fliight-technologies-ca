@@ -7,6 +7,10 @@ import DropdownMenu from './DropdownMenu'
 import { useState } from 'react'
 import { useContext } from 'react'
 import { MobileMenuContext } from './MobileMenuContext'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+AOS.init()
 
 function Header() {
   const [isDronesDropdownOpen, setIsDronesDropdownOpen] = useState(false)
@@ -71,6 +75,7 @@ function Header() {
       {/* Desktop Navigation */}
       <div
         className={`hidden border-b ${headerClasses.borderColor} lg:flex md:flex w-full h-16 justify-between items-center pl-12 `}
+
       >
         {/* Home Logo */}
         <Link

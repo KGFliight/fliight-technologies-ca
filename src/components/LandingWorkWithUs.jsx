@@ -1,15 +1,33 @@
 import '../App.css'
 import iconDrone from '../assets/images/icon-drone.png'
 import { NavLink } from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+AOS.init()
 
 function LandingWorkWithUs() {
   return (
     <div className="flex flex-col items-center justify-center my-32 mt-40 ">
       <div className="max-w-xl sm:max-w-full text-center flex flex-col justify-center items-center p-8">
-        <h2 className="uppercase font-medium my-16 md:my-8 px-14 text-4xl sm:text-5xl tracking-wide leading-10 sm:tracking-widest sm:max-w-4xl">
+        <h2
+          className="uppercase font-medium my-16 md:my-8 px-14 text-4xl sm:text-5xl tracking-wide leading-10 sm:tracking-widest sm:max-w-4xl"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in"
+          data-aos-delay="300"
+          data-aos-offset="0"
+          data-aos-duration="600"
+        >
           We Innovate, design, build and implement.
         </h2>
-        <p className="text-lg px-18 my-16 md:my-8 md:max-w-2xl leading-7 tracking-wide font-['Inter'] font-light">
+        <p
+          className="text-lg px-18 my-16 md:my-8 md:max-w-2xl leading-7 tracking-wide font-['Inter'] font-light"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in"
+          data-aos-delay="600"
+          data-aos-offset="0"
+          data-aos-duration="600"
+        >
           The field of Unmanned Aerial Vehicles is evolving rapidly. Off the
           shelf solutions cannot keep pace with the fast-changing needs of our
           clients as they seek differentiation and competitive advantage. Many
@@ -19,11 +37,25 @@ function LandingWorkWithUs() {
           It&apos;s what we do.
         </p>
       </div>
-      <h3 className="uppercase mt-12 mb-6 font-semibold leading-relaxed text-lg ">
+      <h3
+        className="uppercase mt-12 mb-6 font-semibold leading-relaxed text-lg"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in"
+        data-aos-delay="600"
+        data-aos-offset="0"
+        data-aos-duration="600"
+      >
         Services
       </h3>
       <div className="md:flex md:flex-wrap justify-center w-full">
-        <div className="flex flex-col text-left bg-ft-dark-grey p-6 sm:p-8 mx-8 md:mx-4 my-8 md:max-w-[36%] rounded">
+        <div
+          className="flex flex-col text-left bg-ft-dark-grey p-6 sm:p-8 mx-8 md:mx-4 my-8 md:max-w-[36%] rounded"
+          data-aos="fade-in"
+          data-aos-easing="ease-in"
+          data-aos-delay="400"
+          data-aos-offset="0"
+          data-aos-duration="600"
+        >
           <span>
             {' '}
             <img
@@ -45,7 +77,14 @@ function LandingWorkWithUs() {
             value to your organisation.
           </p>
         </div>
-        <div className="flex flex-col text-left bg-ft-dark-grey p-6 sm:p-8 mx-8 md:mx-4 md:my-8 md:max-w-[36%] rounded">
+        <div
+          className="flex flex-col text-left bg-ft-dark-grey p-6 sm:p-8 mx-8 md:mx-4 md:my-8 md:max-w-[36%] rounded"
+          data-aos="fade-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="600"
+          data-aos-offset="0"
+          data-aos-duration="600"
+        >
           <span>
             {' '}
             <img
@@ -69,7 +108,14 @@ function LandingWorkWithUs() {
         </div>
       </div>
       <div className="md:flex md:flex-wrap justify-center w-full">
-        <div className="flex flex-col text-left bg-ft-dark-grey p-6 sm:p-8 mx-8 my-8 md:my-0 md:mx-4 md:max-w-[36%] rounded">
+        <div
+          className="flex flex-col text-left bg-ft-dark-grey p-6 sm:p-8 mx-8 my-8 md:my-0 md:mx-4 md:max-w-[36%] rounded"
+          data-aos="fade-in"
+          data-aos-easing="ease-in"
+          data-aos-delay="400"
+          data-aos-offset="0"
+          data-aos-duration="600"
+        >
           <span>
             {' '}
             <img
@@ -91,7 +137,14 @@ function LandingWorkWithUs() {
             packages to get your team operating like professionals in no time.
           </p>
         </div>
-        <div className="flex flex-col text-left bg-ft-dark-grey p-6 sm:p-8 mx-8 md:mx-4 md:max-w-[36%] rounded">
+        <div
+          className="flex flex-col text-left bg-ft-dark-grey p-6 sm:p-8 mx-8 md:mx-4 md:max-w-[36%] rounded"
+          data-aos="fade-in"
+          data-aos-easing="ease-in"
+          data-aos-delay="600"
+          data-aos-offset="0"
+          data-aos-duration="600"
+        >
           <span>
             {' '}
             <img
@@ -114,7 +167,14 @@ function LandingWorkWithUs() {
         </div>
       </div>
 
-      <button className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-12 md:mx-6 hover:bg-[#5b172c] hover:opacity-90  transition duration-300 active:-translate-y-1">
+      <button
+        className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-12 md:mx-6 hover:bg-[#5b172c] hover:opacity-90  transition duration-300 active:-translate-y-1"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="600"
+        data-aos-offset="0"
+        data-aos-duration="600"
+      >
         <NavLink to="/request-demo">Work with us</NavLink>
       </button>
     </div>

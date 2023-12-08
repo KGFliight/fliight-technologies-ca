@@ -17,7 +17,7 @@ function Footer() {
             <h2 className="uppercase text-4xl sm:text-5xl tracking-wide sm:tracking-widest sm:max-w-4xl">
               READY FOR TAKEOFF?
             </h2>
-            <p className="w-full text-left text-lg my-4 sm:max-w-2xl font-['Inter'] font-light">
+            <p className="w-full text-left text-lg my-8 sm:max-w-2xl font-['Inter'] font-light">
               Our friendly Fliight Crew is here to discuss your needs, no
               strings attached. Let&apos;s navigate solving your problem together.
             </p>
@@ -29,7 +29,7 @@ function Footer() {
               </NavLink>
               <NavLink to="/request-demo">
                 <button className="bg-ft-dark-grey uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest hover:opacity-90 hover:bg-black transition duration-300">
-                  Book a demo
+                  REQUEST A DEMO
                 </button>
               </NavLink>
             </div>
@@ -65,13 +65,13 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="md:m-8 md:mr-auto">
+        {/*<div className="md:m-8 md:mr-auto">
           <img src={deltaQuad} alt="deltaQuad" className="w-60 mt-8 mb-1" />
           <span className="text-sm leading-relaxed tracking-wide text-ft-grey font-['Inter'] font-light">
             |&nbsp;&nbsp; Fliight Technologies is proud to be the official
             Australian DeltaQuad Distributor
           </span>
-        </div>
+  </div>*/}
       </div>
       <div className="flex flex-col md:flex-row md:justify-around md:px-30 lg:px-40 bg-ft-dark-grey w-screen mb-4 py-8 px-6 gap-3 font-['Inter'] font-light">
         <div className="flex items-center gap-4 ml-4">
