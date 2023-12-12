@@ -2,13 +2,15 @@ import iconDrone from '../assets/images/icon-drone.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-AOS.init()
+
 
 function DeltaQuadProInfo() {
   const technologyItems = ["Up to 150 KM Flight Distance", "Full Automation", "Redundant Communication Links", "Local Support and SLA", "1 Minute field assembly", "1.2kg Payload capacity", "Fly in Rain or Snow"]
 
   const endToEndItems = ["Support and warranty", "Certified training", "Regulatory compliance packages", "Data processing and management"]
 
+  AOS.init()
+  
   return (
     <div className="m-12 md:m-20">
       <div className="mb-24">

@@ -3,11 +3,13 @@ import { useState } from 'react'
 import fliightLogo from '../assets/images/fliight-logo-white.png'
 import fliightLogoBlack from '../assets/images/fliight-logo-black.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faTimes, faBars } from '@fortawesome/free-solid-svg-icons'
+import {
+  faChevronDown,
+  faTimes,
+  faBars,
+} from '@fortawesome/free-solid-svg-icons'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-
-AOS.init()
 
 function MobileMenu({ isMenuOpen, setMenuOpen }) {
   const [techDropdownOpen, setTechDropdownOpen] = useState(false)
@@ -47,6 +49,8 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
   }
   const headerClasses = getHeaderClass()
 
+  AOS.init()
+
   return (
     <div
       className={`w-full h-16 px-6 pt-6 pb-5 ${headerClasses.background} ${headerClasses.textColor} flex justify-between items-center`}
@@ -61,7 +65,10 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
         className="w-5 h-6 flex flex-col justify-between cursor-pointer"
         onClick={toggleMenu}
       >
-        <FontAwesomeIcon icon={faBars} className={`text-2xl ${headerClasses.menuIconColor}` }/>
+        <FontAwesomeIcon
+          icon={faBars}
+          className={`text-2xl ${headerClasses.menuIconColor}`}
+        />
       </button>
 
       {isMenuOpen && (
@@ -80,7 +87,6 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
               to=""
               className="text-white py-2"
               onClick={toggleTechDropdown}
-              
             >
               <span className="">
                 Technology&nbsp;
@@ -92,7 +98,8 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
                 <Link
                   to="/drones/deltaquad-pro"
                   className="text-ft-grey py-1 pl-2 text-3xl"
-                  onClick={handleMenuItemClick} data-aos="fade-down"
+                  onClick={handleMenuItemClick}
+                  data-aos="fade-down"
                   data-aos-easing="ease"
                   data-aos-offset="0"
                   data-aos-delay="0"
@@ -102,7 +109,8 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
                 <Link
                   to="/drones/deltaquad-evo"
                   className="text-ft-grey py-1 pl-2 text-3xl"
-                  onClick={handleMenuItemClick} data-aos="fade-down"
+                  onClick={handleMenuItemClick}
+                  data-aos="fade-down"
                   data-aos-easing="ease"
                   data-aos-offset="0"
                   data-aos-delay="0"

@@ -14,9 +14,10 @@ import playButton from '../assets/images/icons/playbutton.svg'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-AOS.init()
+
 
 function Landing() {
+  AOS.init()
   const { isMobileMenuOpen } = useContext(MobileMenuContext)
   return (
     <div className="flex flex-col">

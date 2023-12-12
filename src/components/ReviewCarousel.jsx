@@ -12,7 +12,7 @@ import '../App.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-AOS.init()
+
 
 const reviews = [
   {
@@ -44,6 +44,8 @@ const reviews = [
 function ReviewCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [fadeClass, setFadeClass] = useState('fade-in')
+
+  AOS.init()
 
   function changeReview(newIndex) {
     setFadeClass('fade-out')

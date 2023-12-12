@@ -4,9 +4,11 @@ import { NavLink } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-AOS.init()
+
 
 function LandingWorkWithUs() {
+  AOS.init()
+  
   return (
     <div className="flex flex-col items-center justify-center my-32 mt-40 ">
       <div className="max-w-xl sm:max-w-full text-center flex flex-col justify-center items-center p-8">

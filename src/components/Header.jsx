@@ -11,7 +11,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import '../App.css'
 
-AOS.init()
 
 function Header() {
   const [isDronesDropdownOpen, setIsDronesDropdownOpen] = useState(false)
@@ -20,7 +19,7 @@ function Header() {
     useContext(MobileMenuContext)
 
   const location = useLocation()
-
+  
   const getHeaderClass = () => {
     if (
       location.pathname === '/drones/deltaquad-pro' ||
@@ -71,6 +70,9 @@ function Header() {
     { name: 'Argus', path: '/solutions/argus' },
   ]
 
+  AOS.init()
+
+  
   return (
     <header className={`fixed-top h-16 w-full ${headerClasses.background}`}>
       {/* Desktop Navigation */}
