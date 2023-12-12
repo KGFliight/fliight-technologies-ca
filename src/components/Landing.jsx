@@ -22,8 +22,8 @@ function Landing() {
   return (
     <div className="flex flex-col">
       <div
-        className="flex flex-col justify-start items-start w-100 flex-grow gap-7"
-        style={{ height: 'calc(100vh - 4rem)' }}
+        className="flex flex-col justify-start items-start flex-grow gap-7"
+        style={{ height: 'calc(100dvh - 4rem)' }}
       >
         <div className="">
           <div

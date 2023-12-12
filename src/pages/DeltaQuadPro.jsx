@@ -12,7 +12,7 @@ import { NavLink } from 'react-router-dom'
 
 function DeltaQuadPro() {
   return (
-    <div className="flex flex-col min-h-[100svh]">
+    <div className="flex flex-col min-h-[100dvh]">
       <Header />
       <div className="flex-1 flex flex-col items-center justify-center">
         <DeltaQuadProBanner

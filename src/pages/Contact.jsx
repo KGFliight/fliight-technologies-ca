@@ -4,7 +4,7 @@ import ContactForm from '../components/ContactForm'
 
 function Contact() {
   return (
-    <div className="flex flex-col min-h-[100svh]">
+    <div className="flex flex-col min-h-[100dvh]">
       <Header />
       <div className="px-12 py-6 flex-1 flex items-center justify-center">
         <div className="flex flex-col max-w-full">
