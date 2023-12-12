@@ -1,7 +1,12 @@
 body {
-  font-family: 'rajdhani', system-ui;
+  font-family: 'rajdhani', 'inter', system-ui;
   font-size: 1.125rem;
   line-height: 1.5;
+  /*to fix ios mobile dvh issue*/
+  min-height: 100vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+  background: #1c1f2a;
 }
 
 main {
@@ -17,8 +22,18 @@ video {
   display: block;
 }
 
-button:focus, a:focus, span:focus, svg:focus, div:focus {
+button:focus,
+a:focus,
+span:focus,
+svg:focus,
+div:focus {
   -webkit-tap-highlight-color: transparent;
+}
+
+  /*to fix ios mobile dvh issue*/
+html {
+  height: fill-available;
+  height: -webkit-fill-available;
 }
 
 .bg-deltaquad {
@@ -126,18 +141,32 @@ button:focus, a:focus, span:focus, svg:focus, div:focus {
   left: 0;
   right: 0;
   height: 1px; /* Thickness of the border */
-  background: linear-gradient(to right, transparent 25%, #ba0c2f 25%, #ba0c2f 75%, transparent 75%);
+  background: linear-gradient(
+    to right,
+    transparent 25%,
+    #ba0c2f 25%,
+    #ba0c2f 75%,
+    transparent 75%
+  );
   display: block;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .fade-in {
