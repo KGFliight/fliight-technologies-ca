@@ -3,6 +3,7 @@ import cargo from '../assets/images/dq-vtol-cargo.jpeg'
 import view from '../assets/images/dq-vtol-view.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
+import chevronDoubleRight from '../assets/images/icons/chevron-double-right.svg'
 
 function DeltaQuadVtol() {
   const options = [
@@ -64,10 +65,10 @@ function DeltaQuadVtol() {
         <span className="mx-12">Options</span>
         <div className="border-b border-ft-dark-grey h-0.5 w-[40%]"></div>
       </div>
-      <div className="">
-        <ul className="flex flex-col md:flex-row justify-between tracking-wide leading-loose mb-12 text-sm md:text-lg">
+      <div className="flex justify-center w-full">
+        <ul className="flex flex-col lg:flex-row justify-between tracking-wide leading-loose mb-12 text-sm md:text-lg max-w-[96rem]">
           {options.map((option, index) => (
-            <li key={index} className="sm:p-4">
+            <li key={index} className="sm:p-4 lg:p-8">
               <img
                 src={option.image}
                 alt={`${option.heading} image`}
@@ -79,12 +80,12 @@ function DeltaQuadVtol() {
               <h5 className="uppercase text-xl font-semibold leading-7 my-6">
                 {option.subHeading}
               </h5>
-              <ul className="flex flex-col mb-20 font-light font-['Inter']">
+              <ul className="flex flex-col mb-20 font-light font-['Inter'] capitalize">
                 {option.points.map((point, pointIndex) => (
-                  <li key={pointIndex} className="py-2">
+                  <li key={pointIndex} className="py-1 flex items-center">
                     <FontAwesomeIcon
                       icon={faAnglesRight}
-                      className="text-ft-red pr-4"
+                      className="text-ft-red pr-4 text-2xl"
                     />
                     {point}
                   </li>

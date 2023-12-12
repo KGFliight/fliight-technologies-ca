@@ -17,6 +17,10 @@ video {
   display: block;
 }
 
+button:focus, a:focus, span:focus, svg:focus, div:focus {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .bg-deltaquad {
   background-image: url('./assets/images/landing-drone.jpeg');
   background-position: right center;
@@ -144,3 +148,6 @@ video {
   animation: fadeOut 0.5s ease-out forwards;
 }
 
+.button-transition {
+  transition: background-color 300ms ease;
+}

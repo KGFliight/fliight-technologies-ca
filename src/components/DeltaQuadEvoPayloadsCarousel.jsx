@@ -1,41 +1,48 @@
 import '../App.css'
 import React from 'react'
 import software from '../assets/images/software-1.jpeg'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faChevronRight,
+  faChevronLeft,
+} from '@fortawesome/free-solid-svg-icons'
 
 const result = [
   {
     image: software,
-    alt: "fill",
-    category: "RGB",
-    title: "A74 MARK IV",
-    maker: "Sony",
-    description: "A fully integrated 61 megapixel mapping camera with an interchangeable lens"
+    alt: 'fill',
+    category: 'RGB',
+    title: 'A74 MARK IV',
+    maker: 'Sony',
+    description:
+      'A fully integrated 61 megapixel mapping camera with an interchangeable lens',
   },
   {
     image: software,
-    alt: "fill",
-    category: "RGB & MULTISPECTRAL",
-    title: "MICASENSE ALTUM PT",
-    maker: "Ag Eagle",
-    description: "A six band synchronized thermal and multispectral sensor with panchromatic correction"
+    alt: 'fill',
+    category: 'RGB & MULTISPECTRAL',
+    title: 'MICASENSE ALTUM PT',
+    maker: 'Ag Eagle',
+    description:
+      'A six band synchronized thermal and multispectral sensor with panchromatic correction',
   },
   {
     image: software,
-    alt: "fill",
-    category: "RGB & THERMAL",
-    title: "WRIS PRO",
-    maker: "Workswell",
-    description: "An integrated high-resolution thermal & RGB mapping sensor"
+    alt: 'fill',
+    category: 'RGB & THERMAL',
+    title: 'WRIS PRO',
+    maker: 'Workswell',
+    description: 'An integrated high-resolution thermal & RGB mapping sensor',
   },
   {
     image: software,
-    alt: "fill",
-    category: "CARGO",
-    title: "PAYLOAD DELIVERY",
-    maker: "DeltaQuad",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo."
-  }
+    alt: 'fill',
+    category: 'CARGO',
+    title: 'PAYLOAD DELIVERY',
+    maker: 'DeltaQuad',
+    description:
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo.',
+  },
 ]
 
 function DeltaQuadPayloadsCarousel() {
@@ -63,26 +70,26 @@ function DeltaQuadPayloadsCarousel() {
     <div className="my-40">
       <div className="">
         <div className="inline-flex items-center w-full justify-between mb-2 pl-12 md:pl-20">
-        <h3 className="text-4xl sm:text-5xl uppercase md:ml-0">
-          Available payloads
-        </h3>
-        <div className="max-md:hidden flex justify-end ">
-        <div className="mb-auto text-right text-3xl md:px-0 md:pr-16 gap-4 mr-4 my-3 sm:m-0 sm:mr-8">
-          <button
-            className="border border-ft-dark-grey px-3 mr-2 hover:bg-ft-red hover:opacity-90  transition duration-300 active:-translate-y-1"
-            onClick={slideToTheLeft}
-          >
-            &lt;
-          </button>
-          <button
-            className="border border-ft-dark-grey px-3 hover:bg-ft-red hover:opacity-90  transition duration-300 active:-translate-y-1"
-            onClick={slideToTheRight}
-          >
-            &gt;
-          </button>
+          <h3 className="text-4xl sm:text-5xl uppercase md:ml-0">
+            Available payloads
+          </h3>
+          <div className="max-md:hidden flex justify-end ">
+            <div className="mb-auto text-right text-3xl md:px-0 md:pr-16 gap-4 mr-4 my-3 sm:m-0 sm:mr-8">
+              <button
+                className="border border-ft-dark-grey px-3 pt-2 pb-1 hover:bg-ft-red hover:opacity-90  transition duration-300 active:-translate-y-1 active:bg-ft-dark-grey"
+                onClick={slideToTheLeft}
+              >
+                <FontAwesomeIcon icon={faChevronLeft} />
+              </button>
+              <button
+                className="border border-ft-dark-grey px-3 pt-2 pb-1 hover:bg-ft-red hover:opacity-90  transition duration-300 active:-translate-y-1 active:bg-ft-dark-grey"
+                onClick={slideToTheRight}
+              >
+                <FontAwesomeIcon icon={faChevronRight} />
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
         <ul
           className="media-scroller snaps-inline md:auto-cols-[42%] lg:auto-cols-[38%] pl-12 md:pl-20"
           ref={scrollRef}
@@ -102,8 +109,6 @@ function DeltaQuadPayloadsCarousel() {
           ))}
         </ul>
       </div>
-      
-      
     </div>
   )
 }

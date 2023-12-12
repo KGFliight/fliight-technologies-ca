@@ -2,6 +2,8 @@ import { useState } from 'react'
 import iconDrone from '../assets/images/icon-drone.png'
 import deltaQuadInfoImage from '../assets/images/dq-evo-info.png'
 import deltaQuadPropellerImage from '../assets/images/dq-evo-info-propeller.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import '../App.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -122,18 +124,18 @@ function DeltaQuadEvoInfo() {
               <div className="bg-ft-dark-grey p-2 rounded text-2xl font-medium">
                 <button
                   onClick={() => toggleTechItem(item.id)}
-                  className="flex items-center w-full text-left [&>*:nth-child(3)]:ml-auto [&>*:nth-child(3)]:p-4"
+                  className="flex items-center w-full text-left [&>*:nth-child(3)]:ml-auto [&>*:nth-child(3)]:p-4 text-sm md:text-lg font-light font-['Inter'] tracking-wide leading-loose my-2"
                 >
                   <img
                     src={iconDrone}
                     alt="drone icon"
                     className="w-[40px] h-[40px] m-2 md:mr-4 inline-flex"
                   />
-                  <span className="uppercase">{item.heading}</span>
-                  <span className="">V</span>
+                  <span className="capitalize">{item.heading}</span>
+                  <FontAwesomeIcon icon={faChevronDown} className="text-2xl" />
                 </button>
                 {openTechItem === item.id && (
-                  <div className="text-white p-3 normal-case text-base leading-loose tracking-wide font-light font-['Inter']">
+                  <div className="text-white mt-3 p-3 normal-case text-base leading-loose tracking-wide font-light font-['Inter'] border-t rounded border-ft-black shadow bg-ft-black transition-all duration-300">
                     {item.contents}
                   </div>
                 )}
@@ -174,14 +176,15 @@ function DeltaQuadEvoInfo() {
           {endToEndItems.map((item, index) => (
             <li
               key={index}
-              className="bg-ft-dark-grey p-2 my-2 mr-4 md:w-[44%] lg:w-[48%] rounded"
+              className="bg-ft-dark-grey p-2 my-2 mr-4 md:w-[44%] lg:w-[48%] rounded capitalize flex items-center"
             >
               <img
                 src={iconDrone}
                 alt="drone icon"
                 className="w-[40px] h-[40px] m-2 md:mr-4 inline-flex"
               />
-              {item}
+              <div className="flex-wrap">{item}</div>
+              
             </li>
           ))}
         </ul>

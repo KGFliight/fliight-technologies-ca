@@ -3,7 +3,7 @@ import { useState } from 'react'
 import fliightLogo from '../assets/images/fliight-logo-white.png'
 import fliightLogoBlack from '../assets/images/fliight-logo-black.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faTimes, faBars } from '@fortawesome/free-solid-svg-icons'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -34,14 +34,14 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
         background: 'bg-white',
         textColor: 'text-ft-black',
         image: `${fliightLogoBlack}`,
-        menuBackground: 'bg-ft-black',
+        menuIconColor: 'text-ft-black',
       }
     } else {
       return {
         background: 'bg-ft-black',
         textColor: 'text-ft-white',
         image: `${fliightLogo}`,
-        menuBackground: 'bg-ft-white',
+        menuIconColor: 'text-ft-white',
       } // Default color
     }
   }
@@ -57,14 +57,12 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
       </Link>
 
       {/* Hamburger Menu Icon */}
-      <div
+      <button
         className="w-5 h-6 flex flex-col justify-between cursor-pointer"
         onClick={toggleMenu}
       >
-        <div className={`h-0.5 ${headerClasses.menuBackground}`}></div>
-        <div className={`h-0.5 ${headerClasses.menuBackground}`}></div>
-        <div className={`h-0.5 ${headerClasses.menuBackground}`}></div>
-      </div>
+        <FontAwesomeIcon icon={faBars} className={`text-2xl ${headerClasses.menuIconColor}` }/>
+      </button>
 
       {isMenuOpen && (
         <div

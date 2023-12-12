@@ -1,9 +1,9 @@
 import '../App.css'
-import deltaquad from '../assets/images/icons/deltaquad.png'
-import dji from '../assets/images/icons/dji.png'
-import hover from '../assets/images/icons/hover.png'
-import unleash from '../assets/images/icons/unleash.png'
-import pypervision from '../assets/images/icons/pypervision.png'
+import deltaquad from '../assets/images/logos/deltaquad.png'
+import dji from '../assets/images/logos/dji.png'
+import hover from '../assets/images/logos/hover.png'
+import unleash from '../assets/images/logos/unleash.png'
+import pypervision from '../assets/images/logos/pypervision.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -15,7 +15,7 @@ function LandingIcons() {
       <ul className="flex flex-col lg:flex-row lg:gap-16 justify-center items-center gap-8">
         <li
           className="w-40 h-20 items-center justify-center flex"
-          data-aos-delay="600"
+          data-aos-delay="200"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-offset="0"
@@ -25,7 +25,7 @@ function LandingIcons() {
         </li>
         <li
           className="w-40 h-20 items-center justify-center flex"
-          data-aos-delay="800"
+          data-aos-delay="400"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-offset="0"
@@ -35,7 +35,7 @@ function LandingIcons() {
         </li>
         <li
           className="w-40 h-20 items-center justify-center flex"
-          data-aos-delay="1000"
+          data-aos-delay="600"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-offset="0"
@@ -45,7 +45,7 @@ function LandingIcons() {
 
         <li
           className="w-40 h-20 items-center justify-center flex"
-          data-aos-delay="1200"
+          data-aos-delay="800"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-offset="0"
@@ -55,7 +55,7 @@ function LandingIcons() {
         </li>
         <li
           className="w-40 h-20 items-center justify-center flex"
-          data-aos-delay="1400"
+          data-aos-delay="1000"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-offset="0"

@@ -1,7 +1,11 @@
 import '../App.css'
 import React from 'react'
 import software from '../assets/images/software-1.jpeg'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faChevronRight,
+  faChevronLeft,
+} from '@fortawesome/free-solid-svg-icons'
 
 const result = [
   {
@@ -55,16 +59,16 @@ function DeltaQuadXxxResults() {
         <div className="max-md:hidden flex justify-end ">
         <div className="mb-auto text-right text-3xl sm:px-4 gap-4 mr-4 my-3 sm:m-0 sm:mr-20">
           <button
-            className="border border-ft-dark-grey px-3 mr-2 hover:bg-ft-red hover:opacity-90  transition duration-300 active:-translate-y-1"
+            className="border border-ft-dark-grey px-3 pt-2 pb-1 hover:bg-ft-red hover:opacity-90  transition duration-300 active:-translate-y-1 active:bg-ft-dark-grey"
             onClick={slideToTheLeft}
           >
-            &lt;
+            <FontAwesomeIcon icon={faChevronLeft} />
           </button>
           <button
-            className="border border-ft-dark-grey px-3 hover:bg-ft-red hover:opacity-90  transition duration-300 active:-translate-y-1"
+            className="border border-ft-dark-grey px-3 pt-2 pb-1 hover:bg-ft-red hover:opacity-90  transition duration-300 active:-translate-y-1 active:bg-ft-dark-grey"
             onClick={slideToTheRight}
           >
-            &gt;
+            <FontAwesomeIcon icon={faChevronRight} />
           </button>
         </div>
       </div>

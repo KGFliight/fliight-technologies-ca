@@ -4,7 +4,7 @@ import Landing from "../components/Landing";
 
 function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-[100svh]">
       <Header/>
       <div className="flex-1 flex items-center justify-center">
       <Landing/>

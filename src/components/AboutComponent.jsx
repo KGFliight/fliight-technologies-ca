@@ -1,6 +1,7 @@
 import workWorkshop from '../assets/images/work-workshop.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import kit from '../assets/images/review-users/kit.jpeg'
 import '../App.css'
 import LandingIcons from './LandingIcons'
@@ -11,7 +12,9 @@ function AboutComponent() {
       <h1 className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-widest mt-32 py-20 justify-center flex uppercase ">
         About
       </h1>
-      <h2 className="flex flex-col items-center mb-8 md:mb-20 md:my-12 font-['Inter'] font-light text-lg leading-loose tracking-wide">Subheading</h2>
+      <h2 className="flex flex-col items-center mb-8 md:mb-20 md:my-12 font-['Inter'] font-light text-lg leading-loose tracking-wide">
+        Subheading
+      </h2>
       <div className="w-screen 2xl:flex 2xl:justify-center flex">
         <img
           src={workWorkshop}
@@ -108,7 +111,9 @@ function AboutComponent() {
               </div>
 
               <div className="my-8">
-                <p className="my-2 text-3xl leading-loose tracking-wide">Kihan Garcia</p>
+                <p className="my-2 text-3xl leading-loose tracking-wide">
+                  Kihan Garcia
+                </p>
                 <p className="my-2 text-xl leading-loose tracking-wide">CEO</p>
                 <p className="my-2 mb-4 leading-loose tracking-wide">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
@@ -116,8 +121,19 @@ function AboutComponent() {
                   molestiae suscipit, voluptatibus sapiente minima facere velit
                   nisi nemo omnis expedita sunt? Unde.
                 </p>
-                <span>
-                  <a href="www.linkedin.com" className="leading-loose tracking-wide">Connect **</a>
+                <span className="hover:opacity-50 transition duration-300">
+                  <a
+                    href="https://www.linkedin.com/in/kihan-garcia-892543124/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="leading-loose tracking-wide font-['rajdhani'] font-medium inline-flex items-center"
+                  >
+                    Connect{' '}
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      className="text-ft-red text-2xl pl-2 rounded"
+                    />
+                  </a>
                 </span>
               </div>
             </div>
@@ -126,27 +142,47 @@ function AboutComponent() {
                 <img src={kit} className="w-80 h-96 rounded" />
               </div>
               <div className="my-8">
-                <p className="my-2 text-3xl leading-loose tracking-wide">Johnathan Clark</p>
-                <p className="my-2 text-xl leading-loose tracking-wide">Research and Development Engineer</p>
-                <p className="my-2 mb-4 leading-loose tracking-wide">
-                Specialises in heavy lift RPAS, VTOL UAV&apos;s, custom payloads, and remote sensing. With a six-year journey that spans from project inception to mass production, Johnathan has honed his expertise in project management, CAD, and precision manufacturing, all while ensuring his clients achieve safer, more efficient, and cost-effective business operations.
+                <p className="my-2 text-3xl leading-loose tracking-wide">
+                  Johnathan Clark
                 </p>
-                <span>
-                  <a href="www.linkedin.com" className="leading-loose tracking-wide">Connect **</a>
+                <p className="my-2 text-xl leading-loose tracking-wide">
+                  Research and Development Engineer
+                </p>
+                <p className="my-2 mb-4 leading-loose tracking-wide">
+                  Specialises in heavy lift RPAS, VTOL UAV&apos;s, custom
+                  payloads, and remote sensing. With a six-year journey that
+                  spans from project inception to mass production, Johnathan has
+                  honed his expertise in project management, CAD, and precision
+                  manufacturing, all while ensuring his clients achieve safer,
+                  more efficient, and cost-effective business operations.
+                </p>
+                <span className="hover:opacity-50 transition duration-300">
+                  <a
+                    href="https://www.linkedin.com/in/jonathan-clark-7814b3112/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="leading-loose tracking-wide font-['rajdhani'] font-medium inline-flex items-center"
+                  >
+                    Connect{' '}
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      className="text-ft-red text-2xl pl-2 rounded"
+                    />
+                  </a>
                 </span>
               </div>
             </div>
           </div>
           <div className="mt-40 my-12">
-          <p className="text-4xl  leading-10 tracking-wide  text-center justify-center max-w-[48rem] my-20 lg:mx-40">
-            We serve clients worldwide, providing specialised solutions to
-            unique problems
-          </p>
-          <LandingIcons/>
-          <p className="text-4xl  leading-10 tracking-wide  text-center justify-center max-w-[48rem] md:mx-40 mt-40 my-20">
-            Partners
-          </p>
-          <LandingIcons />
+            <p className="text-4xl  leading-10 tracking-wide  text-center justify-center max-w-[48rem] my-20 lg:mx-40">
+              We serve clients worldwide, providing specialised solutions to
+              unique problems
+            </p>
+            <LandingIcons />
+            <p className="text-4xl  leading-10 tracking-wide  text-center justify-center max-w-[48rem] md:mx-40 mt-40 my-20">
+              Partners
+            </p>
+            <LandingIcons />
           </div>
         </div>
       </div>

@@ -69,7 +69,7 @@ function ContactForm() {
           ></textarea>
         </label>
         <div className="w-full flex justify-center items-center my-4">
-        <button className="cursor-pointer bg-ft-red  rounded-3xl w-72 h-8 sm:w-44 min-h-[2.75rem]  hover:opacity-90 hover:bg-[#5b172c] transition duration-300">
+        <button className="cursor-pointer bg-ft-red  rounded-3xl w-72 h-8 sm:w-44 min-h-[2.75rem]  hover:opacity-90 hover:bg-[#5b172c] transition duration-300 active:bg-ft-dark-grey">
           <input
             type="submit"
             value="Send"

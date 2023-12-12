@@ -1,4 +1,4 @@
-import deltaQuad from '../assets/images/icons/deltaquad.png'
+import deltaQuad from '../assets/images/logos/deltaquad.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faPhone,
@@ -6,7 +6,7 @@ import {
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom'
-
+import '../App.css'
 
 function Footer() {
   return (
@@ -19,16 +19,17 @@ function Footer() {
             </h2>
             <p className="w-full text-left text-lg my-8 sm:max-w-2xl font-['Inter'] font-light">
               Our friendly Fliight Crew is here to discuss your needs, no
-              strings attached. Let&apos;s navigate solving your problem together.
+              strings attached. Let&apos;s navigate solving your problem
+              together.
             </p>
             <div className="gap-3 py-2 justify-center items-center flex-col flex sm:items-start sm:flex-row sm:justify-start">
               <NavLink to="/contact">
-                <button className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest hover:bg-[#5b172c] hover:opacity-90  transition duration-300 active:-translate-y-1">
+                <button className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest hover:bg-[#5b172c] hover:opacity-90  transition duration-300 active:-translate-y-1 active:bg-ft-dark-grey">
                   Contact us
                 </button>
               </NavLink>
               <NavLink to="/request-demo">
-                <button className="bg-ft-dark-grey uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest hover:opacity-90 hover:bg-black transition duration-300">
+                <button className="bg-ft-dark-grey uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest hover:opacity-90 hover:bg-black transition duration-300 active:bg-ft-red">
                   REQUEST A DEMO
                 </button>
               </NavLink>
@@ -42,10 +43,14 @@ function Footer() {
                 </span>
                 <ul className="text-sm leading-loose tracking-wide md:text-lg font-['Inter'] font-light">
                   <NavLink to="/drones/deltaquad-pro">
-                    <li className="my-4 hover:opacity-50  transition duration-300">DeltaQuad Pro</li>
+                    <li className="my-4 hover:opacity-50  transition duration-300">
+                      DeltaQuad Pro
+                    </li>
                   </NavLink>
                   <NavLink to="/drones/deltaquad-evo">
-                    <li className="my-4 hover:opacity-50 transition duration-300">DeltaQuad Evo</li>
+                    <li className="my-4 hover:opacity-50 transition duration-300">
+                      DeltaQuad Evo
+                    </li>
                   </NavLink>
                 </ul>
               </div>
@@ -55,10 +60,14 @@ function Footer() {
                 </span>
                 <ul className="text-sm leading-loose tracking-wide md:text-lg font-['Inter'] font-light">
                   <NavLink to="/solutions/aerowhere">
-                    <li className="my-4 hover:opacity-50 transition duration-300">AeroWhere</li>
+                    <li className="my-4 hover:opacity-50 transition duration-300">
+                      AeroWhere
+                    </li>
                   </NavLink>
                   <NavLink to="/solutions/argus">
-                    <li className="my-4 hover:opacity-50 transition duration-300">Argus</li>
+                    <li className="my-4 hover:opacity-50 transition duration-300">
+                      Argus
+                    </li>
                   </NavLink>
                 </ul>
               </div>
@@ -98,7 +107,15 @@ function Footer() {
           <p className="">
             © Fliight Technologies Pty Ltd. All rights reserved.{' '}
           </p>
-          <p className="hover:opacity-50 transition duration-300"><a href="https://jbdev.io" target="_blank" rel="noreferrer noopener">Website by jbdev</a></p>
+          <p className="hover:opacity-50 transition duration-300">
+            <a
+              href="https://jbdev.io"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Website by jbdev
+            </a>
+          </p>
         </div>
       </div>
     </footer>

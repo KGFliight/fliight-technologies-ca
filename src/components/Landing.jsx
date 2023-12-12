@@ -1,4 +1,4 @@
-import '../App.css'
+
 import LandingIcons from './LandingIcons'
 import LandingWorkWithUs from './LandingWorkWithUs'
 import ReviewCarousel from './ReviewCarousel'
@@ -10,6 +10,7 @@ import { NavLink } from 'react-router-dom'
 import { useContext } from 'react'
 import { MobileMenuContext } from './MobileMenuContext'
 import playButton from '../assets/images/icons/playbutton.svg'
+
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -25,7 +26,7 @@ function Landing() {
       >
         <div className="">
           <div
-            className="vertical-align mt-24 px-12 sm:pt-12 sm:p-0 sm:ml-16 md:ml-24 lg:ml-36 w-3/4 overflow-visible lg:w-1/3 h-fit text-5xl sm:text-7xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white items-center transition-ease duration-300"
+            className="vertical-align mt-24 px-12 sm:pt-12 sm:p-0 sm:ml-16 md:ml-24 lg:ml-36 w-5/6 overflow-visible lg:w-1/3 h-fit text-5xl sm:text-7xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white items-center transition-ease duration-300"
             data-aos="fade-down-in"
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
@@ -47,7 +48,7 @@ function Landing() {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <div className="flex items-center gap-2 hover:opacity-80 transition duration-300">
+                <div className="flex items-center gap-2 hover:opacity-50 transition duration-300 ">
                   <img
                     src={playButton}
                     className="h-[68px] w-[68px] xl:h-[103px] xl:w-[103px]"
@@ -60,7 +61,7 @@ function Landing() {
         </div>
         <br />
         <div
-          className="vertical-align absolute-bottom mb-8 md:mb-24 p-14 sm:p-0 lg:p-0 w-full sm:ml-16 lg:ml-36 max-sm:mt-[28rem] sm:mt-[36rem] md:mt-[36rem] lg:mt-[40rem] sm:w-[30rem] text-normal font-rajdhani font-light leading-20 tracking-wide  text-ft-white transition-ease duration-300 font-['Inter']"
+          className="vertical-align absolute-bottom mb-4 md:mb-24 p-14 sm:p-0 lg:p-0 w-full sm:ml-16 lg:ml-36 max-sm:mt-[28rem] sm:mt-[36rem] md:mt-[36rem] lg:mt-[40rem] sm:w-[30rem] text-normal font-rajdhani font-light leading-20 tracking-wide  text-ft-white transition-ease duration-300 font-['Inter']"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-delay="1200"
@@ -79,9 +80,9 @@ function Landing() {
               className="fixed-bottom w-full md:hidden bg-ft-red min-h-[2.rem] px-5 py-2 inline-flex justify-center items-center transition-ease duration-300"
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
-              data-aos-delay="600"
+              data-aos-delay="0"
               data-aos-offset="0"
-              data-aos-duration="600"
+              data-aos-duration="300"
             >
               BOOK A DEMO
             </button>
@@ -138,16 +139,18 @@ function Landing() {
       <div className="flex flex-col justify-center items-start 2xl:items-center w-screen lg:pl-32">
         <div className="relative mx-8 md:mx-16 lg:mx-0 md:min-h-[300px] md:min-w-[300px] z-50 my-4">
           <div className="flex flex-col xl:flex-row md:p-12">
-            <div className="image-container flex justify-center mx-6 my-12 md:my-16 md:w-[600px]">
+            <div
+              className="image-container flex justify-center mx-6 my-12 md:my-16 md:w-[600px]"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in"
+              data-aos-delay="300"
+              data-aos-offset="0"
+              data-aos-duration="600"
+            >
               <img
                 src={landingWorkWithImage}
                 alt=""
                 className="min-h-auto mx-16 md:w-[600px] image-container md:h-[600px] 2xl:max-h-[800px] md:object-none md:object-left-bottom rounded"
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in"
-                data-aos-delay="300"
-                data-aos-offset="0"
-                data-aos-duration="600"
               />
             </div>
             <div className="flex flex-col md:justify-center md:items-start xl:p-12 xl:w-[38rem]">
@@ -175,12 +178,8 @@ function Landing() {
               </p>
               <div className="max-md:flex max-md:justify-center">
                 <button
-                  className="bg-ft-dark-grey uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-8 md:mx-6 hover:opacity-90 hover:bg-black transition duration-300"
-                  data-aos="fade-zoom-in"
-                  data-aos-easing="ease-in"
-                  data-aos-delay="300"
-                  data-aos-offset="0"
-                  data-aos-duration="600"
+                  className="bg-ft-dark-grey uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-8 md:mx-6 hover:opacity-90 hover:bg-black duration-300"
+              
                 >
                   <NavLink to="/about">About us</NavLink>
                 </button>

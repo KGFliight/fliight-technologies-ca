@@ -9,6 +9,7 @@ import { useContext } from 'react'
 import { MobileMenuContext } from './MobileMenuContext'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import '../App.css'
 
 AOS.init()
 

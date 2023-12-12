@@ -25,7 +25,7 @@ function DeltaQuadProInfo() {
         <h3 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12">Game changing technology</h3>
         <ul className="flex flex-col md:flex-row flex-wrap tracking-wide leading-loose my-6 text-sm md:text-lg font-light font-['Inter']">
           {technologyItems.map((item, index) => (
-            <li key={index} className="bg-ft-dark-grey p-2 my-2 mr-4 md:w-[44%] lg:w-[48%] rounded">
+            <li key={index} className="bg-ft-dark-grey p-2 my-2 mr-4 md:w-[44%] lg:w-[48%] rounded capitalize">
               <img
                 src={iconDrone}
                 alt="drone icon"
@@ -43,7 +43,7 @@ function DeltaQuadProInfo() {
         </p>
         <ul className="flex flex-col md:flex-row flex-wrap tracking-wide leading-loose my-6 text-sm md:text-lg">
           {endToEndItems.map((item, index) => (
-            <li key={index} className="bg-ft-dark-grey p-2 my-2 mr-4 md:w-[44%] lg:w-[48%] rounded font-light font-['Inter']">
+            <li key={index} className="bg-ft-dark-grey p-2 my-2 mr-4 md:w-[44%] lg:w-[48%] rounded font-light font-['Inter'] capitalize">
               <img
                 src={iconDrone}
                 alt="drone icon"
