@@ -15,51 +15,52 @@ function LandingIcons() {
       <ul className="flex flex-col lg:flex-row lg:gap-16 justify-center items-center gap-8">
         <li
           className="w-40 h-20 items-center justify-center flex"
-          data-aos-delay="200"
+          data-aos-delay="0"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-offset="0"
-          data-aos-duration="600"
+          data-aos-duration="300"
         >
           <img src={pypervision} alt="pypervision logo" />
         </li>
         <li
           className="w-40 h-20 items-center justify-center flex"
-          data-aos-delay="400"
+          data-aos-delay="0"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-offset="0"
-          data-aos-duration="600"
+          data-aos-duration="300"
         >
           <img src={hover} alt="hover logo" />
         </li>
         <li
           className="w-40 h-20 items-center justify-center flex"
-          data-aos-delay="600"
+          data-aos-delay="0"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-offset="0"
+          data-aos-duration="300"
         >
           <img src={unleash} alt="pypervision logo" />
         </li>
 
         <li
           className="w-40 h-20 items-center justify-center flex"
-          data-aos-delay="800"
+          data-aos-delay="0"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-offset="0"
-          data-aos-duration="600"
+          data-aos-duration="300"
         >
           <img src={dji} alt="dji logo" />
         </li>
         <li
           className="w-40 h-20 items-center justify-center flex"
-          data-aos-delay="1000"
+          data-aos-delay="0"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-offset="0"
-          data-aos-duration="600"
+          data-aos-duration="300"
         >
           <img src={deltaquad} alt="deltaquad logo" />
         </li>

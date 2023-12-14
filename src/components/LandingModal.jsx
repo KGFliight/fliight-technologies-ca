@@ -25,7 +25,7 @@ function LandingModal() {
         data-aos-easing="ease-in-back"
         data-aos-delay="600"
         data-aos-offset="0"
-        data-aos-duration="1200"
+        data-aos-duration="900"
       >
         <div>
           <button

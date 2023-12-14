@@ -16,7 +16,7 @@ function LandingWorkWithUs() {
           className="uppercase font-medium my-16 md:my-8 px-14 text-4xl sm:text-5xl tracking-wide leading-10 sm:tracking-widest sm:max-w-4xl"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in"
-          data-aos-delay="300"
+          data-aos-delay="0"
           data-aos-offset="0"
           data-aos-duration="600"
         >
@@ -26,7 +26,7 @@ function LandingWorkWithUs() {
           className="text-lg px-18 my-16 md:my-8 md:max-w-2xl leading-7 tracking-wide font-['Inter'] font-light"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in"
-          data-aos-delay="600"
+          data-aos-delay="0"
           data-aos-offset="0"
           data-aos-duration="600"
         >
@@ -43,7 +43,7 @@ function LandingWorkWithUs() {
         className="uppercase mt-12 mb-6 font-semibold leading-relaxed text-lg"
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in"
-        data-aos-delay="600"
+        data-aos-delay="0"
         data-aos-offset="0"
         data-aos-duration="600"
       >
@@ -54,7 +54,7 @@ function LandingWorkWithUs() {
           className="flex flex-col text-left bg-ft-dark-grey p-6 sm:p-8 mx-8 md:mx-4 my-8 md:max-w-[36%] rounded"
           data-aos="fade-in"
           data-aos-easing="ease-in"
-          data-aos-delay="400"
+          data-aos-delay="0"
           data-aos-offset="0"
           data-aos-duration="600"
         >
@@ -83,7 +83,7 @@ function LandingWorkWithUs() {
           className="flex flex-col text-left bg-ft-dark-grey p-6 sm:p-8 mx-8 md:mx-4 md:my-8 md:max-w-[36%] rounded"
           data-aos="fade-in"
           data-aos-easing="ease-in-back"
-          data-aos-delay="600"
+          data-aos-delay="0"
           data-aos-offset="0"
           data-aos-duration="600"
         >
@@ -114,7 +114,7 @@ function LandingWorkWithUs() {
           className="flex flex-col text-left bg-ft-dark-grey p-6 sm:p-8 mx-8 my-8 md:my-0 md:mx-4 md:max-w-[36%] rounded"
           data-aos="fade-in"
           data-aos-easing="ease-in"
-          data-aos-delay="400"
+          data-aos-delay="0"
           data-aos-offset="0"
           data-aos-duration="600"
         >
@@ -143,7 +143,7 @@ function LandingWorkWithUs() {
           className="flex flex-col text-left bg-ft-dark-grey p-6 sm:p-8 mx-8 md:mx-4 md:max-w-[36%] rounded"
           data-aos="fade-in"
           data-aos-easing="ease-in"
-          data-aos-delay="600"
+          data-aos-delay="0"
           data-aos-offset="0"
           data-aos-duration="600"
         >

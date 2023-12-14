@@ -39,7 +39,7 @@ function Landing() {
             data-aos-delay="0"
             data-aos-offset="0"
             data-aos-mirror="true"
-            data-aos-duration="900"
+            data-aos-duration="600"
           >
             <div className={`${isModalOpen ? 'blur-sm' : ''}`}>
             UAV SOLUTIONS
@@ -79,7 +79,7 @@ function Landing() {
           data-aos-easing="ease-in-back"
           data-aos-delay="0"
           data-aos-offset="0"
-          data-aos-duration="1200"
+          data-aos-duration="900"
         >
           <div className={`${isModalOpen ? 'blur-sm' : ''}`}>
           A Wollongong based company.
@@ -112,7 +112,7 @@ function Landing() {
             data-aos-easing="ease-in"
             data-aos-delay="0"
             data-aos-offset="0"
-            data-aos-duration="600"
+            data-aos-duration="300"
           >
             We serve clients worldwide, providing specialised solutions to
             unique problems.
@@ -127,7 +127,7 @@ function Landing() {
         data-aos-easing="ease-in"
         data-aos-delay="0"
         data-aos-offset="0"
-        data-aos-duration="600"
+        data-aos-duration="300"
       >
         <div className="flex flex-col items-center justify-center text-center">
           <h2 className="uppercase px-12 text-4xl sm:text-5xl tracking-wide font-medium sm:tracking-widest sm:max-w-4xl">
@@ -160,7 +160,7 @@ function Landing() {
               data-aos-easing="ease-in"
               data-aos-delay="0"
               data-aos-offset="0"
-              data-aos-duration="600"
+              data-aos-duration="300"
             >
               <img
                 src={landingWorkWithImage}
@@ -175,7 +175,7 @@ function Landing() {
                 data-aos-easing="ease-in"
                 data-aos-delay="0"
                 data-aos-offset="0"
-                data-aos-duration="600"
+                data-aos-duration="300"
               >
                 Work with a team leading the way in for uav engineering.
               </h2>
@@ -185,7 +185,7 @@ function Landing() {
                 data-aos-easing="ease-in"
                 data-aos-delay="0"
                 data-aos-offset="0"
-                data-aos-duration="600"
+                data-aos-duration="300"
               >
                 Our team have been passionate about drones and UAV&apos;s right
                 through their evolution. Today, they are among the world&apos;s
