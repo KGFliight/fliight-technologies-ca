@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom'
 import { useContext } from 'react'
 import { MobileMenuContext } from './MobileMenuContext'
 import { ModalContext } from './LandingModalContext'
-import playButton from '../assets/images/icons/playbutton.svg'
+
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -36,7 +36,7 @@ function Landing() {
             className="vertical-align mt-24 px-12 sm:pt-12 sm:p-0 sm:ml-16 md:ml-24 lg:ml-36 w-5/6 overflow-visible md:full h-fit text-5xl sm:text-7xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white items-center transition-ease duration-300 z-50"
             data-aos="fade-down-in"
             data-aos-easing="ease-in-back"
-            data-aos-delay="300"
+            data-aos-delay="0"
             data-aos-offset="0"
             data-aos-mirror="true"
             data-aos-duration="900"
@@ -77,7 +77,7 @@ function Landing() {
           className="vertical-align absolute-bottom mb-4 md:mb-14 p-14 sm:p-0 lg:p-0 w-full sm:ml-16 md:ml-24 lg:ml-36 max-sm:mt-[28rem] sm:mt-[36rem] md:mt-[36rem] lg:mt-[40rem] sm:w-[30rem] text-normal font-rajdhani font-light leading-20 tracking-wide  text-ft-white transition-ease duration-300 font-['Inter'] z-40"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
-          data-aos-delay="1200"
+          data-aos-delay="0"
           data-aos-offset="0"
           data-aos-duration="1200"
         >
@@ -110,7 +110,7 @@ function Landing() {
             className="max-w-xs md:max-w-md lg:max-w-3xl min-h-24 text-center text-2xl font-regular leading-loose tracking-wide md:text-4xl md:leading-10 md:font-medium"
             data-aos="fade-zoom-in"
             data-aos-easing="ease-in"
-            data-aos-delay="300"
+            data-aos-delay="0"
             data-aos-offset="0"
             data-aos-duration="600"
           >
@@ -125,7 +125,7 @@ function Landing() {
         className="sm:my-40"
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in"
-        data-aos-delay="300"
+        data-aos-delay="0"
         data-aos-offset="0"
         data-aos-duration="600"
       >
@@ -158,7 +158,7 @@ function Landing() {
               className="image-container flex justify-center mx-6 my-12 md:my-16 md:w-[600px]"
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in"
-              data-aos-delay="300"
+              data-aos-delay="0"
               data-aos-offset="0"
               data-aos-duration="600"
             >
@@ -173,7 +173,7 @@ function Landing() {
                 className="uppercase px-6 my-8 sm:text-5xl tracking-wide leading-10 sm:tracking-widest sm:max-w-4xl text-5xl"
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in"
-                data-aos-delay="300"
+                data-aos-delay="0"
                 data-aos-offset="0"
                 data-aos-duration="600"
               >
@@ -183,7 +183,7 @@ function Landing() {
                 className="leading-normal tracking-wide px-6 my-4 lg:max-w-2xl text-xl font-light font-['Inter']"
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in"
-                data-aos-delay="300"
+                data-aos-delay="0"
                 data-aos-offset="0"
                 data-aos-duration="600"
               >
