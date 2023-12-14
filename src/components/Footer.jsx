@@ -43,18 +43,18 @@ function Footer() {
                 </span>
                 <ul className="text-sm leading-loose tracking-wide md:text-lg font-['Inter'] font-light">
                   <NavLink to="/drones/deltaquad-pro">
-                    <li className="my-4 hover:opacity-50  transition duration-300">
+                    <li className="my-4  hover:underline hover:text-ft-white  transition duration-300">
                       DeltaQuad Pro
                     </li>
                   </NavLink>
                   <NavLink to="/drones/deltaquad-evo">
-                    <li className="my-4 hover:opacity-50 transition duration-300">
+                    <li className="my-4  hover:underline hover:text-ft-white transition duration-300" >
                       DeltaQuad Evo
                     </li>
                   </NavLink>
                 </ul>
               </div>
-              <div className="flex flex-col w-[50%] sm:w-40 ml-[4rem]  leading-loose tracking-wide">
+              {/*<div className="flex flex-col w-[50%] sm:w-40 ml-[4rem]  leading-loose tracking-wide">
                 <span className="uppercase mt-4 sm:my-4 text-sm leading-relaxed font-semibold text-ft-grey md:text-lg opacity-50 ">
                   Software
                 </span>
@@ -70,7 +70,7 @@ function Footer() {
                     </li>
                   </NavLink>
                 </ul>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ function Footer() {
       <div className="flex flex-col md:flex-row md:justify-around md:px-30 lg:px-40 bg-ft-dark-grey w-screen mb-4 py-8 px-6 gap-3 font-['Inter'] font-light">
         <div className="flex items-center gap-4 ml-4">
           <FontAwesomeIcon icon={faPhone} className="self-center w-12" />
-          <span className="text-sm leading-loose tracking-wides hover:opacity-50 transition duration-300t">
+          <span className="text-sm leading-loose tracking-wides  hover:underline hover:text-ft-white transition duration-300 hover:underline">
             <a href="tel:+61429279876">+(61) 429 279 876</a>
           </span>
         </div>
@@ -97,7 +97,7 @@ function Footer() {
         </div>
         <div className="flex items-center gap-4 ml-4">
           <FontAwesomeIcon icon={faEnvelope} className="self-center w-12" />
-          <span className="text-sm leading-loose tracking-widest hover:opacity-50 transition duration-300">
+          <span className="text-sm leading-loose tracking-widest hover:underline hover:text-ft-white transition duration-300">
             <a href="mailto:info@fliight.com.au">info@fliight.com.au</a>
           </span>
         </div>

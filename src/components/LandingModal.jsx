@@ -32,22 +32,24 @@ function LandingModal() {
             onClick={toggleModal}
             className="flex items-center gap-2 hover:opacity-50 transition duration-700 w-fit"
           >
+            <div className={`${isModalOpen ? 'blur-sm' : ''} transition duration-700`}>
             <img
               src={playButton}
               className="h-[68px] w-[68px] xl:h-[103px] xl:w-[103px]"
               alt="Play"
             />
+            </div>
             <div className={`${isModalOpen ? 'blur-sm' : ''} transition duration-700`}>
             WATCH VIDEO
             </div>
           </button>
 
           {modal && (
-            <div className="fixed inset-0 bg-ft-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center max-sm:mt-28 ml-[-4rem]  max-sm:w-screen">
+            <div className="fixed inset-0 bg-ft-black bg-opacity-0 flex justify-center items-center max-sm:mt-28 ml-[-4rem]  max-sm:w-screen">
               <div className="modal bg-transparent p-2 ml-[4rem] sm:p-4 rounded-lg shadow-lg relative md:mx-10   max-sm:w-screen">
                 <button
                   onClick={toggleModal}
-                  className="max-sm:right-2 absolute top-2 right-2 text-ft-red text-2xl bg-ft-white border-ft-red rounded px-2 py-1 hover:bg-ft-red hover:text-ft-grey transition active:bg-ft-white duration-300 z-[500] max-sm:top-2 shadow-lg  "
+                  className="max-sm:right-2 absolute top-2 right-2 text-ft-red text-2xl bg-ft-white border-ft-red rounded px-2 py-1 hover:bg-ft-red hover:text-ft-grey transition active:bg-ft-white duration-300 z-[500] max-sm:top-2 shadow-lg"
                 >
                   <FontAwesomeIcon icon={faTimes} className=""/>
                 </button>

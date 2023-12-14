@@ -1,6 +1,8 @@
 import iconDrone from '../assets/images/icon-drone.png'
 import DeltaQuadPayloadsCarousel from './DeltaQuadEvoPayloadsCarousel'
 import deltaQuadPayloadsCustom from '../assets/images/deltaquad-evo-payload-custom.png'
+import { NavLink } from 'react-router-dom'
+
 
 function DeltaQuadPayloads() {
   return (
@@ -66,9 +68,11 @@ function DeltaQuadPayloads() {
             integrate with the DeltaQuad Evo, Fliight Technologies offer
             complete payload integration services to get you flying fast.
           </div>
-          <button className="bg-ft-dark-grey uppercase rounded-3xl py-2 w-72 h-8 sm:w-36 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-12">
+          <NavLink to="/contact">
+          <button className="bg-ft-dark-grey uppercase rounded-3xl py-2 w-72 h-8 sm:w-36 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-12 hover:bg-black transition duration-300 focus:bg-ft-grey">
             Contact us
           </button>
+          </NavLink>
         </div>
       </div>
     </div>

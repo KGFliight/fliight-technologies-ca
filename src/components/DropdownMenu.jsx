@@ -5,7 +5,7 @@ function DropdownMenu({ title, items, isOpen, setIsOpen }) {
   const isDeltaQuadPath = location.pathname === '/drones/deltaquad-pro' || location.pathname === '/drones/deltaquad-evo';
 
   const headerClasses = {
-    background: isDeltaQuadPath ? 'bg-ft-grey' : 'bg-ft-dark-grey',
+    background: isDeltaQuadPath ? 'bg-ft-grey' : 'bg-[#272B3A]',
     textColor: isDeltaQuadPath ? 'text-ft-black' : 'text-ft-white',
     hoverColor: isDeltaQuadPath ? 'hover:bg-ft-white' : 'hover:bg-ft-grey',
     hoverTextColor: isDeltaQuadPath ? 'hover:text-ft-black' : 'hover:text-ft-black', // Update this as needed
