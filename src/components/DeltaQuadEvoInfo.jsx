@@ -8,9 +8,6 @@ import '../App.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-
-
-
 function DeltaQuadEvoInfo() {
   AOS.init()
   /*const technologyItems = [
@@ -93,10 +90,26 @@ function DeltaQuadEvoInfo() {
   return (
     <div className="m-12 md:m-20">
       <div className="mb-24">
-        <h2 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12">
+        <h2
+          className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12"
+          data-aos="fade-down-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="0"
+          data-aos-offset="0"
+          data-aos-mirror="true"
+          data-aos-duration="600"
+        >
           A new standard is rising
         </h2>
-        <p className="tracking-wide leading-loose my-6 text-lg font-light font-['Inter']">
+        <p
+          className="tracking-wide leading-loose my-6 text-lg font-light font-['Inter']"
+          data-aos="fade-down-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="0"
+          data-aos-offset="0"
+          data-aos-mirror="true"
+          data-aos-duration="600"
+        >
           Equipped with a dual battery, the Evo has been tested to fly for up to
           4.5 hours. This performance sits at the top of the electric drone
           market. Paired with unique radio and LTE VPN connection possibilities
@@ -165,7 +178,15 @@ function DeltaQuadEvoInfo() {
       </div>
               */}
 
-      <div className="mb-20">
+      <div
+        className="mb-20"
+        data-aos="fade-down-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="0"
+        data-aos-offset="0"
+        data-aos-mirror="true"
+        data-aos-duration="600"
+      >
         <h3 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12">
           End-to-end deployment packages
         </h3>
@@ -185,15 +206,26 @@ function DeltaQuadEvoInfo() {
                 className="w-[40px] h-[40px] m-2 md:mr-4 inline-flex"
               />
               <div className="flex-wrap">{item}</div>
-              
             </li>
           ))}
         </ul>
       </div>
       <div className="flex flex-col sm:flex-row justify-center gap-20 my-40">
         <div className="w-80 sm:w-[480px] items-center sm:items-start flex flex-col justify-center">
-          <h3 className="text-5xl text-left uppercase w-auto my-8">Incredible flexibility</h3>
-          <div className="text-lg leading-loose tracking-wide font-light font-['Inter'] pr-6">
+          <h3 className="text-5xl text-left uppercase w-auto my-8" data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600">
+            Incredible flexibility
+          </h3>
+          <div className="text-lg leading-loose tracking-wide font-light font-['Inter'] pr-6" data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600">
             The DeltaQuad Evo is setting a new standard in payload flexibility
             by incorporating two universal payload bays. The bays can be used to
             combine and simultaneously operate multiple payloads. The dual

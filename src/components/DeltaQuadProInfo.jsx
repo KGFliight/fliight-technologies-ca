@@ -14,8 +14,18 @@ function DeltaQuadProInfo() {
   return (
     <div className="m-12 md:m-20">
       <div className="mb-24">
-        <h2 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12">Introduction Heading</h2>
-        <p className="tracking-wide leading-loose my-6 font-light font-['Inter']"> 
+        <h2 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12" data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600">Introduction Heading</h2>
+        <p className="tracking-wide leading-loose my-6 font-light font-['Inter']" data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600"> 
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
           molestiae dignissimos deserunt accusantium amet officia! Nisi
           similique, ea amet hic assumenda, doloribus temporibus ipsa obcaecati

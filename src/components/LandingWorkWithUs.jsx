@@ -170,7 +170,7 @@ function LandingWorkWithUs() {
       </div>
 
       <button
-        className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-12 md:mx-6 hover:bg-[#5b172c] hover:opacity-90  transition duration-300 active:-translate-y-1 active:bg-ft-dark-grey"
+        className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest  m-[4rem]  hover:bg-[#5b172c] hover:opacity-90  transition duration-300 active:-translate-y-1 active:bg-ft-dark-grey"
       >
         <NavLink to="/contact">Work with us</NavLink>
       </button>

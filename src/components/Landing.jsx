@@ -105,7 +105,7 @@ function Landing() {
           </NavLink>
         )}
       </div>
-      <div className="my-80">
+      <div className="my-16">
         <div className="flex flex-col items-center justify-center my-32 sm:mt-56 sm:mb-16">
           <p
             className="max-w-xs md:max-w-md lg:max-w-3xl min-h-24 text-center text-2xl font-regular leading-loose tracking-wide md:text-4xl md:leading-10 md:font-medium"
@@ -134,7 +134,7 @@ function Landing() {
           <h2 className="uppercase px-12 text-4xl sm:text-5xl tracking-wide font-medium sm:tracking-widest sm:max-w-4xl">
             Class leading innovation
           </h2>
-          <p className="text-lg px-16 my-4 sm:max-w-2xl font-normal tracking-wide font-['Inter']">
+          <p className="text-lg px-16 my-4 sm:max-w-2xl font-light tracking-wide font-['Inter']">
             We didn&apos;t say it, they did
           </p>
         </div>
@@ -150,7 +150,7 @@ function Landing() {
       </div>
       <DronesCarousel />
       <div className="h-24"></div>
-      <SoftwareAppsCarousel />
+      {/*<SoftwareAppsCarousel />*/}
 
       <div className="flex flex-col justify-center items-start 2xl:items-center w-screen lg:pl-32">
         <div className="relative mx-8 md:mx-16 lg:mx-0 md:min-h-[300px] md:min-w-[300px] z-50 my-4">

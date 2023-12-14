@@ -5,14 +5,33 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import kit from '../assets/images/review-users/kit.jpeg'
 import '../App.css'
 import LandingIcons from './LandingIcons'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function AboutComponent() {
+  AOS.init()
   return (
     <div className="flex-1 flex flex-col">
-      <h1 className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-widest mt-32 py-20 justify-center flex uppercase ">
+      <h1
+        className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-widest mt-32 py-20 justify-center flex uppercase "
+        data-aos="fade-down-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="0"
+        data-aos-offset="0"
+        data-aos-mirror="true"
+        data-aos-duration="600"
+      >
         About
       </h1>
-      <h2 className="flex flex-col items-center mb-8 md:mb-20 md:my-12 font-['Inter'] font-light text-lg leading-loose tracking-wide">
+      <h2
+        className="flex flex-col items-center mb-8 md:mb-20 md:my-12 font-['Inter'] font-light text-lg leading-loose tracking-wide"
+        data-aos="fade-down-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+        data-aos-mirror="true"
+        data-aos-duration="600"
+      >
         Subheading
       </h2>
       <div className="w-screen 2xl:flex 2xl:justify-center flex">
@@ -23,15 +42,39 @@ function AboutComponent() {
       </div>
       <div className="flex flex-col items-center flex-1 p-6 md:my-12">
         <div className=" md:mx-20 mx-0 p-6">
-          <h3 className="uppercase text-5xl tracking-widest text-left my-8 ">
+          <h3
+            className="uppercase text-5xl tracking-widest text-left my-8 "
+            data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+          >
             Our approach to UAV
           </h3>
-          <p className="my-8 max-w-[960px] font-['Inter'] font-light">
+          <p
+            className="my-8 max-w-[960px] font-['Inter'] font-light"
+            data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
             placeat facere accusantium ad inventore explicabo dicta. Voluptates,
             mollitia modi! Quis in earum perspiciatis
           </p>
-          <div className="flex flex-col sm:flex-row my-12 justify-between lg:max-w-[960px] xl:max-w-[1200px]">
+          <div
+            className="flex flex-col sm:flex-row my-12 justify-between lg:max-w-[960px] xl:max-w-[1200px]"
+            data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+          >
             <div className="">
               <ul className="font-['Inter'] font-light">
                 <li className="my-8 flex  items-start leading-loose tracking-wide">
@@ -84,10 +127,20 @@ function AboutComponent() {
             </div>
           </div>
           <div className="my-24">
-            <h3 className="uppercase text-5xl tracking-widest text-left my-8 ">
+            <h3 className="uppercase text-5xl tracking-widest text-left my-8 " data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600">
               Our Future
             </h3>
-            <p className="max-w-[960px] font-['Inter'] font-light">
+            <p className="max-w-[960px] font-['Inter'] font-light" data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
               ratione enim libero. Vitae asperiores molestiae neque adipisci ut
               corrupti officiis exercitationem, odio, recusandae necessitatibus

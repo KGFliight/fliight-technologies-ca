@@ -5,7 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
 import chevronDoubleRight from '../assets/images/icons/chevron-double-right.svg'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 function DeltaQuadVtol() {
+  AOS.init()
   const options = [
     {
       heading: 'View',
@@ -47,7 +51,12 @@ function DeltaQuadVtol() {
 
   return (
     <div className="m-12 md:mx-20 ">
-      <div className="">
+      <div className="" data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600">
         <h3 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12">
           The complete VTOL Solution
         </h3>
