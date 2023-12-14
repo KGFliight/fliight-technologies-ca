@@ -197,12 +197,13 @@ html {
 
 
 .custom-cursor {
-  width: 2rem;
-  height: 2rem;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 10000;
+  opacity: 0.9;
   mix-blend-mode: normal;
   background: radial-gradient(circle, #ba0c2f 0%, #272B3A 100%);
   filter: blur(16px);

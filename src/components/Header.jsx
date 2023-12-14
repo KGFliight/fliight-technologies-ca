@@ -72,7 +72,7 @@ function Header() {
 
   AOS.init()
 
-  
+
   return (
     <header className={`fixed-top h-16 w-full ${headerClasses.background}`}>
       {/* Desktop Navigation */}
@@ -156,7 +156,7 @@ function Header() {
 
         {/* Request a Demo */}
         <div
-          className={`h-16 w-48 lg:w-[240px] bg-ft-red border-b ${headerClasses.borderColor} flex items-center justify-center hover:opacity-80 transition duration-300`}
+          className={`h-16 w-48 lg:w-[240px] bg-ft-red border-b ${headerClasses.borderColor} flex items-center justify-center hover:bg-[#5b172c] hover:opacity-90  transition duration-300  active:bg-ft-dark-grey text-ft-white`}
         >
           <Link
             to="/request-demo"

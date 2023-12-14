@@ -85,7 +85,7 @@ function Footer() {
       <div className="flex flex-col md:flex-row md:justify-around md:px-30 lg:px-40 bg-ft-dark-grey w-screen mb-4 py-8 px-6 gap-3 font-['Inter'] font-light">
         <div className="flex items-center gap-4 ml-4">
           <FontAwesomeIcon icon={faPhone} className="self-center w-12" />
-          <span className="text-sm leading-loose tracking-wides  hover:underline hover:text-ft-white transition duration-300 hover:underline">
+          <span className="text-sm leading-loose tracking-wides  hover:underline hover:text-ft-white transition duration-300">
             <a href="tel:+61429279876">+(61) 429 279 876</a>
           </span>
         </div>

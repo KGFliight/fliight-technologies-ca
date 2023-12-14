@@ -84,8 +84,8 @@ function DeltaQuadXxxResults() {
                 alt={item.alt}
                 className="bg-ft-grey border-ft-grey rounded min-h-[10rem] h-auto"
               />
-              <p className="uppercase font-medium mt-2">{item.title}</p>
-              <p className="text-base text-ft-grey leading-loose tracking-wide font-thin font-['Inter']">
+              <p className="uppercase font-medium mt-2 text-[2rem]">{item.title}</p>
+              <p className="text-base text-ft-grey leading-loose tracking-wide font-light font-['Inter']">
                 {item.description}
               </p>
             </li>

@@ -10,7 +10,8 @@ import { NavLink } from 'react-router-dom'
 import { useContext } from 'react'
 import { MobileMenuContext } from './MobileMenuContext'
 import { ModalContext } from './LandingModalContext'
-
+import CustomCursor from '../components/CustomCursor'
+import React, { useState, useEffect } from 'react'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -25,8 +26,23 @@ function Landing() {
     setIsModalOpen(!isModalOpen)
   }
 
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 })
+
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      setCursorPosition({ x: event.clientX, y: event.clientY })
+    }
+
+    document.addEventListener('mousemove', handleMouseMove)
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove)
+    }
+  }, [])
+
   return (
     <div className="flex flex-col">
+      <CustomCursor position={cursorPosition} />
       <div
         className="flex flex-col justify-start items-start flex-grow gap-7"
         style={{ height: 'calc(100dvh - 4rem)' }}

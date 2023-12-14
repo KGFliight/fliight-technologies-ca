@@ -25,37 +25,37 @@ function DeltaQuadEvoInfo() {
     {
       id: '1',
       heading: 'Aerospace grade airframe',
-      contents: 'Details about aerospace grade airframe...',
+      contents: 'Details about aerospace grade airframe... Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, culpa!',
     },
     {
       id: '2',
       heading: 'Retractable landing gear',
-      contents: 'Details about retractable landing gear',
+      contents: 'Details about retractable landing gear... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium soluta ab, aperiam dolorum distinctio quasi!',
     },
     {
       id: '3',
       heading: 'Enhanced Endurance',
-      contents: 'Details about enhanced endurance',
+      contents: 'Details about enhanced endurance...  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, nam?',
     },
     {
       id: '4',
       heading: 'Self Maintenance',
-      contents: 'Details about self maintenance',
+      contents: 'Details about self maintenanceLorem ipsum dolor sit amet consectetur, adipisicing elit.',
     },
     {
       id: '5',
       heading: 'Dual payload',
-      contents: 'Details about dual payload',
+      contents: 'Details about dual payloadLorem ipsum dolor sit amet consectetur adipisicing elit. Animi magni quo ratione?',
     },
     {
       id: '6',
       heading: 'Swappable payloads',
-      contents: 'Details about swappable payloads',
+      contents: 'Details about swappable payloads Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, esse!',
     },
     {
       id: '7',
       heading: 'Military standards',
-      contents: 'Details about military standards',
+      contents: 'Details about military standardsLorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, debitis assumenda. Provident blanditiis dolorum error temporibus quos maiores?',
     },
     { id: '8', heading: 'Open design', contents: 'Details about open design' },
     // ... other items
@@ -88,7 +88,7 @@ function DeltaQuadEvoInfo() {
   }
 
   return (
-    <div className="m-12 md:m-20">
+    <div className="m-12 md:m-20 mt-80">
       <div className="mb-24">
         <h2
           className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12"

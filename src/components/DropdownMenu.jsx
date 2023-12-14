@@ -1,8 +1,11 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 
 function DropdownMenu({ title, items, isOpen, setIsOpen }) {
   const isDeltaQuadPath = location.pathname === '/drones/deltaquad-pro' || location.pathname === '/drones/deltaquad-evo';
+
+  
 
   const headerClasses = {
     background: isDeltaQuadPath ? 'bg-ft-grey' : 'bg-[#272B3A]',

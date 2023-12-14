@@ -69,7 +69,7 @@ function ReviewCarousel() {
 
   return (
     <div className="sm:flex sm:justify-center items-center sm:my-0 ">
-      <div className="container px-4 md:px-8 lg:px-16 sm:flex md:flex-row items-center justify-center sm:h-[480px] mb-40">
+      <div className="container px-4 md:px-8 lg:px-16 sm:flex md:flex-row items-center justify-center sm:h-[480px]">
         <div className="flex flex-col justify-center items-center w-fit">
           <div
             className={`${fadeClass} py-4 relative mx-8 md:mx-0 md:min-h-[300px] md:min-w-[300px] min-h-[300px] z-50 my-8 md:my-16`}

@@ -168,7 +168,7 @@ function AboutComponent() {
                   Kihan Garcia
                 </p>
                 <p className="my-2 text-xl leading-loose tracking-wide">CEO</p>
-                <p className="my-2 mb-4 leading-loose tracking-wide">
+                <p className="my-4 leading-loose tracking-wide">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
                   libero rerum est placeat obcaecati atque, dolorem architecto
                   molestiae suscipit, voluptatibus sapiente minima facere velit
@@ -201,7 +201,7 @@ function AboutComponent() {
                 <p className="my-2 text-xl leading-loose tracking-wide">
                   Research and Development Engineer
                 </p>
-                <p className="my-2 mb-4 leading-loose tracking-wide">
+                <p className="my-4 leading-loose tracking-wide">
                   Specialises in heavy lift RPAS, VTOL UAV&apos;s, custom
                   payloads, and remote sensing. With a six-year journey that
                   spans from project inception to mass production, Johnathan has

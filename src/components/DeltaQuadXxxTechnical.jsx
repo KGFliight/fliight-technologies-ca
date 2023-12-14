@@ -7,10 +7,10 @@ function DeltaQuadXxxTechnical() {
       <img
         src={evoDrawing}
         alt="Evo Drawing"
-        className="py-16 md:px-32 md:pt-16 flex justify-center w-full"
+        className="pt-16 md:px-32 md:pt-16 flex justify-center w-full"
       />
-      <div className="m-4 md:m-8 leading-loose tracking-wide p-8 md:p-20">
-        <h3 className="uppercase text-ft-black text-3xl md:text-5xl my-8">
+      <div className="m-4 md:m-8 leading-loose tracking-wide px-8 md:px-20">
+        <h3 className="uppercase text-ft-black text-3xl md:text-5xl my-4">
           Technical specs
         </h3>
         <div className="flex flex-col md:flex-row my-2">
