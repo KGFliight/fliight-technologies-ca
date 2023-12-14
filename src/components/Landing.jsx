@@ -33,7 +33,7 @@ function Landing() {
       >
         <div className="">
           <div
-            className="vertical-align mt-24 px-12 sm:pt-12 sm:p-0 sm:ml-16 md:ml-24 lg:ml-36 w-5/6 overflow-visible md:full h-fit text-5xl sm:text-7xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white items-center transition-ease duration-300 z-50"
+            className="vertical-align mt-24 px-12 sm:pt-12 sm:p-0 sm:ml-16 md:ml-24 lg:ml-36 w-5/6 overflow-visible h-fit text-5xl sm:text-7xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white items-center transition-ease duration-300 z-50"
             data-aos="fade-down-in"
             data-aos-easing="ease-in-back"
             data-aos-delay="0"
@@ -88,6 +88,7 @@ function Landing() {
           clients.
           </div>
         </div>
+        
         <div className="bg-deltaquad min-h-[50%] max-h-screen xl:h-screen max-w-full min-w-full bg-cover flex justify-start items-start mt-44 md:mt-auto ml-auto transition-ease duration-100"></div>
         {!isMobileMenuOpen && (
           <NavLink to="/request-demo">

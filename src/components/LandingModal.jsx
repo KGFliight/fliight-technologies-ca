@@ -30,14 +30,16 @@ function LandingModal() {
         <div>
           <button
             onClick={toggleModal}
-            className="flex items-center gap-2 hover:opacity-50 transition duration-300 w-fit"
+            className="flex items-center gap-2 hover:opacity-50 transition duration-700 w-fit"
           >
             <img
               src={playButton}
               className="h-[68px] w-[68px] xl:h-[103px] xl:w-[103px]"
               alt="Play"
             />
+            <div className={`${isModalOpen ? 'blur-sm' : ''} transition duration-700`}>
             WATCH VIDEO
+            </div>
           </button>
 
           {modal && (
