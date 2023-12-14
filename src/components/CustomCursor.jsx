@@ -7,7 +7,7 @@ const CustomCursor = ({ position }) => {
     top: `${position.y}px`,
   };
 
-  return <div className="custom-cursor" style={style}></div>;
+  return <div className="custom-cursor max-lg:hidden" style={style}></div>;
 };
 
 export default CustomCursor;
