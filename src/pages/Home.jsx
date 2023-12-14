@@ -2,6 +2,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer";
 import Landing from "../components/Landing";
 
+
 function Home() {
   return (
     <div className="flex flex-col min-h-[100dvh]">

@@ -9,6 +9,7 @@ import SoftwareAppsCarousel from './SoftwareAppsCarousel'
 import { NavLink } from 'react-router-dom'
 import { useContext } from 'react'
 import { MobileMenuContext } from './MobileMenuContext'
+import { ModalContext } from './LandingModalContext'
 import playButton from '../assets/images/icons/playbutton.svg'
 
 import AOS from 'aos'
@@ -16,7 +17,14 @@ import 'aos/dist/aos.css'
 
 function Landing() {
   AOS.init()
+  const { isModalOpen, setIsModalOpen } = useContext(ModalContext)
   const { isMobileMenuOpen } = useContext(MobileMenuContext)
+
+  const toggleModal = () => {
+    setModal(!modal)
+    setIsModalOpen(!isModalOpen)
+  }
+
   return (
     <div className="flex flex-col">
       <div
@@ -33,11 +41,13 @@ function Landing() {
             data-aos-mirror="true"
             data-aos-duration="900"
           >
+            <div className={`${isModalOpen ? 'blur-sm' : ''}`}>
             UAV SOLUTIONS
             <br />
             CUSTOMISED
             <br />
             TO WORK FOR YOU
+            </div>
             {/*<div
               className="md:ml-4 h-60 text-sm md:text-lg lg:text-2xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white transition-ease duration-300 mt-4"
               data-aos="fade-zoom-in"
@@ -71,10 +81,12 @@ function Landing() {
           data-aos-offset="0"
           data-aos-duration="1200"
         >
+          <div className={`${isModalOpen ? 'blur-sm' : ''}`}>
           A Wollongong based company.
           <br />
           Providing integrated drones solutions to enterprise and government
           clients.
+          </div>
         </div>
         <div className="bg-deltaquad min-h-[50%] max-h-screen xl:h-screen max-w-full min-w-full bg-cover flex justify-start items-start mt-44 md:mt-auto ml-auto transition-ease duration-100"></div>
         {!isMobileMenuOpen && (
