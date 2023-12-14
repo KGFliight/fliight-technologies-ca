@@ -41,7 +41,7 @@ function Landing() {
             data-aos-mirror="true"
             data-aos-duration="600"
           >
-            <div className={`${isModalOpen ? 'blur-sm' : ''}`}>
+            <div className={`${isModalOpen ? 'blur-sm' : ''} transition duration-700`}>
             UAV SOLUTIONS
             <br />
             CUSTOMISED
@@ -81,7 +81,7 @@ function Landing() {
           data-aos-offset="0"
           data-aos-duration="900"
         >
-          <div className={`${isModalOpen ? 'blur-sm' : ''}`}>
+          <div className={`${isModalOpen ? 'blur-sm' : ''} transition duration-700`}>
           A Wollongong based company.
           <br />
           Providing integrated drones solutions to enterprise and government
