@@ -74,7 +74,7 @@ function Landing() {
         </div>
         <br />
         <div
-          className="vertical-align absolute-bottom mb-4 md:mb-14 p-14 sm:p-0 lg:p-0 w-full sm:ml-16 md:ml-24 lg:ml-36 max-sm:mt-[28rem] sm:mt-[36rem] md:mt-[36rem] lg:mt-[40rem] sm:w-[30rem] text-normal font-rajdhani font-light leading-20 tracking-wide  text-ft-white transition-ease duration-300 font-['Inter'] z-40"
+          className="vertical-align absolute-bottom mb-4 md:mb-14 p-12 sm:p-0 lg:p-0 w-full sm:ml-16 md:ml-24 lg:ml-36 max-sm:mt-[28rem] sm:mt-[36rem] md:mt-[36rem] lg:mt-[40rem] sm:w-[30rem] text-normal font-rajdhani font-light leading-20 tracking-wide  text-ft-white transition-ease duration-300 font-['Inter'] z-40"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-delay="0"
