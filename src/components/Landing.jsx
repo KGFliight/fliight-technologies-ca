@@ -1,8 +1,8 @@
-
 import LandingIcons from './LandingIcons'
 import LandingWorkWithUs from './LandingWorkWithUs'
 import ReviewCarousel from './ReviewCarousel'
 import DronesCarousel from './DronesCarousel'
+import LandingModal from './LandingModal'
 import landingWorkshopImage from '../assets/images/landing-workshop-image.jpeg'
 import landingWorkWithImage from '../assets/images/work-workshop.jpeg'
 import SoftwareAppsCarousel from './SoftwareAppsCarousel'
@@ -13,8 +13,6 @@ import playButton from '../assets/images/icons/playbutton.svg'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-
-
 
 function Landing() {
   AOS.init()
@@ -27,7 +25,7 @@ function Landing() {
       >
         <div className="">
           <div
-            className="vertical-align mt-24 px-12 sm:pt-12 sm:p-0 sm:ml-16 md:ml-24 lg:ml-36 w-5/6 overflow-visible md:full h-fit text-5xl sm:text-7xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white items-center transition-ease duration-300"
+            className="vertical-align mt-24 px-12 sm:pt-12 sm:p-0 sm:ml-16 md:ml-24 lg:ml-36 w-5/6 overflow-visible md:full h-fit text-5xl sm:text-7xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white items-center transition-ease duration-300 z-50"
             data-aos="fade-down-in"
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
@@ -36,11 +34,11 @@ function Landing() {
             data-aos-duration="900"
           >
             UAV SOLUTIONS
-            <br/>
+            <br />
             CUSTOMISED
-            <br/>
+            <br />
             TO WORK FOR YOU
-            <div
+            {/*<div
               className="md:ml-4 h-60 text-sm md:text-lg lg:text-2xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white transition-ease duration-300 mt-4"
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
@@ -61,12 +59,12 @@ function Landing() {
                   WATCH VIDEO
                 </div>
               </a>
-            </div>
+  </div>*/} <LandingModal/>
           </div>
         </div>
         <br />
         <div
-          className="vertical-align absolute-bottom mb-4 md:mb-14 p-14 sm:p-0 lg:p-0 w-full sm:ml-16 md:ml-24 lg:ml-36 max-sm:mt-[28rem] sm:mt-[36rem] md:mt-[36rem] lg:mt-[40rem] sm:w-[30rem] text-normal font-rajdhani font-light leading-20 tracking-wide  text-ft-white transition-ease duration-300 font-['Inter']"
+          className="vertical-align absolute-bottom mb-4 md:mb-14 p-14 sm:p-0 lg:p-0 w-full sm:ml-16 md:ml-24 lg:ml-36 max-sm:mt-[28rem] sm:mt-[36rem] md:mt-[36rem] lg:mt-[40rem] sm:w-[30rem] text-normal font-rajdhani font-light leading-20 tracking-wide  text-ft-white transition-ease duration-300 font-['Inter'] z-40"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-delay="1200"
@@ -182,10 +180,7 @@ function Landing() {
                 foremost experts in UAV engineering and automation
               </p>
               <div className="max-md:flex max-md:justify-center">
-                <button
-                  className="bg-ft-dark-grey uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-8 md:mx-6 hover:opacity-90 hover:bg-black duration-300"
-              
-                >
+                <button className="bg-ft-dark-grey uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-8 md:mx-6 hover:opacity-90 hover:bg-black duration-300">
                   <NavLink to="/about">About us</NavLink>
                 </button>
               </div>

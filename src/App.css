@@ -180,3 +180,17 @@ html {
 .button-transition {
   transition: background-color 300ms ease;
 }
+
+.modal {
+  max-width: 800px;
+  width: 90%; /* Responsive width */
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal.open {
+  transform: scale(1);
+}
+
+.modal.closed {
+  transform: scale(0);
+}
