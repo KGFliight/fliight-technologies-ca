@@ -8,7 +8,7 @@ import 'aos/dist/aos.css'
 
 function LandingWorkWithUs() {
   AOS.init()
-  
+
   return (
     <div className="flex flex-col items-center justify-center my-32 mt-40 ">
       <div className="max-w-xl sm:max-w-full text-center flex flex-col justify-center items-center p-8">
@@ -172,7 +172,7 @@ function LandingWorkWithUs() {
       <button
         className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-12 md:mx-6 hover:bg-[#5b172c] hover:opacity-90  transition duration-300 active:-translate-y-1 active:bg-ft-dark-grey"
       >
-        <NavLink to="/request-demo">Work with us</NavLink>
+        <NavLink to="/contact">Work with us</NavLink>
       </button>
     </div>
   )

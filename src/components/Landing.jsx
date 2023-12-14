@@ -27,7 +27,7 @@ function Landing() {
       >
         <div className="">
           <div
-            className="vertical-align mt-24 px-12 sm:pt-12 sm:p-0 sm:ml-16 md:ml-24 lg:ml-36 w-5/6 overflow-visible lg:w-1/3 h-fit text-5xl sm:text-7xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white items-center transition-ease duration-300"
+            className="vertical-align mt-24 px-12 sm:pt-12 sm:p-0 sm:ml-16 md:ml-24 lg:ml-36 w-5/6 overflow-visible md:full h-fit text-5xl sm:text-7xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white items-center transition-ease duration-300"
             data-aos="fade-down-in"
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
@@ -35,7 +35,11 @@ function Landing() {
             data-aos-mirror="true"
             data-aos-duration="900"
           >
-            UAV SOLUTIONS CUSTOMISED TO WORK FOR YOU
+            UAV SOLUTIONS
+            <br/>
+            CUSTOMISED
+            <br/>
+            TO WORK FOR YOU
             <div
               className="md:ml-4 h-60 text-sm md:text-lg lg:text-2xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white transition-ease duration-300 mt-4"
               data-aos="fade-zoom-in"
@@ -62,7 +66,7 @@ function Landing() {
         </div>
         <br />
         <div
-          className="vertical-align absolute-bottom mb-4 md:mb-24 p-14 sm:p-0 lg:p-0 w-full sm:ml-16 lg:ml-36 max-sm:mt-[28rem] sm:mt-[36rem] md:mt-[36rem] lg:mt-[40rem] sm:w-[30rem] text-normal font-rajdhani font-light leading-20 tracking-wide  text-ft-white transition-ease duration-300 font-['Inter']"
+          className="vertical-align absolute-bottom mb-4 md:mb-14 p-14 sm:p-0 lg:p-0 w-full sm:ml-16 md:ml-24 lg:ml-36 max-sm:mt-[28rem] sm:mt-[36rem] md:mt-[36rem] lg:mt-[40rem] sm:w-[30rem] text-normal font-rajdhani font-light leading-20 tracking-wide  text-ft-white transition-ease duration-300 font-['Inter']"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-delay="1200"

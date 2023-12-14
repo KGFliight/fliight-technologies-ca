@@ -4,7 +4,7 @@ body {
   line-height: 1.5;
   /*to fix ios mobile dvh issue*/
   min-height: 100vh;
-  min-height: fill-available;
+  min-height: stretch;
   min-height: -webkit-fill-available;
   background: #1c1f2a;
 }
@@ -32,7 +32,7 @@ div:focus {
 
   /*to fix ios mobile dvh issue*/
 html {
-  height: fill-available;
+  height: stretch;
   height: -webkit-fill-available;
 }
 
