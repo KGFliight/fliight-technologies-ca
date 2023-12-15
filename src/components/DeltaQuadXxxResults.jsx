@@ -57,15 +57,15 @@ function DeltaQuadXxxResults() {
           Results worth sharing
         </h3>
         <div className="max-md:hidden flex justify-end ">
-        <div className="mb-auto text-right text-3xl sm:px-4 gap-4 mr-4 my-3 sm:m-0 sm:mr-20">
+        <div className="sm:w-full text-right text-3xl sm:p-4 flex gap-4 justify-end mr-4 my-3 sm:mx-1">
           <button
-            className="border border-ft-dark-grey px-3 pt-2 pb-1 hover:bg-ft-red hover:opacity-90  transition duration-300 active:-translate-y-1 active:bg-ft-dark-grey"
+            className="border border-ft-dark-grey px-3 pt-2 pb-1 hover:bg-ft-red hover:border-ft-dark-grey  transition duration-300 rounded active:-translate-y-1 active:bg-ft-dark-grey"
             onClick={slideToTheLeft}
           >
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>
           <button
-            className="border border-ft-dark-grey px-3 pt-2 pb-1 hover:bg-ft-red hover:opacity-90  transition duration-300 active:-translate-y-1 active:bg-ft-dark-grey"
+            className="border border-ft-dark-grey px-3 pt-2 pb-1 hover:bg-ft-red hover:border-ft-dark-grey  transition duration-300 rounded active:-translate-y-1 active:bg-ft-dark-grey"
             onClick={slideToTheRight}
           >
             <FontAwesomeIcon icon={faChevronRight} />
