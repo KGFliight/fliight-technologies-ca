@@ -127,20 +127,26 @@ function AboutComponent() {
             </div>
           </div>
           <div className="my-24">
-            <h3 className="uppercase text-5xl tracking-widest text-left my-8 " data-aos="fade-down-in"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="0"
-            data-aos-offset="0"
-            data-aos-mirror="true"
-            data-aos-duration="600">
+            <h3
+              className="uppercase text-5xl tracking-widest text-left my-8 "
+              data-aos="fade-down-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="0"
+              data-aos-offset="0"
+              data-aos-mirror="true"
+              data-aos-duration="600"
+            >
               Our Future
             </h3>
-            <p className="max-w-[960px] font-['Inter'] font-light" data-aos="fade-down-in"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="0"
-            data-aos-offset="0"
-            data-aos-mirror="true"
-            data-aos-duration="600">
+            <p
+              className="max-w-[960px] font-['Inter'] font-light"
+              data-aos="fade-down-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="0"
+              data-aos-offset="0"
+              data-aos-mirror="true"
+              data-aos-duration="600"
+            >
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
               ratione enim libero. Vitae asperiores molestiae neque adipisci ut
               corrupti officiis exercitationem, odio, recusandae necessitatibus
@@ -157,10 +163,10 @@ function AboutComponent() {
           <h3 className="uppercase text-5xl tracking-widest text-left my-8 ">
             Our people who make it happen
           </h3>
-          <div className="flex flex-col sm:items-center lg:items-start lg:flex-row lg:justify-between max-w-[900px] my-20 font-['Inter'] font-light">
-            <div className="max-w-[368px] mt-0">
-              <div className="image-container z-50">
-                <img src={kit} className="w-80 h-96" />
+          <div className="flex flex-col sm:items-center lg:items-start lg:flex-row lg:justify-between my-20 font-['Inter'] font-light ">
+            <div className="max-w-[368px] lg:min-w-[xl] lg:max-w-2xl pr-8 mt-0 flex-1">
+              <div className="aspect-w-9 aspect-h-16 image-container z-50">
+                <img src={kit} className="w-full h-auto" />
               </div>
 
               <div className="my-8">
@@ -190,9 +196,9 @@ function AboutComponent() {
                 </span>
               </div>
             </div>
-            <div className="max-w-[368px] mt-24">
-              <div className="image-container z-50">
-                <img src={kit} className="w-80 h-96 rounded" />
+            <div className="max-w-[368px] lg:min-w-[xl] lg:max-w-2xl mt-24 pr-8 flex-1">
+              <div className="aspect-w-9 aspect-h-16 image-container z-50">
+                <img src={kit} className="w-full h-auto rounded" />
               </div>
               <div className="my-8">
                 <p className="my-2 text-3xl leading-loose tracking-wide">
