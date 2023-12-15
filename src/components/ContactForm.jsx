@@ -1,19 +1,30 @@
 import emailjs from 'emailjs-com'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function ContactForm() {
+  AOS.init()
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    emailjs.sendForm('service_s5zd9yh', 'template_vq0um9d', e.target, 'L6wCoQNjMIaX3KMFK')
-      .then((result) => {
-          console.log(result.text);
-          alert('Message sent successfully');
-      }, (error) => {
-          console.log(error.text);
-          alert('Failed to send message. Please try again later.');
-      });
-  };
-
+    emailjs
+      .sendForm(
+        'service_s5zd9yh',
+        'template_vq0um9d',
+        e.target,
+        'L6wCoQNjMIaX3KMFK'
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+          alert('Message sent successfully')
+        },
+        (error) => {
+          console.log(error.text)
+          alert('Failed to send message. Please try again later.')
+        }
+      )
+  }
 
   return (
     <div className="my-12 font-['Inter'] font-light">
@@ -53,15 +64,17 @@ function ContactForm() {
             className="bg-ft-dark-grey p-2 my-2 rounded focus:border-green-500 placeholder-ft-grey"
             placeholder="Select"
           >
-            <option value="" disabled>Select</option>
-            <option value="general enquiry" >General Enquiry</option>
-            <option value="technical support" >Technical Support</option>
-            <option value="feedback" >Feedback</option>
-            <option value="request a demo" >Request a demo</option>
+            <option value="" disabled>
+              Select
+            </option>
+            <option value="general enquiry">General Enquiry</option>
+            <option value="technical support">Technical Support</option>
+            <option value="feedback">Feedback</option>
+            <option value="request a demo">Request a demo</option>
           </select>
         </label>
         <label className="flex flex-col">
-          How can we help?* 
+          How can we help?*
           <textarea
             name="message"
             className="bg-ft-dark-grey placeholder-ft-grey rounded h-40 p-2 my-2 placeholder-top"
@@ -69,13 +82,21 @@ function ContactForm() {
           ></textarea>
         </label>
         <div className="w-full flex justify-center items-center my-4">
-        <button className="cursor-pointer bg-ft-red  rounded-3xl w-72 h-8 sm:w-44 min-h-[2.75rem]  hover:opacity-90 hover:bg-[#5b172c] transition duration-300 active:bg-ft-dark-grey">
-          <input
-            type="submit"
-            value="Send"
-            className="uppercase text-base font-semibold leading-tight tracking-widest"
-          />
-        </button>
+          <button
+            className="cursor-pointer bg-ft-red  rounded-3xl w-72 h-8 sm:w-44 min-h-[2.75rem]  hover:opacity-90 hover:bg-[#5b172c] transition duration-300 active:bg-ft-dark-grey"
+            data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+          >
+            <input
+              type="submit"
+              value="Send"
+              className="uppercase text-base font-semibold leading-tight tracking-widest"
+            />
+          </button>
         </div>
       </form>
     </div>

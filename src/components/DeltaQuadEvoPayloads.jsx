@@ -15,14 +15,14 @@ function DeltaQuadPayloads() {
       </p>
       <div className="flex flex-col md:flex-row md:gap-4">
         <div className="bg-ft-dark-grey p-4 my-2 mr-4 md:w-[44%] lg:w-[48%] rounded flex">
-          <div className="pr-8 flex items-center max-sm:hidden">
+          <div className="min-w-[5rem] flex items-center max-sm:hidden m-2">
             <img
               src={iconDrone}
               alt="drone icon"
-              className="w-[40px] h-[40px] m-4"
+              className="w-full h-auto min-h-[4rem] max-h-20 m-0"
             />
           </div>
-          <div className="m-2 leading-loose tracking-wide font-light font-['Inter']">
+          <div className="m-2 leading-loose tracking-wide font-light font-['Inter'] pl-1">
             <strong>Single payloads</strong> can be flown individually, paired
             with another single sensor, or combined with an additional battery
             for extended endurance.
@@ -30,11 +30,11 @@ function DeltaQuadPayloads() {
         </div>
 
         <div className="bg-ft-dark-grey p-4 my-2 mr-4 md:w-[44%] lg:w-[48%] rounded flex">
-          <div className="pr-8 flex items-center max-sm:hidden">
+          <div className="min-w-[5rem] flex items-center max-sm:hidden m-2">
             <img
               src={iconDrone}
               alt="drone icon"
-              className="w-[40px] h-[40px] m-4 "
+              className="w-full h-auto min-h-[4rem] max-h-20 m-0"
             />
           </div>
           <div className="m-2 leading-loose tracking-wide font-light font-['Inter']">

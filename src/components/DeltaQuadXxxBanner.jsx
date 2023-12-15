@@ -11,7 +11,7 @@ function DeltaQuadProBanner({ title, imageSrc, subheading }) {
           className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-widest mt-24 py-20 justify-center flex uppercase  text-ft-black text-center"
           data-aos="fade-down-in"
           data-aos-easing="ease-in-back"
-          data-aos-delay="900"
+          data-aos-delay="300"
           data-aos-offset="0"
           data-aos-mirror="true"
           data-aos-duration="600"

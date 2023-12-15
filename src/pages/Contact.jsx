@@ -1,13 +1,25 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import ContactForm from '../components/ContactForm'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Contact() {
+  AOS.init()
+
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <Header />
       <div className="px-12 py-6 flex-1 flex items-center justify-center">
-        <div className="flex flex-col max-w-full">
+        <div
+          className="flex flex-col max-w-full"
+          data-aos="fade-down-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="0"
+          data-aos-offset="0"
+          data-aos-mirror="true"
+          data-aos-duration="300"
+        >
           <h1 className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-wide md:tracking-widest mt-24 py-20 flex uppercase h-20 my-12 md:justify-center text-left md:text-center">
             LET&apos;S TALK
           </h1>
@@ -16,7 +28,7 @@ function Contact() {
             needs, no strings attached. Let&apos;s navigate solving your problem
             together.
           </p>
-          <ContactForm/>
+          <ContactForm />
         </div>
       </div>
       <Footer />

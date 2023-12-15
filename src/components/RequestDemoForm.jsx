@@ -1,18 +1,31 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import emailjs from 'emailjs-com'
 
 function RequestDemoForm() {
-  const sendEmail = (e) => {
-    e.preventDefault();
+  AOS.init()
 
-    emailjs.sendForm('service_s5zd9yh', 'template_brdrre2', e.target, 'L6wCoQNjMIaX3KMFK')
-      .then((result) => {
-          console.log(result.text);
-          alert('Message sent successfully');
-      }, (error) => {
-          console.log(error.text);
-          alert('Failed to send message. Please try again later.');
-      });
-  };
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_s5zd9yh',
+        'template_brdrre2',
+        e.target,
+        'L6wCoQNjMIaX3KMFK'
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+          alert('Message sent successfully')
+        },
+        (error) => {
+          console.log(error.text)
+          alert('Failed to send message. Please try again later.')
+        }
+      )
+  }
   return (
     <div className="my-12 font-['Inter'] font-light">
       <form className="flex flex-col gap-4" onSubmit={sendEmail}>
@@ -62,7 +75,15 @@ function RequestDemoForm() {
           ></textarea>
         </label>
         <div className="w-full flex justify-center items-center my-4">
-          <button className="cursor-pointer bg-ft-red  rounded-3xl w-72 h-8 sm:w-44 min-h-[2.75rem]  hover:opacity-90 hover:bg-[#5b172c] transition duration-300 active:bg-ft-dark-grey">
+          <button
+            className="cursor-pointer bg-ft-red  rounded-3xl w-72 h-8 sm:w-44 min-h-[2.75rem]  hover:opacity-90 hover:bg-[#5b172c] transition duration-300 active:bg-ft-dark-grey"
+            data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+          >
             <input
               type="submit"
               value="Send"
