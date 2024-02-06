@@ -10,6 +10,8 @@ import 'aos/dist/aos.css'
 
 function AboutComponent() {
   AOS.init()
+
+  
   return (
     <div className="flex-1 flex flex-col">
       <h1

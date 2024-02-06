@@ -206,5 +206,12 @@ html {
   mix-blend-mode: normal;
   background: radial-gradient(circle, #ba0c2f 0%, #272B3A 100%);
   filter: blur(16px);
-  transform: translate(-50%, -50%); /* Centers the effect on the cursor */
+  transform: translate(-50%, -50%);
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out, filter 0.8s ease-in-out; /* Adjusted for smoother transition */
+}
+
+.custom-cursor-hover {
+  filter: blur(8px);
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0.2; /* Adjusted opacity */
 }
