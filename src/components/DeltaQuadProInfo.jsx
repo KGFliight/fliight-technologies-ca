@@ -1,4 +1,4 @@
-import iconDrone from '../assets/images/icon-drone.png'
+import iconDrone from '../assets/images/icons/icon-drone.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 

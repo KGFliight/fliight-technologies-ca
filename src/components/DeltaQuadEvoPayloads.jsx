@@ -1,4 +1,4 @@
-import iconDrone from '../assets/images/icon-drone.png'
+import iconDrone from '../assets/images/icons/icon-drone.png'
 import DeltaQuadPayloadsCarousel from './DeltaQuadEvoPayloadsCarousel'
 import deltaQuadPayloadsCustom from '../assets/images/deltaquad-evo-payload-custom.png'
 import { NavLink } from 'react-router-dom'

@@ -4,14 +4,13 @@ import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import kit from '../assets/images/review-users/kit.jpeg'
 import '../App.css'
-import LandingIcons from './LandingIcons'
+import LandingIcons from './LandingLogos'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 function AboutComponent() {
   AOS.init()
 
-  
   return (
     <div className="flex-1 flex flex-col">
       <h1
@@ -234,13 +233,12 @@ function AboutComponent() {
               </div>
             </div>
           </div>
-          <div className="mt-40 my-12">
-            <p className="text-4xl  leading-10 tracking-wide  text-center justify-center max-w-[48rem] my-20 lg:mx-40">
-              We serve clients worldwide, providing specialised solutions to
-              unique problems
+          <div className="mt-40 my-12 max-w-screen">
+            <p className="text-4xl leading-10 tracking-wide text-center justify-center my-20 lg:mx-60">
+              We serve clients worldwide, providing specialised solutions to unique problems
             </p>
             <LandingIcons />
-            <p className="text-4xl  leading-10 tracking-wide  text-center justify-center max-w-[48rem] md:mx-40 mt-40 my-20">
+            <p className="text-4xl leading-10 tracking-wide  text-center justify-center max-w-screen md:mx-40 my-20">
               Partners
             </p>
             <LandingIcons />

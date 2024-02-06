@@ -1,4 +1,4 @@
-import LandingIcons from './LandingIcons'
+import LandingIcons from './LandingLogos'
 import LandingWorkWithUs from './LandingWorkWithUs'
 import ReviewCarousel from './ReviewCarousel'
 import DronesCarousel from './DronesCarousel'
@@ -57,12 +57,16 @@ function Landing() {
             data-aos-mirror="true"
             data-aos-duration="600"
           >
-            <div className={`${isModalOpen ? 'blur-sm' : ''} transition duration-700`}>
-            UAV SOLUTIONS
-            <br />
-            CUSTOMISED
-            <br />
-            TO WORK FOR YOU
+            <div
+              className={`${
+                isModalOpen ? 'blur-sm' : ''
+              } transition duration-700`}
+            >
+              UAV SOLUTIONS
+              <br />
+              CUSTOMISED
+              <br />
+              TO WORK FOR YOU
             </div>
             {/*<div
               className="md:ml-4 h-60 text-sm md:text-lg lg:text-2xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white transition-ease duration-300 mt-4"
@@ -85,7 +89,8 @@ function Landing() {
                   WATCH VIDEO
                 </div>
               </a>
-  </div>*/} <LandingModal/>
+  </div>*/}{' '}
+            <LandingModal />
           </div>
         </div>
         <br />
@@ -97,14 +102,18 @@ function Landing() {
           data-aos-offset="0"
           data-aos-duration="900"
         >
-          <div className={`${isModalOpen ? 'blur-sm' : ''} transition duration-700`}>
-          A Wollongong based company.
-          <br />
-          Providing integrated drones solutions to enterprise and government
-          clients.
+          <div
+            className={`${
+              isModalOpen ? 'blur-sm' : ''
+            } transition duration-700`}
+          >
+            A Wollongong based company.
+            <br />
+            Providing integrated drones solutions to enterprise and government
+            clients.
           </div>
         </div>
-        
+
         <div className="bg-deltaquad min-h-[50%] max-h-screen xl:min-h-screen max-w-full min-w-full bg-cover flex justify-start items-start mt-44 md:mt-[-3rem] ml-auto transition-ease duration-100"></div>
         {!isMobileMenuOpen && (
           <NavLink to="/request-demo">

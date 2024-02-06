@@ -1,5 +1,4 @@
 import '../App.css'
-import iconDrone from '../assets/images/icons/icon-drone.png'
 import iconDroneHand from '../assets/images/icons/icon-drone-hand.png'
 import iconCog from '../assets/images/icons/icon-cog.png'
 import iconPresentation from '../assets/images/icons/icon-presentation.png'
@@ -14,7 +13,7 @@ function LandingWorkWithUs() {
   AOS.init()
 
   return (
-    <div className="flex flex-col items-center justify-center my-32 mt-40 ">
+    <div className="flex flex-col items-center justify-center my-32 mt-28">
       <div className="max-w-xl sm:max-w-full text-center flex flex-col justify-center items-center p-8">
         <h2
           className="uppercase font-medium my-16 md:my-8 px-14 text-4xl sm:text-5xl tracking-wide leading-10 sm:tracking-widest sm:max-w-4xl"
