@@ -37,9 +37,8 @@ html {
 }
 
 .bg-deltaquad {
-  background-image: url('./assets/images/landing-drone.jpeg');
+  background-image: url('./assets/images/landing-drone-1.jpeg');
   background-position: right center;
-  mix-blend-mode: multiply;
   z-index: 0;
 }
 

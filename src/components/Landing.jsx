@@ -105,7 +105,7 @@ function Landing() {
           </div>
         </div>
         
-        <div className="bg-deltaquad min-h-[50%] max-h-screen xl:h-screen max-w-full min-w-full bg-cover flex justify-start items-start mt-44 md:mt-auto ml-auto transition-ease duration-100"></div>
+        <div className="bg-deltaquad min-h-[50%] max-h-screen xl:min-h-screen max-w-full min-w-full bg-cover flex justify-start items-start mt-44 md:mt-[-3rem] ml-auto transition-ease duration-100"></div>
         {!isMobileMenuOpen && (
           <NavLink to="/request-demo">
             <button
