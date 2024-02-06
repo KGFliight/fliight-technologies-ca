@@ -1,5 +1,9 @@
 import '../App.css'
-import iconDrone from '../assets/images/icon-drone.png'
+import iconDrone from '../assets/images/icons/icon-drone.png'
+import iconDroneHand from '../assets/images/icons/icon-drone-hand.png'
+import iconCog from '../assets/images/icons/icon-cog.png'
+import iconPresentation from '../assets/images/icons/icon-presentation.png'
+import iconFlowDiagram from '../assets/images/icons/icon-flow-diagram.png'
 import { NavLink } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -61,7 +65,7 @@ function LandingWorkWithUs() {
           <span>
             {' '}
             <img
-              src={iconDrone}
+              src={iconDroneHand}
               alt="drone icon"
               className="w-[72px] h-[72px] my-4"
             />
@@ -90,7 +94,7 @@ function LandingWorkWithUs() {
           <span>
             {' '}
             <img
-              src={iconDrone}
+              src={iconCog}
               alt="drone icon"
               className="w-[72px] h-[72px] my-4"
             />
@@ -121,7 +125,7 @@ function LandingWorkWithUs() {
           <span>
             {' '}
             <img
-              src={iconDrone}
+              src={iconFlowDiagram}
               alt="drone icon"
               className="w-[72px] h-[72px] my-4"
             />
@@ -150,7 +154,7 @@ function LandingWorkWithUs() {
           <span>
             {' '}
             <img
-              src={iconDrone}
+              src={iconPresentation}
               alt="drone icon"
               className="w-[72px] h-[72px] my-4"
             />
