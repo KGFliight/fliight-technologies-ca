@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import iconDrone from '../assets/images/icons/icon-drone.png'
 import deltaQuadInfoImage from '../assets/images/dq-evo-info.png'
+import deltaQuadFlexibility from '../assets/images/deltaquad-evo-flexibility.png'
 import deltaQuadEvoGif from '../assets/images/dq-evo-intro.gif'
 import deltaQuadPropellerImage from '../assets/images/dq-evo-info-propeller.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -240,9 +241,9 @@ function DeltaQuadEvoInfo() {
         </div>
         <div className="image-container max-w-[384px] max-h-[600px] z-50">
           <img
-            src={deltaQuadPropellerImage}
+            src={deltaQuadFlexibility}
             alt="DeltaQuad Evo Propeller"
-            className="w-96 object-none h-[600px] rounded"
+            className="w-96 object-cover h-[600px] rounded"
           />
         </div>
       </div>

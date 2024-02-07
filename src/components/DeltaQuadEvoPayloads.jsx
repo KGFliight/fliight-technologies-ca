@@ -1,6 +1,7 @@
 import iconDrone from '../assets/images/icons/icon-drone.png'
 import DeltaQuadPayloadsCarousel from './DeltaQuadEvoPayloadsCarousel'
-import deltaQuadPayloadsCustom from '../assets/images/deltaquad-evo-payload-custom.png'
+
+import deltaQuadCustomRender from '../assets/images/dq-evo-custom-render.jpeg'
 import { NavLink } from 'react-router-dom'
 
 
@@ -54,9 +55,9 @@ function DeltaQuadPayloads() {
       <div className="flex flex-col sm:flex-row justify-center gap-20 my-40 p-12 md:p-20">
         <div className="image-container max-w-[384px] lg:max-w-[660px] max-h-[600px] z-50">
           <img
-            src={deltaQuadPayloadsCustom}
+            src={deltaQuadCustomRender}
             alt="DeltaQuad Evo Propeller"
-            className="w-96 lg:w-[540px] lg:max-w-[540px] object-none object-center h-[600px] rounded"
+            className="w-96 lg:w-[540px] lg:max-w-[540px] object-fit h-[600px] rounded"
           />
         </div>
         <div className="w-80 sm:w-[480px] items-center sm:items-start flex flex-col justify-center">
