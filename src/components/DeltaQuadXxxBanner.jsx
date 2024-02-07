@@ -5,7 +5,7 @@ AOS.init()
 
 function DeltaQuadProBanner({ title, imageSrc, subheading }) {
   return (
-    <div className="h-[100dvh] w-screen border bg-white">
+    <div className="min-h-[100dvh] w-screen border bg-white">
       <div className="flex flex-col items-center my-12 mx-8">
         <h1
           className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-widest mt-24 py-20 justify-center flex uppercase  text-ft-black text-center"

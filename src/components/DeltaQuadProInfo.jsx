@@ -12,7 +12,7 @@ function DeltaQuadProInfo() {
   AOS.init()
   
   return (
-    <div className="m-12 md:m-20 mt-80">
+    <div className="m-12 md:m-20 mt-20 md:mt-80">
       <div className="mb-24">
         <h2 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12" data-aos="fade-down-in"
             data-aos-easing="ease-in-back"
