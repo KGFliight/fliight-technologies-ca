@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import iconDrone from '../assets/images/icons/icon-drone.png'
 import deltaQuadInfoImage from '../assets/images/dq-evo-info.png'
+import deltaQuadEvoGif from '../assets/images/dq-evo-intro.gif'
 import deltaQuadPropellerImage from '../assets/images/dq-evo-info-propeller.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
@@ -91,7 +92,7 @@ function DeltaQuadEvoInfo() {
     <div className="m-12 md:m-20 mt-20">
       <div className="mb-24">
         <h2
-          className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12"
+          className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-0"
           data-aos="fade-down-in"
           data-aos-easing="ease-in-back"
           data-aos-delay="0"
@@ -119,9 +120,9 @@ function DeltaQuadEvoInfo() {
       </div>
       <div className="flex flex-col items-center my-24">
         <div className="flex flex-col items-center z-50">
-          <div className="image-container m-0 md:mx-24 my-12 ">
+          <div className="image-container m-0 md:mx-24 my-0 ">
             <img
-              src={deltaQuadInfoImage}
+              src={deltaQuadEvoGif}
               className="object-contain sm:object-cover rounded h-auto sm:h-[480px] w-full"
             />
           </div>
