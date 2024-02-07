@@ -57,7 +57,7 @@ function DeltaQuadPayloads() {
           <img
             src={deltaQuadCustomRender}
             alt="DeltaQuad Evo Propeller"
-            className="w-96 lg:w-[540px] lg:max-w-[540px] object-fit h-[600px] rounded"
+            className="w-96 lg:w-[540px] lg:max-w-[540px] object-fit sm:h-[600px] rounded"
           />
         </div>
         <div className="w-80 sm:w-[480px] items-center sm:items-start flex flex-col justify-center">

@@ -27,37 +27,44 @@ function DeltaQuadEvoInfo() {
     {
       id: '1',
       heading: 'Aerospace grade airframe',
-      contents: 'Details about aerospace grade airframe... Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, culpa!',
+      contents:
+        'Details about aerospace grade airframe... Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, culpa!',
     },
     {
       id: '2',
       heading: 'Retractable landing gear',
-      contents: 'Details about retractable landing gear... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium soluta ab, aperiam dolorum distinctio quasi!',
+      contents:
+        'Details about retractable landing gear... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium soluta ab, aperiam dolorum distinctio quasi!',
     },
     {
       id: '3',
       heading: 'Enhanced Endurance',
-      contents: 'Details about enhanced endurance...  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, nam?',
+      contents:
+        'Details about enhanced endurance...  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, nam?',
     },
     {
       id: '4',
       heading: 'Self Maintenance',
-      contents: 'Details about self maintenanceLorem ipsum dolor sit amet consectetur, adipisicing elit.',
+      contents:
+        'Details about self maintenanceLorem ipsum dolor sit amet consectetur, adipisicing elit.',
     },
     {
       id: '5',
       heading: 'Dual payload',
-      contents: 'Details about dual payloadLorem ipsum dolor sit amet consectetur adipisicing elit. Animi magni quo ratione?',
+      contents:
+        'Details about dual payloadLorem ipsum dolor sit amet consectetur adipisicing elit. Animi magni quo ratione?',
     },
     {
       id: '6',
       heading: 'Swappable payloads',
-      contents: 'Details about swappable payloads Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, esse!',
+      contents:
+        'Details about swappable payloads Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, esse!',
     },
     {
       id: '7',
       heading: 'Military standards',
-      contents: 'Details about military standardsLorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, debitis assumenda. Provident blanditiis dolorum error temporibus quos maiores?',
+      contents:
+        'Details about military standardsLorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, debitis assumenda. Provident blanditiis dolorum error temporibus quos maiores?',
     },
     { id: '8', heading: 'Open design', contents: 'Details about open design' },
     // ... other items
@@ -91,7 +98,7 @@ function DeltaQuadEvoInfo() {
 
   return (
     <div className="m-12 md:m-20 mt-20">
-      <div className="mb-24">
+      <div className="mb-20">
         <h2
           className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-0"
           data-aos="fade-down-in"
@@ -212,22 +219,28 @@ function DeltaQuadEvoInfo() {
           ))}
         </ul>
       </div>
-      <div className="flex flex-col sm:flex-row justify-center gap-20 my-40">
+      <div className="flex flex-col sm:flex-row justify-center gap-20 my-12 sm:my-40">
         <div className="w-80 sm:w-[480px] items-center sm:items-start flex flex-col justify-center">
-          <h3 className="text-5xl text-left uppercase w-auto my-8" data-aos="fade-down-in"
+          <h3
+            className="text-5xl text-left uppercase w-auto my-8"
+            data-aos="fade-down-in"
             data-aos-easing="ease-in-back"
             data-aos-delay="0"
             data-aos-offset="0"
             data-aos-mirror="true"
-            data-aos-duration="600">
+            data-aos-duration="600"
+          >
             Incredible flexibility
           </h3>
-          <div className="text-lg leading-loose tracking-wide font-light font-['Inter'] pr-6" data-aos="fade-down-in"
+          <div
+            className="text-lg leading-loose tracking-wide font-light font-['Inter'] pr-6"
+            data-aos="fade-down-in"
             data-aos-easing="ease-in-back"
             data-aos-delay="0"
             data-aos-offset="0"
             data-aos-mirror="true"
-            data-aos-duration="600">
+            data-aos-duration="600"
+          >
             The DeltaQuad Evo is setting a new standard in payload flexibility
             by incorporating two universal payload bays. The bays can be used to
             combine and simultaneously operate multiple payloads. The dual
@@ -239,12 +252,14 @@ function DeltaQuadEvoInfo() {
             ownership for any business.
           </div>
         </div>
-        <div className="image-container max-w-[384px] max-h-[600px] z-50">
-          <img
-            src={deltaQuadFlexibility}
-            alt="DeltaQuad Evo Propeller"
-            className="w-96 object-cover h-[600px] rounded"
-          />
+        <div className="feathered-edge-container relative max-w-[384px] sm:max-w-[420px] max-h-[400px] sm:max-h-[600px] z-50 overflow-hidden ">
+          <div className="overflow-hidden">
+            <img
+              src={deltaQuadFlexibility}
+              alt="DeltaQuad Evo Propeller"
+              className="transform scale-[0.9] w-[384px] sm:w-[420px] object-cover h-[400px] sm:h-[600px] rounded overflow-visible"
+            />
+          </div>
         </div>
       </div>
     </div>

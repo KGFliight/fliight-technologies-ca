@@ -215,3 +215,25 @@ html {
   transform: translate(-50%, -50%) scale(0.5);
   opacity: 0.2; /* Adjusted opacity */
 }
+
+/* Custom CSS for feathered edge effect */
+.feathered-edge-container::before,
+.feathered-edge-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30%; /* Adjust the width of the gradient effect */
+  z-index: 10;
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+.feathered-edge-container::before {
+  left: 0;
+  background: linear-gradient(to right, #1C1F2A, transparent);
+}
+
+.feathered-edge-container::after {
+  right: 0;
+  background: linear-gradient(to left, #1C1F2A, transparent);
+}
