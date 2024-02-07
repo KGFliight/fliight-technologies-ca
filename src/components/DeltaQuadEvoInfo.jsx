@@ -88,7 +88,7 @@ function DeltaQuadEvoInfo() {
   }
 
   return (
-    <div className="m-12 md:m-20 mt-20 md:mt-80">
+    <div className="m-12 md:m-20 mt-20">
       <div className="mb-24">
         <h2
           className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12"

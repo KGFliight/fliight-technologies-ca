@@ -30,7 +30,7 @@ function DeltaQuadProBanner({ title, imageSrc, subheading }) {
           {subheading}
         </p>
       </div>
-      <div className="flex justify-center pb-96 bg-white">
+      <div className="flex justify-center bg-white">
         <img
           src={imageSrc}
           className="px-4 my-8 h-auto md:px-20 lg:h-80 xl:h-[400px]"
