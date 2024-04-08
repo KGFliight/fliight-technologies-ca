@@ -13,6 +13,10 @@ import Aerowhere from './pages/Aerowhere'
 import { MobileMenuProvider } from './components/MobileMenuContext'
 import { ModalProvider } from './components/LandingModalContext'
 
+import TemplateProductPage from './pages/TemplateProductPage'
+
+// CREATE A PATH IF MAKING ANOTHER PAGE (template)
+
 function App() {
   return (
     <div className="bg-ft-black overflow-x-hidden text-ft-white">
@@ -23,9 +27,21 @@ function App() {
             <Route path="/drones" element={<Drones />} />
             <Route path="/drones/deltaquad-pro" element={<DeltaQuadPro />} />
             <Route path="/drones/deltaquad-evo" element={<DeltaQuadEvo />} />
-            <Route path="/solutions" element={<Solutions />} />
+            
+            {/* 
+            UNCOMMENT THIS TO SEE TEMPLATE PAGE
+            <Route
+              path="/template-product"
+              element={<TemplateProductPage />}
+            />
+            }
+
+            SEPARATE FROM TEMPLATE - FOR DROPDOWN SOLUTIONS MENU
+            {/*<
+            Route path="/solutions" element={<Solutions />} />
             <Route path="/solutions/aerowhere" element={<Aerowhere />} />
             <Route path="solutions/argus" element={<Argus />} />
+            */}
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/request-demo" element={<RequestDemo />} />

@@ -7,6 +7,8 @@ import {
 import { NavLink } from 'react-router-dom'
 import '../App.css'
 
+// see line 57 for template product url insertion
+
 function Footer() {
   return (
     <footer className="border-ft-dark-grey">
@@ -47,10 +49,17 @@ function Footer() {
                     </li>
                   </NavLink>
                   <NavLink to="/drones/deltaquad-evo">
-                    <li className="my-4  hover:underline hover:text-ft-white transition duration-300" >
+                    <li className="my-4  hover:underline hover:text-ft-white transition duration-300">
                       DeltaQuad Evo
                     </li>
                   </NavLink>
+                  {
+                  /*<NavLink to="/template-product">
+                    <li className="my-4  hover:underline hover:text-ft-white transition duration-300" >
+                      TEMPLATE PRODUCT NAME GOES HERE
+                    </li>
+                  </NavLink>*/
+  }
                 </ul>
               </div>
               {/*<div className="flex flex-col w-[50%] sm:w-40 ml-[4rem]  leading-loose tracking-wide">

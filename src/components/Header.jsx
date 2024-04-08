@@ -11,10 +11,11 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import '../App.css'
 
+// for TEMPLATE insertion, see lines 28, 69. Can use solutions if wanting separate dropdown items around line 128
 
 function Header() {
   const [isDronesDropdownOpen, setIsDronesDropdownOpen] = useState(false)
-  const [isSolutionsDropdownOpen, setIsSolutionsDropdownOpen] = useState(false)
+  //const [isSolutionsDropdownOpen, setIsSolutionsDropdownOpen] = useState(false)
   const { isMobileMenuOpen, setIsMobileMenuOpen } =
     useContext(MobileMenuContext)
 
@@ -23,7 +24,9 @@ function Header() {
   const getHeaderClass = () => {
     if (
       location.pathname === '/drones/deltaquad-pro' ||
-      location.pathname === '/drones/deltaquad-evo'
+      location.pathname === '/drones/deltaquad-evo' 
+      // TEMPLATE if adding product can add here, be sure to also include || on the above line (27) if adding a new location.pathname. Location.pathname to match url on app.jsx
+      // this changes the colour of the header to match background 
     ) {
       return {
         background: 'bg-white',
@@ -63,12 +66,14 @@ function Header() {
   const dronesDropdownItems = [
     { name: 'DeltaQuad Pro', path: '/drones/deltaquad-pro' },
     { name: 'DeltaQuad Evo', path: '/drones/deltaquad-evo' },
+    //template product could go here, following the same configuration as the ones above. Be sure to adjust the path correctly
   ]
 
-  const solutionsDropdownItems = [
-    { name: 'Aerowhere', path: '/solutions/aerowhere' },
-    { name: 'Argus', path: '/solutions/argus' },
-  ]
+  // relating to line 128 (or so). can be uncommented and adjusted for template items if preferred
+  //const solutionsDropdownItems = [
+  //  { name: 'Aerowhere', path: '/solutions/aerowhere' },
+  //  { name: 'Argus', path: '/solutions/argus' },
+  //]
 
   AOS.init()
 
@@ -113,9 +118,11 @@ function Header() {
               setIsOpen={setIsDronesDropdownOpen}
             />
           </div>
-
+          
+          {/*
+          COMMENTED OUT 'SOLUTIONS' DROPDOWN MENU. CAN UNCOMMENT OR ADJUST FOR PRODUCTS. IF WANTING TO JUST HAVE SINGLE LINK, FOLLOW SAME CONFIGURATION AS 'ABOUT' NAVLINK BELOW
           <div
-            className="relative group hidden"
+            className="relative group"
             onMouseEnter={() => openDropdown(setIsSolutionsDropdownOpen)}
             onMouseLeave={() => closeDropdown(setIsSolutionsDropdownOpen)}
             onClick={() =>
@@ -137,7 +144,7 @@ function Header() {
               isOpen={isSolutionsDropdownOpen}
               setIsOpen={setIsSolutionsDropdownOpen}
             />
-          </div>
+          </div>*/}
 
           <NavLink
             to="/about"
