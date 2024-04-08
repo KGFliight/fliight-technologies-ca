@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useTransition, animated } from 'react-spring'
 import fliightLogo from '../assets/images/fliight-logo-white.png'
 import fliightLogoBlack from '../assets/images/fliight-logo-black.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,18 +15,29 @@ import 'aos/dist/aos.css'
 function MobileMenu({ isMenuOpen, setMenuOpen }) {
   const [techDropdownOpen, setTechDropdownOpen] = useState(false)
 
+  const transitions = useTransition(techDropdownOpen, {
+    from: { opacity: 0, transform: 'translateY(-50%)' },
+    enter: { opacity: 1, transform: 'translateY(0%)' },
+    leave: { opacity: 0, transform: 'translateY(-50%)' },
+    reverse: techDropdownOpen,
+    delay: 80,
+    config: { duration: 200 },
+  })
+
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen)
   }
 
   const toggleTechDropdown = () => {
     setTechDropdownOpen(!techDropdownOpen)
+    //AOS.refresh();
   }
 
   const handleMenuItemClick = () => {
     setMenuOpen(false) // Close the menu
-    // Add any additional logic here if needed
   }
+
+  //const techDropdownAnimation = techDropdownOpen ? "fade-down" : "fade-up";
 
   const getHeaderClass = () => {
     if (
@@ -47,9 +59,12 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
       } // Default color
     }
   }
+
   const headerClasses = getHeaderClass()
 
-  AOS.init()
+  useEffect(() => {
+    AOS.init() // Initialize AOS on component mount
+  }, [])
 
   return (
     <div
@@ -93,31 +108,27 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
                 <FontAwesomeIcon icon={faChevronDown} className="text-2xl" />
               </span>
             </Link>
-            {techDropdownOpen && (
-              <div className="flex flex-col gap-4">
-                <Link
-                  to="/drones/deltaquad-pro"
-                  className="text-ft-grey py-1 pl-2 text-3xl"
-                  onClick={handleMenuItemClick}
-                  data-aos="fade-down"
-                  data-aos-easing="ease"
-                  data-aos-offset="0"
-                  data-aos-delay="0"
-                >
-                  DeltaQuad Pro
-                </Link>
-                <Link
-                  to="/drones/deltaquad-evo"
-                  className="text-ft-grey py-1 pl-2 text-3xl"
-                  onClick={handleMenuItemClick}
-                  data-aos="fade-down"
-                  data-aos-easing="ease"
-                  data-aos-offset="0"
-                  data-aos-delay="0"
-                >
-                  DeltaQuad Evo
-                </Link>
-              </div>
+            {transitions((style, item) =>
+              item ? (
+                <animated.div style={style} className="flex flex-col gap-4">
+                  <Link
+                    to="/drones/deltaquad-pro"
+                    className="text-ft-grey py-1 pl-2 text-3xl"
+                    onClick={handleMenuItemClick}
+                  >
+                    DeltaQuad Pro
+                  </Link>
+                  <Link
+                    to="/drones/deltaquad-evo"
+                    className="text-ft-grey py-1 pl-2 text-3xl"
+                    onClick={handleMenuItemClick}
+                  >
+                    DeltaQuad Evo
+                  </Link>
+                </animated.div>
+              ) : (
+                ''
+              )
             )}
             <Link
               to="/about"
