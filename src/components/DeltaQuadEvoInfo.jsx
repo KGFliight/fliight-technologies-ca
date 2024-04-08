@@ -1,14 +1,13 @@
 import { useState } from 'react'
 import iconDrone from '../assets/images/icons/icon-drone.png'
-import deltaQuadInfoImage from '../assets/images/dq-evo-info.png'
 import deltaQuadFlexibility from '../assets/images/deltaquad-evo-flexibility.png'
 import deltaQuadEvoGif from '../assets/images/dq-evo-intro.gif'
-import deltaQuadPropellerImage from '../assets/images/dq-evo-info-propeller.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import '../App.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { useSpring, animated } from 'react-spring'
 
 function DeltaQuadEvoInfo() {
   AOS.init()
@@ -88,12 +87,16 @@ function DeltaQuadEvoInfo() {
 
   const [openTechItem, setOpenTechItem] = useState(null)
 
+  //const toggleTechItem = (itemId) => {
+  //  if (openTechItem === itemId) {
+  //    setOpenTechItem(null)
+  //  } else {
+  //    setOpenTechItem(itemId)
+  //  }
+  //}
+
   const toggleTechItem = (itemId) => {
-    if (openTechItem === itemId) {
-      setOpenTechItem(null)
-    } else {
-      setOpenTechItem(itemId)
-    }
+    setOpenTechItem(openTechItem === itemId ? null : itemId)
   }
 
   return (
@@ -142,29 +145,52 @@ function DeltaQuadEvoInfo() {
         </h3>
 
         <div className="flex flex-col md:flex-row flex-wrap tracking-wide leading-loose my-6 text-sm md:text-lg uppercase ">
-          {technologyItems.map((item) => (
-            <div key={item.id} className="md:w-[44%] lg:w-[48%] my-2 mr-4">
-              <div className="bg-ft-dark-grey p-2 rounded text-2xl font-medium">
-                <button
-                  onClick={() => toggleTechItem(item.id)}
-                  className="flex items-center w-full text-left [&>*:nth-child(3)]:ml-auto [&>*:nth-child(3)]:p-4 text-sm md:text-lg font-light font-['Inter'] tracking-wide leading-loose my-2"
-                >
-                  <img
-                    src={iconDrone}
-                    alt="drone icon"
-                    className="w-[40px] h-[40px] m-2 md:mr-4 inline-flex"
-                  />
-                  <span className="capitalize">{item.heading}</span>
-                  <FontAwesomeIcon icon={faChevronDown} className="text-2xl" />
-                </button>
-                {openTechItem === item.id && (
-                  <div className="text-white mt-3 p-3 normal-case text-base leading-loose tracking-wide font-light font-['Inter'] border-t rounded border-ft-black shadow bg-ft-black transition-all duration-300">
+          {technologyItems.map((item) => {
+            // Determine if the current item is open
+            const isOpen = openTechItem === item.id
+            // Use Spring to animate the dropdown
+            const props = useSpring({
+              to: {
+                opacity: isOpen ? 1 : 0,
+                maxHeight: isOpen ? '500px' : '0px', 
+                overflow: 'hidden',
+                
+              },
+            })
+
+            return (
+              <div key={item.id} className="md:w-[44%] lg:w-[48%] my-2 mr-4">
+                <div className="bg-ft-dark-grey p-2 rounded text-2xl font-medium">
+                  <button
+                    onClick={() => toggleTechItem(item.id)}
+                    className="flex items-center w-full text-left [&>*:nth-child(3)]:ml-auto [&>*:nth-child(3)]:p-2 text-sm md:text-lg font-light font-['Inter'] tracking-wide leading-loose"
+                  >
+                    <img
+                      src={iconDrone}
+                      alt="drone icon"
+                      className="w-[40px] h-[40px] m-2 md:mr-4 inline-flex"
+                    />
+                    {item.heading}
+                    <FontAwesomeIcon
+                      icon={faChevronDown}
+                      className="text-2xl ml-auto"
+                    />
+                  </button>
+                  {/* Animated div for item content */}
+                  <animated.div
+                    style={props}
+                    className="text-white px-3 normal-case text-base leading-loose tracking-wide font-light font-['Inter']"
+                  >
+                    <div className="h-4">
+                      
+                    </div> 
+                  
                     {item.contents}
-                  </div>
-                )}
+                  </animated.div>
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
 

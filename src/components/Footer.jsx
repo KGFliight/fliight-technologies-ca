@@ -1,4 +1,3 @@
-import deltaQuad from '../assets/images/logos/deltaquad.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faPhone,
