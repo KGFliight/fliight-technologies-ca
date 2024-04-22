@@ -113,10 +113,9 @@ function ContactForm() {
         <div className="w-full justify-center items-center my-4 flex flex-col">
           <ReCAPTCHA
             ref={recaptchaRef}
-            size="invisible"
             sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
             onChange={onReCAPTCHAChange}
-            className="w-full flex justify-center my-4"
+            className="w-full flex justify-center my-4 mb-8"
           />
           <button
             className="cursor-pointer bg-ft-red  rounded-3xl w-72 h-8 sm:w-44 min-h-[2.75rem]  hover:opacity-90 hover:bg-[#5b172c] transition duration-300 active:bg-ft-dark-grey"
