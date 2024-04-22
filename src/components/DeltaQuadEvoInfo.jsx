@@ -27,45 +27,50 @@ function DeltaQuadEvoInfo() {
       id: '1',
       heading: 'Aerospace grade airframe',
       contents:
-        'Details about aerospace grade airframe... Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, culpa!',
+        'The EVO is built from carbon, kevlar and fibreglass material. This provides an extremely robust. lightweight airframe that will last for years, even in the harshest conditions.',
     },
     {
       id: '2',
       heading: 'Retractable landing gear',
       contents:
-        'Details about retractable landing gear... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium soluta ab, aperiam dolorum distinctio quasi!',
+        'The EVO automatically extends and retracts the landing gear. This alloes a diverse set of payloads to be installed both inside and underneath the platform.',
     },
     {
       id: '3',
       heading: 'Enhanced Endurance',
       contents:
-        'Details about enhanced endurance...  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, nam?',
+        'The EVO can carry a single payload for up to 4.5 hours using a dual battery or a double payload for up to 3 hours.',
     },
     {
       id: '4',
       heading: 'Self Maintenance',
       contents:
-        'Details about self maintenanceLorem ipsum dolor sit amet consectetur, adipisicing elit.',
+        'The Evo is designed to be modular and easy to self maintain. The motor arms are swappable, and a maintenance kit can be installed by any operator without the need to return it to the factory.',
     },
     {
       id: '5',
       heading: 'Dual payload',
       contents:
-        'Details about dual payloadLorem ipsum dolor sit amet consectetur adipisicing elit. Animi magni quo ratione?',
+        'The EVO is equipped with two fully integrated payload slots. They can be used to carry two sensors simultaneously, a single large payload, or to achieve extreme flight times with a second battery.',
     },
     {
       id: '6',
       heading: 'Swappable payloads',
       contents:
-        'Details about swappable payloads Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, esse!',
+        'The EVO allows plug&play installation of an extensive range of payloads that can be swapped in the field without any tools. The Evo updates automatically to be compatible with future payloads.',
     },
     {
       id: '7',
       heading: 'Military standards',
       contents:
-        'Details about military standardsLorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, debitis assumenda. Provident blanditiis dolorum error temporibus quos maiores?',
+        'The EVO is a multi-purpose platform that complies with military standards. It features several military options to ruggedize and protect data while providing diverse aerial intelligence.',
     },
-    { id: '8', heading: 'Open design', contents: 'Details about open design' },
+    {
+      id: '8',
+      heading: 'Open design',
+      contents:
+        'The EVO comes with everything required to design and integrate your own payload. The required 3D models are freely available, and payload connectors are offered at a low cost.',
+    },
     // ... other items
   ]
 
@@ -152,9 +157,8 @@ function DeltaQuadEvoInfo() {
             const props = useSpring({
               to: {
                 opacity: isOpen ? 1 : 0,
-                maxHeight: isOpen ? '500px' : '0px', 
+                maxHeight: isOpen ? '500px' : '0px',
                 overflow: 'hidden',
-                
               },
             })
 
@@ -181,10 +185,8 @@ function DeltaQuadEvoInfo() {
                     style={props}
                     className="text-white px-3 normal-case text-base leading-loose tracking-wide font-light font-['Inter']"
                   >
-                    <div className="h-4">
-                      
-                    </div> 
-                  
+                    <div className="h-4"></div>
+
                     {item.contents}
                   </animated.div>
                 </div>

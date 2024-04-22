@@ -19,18 +19,14 @@ function DeltaQuadProInfo() {
             data-aos-delay="0"
             data-aos-offset="0"
             data-aos-mirror="true"
-            data-aos-duration="600">Introduction Heading</h2>
+            data-aos-duration="600">Fliight Technologies is proud to be the official Australian distributor for the Deltaquad Pro eVTOL platform</h2>
         <p className="tracking-wide leading-loose my-6 font-light font-['Inter']" data-aos="fade-down-in"
             data-aos-easing="ease-in-back"
             data-aos-delay="0"
             data-aos-offset="0"
             data-aos-mirror="true"
             data-aos-duration="600"> 
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
-          molestiae dignissimos deserunt accusantium amet officia! Nisi
-          similique, ea amet hic assumenda, doloribus temporibus ipsa obcaecati
-          natus quasi architecto officiis distinctio quaerat fugiat, perferendis
-          minima earum. Pariatur aliquid quae mollitia quas.
+          The DeltaQuad Pro platform offers incredible value for money.
         </p>
       </div>
       <div className="mb-24">
