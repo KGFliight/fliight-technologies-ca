@@ -121,7 +121,6 @@ function ContactForm() {
             ref={recaptchaRef}
             sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
             onChange={onReCAPTCHAChange}
-            size="invisible"
             className="w-full flex justify-center my-4 mb-8"
           />
           <button
