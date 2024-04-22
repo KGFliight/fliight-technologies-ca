@@ -1,13 +1,20 @@
 import emailjs from 'emailjs-com'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import ReCAPTCHA from 'react-google-recaptcha'
+import React from 'react'
 
 function ContactForm() {
   AOS.init()
+  const recaptchaRef = React.useRef()
+
   const sendEmail = (e) => {
     e.preventDefault()
 
-    if (window.grecaptcha.getResponse() === '') {
+    const form = e.target
+    const recaptchaValue = recaptchaRef.current.getValue()
+
+    if (!recaptchaValue) {
       alert('Please verify you are not a robot.')
       return
     }
@@ -23,6 +30,8 @@ function ContactForm() {
         (result) => {
           console.log(result.text)
           alert('Message sent successfully')
+          form.reset()
+          recaptchaRef.current.reset()
         },
         (error) => {
           console.log(error.text)
@@ -57,10 +66,10 @@ function ContactForm() {
         <label className="flex flex-col">
           Phone number*
           <input
-            type="tel"
+            type="number"
             name="phone"
             required
-            pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *[x/#]{1}(\d+))?\s*$"
+            pattern="^\+?\d{0,13}"
             title="A valid phone number is required"
             className="bg-ft-dark-grey p-2 my-2 rounded focus:border-green-500 placeholder-ft-grey"
             placeholder="What's your phone number?"
@@ -94,7 +103,13 @@ function ContactForm() {
             placeholder="Please describe your problem and where you see us fitting into your project?"
           ></textarea>
         </label>
-        <div className="w-full flex justify-center items-center my-4">
+        <div className="w-full flex justify-center items-center my-4 flex flex-col">
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+            onChange={() => {}}
+            className="flex justify-center my-8"
+          />
           <button
             className="cursor-pointer bg-ft-red  rounded-3xl w-72 h-8 sm:w-44 min-h-[2.75rem]  hover:opacity-90 hover:bg-[#5b172c] transition duration-300 active:bg-ft-dark-grey"
             data-aos="fade-down-in"
