@@ -177,7 +177,7 @@ function DeltaQuadEvoInfo() {
                     {item.heading}
                     <FontAwesomeIcon
                       icon={faChevronDown}
-                      className="text-2xl ml-auto"
+                      className="text-2xl ml-auto mr-4"
                     />
                   </button>
                   {/* Animated div for item content */}
