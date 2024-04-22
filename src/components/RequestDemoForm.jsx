@@ -1,31 +1,54 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import emailjs from 'emailjs-com'
+import ReCAPTCHA from 'react-google-recaptcha'
+import React, { useState, useRef } from 'react'
 
 function RequestDemoForm() {
   AOS.init()
 
+  const recaptchaRef = useRef()
+  const [isVerified, setIsVerified] = useState(false)
+
   const sendEmail = (e) => {
     e.preventDefault()
 
-    emailjs
-      .sendForm(
-        'service_s5zd9yh',
-        'template_brdrre2',
-        e.target,
-        'L6wCoQNjMIaX3KMFK'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-          alert('Message sent successfully')
-        },
-        (error) => {
-          console.log(error.text)
-          alert('Failed to send message. Please try again later.')
-        }
-      )
+    if (!isVerified) {
+      alert('Please verify that you are not a robot.')
+      recaptchaRef.current.execute() // Trigger reCAPTCHA when verification is needed
+    } else {
+      emailjs
+        .sendForm(
+          'service_s5zd9yh',
+          'template_brdrre2',
+          e.target,
+          'L6wCoQNjMIaX3KMFK'
+        )
+        .then(
+          (result) => {
+            console.log(result.text)
+            alert('Message sent successfully')
+            e.target.reset() // Reset form fields
+            recaptchaRef.current.reset() // Reset the reCAPTCHA
+            setIsVerified(false) // Reset verification state
+          },
+          (error) => {
+            console.log(error.text)
+            alert('Failed to send message. Please try again later.')
+          }
+        )
+    }
   }
+
+  const onReCAPTCHAChange = (captchaCode) => {
+    if (captchaCode) {
+      setIsVerified(true)
+    } else {
+      setIsVerified(false)
+      alert('reCAPTCHA expired, please verify again.')
+    }
+  }
+
   return (
     <div className="my-12 font-['Inter'] font-light">
       <form className="flex flex-col gap-4" onSubmit={sendEmail}>
@@ -79,6 +102,12 @@ function RequestDemoForm() {
             placeholder="Please describe your problem and where you see us fitting into your project?"
           ></textarea>
         </label>
+        <ReCAPTCHA
+          ref={recaptchaRef}
+          sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+          onChange={onReCAPTCHAChange}
+          className="w-full flex justify-center my-4"
+        />
         <div className="w-full flex justify-center items-center my-4">
           <button
             className="cursor-pointer bg-ft-red  rounded-3xl w-72 h-8 sm:w-44 min-h-[2.75rem]  hover:opacity-90 hover:bg-[#5b172c] transition duration-300 active:bg-ft-dark-grey"
