@@ -16,7 +16,8 @@ const reviews = [
   {
     image: kit,
     alt: 'Jackie Dujmovic',
-    quote: '',
+    quote:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, commodi.',
     company: 'Hover UAV',
     name: 'Jackie Dujmovic',
     role: 'Founder & CEO',
@@ -33,7 +34,8 @@ const reviews = [
   {
     image: john,
     alt: 'Someone Else',
-    quote: '',
+    quote:
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sint facere quas.',
     company: 'Infravision',
     name: 'Cameron Van Der Berg',
     role: 'Co Founder & CEO',
