@@ -1,8 +1,8 @@
 import '../App.css'
 
 import arace from '../assets/images/logos/partner-logos/arace.png'
-import ascent from '../assets/images/logos/partner-logos/ascent1.svg'
-import deltaquad from '../assets/images/logos/partner-logos/deltaquad_black.png'
+import ascent from '../assets/images/logos/partner-logos/ascent.png'
+import deltaquad from '../assets/images/logos/partner-logos/deltaquad.png'
 import dji from '../assets/images/logos/partner-logos/dji.png'
 import freespace from '../assets/images/logos/partner-logos/freespace.png'
 import freespace1 from '../assets/images/logos/partner-logos/freespace1.png'

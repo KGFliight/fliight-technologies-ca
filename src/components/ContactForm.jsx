@@ -7,6 +7,11 @@ function ContactForm() {
   const sendEmail = (e) => {
     e.preventDefault()
 
+    if (window.grecaptcha.getResponse() === '') {
+      alert('Please verify you are not a robot.')
+      return
+    }
+
     emailjs
       .sendForm(
         'service_s5zd9yh',
@@ -34,6 +39,7 @@ function ContactForm() {
           <input
             type="text"
             name="name"
+            required
             className="bg-ft-dark-grey p-2 my-2 rounded focus:border-green-500 placeholder-ft-grey"
             placeholder="What's your full name?"
           />
@@ -43,6 +49,7 @@ function ContactForm() {
           <input
             type="text"
             name="email"
+            required
             className="bg-ft-dark-grey p-2 my-2 rounded focus:border-green-500 placeholder-ft-grey"
             placeholder="What's your email address?"
           />
@@ -50,8 +57,11 @@ function ContactForm() {
         <label className="flex flex-col">
           Phone number*
           <input
-            type="text"
+            type="tel"
             name="phone"
+            required
+            pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *[x/#]{1}(\d+))?\s*$"
+            title="A valid phone number is required"
             className="bg-ft-dark-grey p-2 my-2 rounded focus:border-green-500 placeholder-ft-grey"
             placeholder="What's your phone number?"
           />
@@ -61,6 +71,7 @@ function ContactForm() {
           <select
             type="text"
             name="why"
+            required
             className="bg-ft-dark-grey p-2 my-2 rounded focus:border-green-500 placeholder-ft-grey"
             placeholder="Select"
           >
@@ -71,12 +82,14 @@ function ContactForm() {
             <option value="technical support">Technical Support</option>
             <option value="feedback">Feedback</option>
             <option value="request a demo">Request a demo</option>
+            <option value="other">Other</option>
           </select>
         </label>
         <label className="flex flex-col">
           How can we help?*
           <textarea
             name="message"
+            required
             className="bg-ft-dark-grey placeholder-ft-grey rounded h-40 p-2 my-2 placeholder-top"
             placeholder="Please describe your problem and where you see us fitting into your project?"
           ></textarea>

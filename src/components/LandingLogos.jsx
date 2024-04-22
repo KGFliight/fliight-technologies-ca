@@ -80,7 +80,7 @@ function LandingLogos() {
           data-aos-offset="0"
           data-aos-duration="300"
         >
-          <img src={barminco} alt="Unleash logo" />
+          <img src={barminco} alt="barminco logo" />
         </li>
         <li
           className="w-40 h-20 md:w-60 md:h-40 items-center justify-center flex"
@@ -90,7 +90,7 @@ function LandingLogos() {
           data-aos-offset="0"
           data-aos-duration="300"
         >
-          <img src={bhpbilliton} alt="Unleash logo" />
+          <img src={bhpbilliton} alt="bhpbilliton logo" />
         </li>
         <li
           className="w-40 h-20 md:w-60 md:h-40 items-center justify-center flex"
@@ -110,7 +110,7 @@ function LandingLogos() {
           data-aos-offset="0"
           data-aos-duration="300"
         >
-          <img src={worley} alt="Unleash logo" />
+          <img src={worley} alt="worley logo" />
         </li>
        
       </ul>
