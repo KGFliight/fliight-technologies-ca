@@ -2,42 +2,47 @@ import emailjs from 'emailjs-com'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import ReCAPTCHA from 'react-google-recaptcha'
-import React from 'react'
+import React, { useRef } from 'react'
 
 function ContactForm() {
   AOS.init()
-  const recaptchaRef = React.useRef()
+  const recaptchaRef = useRef()
 
   const sendEmail = (e) => {
     e.preventDefault()
 
-    const form = e.target
-    const recaptchaValue = recaptchaRef.current.getValue()
+    // This will execute the reCAPTCHA when the form is submitted
+    recaptchaRef.current.execute()
+  }
 
-    if (!recaptchaValue) {
+  const onReCAPTCHAChange = (captchaCode) => {
+    if (!captchaCode) {
       alert('Please verify you are not a robot.')
       return
     }
 
+    // If the ReCAPTCHA is successful, send the email
     emailjs
       .sendForm(
-        'service_s5zd9yh',
-        'template_vq0um9d',
-        e.target,
-        'L6wCoQNjMIaX3KMFK'
+        'your_service_id',
+        'your_template_id',
+        form.current,
+        'your_user_id'
       )
       .then(
         (result) => {
           console.log(result.text)
           alert('Message sent successfully')
-          form.reset()
-          recaptchaRef.current.reset()
+          form.current.reset()
         },
         (error) => {
           console.log(error.text)
           alert('Failed to send message. Please try again later.')
         }
       )
+      .finally(() => {
+        recaptchaRef.current.reset() // Resets the reCAPTCHA after submission.
+      })
   }
 
   return (
@@ -103,11 +108,12 @@ function ContactForm() {
             placeholder="Please describe your problem and where you see us fitting into your project?"
           ></textarea>
         </label>
-        <div className="w-full flex justify-center items-center my-4 flex flex-col">
+        <div className="w-full justify-center items-center my-4 flex flex-col">
           <ReCAPTCHA
             ref={recaptchaRef}
+            size="invisible"
             sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-            onChange={() => {}}
+            onChange={onReCAPTCHAChange}
             className="flex justify-center my-8"
           />
           <button
