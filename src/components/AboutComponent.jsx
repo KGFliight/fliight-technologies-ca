@@ -23,7 +23,7 @@ function AboutComponent() {
         data-aos-mirror="true"
         data-aos-duration="600"
       >
-        About
+        About Us: The Fliight Crew
       </h1>
       <h2
         className="flex flex-col items-center mb-8 md:mb-20 md:my-12 font-['Inter'] font-light text-lg leading-loose tracking-wide"
@@ -34,7 +34,7 @@ function AboutComponent() {
         data-aos-mirror="true"
         data-aos-duration="600"
       >
-        Subheading
+        Who we are, what we do, and why we do it
       </h2>
       <div className="w-screen 2xl:flex 2xl:justify-center flex">
         <img
@@ -53,7 +53,7 @@ function AboutComponent() {
             data-aos-mirror="true"
             data-aos-duration="600"
           >
-            Our approach to UAV
+            Our approach to UAVs
           </h3>
           <p
             className="my-8 max-w-[960px] font-['Inter'] font-light"
@@ -64,9 +64,12 @@ function AboutComponent() {
             data-aos-mirror="true"
             data-aos-duration="600"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            placeat facere accusantium ad inventore explicabo dicta. Voluptates,
-            mollitia modi! Quis in earum perspiciatis
+            UAVs are platforms, designed to provide data and insights that save
+            your organisation time and money all while reducing the risk to
+            personnel. At the end of the day, they are only as useful as the
+            data you get out. We understand this and that's why we provide
+            solutions tailored to your needs and are with you for the entire
+            journey, to ensure your investment is a success.
           </p>
           <div
             className="flex flex-col sm:flex-row my-12 justify-between lg:max-w-[960px] xl:max-w-[1200px]"
@@ -84,21 +87,22 @@ function AboutComponent() {
                     icon={faAnglesRight}
                     className="text-ft-red py-2 pr-4"
                   />{' '}
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  We provide packages for a range of budgets
                 </li>
                 <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
                     className="text-ft-red py-2 pr-4"
                   />{' '}
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  We provide rigorous after-sales support
                 </li>
                 <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
                     className="text-ft-red py-2 pr-4"
                   />{' '}
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  We are able to develop custom integrations where the market is
+                  currently lacking
                 </li>
               </ul>
             </div>
@@ -109,21 +113,16 @@ function AboutComponent() {
                     icon={faAnglesRight}
                     className="text-ft-red py-2 pr-4"
                   />{' '}
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  We have access to a large number of industry experts to get
+                  you the answers and support you need
                 </li>
                 <li className="my-8 flex items-start leading-loose tracking-wide">
                   <FontAwesomeIcon
                     icon={faAnglesRight}
                     className="text-ft-red py-2 pr-4"
                   />{' '}
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </li>
-                <li className="my-8 flex items-start leading-loose tracking-wide">
-                  <FontAwesomeIcon
-                    icon={faAnglesRight}
-                    className="text-ft-red py-2 pr-4"
-                  />{' '}
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  We only work with proven suppliers, time is too precious to
+                  waste
                 </li>
               </ul>
             </div>
@@ -149,16 +148,11 @@ function AboutComponent() {
               data-aos-mirror="true"
               data-aos-duration="600"
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              ratione enim libero. Vitae asperiores molestiae neque adipisci ut
-              corrupti officiis exercitationem, odio, recusandae necessitatibus
-              perspiciatis pariatur sequi fuga cumque, quos quam eius ipsam qui.
-              Quo ullam commodi eum aliquid inventore doloremque similique
-              voluptates rem magni molestias officiis odit debitis, nobis
-              pariatur repellat nihil ratione a sed, id, reiciendis neque eos.
-              Esse reiciendis suscipit dolor reprehenderit nemo itaque
-              laboriosam illo iure ad, rem adipisci sed fugit eaque, vero
-              dolorem velit! Ex.
+              We aim to push Australian UAV technologies to the bleeding edge
+              globally. We don't just do sales and support. We are constantly
+              looking for opportunities to develop products and packages that
+              solve real world problems. If you're interested in joining the
+              Fliight Crew and changing the world - don't hesitate to reach out!
             </p>
           </div>
 
@@ -175,12 +169,16 @@ function AboutComponent() {
                 <p className="my-2 text-3xl leading-loose tracking-wide">
                   Kihan Garcia
                 </p>
-                <p className="my-2 text-xl leading-loose tracking-wide">CEO</p>
+                <p className="my-2 text-xl leading-loose tracking-wide">
+                  CEO & Founder
+                </p>
                 <p className="my-4 leading-loose tracking-wide">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                  libero rerum est placeat obcaecati atque, dolorem architecto
-                  molestiae suscipit, voluptatibus sapiente minima facere velit
-                  nisi nemo omnis expedita sunt? Unde.
+                  Kihan has been involved in the UAV industry since the dawn of
+                  the market. With unparalleled industry experience and
+                  connections with leading partners in hardware and software,
+                  Kihan has built a reputation for rapidly developing high value
+                  solutions with a no BS attitude. If you want to get the job
+                  done, look no further.
                 </p>
                 <span className="hover:opacity-50 transition duration-300">
                   <a
@@ -207,15 +205,20 @@ function AboutComponent() {
                   Johnathan Clark
                 </p>
                 <p className="my-2 text-xl leading-loose tracking-wide">
-                  Research and Development Engineer
+                  R&D Manager & Founder
                 </p>
                 <p className="my-4 leading-loose tracking-wide">
-                  Specialises in heavy lift RPAS, VTOL UAV&apos;s, custom
-                  payloads, and remote sensing. With a six-year journey that
-                  spans from project inception to mass production, Johnathan has
-                  honed his expertise in project management, CAD, and precision
-                  manufacturing, all while ensuring his clients achieve safer,
-                  more efficient, and cost-effective business operations.
+                  With over six years at the forefront of Aerial technologies,
+                  Jonathan specializes in the development and deployment of
+                  cutting-edge solutions including heavy-lift RPAS and VTOL
+                  UAVs. His work spans from initial concept through to
+                  full-scale production, focusing on custom payloads, remote
+                  sensors, and integrated software solutions. Jonathan's
+                  expertise in CAD, programming, and precision manufacturing
+                  along with his leadership in project management ensures that
+                  projects transition seamlessly from prototype to market-ready
+                  products, consistently meeting the complex needs of our
+                  clients.
                 </p>
                 <span className="hover:opacity-50 transition duration-300">
                   <a
@@ -234,7 +237,7 @@ function AboutComponent() {
               </div>
             </div>
           </div>
-          <div className="mt-40 my-12 max-w-screen">
+          {/*<div className="mt-40 my-12 max-w-screen">
             <p className="text-4xl leading-10 tracking-wide text-center justify-center my-20 lg:mx-60">
               We serve clients worldwide, providing specialised solutions to unique problems
             </p>
@@ -243,7 +246,7 @@ function AboutComponent() {
               Partners
             </p>
             <PartnerLogos />
-          </div>
+  </div>*/}
         </div>
       </div>
     </div>
