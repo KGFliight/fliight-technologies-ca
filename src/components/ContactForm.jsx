@@ -2,53 +2,59 @@ import emailjs from 'emailjs-com'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import ReCAPTCHA from 'react-google-recaptcha'
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 
 function ContactForm() {
   AOS.init()
   const recaptchaRef = useRef()
-  const form = useRef()
+  const formRef = useRef()
+  const [isVerified, setIsVerified] = useState(false)
 
   const sendEmail = (e) => {
     e.preventDefault()
 
-    // This will execute the reCAPTCHA when the form is submitted
-    recaptchaRef.current.execute()
+    if (!isVerified) {
+      alert('Please verify you are not a robot.')
+      recaptchaRef.current.execute()
+    } else {
+      emailjs
+        .sendForm(
+          'service_s5zd9yh',
+          'template_vq0um9d',
+          form.current,
+          'L6wCoQNjMIaX3KMFK'
+        )
+        .then(
+          (result) => {
+            console.log(result.text)
+            alert('Message sent successfully')
+            form.current.reset()
+            recaptchaRef.current.reset()
+            setIsVerified(false)
+          },
+          (error) => {
+            console.log(error.text)
+            alert('Failed to send message. Please try again later.')
+          }
+        )
+        .finally(() => {
+          recaptchaRef.current.reset() // Resets the reCAPTCHA after submission.
+        })
+    }
   }
 
   const onReCAPTCHAChange = (captchaCode) => {
-    if (!captchaCode) {
-      alert('Please verify you are not a robot.')
-      return
+    if (captchaCode) {
+      setIsVerified(true)
+    } else {
+      setIsVerified(false)
+      alert('reCAPTCHA expired, please verify again.')
     }
-
-    // If the ReCAPTCHA is successful, send the email
-    emailjs
-      .sendForm(
-        'service_s5zd9yh',
-        'template_vq0um9d',
-        form.current,
-        'L6wCoQNjMIaX3KMFK'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-          alert('Message sent successfully')
-          form.current.reset()
-        },
-        (error) => {
-          console.log(error.text)
-          alert('Failed to send message. Please try again later.')
-        }
-      )
-      .finally(() => {
-        recaptchaRef.current.reset() // Resets the reCAPTCHA after submission.
-      })
   }
 
   return (
     <div className="my-12 font-['Inter'] font-light">
-      <form className="flex flex-col gap-4" onSubmit={sendEmail} ref={form}>
+      <form className="flex flex-col gap-4" onSubmit={sendEmail} ref={formRef}>
         <label className="flex flex-col">
           Full Name*
           <input
@@ -115,6 +121,7 @@ function ContactForm() {
             ref={recaptchaRef}
             sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
             onChange={onReCAPTCHAChange}
+            size="invisible"
             className="w-full flex justify-center my-4 mb-8"
           />
           <button
