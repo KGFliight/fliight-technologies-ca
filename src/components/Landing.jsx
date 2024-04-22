@@ -12,6 +12,7 @@ import { MobileMenuContext } from './MobileMenuContext'
 import { ModalContext } from './LandingModalContext'
 import CustomCursor from '../components/CustomCursor'
 import { useState, useEffect } from 'react'
+import PartnerLogos from './PartnerLogos'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -130,8 +131,9 @@ function Landing() {
           </NavLink>
         )}
       </div>
+      <LandingWorkWithUs />
       <div className="my-16">
-        <div className="flex flex-col items-center justify-center my-32 sm:mt-56 sm:mb-16">
+        <div className="flex flex-col items-center justify-center my-32 sm:mt-28 sm:mb-16">
           <p
             className="max-w-xs md:max-w-md lg:max-w-3xl min-h-24 text-center text-2xl font-regular leading-loose tracking-wide md:text-4xl md:leading-10 md:font-medium"
             data-aos="fade-zoom-in"
@@ -146,7 +148,7 @@ function Landing() {
         </div>
         <LandingIcons />
       </div>
-      <LandingWorkWithUs />
+      {/*<LandingWorkWithUs />*/}
       <div
         className="sm:my-40"
         data-aos="fade-zoom-in"
@@ -176,7 +178,32 @@ function Landing() {
       <DronesCarousel />
       <div className="h-24"></div>
       {/*<SoftwareAppsCarousel />*/}
-
+      <div className="my-16">
+        <div className="flex flex-col items-center justify-center my-32 sm:mt-28 sm:mb-16">
+          <h2
+            className="uppercase font-medium my-16 md:my-8 px-14 text-4xl sm:text-5xl tracking-wide leading-10 sm:tracking-widest sm:max-w-4xl"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-duration="600"
+          >
+            Partners
+          </h2>
+          <p
+            className="max-w-xs md:max-w-md lg:max-w-3xl min-h-24 text-center text-xl font-regular leading-loose tracking-wide md:text-2xl md:leading-10 md:font-medium"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-duration="300"
+          >
+            We work with the best suppliers in the world to ensure your
+            application is a success.
+          </p>
+        </div>
+        <PartnerLogos />
+      </div>
       <div className="flex flex-col justify-center items-start 2xl:items-center w-screen lg:pl-32">
         <div className="relative mx-8 md:mx-16 lg:mx-0 md:min-h-[300px] md:min-w-[300px] z-50 my-4">
           <div className="flex flex-col xl:flex-row md:p-12">

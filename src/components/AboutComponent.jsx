@@ -7,6 +7,7 @@ import '../App.css'
 import LandingIcons from './LandingLogos'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import PartnerLogos from './PartnerLogos'
 
 function AboutComponent() {
   AOS.init()
@@ -238,10 +239,10 @@ function AboutComponent() {
               We serve clients worldwide, providing specialised solutions to unique problems
             </p>
             <LandingIcons />
-            <p className="text-4xl leading-10 tracking-wide  text-center justify-center max-w-screen md:mx-40 my-20">
+            <p className="text-4xl leading-10 tracking-wide  text-center justify-center md:mx-40 my-20">
               Partners
             </p>
-            <LandingIcons />
+            <PartnerLogos />
           </div>
         </div>
       </div>

@@ -12,32 +12,31 @@ import '../App.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-
-
 const reviews = [
   {
     image: kit,
-    alt: 'Kit Moginie',
-    quote:
-      'Turned an idea into a product that has vastly enhanced our customer experience. Great to deal with from inception through to delivery, thanks Fliight Crew!',
-    name: 'Chris Moginie',
-    role: 'Marketing Manager',
+    alt: 'Jackie Dujmovic',
+    quote: '',
+    company: 'Hover UAV',
+    name: 'Jackie Dujmovic',
+    role: 'Founder & CEO',
   },
   {
     image: emily,
-    alt: 'Another User',
+    alt: 'Emily Blythe',
     quote:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem perferendis reprehenderit nostrum, tenetur asperiores tempora.',
-    name: 'Jenna Smith',
-    role: 'Film Director',
+      'Having previously worked with traditional engineering firms to realise our vision (with limited success), we decided to engage Fliight Technologies for our payload design and integration. Not only were they able to significantly increase the effectiveness of our system, but also reduced the cost & weight while providing us a much easier to use platform overall.',
+    company: 'Pyper Vision',
+    name: 'Emily Blythe',
+    role: 'Founder & CEO',
   },
   {
     image: john,
     alt: 'Someone Else',
-    quote:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, odit.',
-    name: 'Spooky Man',
-    role: 'Slender Mans Manager',
+    quote: '',
+    company: 'Infravision',
+    name: 'Cameron Van Der Berg',
+    role: 'Co Founder & CEO',
   },
 ]
 
@@ -83,7 +82,7 @@ function ReviewCarousel() {
             </div>
           </div>
         </div>
-        <div className="items-center justify-around lg:py-8 flex flex-col sm:w-96 md:w-[30rem] lg:w-[88rem] mb-8 mt-2 sm:p-8  sm:my-16">
+        <div className="items-center justify-around lg:py-8 flex flex-col sm:w-96 md:w-[30rem] lg:w-[88rem] mb-8 mt-2 sm:p-8  sm:my-40">
           <div className="flex flex-col w-full mx-6">
             <p
               className={`${fadeClass} pl-12 pr-8 tracking-wide leading-9 font-light text-xl min-h-[18rem] sm:pt-6 sm:min-h-[12rem] w-full font-['Inter'] flex items-center`}
@@ -101,6 +100,11 @@ function ReviewCarousel() {
               className={`${fadeClass} px-12 text-base font-normal tracking-wide text-ft-grey font-['Inter']`}
             >
               {currentReview.role}
+            </span>
+            <span
+              className={`${fadeClass} px-12 text-base font-thin tracking-wide text-ft-grey font-['Inter'] italic`}
+            >
+              {currentReview.company}
             </span>
             <div className="sm:w-full mb-auto text-right text-3xl sm:p-4 flex gap-4 justify-end mr-4 my-3 sm:mx-1">
               <button

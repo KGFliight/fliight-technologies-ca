@@ -1,26 +1,24 @@
 import '../App.css'
 
-import barminco from '../assets/images/logos/barminco.png'
-import bhpbilliton from '../assets/images/logos/bhpbilliton.png'
-import deltaquad from '../assets/images/logos/deltaquad.png'
-import dji from '../assets/images/logos/dji.png'
-import hover from '../assets/images/logos/hover.png'
-import infravision from '../assets/images/logos/infravision.png'
-import perenti from '../assets/images/logos/perenti.png'
-import powercor from '../assets/images/logos/powercor.png'
-import pypervision from '../assets/images/logos/pypervision.png'
-import unleash from '../assets/images/logos/unleash.png'
-import worley from '../assets/images/logos/worley.png'
+import arace from '../assets/images/logos/partner-logos/arace.png'
+import ascent from '../assets/images/logos/partner-logos/ascent1.svg'
+import deltaquad from '../assets/images/logos/partner-logos/deltaquad_black.png'
+import dji from '../assets/images/logos/partner-logos/dji.png'
+import freespace from '../assets/images/logos/partner-logos/freespace.png'
+import freespace1 from '../assets/images/logos/partner-logos/freespace1.png'
+import nextvision from '../assets/images/logos/partner-logos/nextvision.png'
+import rajant from '../assets/images/logos/partner-logos/rajant.png'
+import rockRobotic from '../assets/images/logos/partner-logos/rock_robotic.png'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 AOS.init()
 
-function LandingLogos() {
+function PartnerLogos() {
   return (
     <div className="flex flex-col justify-center items-center my-20 md:my-20">
-      <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center">
+      <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center items-center">
         <li
           className="w-40 h-20 md:w-60 md:h-40 items-center justify-center flex"
           data-aos-delay="50"
@@ -29,7 +27,7 @@ function LandingLogos() {
           data-aos-offset="0"
           data-aos-duration="300"
         >
-          <img src={infravision} alt="Infravision Logo" />
+          <img src={arace} alt="arace Logo" />
         </li>
         <li
           className="w-40 h-20 md:w-60 md:h-40 items-center justify-center flex"
@@ -39,7 +37,7 @@ function LandingLogos() {
           data-aos-offset="0"
           data-aos-duration="300"
         >
-          <img src={perenti} alt="Perenti Logo" />
+          <img src={ascent} alt="ascent Logo" />
         </li>
         <li
           className="w-40 h-20 md:w-60 md:h-40 items-center justify-center flex"
@@ -49,7 +47,7 @@ function LandingLogos() {
           data-aos-offset="0"
           data-aos-duration="300"
         >
-          <img src={pypervision} alt="Pypervision Logo" />
+          <img src={deltaquad} alt="deltaquad Logo" />
         </li>
 
         <li
@@ -60,7 +58,7 @@ function LandingLogos() {
           data-aos-offset="0"
           data-aos-duration="300"
         >
-          <img src={hover} alt="Hover logo" />
+          <img src={dji} alt="dji logo" />
         </li>
         <li
           className="w-40 h-20 md:w-60 md:h-40 items-center justify-center flex"
@@ -70,7 +68,7 @@ function LandingLogos() {
           data-aos-offset="0"
           data-aos-duration="300"
         >
-          <img src={unleash} alt="Unleash logo" />
+          <img src={freespace} alt="freespace logo" />
         </li>
         <li
           className="w-40 h-20 md:w-60 md:h-40 items-center justify-center flex"
@@ -80,7 +78,7 @@ function LandingLogos() {
           data-aos-offset="0"
           data-aos-duration="300"
         >
-          <img src={barminco} alt="Unleash logo" />
+          <img src={nextvision} alt="nextvision logo" />
         </li>
         <li
           className="w-40 h-20 md:w-60 md:h-40 items-center justify-center flex"
@@ -90,7 +88,7 @@ function LandingLogos() {
           data-aos-offset="0"
           data-aos-duration="300"
         >
-          <img src={bhpbilliton} alt="Unleash logo" />
+          <img src={rajant} alt="rajant logo" />
         </li>
         <li
           className="w-40 h-20 md:w-60 md:h-40 items-center justify-center flex"
@@ -100,17 +98,7 @@ function LandingLogos() {
           data-aos-offset="0"
           data-aos-duration="300"
         >
-          <img src={powercor} alt="Unleash logo" />
-        </li>
-        <li
-          className="w-40 h-20 md:w-60 md:h-40 items-center justify-center flex"
-          data-aos-delay="450"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-back"
-          data-aos-offset="0"
-          data-aos-duration="300"
-        >
-          <img src={worley} alt="Unleash logo" />
+          <img src={rockRobotic} alt="rock robotic logo" />
         </li>
        
       </ul>
@@ -118,4 +106,4 @@ function LandingLogos() {
   )
 }
 
-export default LandingLogos
+export default PartnerLogos
