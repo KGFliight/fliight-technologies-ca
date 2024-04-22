@@ -78,7 +78,7 @@ function ContactForm() {
         <label className="flex flex-col">
           Phone number*
           <input
-            type="number"
+            type="tel"
             name="phone"
             required
             pattern="^\+?\d{0,13}"
