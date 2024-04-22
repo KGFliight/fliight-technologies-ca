@@ -34,6 +34,7 @@ function RequestDemoForm() {
           <input
             type="text"
             name="name"
+            required
             className="bg-ft-dark-grey p-2 my-2 rounded focus:border-green-500 placeholder-ft-grey"
             placeholder="What's your full name?"
           />
@@ -43,6 +44,7 @@ function RequestDemoForm() {
           <input
             type="text"
             name="email"
+            required
             className="bg-ft-dark-grey p-2 my-2 rounded focus:border-green-500 placeholder-ft-grey"
             placeholder="What's your email address?"
           />
@@ -50,8 +52,10 @@ function RequestDemoForm() {
         <label className="flex flex-col">
           Phone number*
           <input
-            type="text"
+            type="tel"
             name="phone"
+            required
+            pattern="^\+?\d{0,13}"
             className="bg-ft-dark-grey p-2 my-2 rounded focus:border-green-500 placeholder-ft-grey"
             placeholder="What's your phone number?"
           />
@@ -70,6 +74,7 @@ function RequestDemoForm() {
           How can we help?*
           <textarea
             name="message"
+            required
             className="bg-ft-dark-grey placeholder-ft-grey rounded h-40 p-2 my-2 placeholder-top"
             placeholder="Please describe your problem and where you see us fitting into your project?"
           ></textarea>

@@ -21,14 +21,14 @@ function ContactForm() {
         .sendForm(
           'service_s5zd9yh',
           'template_vq0um9d',
-          form.current,
+          formRef.current,
           'L6wCoQNjMIaX3KMFK'
         )
         .then(
           (result) => {
             console.log(result.text)
             alert('Message sent successfully')
-            form.current.reset()
+            formRef.current.reset()
             recaptchaRef.current.reset()
             setIsVerified(false)
           },
@@ -88,7 +88,7 @@ function ContactForm() {
           />
         </label>
         <label className="flex flex-col">
-          Reason for getting in touch
+          Reason for getting in touch*
           <select
             type="text"
             name="why"
