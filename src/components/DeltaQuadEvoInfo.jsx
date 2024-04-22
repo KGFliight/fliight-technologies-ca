@@ -172,9 +172,9 @@ function DeltaQuadEvoInfo() {
                     <img
                       src={iconDrone}
                       alt="drone icon"
-                      className="w-[40px] h-[40px] m-2 md:mr-4 inline-flex"
+                      className="w-[40px] h-[40px] m-2 mr-4 inline-flex"
                     />
-                    {item.heading}
+                    <span className="m-2">{item.heading}</span>
                     <FontAwesomeIcon
                       icon={faChevronDown}
                       className="text-2xl ml-auto mr-4"
@@ -240,9 +240,9 @@ function DeltaQuadEvoInfo() {
               <img
                 src={iconDrone}
                 alt="drone icon"
-                className="w-[40px] h-[40px] m-2 md:mr-4 inline-flex"
+                className="w-[40px] h-[40px] m-2 mr-4 inline-flex"
               />
-              <div className="flex-wrap">{item}</div>
+              <div className="flex-wrap m-2">{item}</div>
             </li>
           ))}
         </ul>

@@ -15,7 +15,7 @@ function AboutComponent() {
   return (
     <div className="flex-1 flex flex-col">
       <h1
-        className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-widest mt-32 py-20 justify-center flex uppercase "
+        className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-widest mt-32 py-16 mx-10 justify-center flex uppercase "
         data-aos="fade-down-in"
         data-aos-easing="ease-in-back"
         data-aos-delay="0"
@@ -26,10 +26,10 @@ function AboutComponent() {
         About Us: The Fliight Crew
       </h1>
       <h2
-        className="flex flex-col items-center mb-8 md:mb-20 md:my-12 font-['Inter'] font-light text-lg leading-loose tracking-wide"
+        className="flex flex-col items-center mb-8 md:mb-20 md:my-12 font-['Inter'] font-light text-lg leading-loose tracking-wide mx-10"
         data-aos="fade-down-in"
         data-aos-easing="ease-in-back"
-        data-aos-delay="300"
+        data-aos-delay="150"
         data-aos-offset="0"
         data-aos-mirror="true"
         data-aos-duration="600"
