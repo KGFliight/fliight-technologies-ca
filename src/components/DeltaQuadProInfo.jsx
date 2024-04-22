@@ -82,7 +82,7 @@ function DeltaQuadProInfo() {
               <img
                 src={item.img}
                 alt="drone icon"
-                className="w-[40px] h-[40px] m-2 mr-6 inline-flex"
+                className="w-[40px] h-[40px] m-2 mr-4 inline-flex"
               />
               <span className="m-2">{item.text}</span>
             </li>
@@ -114,7 +114,7 @@ function DeltaQuadProInfo() {
               <img
                 src={item.img}
                 alt="drone icon"
-                className="w-[40px] h-[40px] m-2 mr-6 inline-flex"
+                className="w-[40px] h-[40px] m-2 mr-4 inline-flex"
               />
               <span className="m-2">{item.text}</span>
             </li>
