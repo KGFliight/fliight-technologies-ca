@@ -10,12 +10,13 @@ import iconDroneHand from '../assets/images/icons/icon-drone-hand.png'
 import iconData from '../assets/images/icons/icon-data.png'
 import iconWeight from '../assets/images/icons/icon-weight.png'
 import iconPresentation from '../assets/images/icons/icon-presentation.png'
+import iconNoDroneZone from '../assets/images/icons/icon-no-drone-zone.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 function DeltaQuadProInfo() {
   const technologyItems = [
-    { img: iconDrone, text: 'Up to 150 KM Flight Distance' },
+    { img: iconNoDroneZone, text: 'Up to 150 KM Flight Distance' },
     { img: iconDroneHand, text: 'Full Automation' },
     { img: iconWifi, text: 'Redundant Communication Links' },
     { img: iconSupport, text: 'Local Support and SLA' },
