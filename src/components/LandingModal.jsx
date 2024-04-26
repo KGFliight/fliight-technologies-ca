@@ -58,7 +58,7 @@ function LandingModal() {
                     className="h-[270px] w-full sm:h-[463px]  z-40"
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=azCzfA39QR3RZPw1"
+                    src="https://www.youtube.com/embed/xJ2aFkWXlcE?si=8EQzuT2mRrTMx0gv"
                     title="YouTube video player"
                     allow="accelerometer; autoplay gyroscope; picture-in-picture"
                     allowFullScreen
