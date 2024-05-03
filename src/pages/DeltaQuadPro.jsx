@@ -7,7 +7,7 @@ import DeltaQuadVtol from '../components/DeltaQuadVtol'
 import '../App.css'
 import deltaQuadProBannerImage from '../assets/images/deltaquad-pro-banner.jpg'
 import DeltaQuadProResults from '../components/DeltaQuadProResults'
-import DeltaQuadProTechnical from '../components/DeltaQuadXxxTechnical'
+import DeltaQuadProTechnical from '../components/DeltaQuadProTechnical'
 import { NavLink } from 'react-router-dom'
 
 function DeltaQuadPro() {

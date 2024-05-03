@@ -35,7 +35,7 @@ function DeltaQuadXxxTechnical() {
                 <div className="flex-1 ml-8">9kg</div>
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
-                <div className="flex-1">Airtime</div>
+                <div className="flex-1">Airframe Weight</div>
                 <div className="flex-1 ml-8">6kg</div>
               </div>
             </div>

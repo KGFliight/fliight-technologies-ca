@@ -1,4 +1,6 @@
 import workWorkshop from '../assets/images/work-workshop.jpeg'
+import fliightCrew from '../assets/images/thefliightcrew.jpg'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -15,7 +17,7 @@ function AboutComponent() {
   return (
     <div className="flex-1 flex flex-col">
       <h1
-        className="text-6xl md:text-7xl font-medium leading md:leading-10 tracking-widest mt-32 py-16 mx-10 justify-center flex uppercase "
+        className="text-6xl md:text-7xl font-medium leading sm:leading tracking-widest mt-32 py-16 mx-10 justify-center flex uppercase "
         data-aos="fade-down-in"
         data-aos-easing="ease-in-back"
         data-aos-delay="0"
@@ -202,7 +204,7 @@ function AboutComponent() {
               </div>
               <div className="my-8">
                 <p className="my-2 text-3xl leading-loose tracking-wide">
-                  Johnathan Clark
+                  Jonathan Clark
                 </p>
                 <p className="my-2 text-xl leading-loose tracking-wide">
                   R&D Manager & Founder

@@ -34,6 +34,7 @@ div:focus {
 html {
   height: stretch;
   height: -webkit-fill-available;
+  overflow-x: hidden;
 }
 
 .bg-deltaquad {

@@ -46,8 +46,7 @@ function DeltaQuadProInfo() {
           data-aos-mirror="true"
           data-aos-duration="600"
         >
-          Fliight Technologies is proud to be the official Australian
-          distributor for the Deltaquad Pro eVTOL platform
+          Cost-efficient VTOL UAV solution with professional features
         </h2>
         <p
           className="tracking-wide leading-loose my-6 font-light font-['Inter']"
@@ -58,7 +57,7 @@ function DeltaQuadProInfo() {
           data-aos-mirror="true"
           data-aos-duration="600"
         >
-          The DeltaQuad Pro platform offers incredible value for money.
+          A fully autonomous, commercial grade, Vertical Takeoff and Landing drone with smart technology including LTE  connectivity allowing full remote operations and viewing, mission validator, Comprehensive online e-course, provided with a single transport case weighing less than 25kg.
         </p>
       </div>
       <div

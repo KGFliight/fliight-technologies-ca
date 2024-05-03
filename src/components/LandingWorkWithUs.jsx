@@ -13,7 +13,7 @@ function LandingWorkWithUs() {
   AOS.init()
 
   return (
-    <div className="flex flex-col items-center justify-center my-32 mt-56">
+    <div className="flex flex-col items-center justify-center my-32 mt-40">
       <div className="max-w-xl sm:max-w-full text-center flex flex-col justify-center items-center p-8">
         <h2
           className="uppercase font-medium my-16 md:my-8 px-14 text-4xl sm:text-5xl tracking-wide leading-10 sm:tracking-widest sm:max-w-4xl"
@@ -137,9 +137,7 @@ function LandingWorkWithUs() {
             your UAV operations, legally and without interruption. We have
             highly qualified, experienced and properly licenced pilots who can
             operate your UAV&apos;s whilst you sit back and watch from the
-            ground. In order to transition your organisation to independent
-            operations, Fliight Technologies also offer complete training
-            packages to get your team operating like professionals in no time.
+            ground. If you have a test case you would like to investigate, our team will show you how it&apos;s done.
           </p>
         </div>
         <div
@@ -162,12 +160,7 @@ function LandingWorkWithUs() {
             Training
           </h4>
           <p className="text-base font-light leading-7 tracking-wide font-['Inter']">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
-            perferendis, voluptas laboriosam facilis possimus aliquam hic vero
-            iste. Nam aperiam ad ex quod aliquid ut ipsam odit amet labore,
-            quaerat accusantium tempore pariatur modi, corporis totam obcaecati
-            cumque vitae excepturi voluptates aspernatur mollitia unde!
-            Provident reprehenderit ullam dicta ipsum temporibus.
+          In order to transition your organisation to independent operations, Fliight Technologies also offer complete training packages to get your team operating like professionals in no time. Our training is tailored to your aircraft and payload, so your team is ready to operate with confidence. This means your aircraft will spend more time in the air providing value and less time sitting on shelves, collecting dust.
           </p>
         </div>
       </div>

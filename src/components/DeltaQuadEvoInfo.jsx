@@ -1,5 +1,11 @@
 import { useState } from 'react'
 import iconDrone from '../assets/images/icons/icon-drone.png'
+import iconAerospace from '../assets/images/icons/icon-aerospace.png'
+import iconEndurance from '../assets/images/icons/icon-endurance.png'
+import iconMilitary from '../assets/images/icons/icon-military.png'
+import iconMaintenance from '../assets/images/icons/icon-maintenance.png'
+import iconSwappable from '../assets/images/icons/icon-swappable.png'
+import iconOpenDesign from '../assets/images/icons/icon-open-design.png'
 import deltaQuadFlexibility from '../assets/images/deltaquad-evo-flexibility.png'
 import deltaQuadEvoGif from '../assets/images/dq-evo-intro.gif'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -28,48 +34,56 @@ function DeltaQuadEvoInfo() {
       heading: 'Aerospace grade airframe',
       contents:
         'The EVO is built from carbon, kevlar and fibreglass material. This provides an extremely robust. lightweight airframe that will last for years, even in the harshest conditions.',
+      icon: iconAerospace,
     },
     {
       id: '2',
       heading: 'Retractable landing gear',
       contents:
         'The EVO automatically extends and retracts the landing gear. This alloes a diverse set of payloads to be installed both inside and underneath the platform.',
+      icon: iconDrone,
     },
     {
       id: '3',
       heading: 'Enhanced Endurance',
       contents:
         'The EVO can carry a single payload for up to 4.5 hours using a dual battery or a double payload for up to 3 hours.',
+      icon: iconEndurance,
     },
     {
       id: '4',
       heading: 'Self Maintenance',
       contents:
         'The Evo is designed to be modular and easy to self maintain. The motor arms are swappable, and a maintenance kit can be installed by any operator without the need to return it to the factory.',
+      icon: iconMaintenance,
     },
     {
       id: '5',
       heading: 'Dual payload',
       contents:
         'The EVO is equipped with two fully integrated payload slots. They can be used to carry two sensors simultaneously, a single large payload, or to achieve extreme flight times with a second battery.',
+      icon: iconDrone,
     },
     {
       id: '6',
       heading: 'Swappable payloads',
       contents:
         'The EVO allows plug&play installation of an extensive range of payloads that can be swapped in the field without any tools. The Evo updates automatically to be compatible with future payloads.',
+      icon: iconSwappable,
     },
     {
       id: '7',
       heading: 'Military standards',
       contents:
         'The EVO is a multi-purpose platform that complies with military standards. It features several military options to ruggedize and protect data while providing diverse aerial intelligence.',
+      icon: iconMilitary,
     },
     {
       id: '8',
       heading: 'Open design',
       contents:
         'The EVO comes with everything required to design and integrate your own payload. The required 3D models are freely available, and payload connectors are offered at a low cost.',
+      icon: iconOpenDesign,
     },
     // ... other items
   ]
@@ -170,7 +184,7 @@ function DeltaQuadEvoInfo() {
                     className="flex items-center w-full text-left [&>*:nth-child(3)]:ml-auto [&>*:nth-child(3)]:p-2 text-sm md:text-lg font-light font-['Inter'] tracking-wide leading-loose"
                   >
                     <img
-                      src={iconDrone}
+                      src={item.icon}
                       alt="drone icon"
                       className="w-[40px] h-[40px] m-2 mr-4 inline-flex"
                     />
