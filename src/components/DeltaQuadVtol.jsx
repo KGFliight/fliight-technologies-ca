@@ -3,7 +3,6 @@ import cargo from '../assets/images/dq-vtol-cargo.jpeg'
 import view from '../assets/images/dq-vtol-view.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
-import chevronDoubleRight from '../assets/images/icons/chevron-double-right.svg'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'

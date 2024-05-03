@@ -19,13 +19,9 @@ import 'aos/dist/aos.css'
 
 function Landing() {
   AOS.init()
-  const { isModalOpen, setIsModalOpen } = useContext(ModalContext)
+  const { isModalOpen } = useContext(ModalContext)
   const { isMobileMenuOpen } = useContext(MobileMenuContext)
 
-  const toggleModal = () => {
-    setModal(!modal)
-    setIsModalOpen(!isModalOpen)
-  }
 
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 })
 

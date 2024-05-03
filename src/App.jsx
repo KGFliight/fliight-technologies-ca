@@ -1,19 +1,15 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Drones from './pages/Drones'
-import Solutions from './pages/Solutions'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import RequestDemo from './pages/RequestDemo'
 import './App.css'
 import DeltaQuadPro from './pages/DeltaQuadPro'
 import DeltaQuadEvo from './pages/DeltaQuadEvo'
-import Argus from './pages/Argus'
-import Aerowhere from './pages/Aerowhere'
 import { MobileMenuProvider } from './components/MobileMenuContext'
 import { ModalProvider } from './components/LandingModalContext'
 
-import TemplateProductPage from './pages/TemplateProductPage'
 
 // CREATE A PATH IF MAKING ANOTHER PAGE (template)
 

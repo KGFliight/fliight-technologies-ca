@@ -1,4 +1,3 @@
-import workWorkshop from '../assets/images/work-workshop.jpeg'
 import fliightCrew from '../assets/images/thefliightcrew_cropped.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,10 +5,9 @@ import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import kit from '../assets/images/review-users/kit.jpeg'
 import '../App.css'
-import LandingIcons from './LandingLogos'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import PartnerLogos from './PartnerLogos'
+
 
 function AboutComponent() {
   AOS.init()
@@ -69,7 +67,7 @@ function AboutComponent() {
             UAVs are platforms, designed to provide data and insights that save
             your organisation time and money all while reducing the risk to
             personnel. At the end of the day, they are only as useful as the
-            data you get out. We understand this and that's why we provide
+            data you get out. We understand this and that&apos;s why we provide
             solutions tailored to your needs and are with you for the entire
             journey, to ensure your investment is a success.
           </p>
@@ -151,10 +149,10 @@ function AboutComponent() {
               data-aos-duration="600"
             >
               We aim to push Australian UAV technologies to the bleeding edge
-              globally. We don't just do sales and support. We are constantly
+              globally. We don&apos;t just do sales and support. We are constantly
               looking for opportunities to develop products and packages that
-              solve real world problems. If you're interested in joining the
-              Fliight Crew and changing the world - don't hesitate to reach out!
+              solve real world problems. If you&apos;re interested in joining the
+              Fliight Crew and changing the world - don&apos;t hesitate to reach out!
             </p>
           </div>
 
@@ -221,7 +219,7 @@ function AboutComponent() {
                   cutting-edge solutions including heavy-lift RPAS and VTOL
                   UAVs. His work spans from initial concept through to
                   full-scale production, focusing on custom payloads, remote
-                  sensors, and integrated software solutions. Jonathan's
+                  sensors, and integrated software solutions. Jonathan&apos;s
                   expertise in CAD, programming, and precision manufacturing
                   along with his leadership in project management ensures that
                   projects transition seamlessly from prototype to market-ready

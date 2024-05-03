@@ -1,7 +1,5 @@
 import '../App.css'
 import React from 'react'
-import deltaQuad from '../assets/images/deltaquad-pro.jpeg'
-import yellowScan from '../assets/images/evo-yellowscan-payload.jpeg'
 import { NavLink } from 'react-router-dom'
 import deltaQuadProImage from '../assets/images/deltaquad-pro-banner.jpg'
 import deltaQuadEvoImage from '../assets/images/deltaquad-evo-banner.jpg'
