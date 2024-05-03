@@ -197,7 +197,7 @@ function Landing() {
             data-aos-duration="300"
           >
             We work with the best suppliers in the world to ensure your
-            application is a success.
+            project is a success.
           </p>
         </div>
         <PartnerLogos />
