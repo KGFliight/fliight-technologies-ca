@@ -1,11 +1,11 @@
-import evoDrawing from '../assets/images/evo-drawing.jpeg';
+import proDrawing from '../assets/images/dq-pro-drawing.jpeg';
 
 
 function DeltaQuadXxxTechnical() {
   return (
     <div className="pb-8 bg-white">
       <img
-        src={evoDrawing}
+        src={proDrawing}
         alt="Evo Drawing"
         className="pt-16 md:px-32 md:pt-16 flex justify-center w-full"
       />
