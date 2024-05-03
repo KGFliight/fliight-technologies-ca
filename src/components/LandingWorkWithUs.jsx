@@ -36,7 +36,7 @@ function LandingWorkWithUs() {
           The field of Unmanned Aerial Vehicles is evolving rapidly. Off the
           shelf solutions cannot keep pace with the fast-changing needs of our
           clients as they seek differentiation and competitive advantage. Many
-          clients come to us with challenges, we provide solutions.
+          clients come to us with challenges, we provide effective solutions.
           <br />
           <br />
           It&apos;s what we do.

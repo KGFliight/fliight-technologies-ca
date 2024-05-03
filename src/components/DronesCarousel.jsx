@@ -31,7 +31,7 @@ function DronesCarousel() {
     <div className="w-full">
       <div className=" sm:pl-12 md:pl-20">
         <h3 className="pl-12 md:pl-16 mt-8 mb-2 text-4xl sm:text-5xl uppercase font-medium tracking-widest">
-          DRONES
+          AERIAL PLATFORMS
         </h3>
         <div className="hidden md:pr-16">
           <div className="sm:w-full mb-auto text-right text-3xl sm:px-4 flex gap-4 justify-end mr-4 my-3 sm:m-0 sm:mx-1">

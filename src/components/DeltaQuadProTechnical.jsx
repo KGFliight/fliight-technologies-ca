@@ -1,5 +1,4 @@
-import proDrawing from '../assets/images/dq-pro-drawing.jpeg';
-
+import proDrawing from '../assets/images/dq-pro-drawing.jpeg'
 
 function DeltaQuadXxxTechnical() {
   return (
@@ -60,26 +59,12 @@ function DeltaQuadXxxTechnical() {
             </div>
           </div>
           <div className="flex-1 mr-2 md:mr-8">
-            <div className="uppercase text-ft-black text-2xl md:text-4xl my-4">
-              Dual Battery performance
-              <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded mt-6 font-light font-['Inter'] items-center">
-                <div className="flex-1">Maximum Flight Time</div>
-                <div className="flex-1 ml-8">4.5 hours</div>
-              </div>
-              <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
-                <div className="flex-1">Maximum Flight Range</div>
-                <div className="flex-1 ml-8">280 km</div>
-              </div>
-              <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
-                <div className="flex-1">Payload Capacity</div>
-                <div className="flex-1 ml-8">1 kg</div>
-              </div>
-            </div>
+          
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default DeltaQuadXxxTechnical;
+export default DeltaQuadXxxTechnical

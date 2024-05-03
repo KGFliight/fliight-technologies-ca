@@ -1,7 +1,5 @@
-import iconDrone from '../assets/images/icons/icon-drone.png'
 import iconWifi from '../assets/images/icons/icon-wifi.png'
 import iconShield from '../assets/images/icons/icon-shield.png'
-import iconClipboard from '../assets/images/icons/icon-clipboard.png'
 import iconWeather from '../assets/images/icons/icon-weather.png'
 import iconPin from '../assets/images/icons/icon-pin.png'
 import iconSupport from '../assets/images/icons/icon-support.png'
@@ -112,7 +110,7 @@ function DeltaQuadProInfo() {
             >
               <img
                 src={item.img}
-                alt="drone icon"
+                alt="end to end icon"
                 className="w-[40px] h-[40px] m-2 mr-4 inline-flex"
               />
               <span className="m-2">{item.text}</span>

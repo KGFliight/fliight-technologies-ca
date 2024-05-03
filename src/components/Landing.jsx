@@ -65,9 +65,7 @@ function Landing() {
             >
               UAV SOLUTIONS
               <br />
-              CUSTOMISED
-              <br />
-              TO WORK FOR YOU
+              WORKING FOR YOU
             </div>
             {/*<div
               className="md:ml-4 h-60 text-sm md:text-lg lg:text-2xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white transition-ease duration-300 mt-4"

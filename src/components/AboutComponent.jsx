@@ -159,7 +159,7 @@ function AboutComponent() {
           </div>
 
           <h3 className="uppercase text-5xl tracking-widest text-left my-8 ">
-            Our people who make it happen
+            Meet the founders
           </h3>
           <div className="flex flex-col sm:items-center lg:items-start lg:flex-row lg:justify-between my-20 font-['Inter'] font-light ">
             <div className="max-w-[368px] lg:min-w-[xl] lg:max-w-2xl pr-8 mt-0 flex-1">

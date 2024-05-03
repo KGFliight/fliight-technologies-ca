@@ -8,6 +8,10 @@ import iconSwappable from '../assets/images/icons/icon-swappable.png'
 import iconOpenDesign from '../assets/images/icons/icon-open-design.png'
 import deltaQuadFlexibility from '../assets/images/deltaquad-evo-flexibility.png'
 import deltaQuadEvoGif from '../assets/images/dq-evo-intro.gif'
+import iconPin from '../assets/images/icons/icon-pin.png'
+import iconPresentation from '../assets/images/icons/icon-presentation.png'
+import iconShield from '../assets/images/icons/icon-shield.png'
+import iconData from '../assets/images/icons/icon-data.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import '../App.css'
@@ -89,10 +93,10 @@ function DeltaQuadEvoInfo() {
   ]
 
   const endToEndItems = [
-    'Support and warranty',
-    'Certified training',
-    'Regulatory compliance packages',
-    'Data processing and management',
+    { img: iconPin, text: 'Support and warranty' },
+    { img: iconPresentation, text: 'Certified training' },
+    { img: iconShield, text: 'Regulatory compliance packages' },
+    { img: iconData, text: 'Data processing and management' },
   ]
 
   /*
@@ -252,11 +256,11 @@ function DeltaQuadEvoInfo() {
               className="bg-ft-dark-grey p-2 my-2 mr-4 md:w-[44%] lg:w-[48%] rounded capitalize flex items-center"
             >
               <img
-                src={iconDrone}
-                alt="drone icon"
+                src={item.img}
+                alt="end to end icon"
                 className="w-[40px] h-[40px] m-2 mr-4 inline-flex"
               />
-              <div className="flex-wrap m-2">{item}</div>
+              <div className="flex-wrap m-2">{item.text}</div>
             </li>
           ))}
         </ul>
