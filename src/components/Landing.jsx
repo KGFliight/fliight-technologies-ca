@@ -228,7 +228,7 @@ function Landing() {
                 data-aos-offset="0"
                 data-aos-duration="300"
               >
-                Work with a team leading the way in for uav engineering.
+                Work with a team leading the way in for uav innovation.
               </h2>
               <p
                 className="leading-normal tracking-wide px-6 my-4 lg:max-w-2xl text-xl font-light font-['Inter']"
@@ -240,7 +240,7 @@ function Landing() {
               >
                 Our team have been passionate about drones and UAV&apos;s right
                 through their evolution. Today, they are among the world&apos;s
-                foremost experts in UAV engineering and automation
+                foremost experts in UAV engineering and custom system development
               </p>
               <div className="max-md:flex max-md:justify-center">
                 <button className="bg-ft-dark-grey uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest my-8 md:mx-6 hover:opacity-90 hover:bg-black duration-300">
