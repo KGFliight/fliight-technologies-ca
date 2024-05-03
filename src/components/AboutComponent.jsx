@@ -1,5 +1,5 @@
 import workWorkshop from '../assets/images/work-workshop.jpeg'
-import fliightCrew from '../assets/images/thefliightcrew.jpg'
+import fliightCrew from '../assets/images/thefliightcrew_cropped.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
@@ -40,8 +40,8 @@ function AboutComponent() {
       </h2>
       <div className="w-screen 2xl:flex 2xl:justify-center flex">
         <img
-          src={workWorkshop}
-          className="image-container w-full max-h-[540px] 2xl:max-h-[800px] object-scale-down object-bottom sm:object-cover"
+          src={fliightCrew}
+          className="image-container w-full object-scale-down object-bottom"
         />
       </div>
       <div className="flex flex-col items-center flex-1 p-6 md:my-12">
@@ -175,12 +175,18 @@ function AboutComponent() {
                   CEO & Founder
                 </p>
                 <p className="my-4 leading-loose tracking-wide">
-                  Kihan has been involved in the UAV industry since the dawn of
-                  the market. With unparalleled industry experience and
-                  connections with leading partners in hardware and software,
-                  Kihan has built a reputation for rapidly developing high value
-                  solutions with a no BS attitude. If you want to get the job
-                  done, look no further.
+                  Kihan is a mechanical engineer with a passion for design,
+                  production and delivery of integrated systems. As CEO, Kihan
+                  takes a hands-on approach to managing customer and partner
+                  interactions. Aligning technology, project needs and output
+                  requirements with project constraints. His practical drone
+                  experience in the industry provides valuable insight into
+                  market needs and trends. Kihan has extensive experience
+                  integrating hardware and software solutions with the correct
+                  workflows in order to deliver high-value end-to-end solutions
+                  to customers.
+                  <br />
+                  If you want to get the job done, look no further.
                 </p>
                 <span className="hover:opacity-50 transition duration-300">
                   <a
