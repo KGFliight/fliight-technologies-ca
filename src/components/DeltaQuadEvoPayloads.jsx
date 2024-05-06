@@ -12,7 +12,7 @@ function DeltaQuadPayloads() {
       <h3 className="uppercase text-5xl">Single & Double payloads</h3>
       <p className="leading-loose tracking-wide my-6 font-light font-['Inter']">
         The Evo comes with the option of integrating up to two single or one
-        double payload.
+        double payload. 
       </p>
       <div className="flex flex-col md:flex-row md:gap-4">
         <div className="bg-ft-dark-grey p-4 my-2 mr-4 md:w-[44%] lg:w-[48%] rounded flex">
@@ -45,7 +45,7 @@ function DeltaQuadPayloads() {
         </div>
       </div>
       <p className="my-6 leading-loose tracking-wide font-light font-['Inter']">
-        The Evo is equipped with a unique self-balancing system allowing the
+        The Evo is equipped with a unique self-balancing system (COC) allowing the
         vehicle to fly efficiently in any configuration. This provides a
         spectacular range of possibilities and applications - more varied data,
         power, and value from every flight.

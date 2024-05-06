@@ -5,7 +5,7 @@ import {
   faChevronRight,
   faChevronLeft,
 } from '@fortawesome/free-solid-svg-icons'
-import a7riv from '../assets/images/payloads/payloads-cropped-a7riv.jpg'
+import ilxLr1 from '../assets/images/payloads/payloads-cropped-ilx-lr1.jpg'
 import altum from '../assets/images/payloads/payloads-cropped-altum.jpg'
 import delivery from '../assets/images/payloads/payloads-cropped-delivery.jpg'
 import raptor from '../assets/images/payloads/payloads-cropped-raptor.jpg'
@@ -14,14 +14,33 @@ import yellowscan from '../assets/images/payloads/payloads-cropped-yellowscan.jp
 
 const result = [
   {
-    image: a7riv,
+    image: raptor,
+    alt: 'fill',
+    category: 'RGB & Thermal',
+    title: 'Raptor',
+    maker: 'NextVision',
+    description:
+      'An 80x zoom and high-resolution thermal & RGB surveillance camera',
+    bannerText: 'Single',
+  },
+  {
+    image: ilxLr1,
     alt: 'fill',
     category: 'RGB',
-    title: 'A7R mark IV',
+    title: 'ILX - LR1',
     maker: 'Sony',
     description:
       'A fully integrated 61 megapixel mapping camera with an interchangeable lens',
-    bannerText: 'Two Single',
+    bannerText: 'Single',
+  },
+  {
+    image: yellowscan,
+    alt: 'fill',
+    category: 'LIDAR & RGB',
+    title: 'Mapper+ OEM with RGB camera',
+    maker: 'YellowScan',
+    description: 'A lidar mapping solution combined with a synchronized RGB',
+    bannerText: 'Dual',
   },
   {
     image: altum,
@@ -31,16 +50,7 @@ const result = [
     maker: 'AgEagle',
     description:
       'A six band synchronized thermal and multispectral sensor with panchromatic correction',
-    bannerText: 'One Double',
-  },
-  {
-    image: wris,
-    alt: 'fill',
-    category: 'RGB & THERMAL',
-    title: 'Wris Pro',
-    maker: 'Workswell',
-    description: 'An integrated high-resolution thermal & RGB mapping sensor',
-    bannerText: 'Two Single',
+    bannerText: 'Single',
   },
   {
     image: delivery,
@@ -50,27 +60,16 @@ const result = [
     maker: 'DeltaQuad',
     description:
       'A payload delivery system with mission controlled cargo doors for precise delivery',
-    bannerText: 'Two Single',
+    bannerText: 'Dual',
   },
   {
-    image: raptor,
+    image: wris,
     alt: 'fill',
-    category: 'RGB & Thermal',
-    title: 'Raptor',
-    maker: 'NextVision',
-    description:
-      'An 80x zoom and high-resolution thermal & RGB surveillance camera',
-    bannerText: 'Two Single',
-  },
-  {
-    image: yellowscan,
-    alt: 'fill',
-    category: 'LIDAR & RGB',
-    title: 'Mapper+ OEM with RGB camera',
-    maker: 'YellowScan',
-    description:
-      'A lidar mapping solution combined with a synchronized RGB',
-    bannerText: 'One Double',
+    category: 'RGB & THERMAL',
+    title: 'Wris Pro',
+    maker: 'Workswell',
+    description: 'An integrated high-resolution thermal & RGB mapping sensor',
+    bannerText: 'Single',
   },
 ]
 
@@ -120,11 +119,11 @@ function DeltaQuadPayloadsCarousel() {
           </div>
         </div>
         <ul
-          className="media-scroller snaps-inline md:auto-cols-[42%] lg:auto-cols-[38%] pl-12 md:pl-20"
+          className="media-scroller snaps-inline auto-cols-[77%] sm:auto-cols-[42%] lg:auto-cols-[27%] 2xl:auto-cols-[24%] pl-12 md:pl-16 lg:pl-20"
           ref={scrollRef}
         >
           {result.map((item, index) => (
-            <li key={index} className="media-element lg:pr-6 lg:py-12 lg:pl-4">
+            <li key={index} className="media-element lg:pr-2 lg:py-12 lg:pl-4 md:pl-4">
               <div className="relative ">
                 <img
                   src={item.image}
@@ -132,15 +131,15 @@ function DeltaQuadPayloadsCarousel() {
                   className="bg-ft-grey border-ft-grey rounded object-cover "
                 />
                 {/* Conditional rendering based on bannerText */}
-                {item.bannerText === 'Two Single' && (
-                  <div className="absolute bottom-4 right-4 bg-ft-red text-ft-white w-fit h-fit p-1 inline-flex items-center rounded px-2">
+                {item.bannerText === 'Dual' && (
+                  <div className="absolute bottom-4 right-4 bg-ft-red text-ft-white w-fit h-fit inline-flex items-center rounded px-2">
                     <div className="bg-ft-white w-4 h-6 m-0.5 rounded-sm"></div>
                     <div className="bg-ft-white w-4 h-6 m-0.5 rounded-sm"></div>
                     <div className="p-2">{item.bannerText}</div>
                   </div>
                 )}
-                {item.bannerText === 'One Double' && (
-                  <div className="absolute bottom-4 right-4 bg-ft-red text-ft-white w-fit h-fit p-1 inline-flex items-center rounded px-2">
+                {item.bannerText === 'Single' && (
+                  <div className="absolute bottom-4 right-4 bg-ft-red text-ft-white w-fit h-fit inline-flex items-center rounded px-2">
                     <div className="bg-ft-white w-4 h-6 m-0.5 rounded-sm"></div>
                     <div className="p-2">{item.bannerText}</div>
                   </div>
@@ -158,11 +157,11 @@ function DeltaQuadPayloadsCarousel() {
                   <div className="p-2">One Double</div>
                 </div>*/}
               </div>
-              <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter'] mt-4 mb-2">
+              <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter'] mt-4 mb-1">
                 {item.category}
               </p>
-              <p className="uppercase font-medium text-2xl lg:text-[2rem]">{item.title}</p>
-              <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter'] h-8">
+              <p className="uppercase font-medium text-2xl ">{item.title}</p>
+              <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter']">
                 {item.maker}
               </p>
               <div className="border-ft-dark-grey border-t h-0.5 w-full rounded"></div>
