@@ -24,7 +24,7 @@ const result = [
     title: 'Surf Life Saving - Shark Spotting',
     description:
       'Demonstration of a remote command centre concept with real world data collected during the Surf Life Saving NSW Beyond Visual Line of Sight (BVLOS) trials in Northern NSW, Australia.',
-    url: '⁠https://sls-bvlos-shark.glitch.me/',
+    url: 'https://sls-bvlos-shark.glitch.me/',
   },
   {
     image: landscape,
@@ -87,7 +87,12 @@ function DeltaQuadProResults() {
           {result.map((item, index) => (
             <li key={index} className="media-element lg:pr-6 lg:py-12 lg:pl-4 ">
               {item.url ? (
-                <a href={item.url} className="no-underline hover:no-underline hover:opacity-80 hover:-translate-y-1">
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="no-underline hover:no-underline hover:opacity-80 hover:-translate-y-1"
+                >
                   <img
                     src={item.image}
                     alt={item.alt}
@@ -102,18 +107,18 @@ function DeltaQuadProResults() {
                 </a>
               ) : (
                 <>
-                <a className="hover:-translate-y-1">
-                  <img
-                    src={item.image}
-                    alt={item.alt}
-                    className="bg-ft-grey border-ft-grey rounded min-h-[10rem] h-auto"
-                  />
-                  <p className="uppercase font-medium mt-2 text-[2rem]">
-                    {item.title}
-                  </p>
-                  <p className="text-base text-ft-grey leading-loose tracking-wide font-light font-['Inter']">
-                    {item.description}
-                  </p>
+                  <a className="hover:-translate-y-1">
+                    <img
+                      src={item.image}
+                      alt={item.alt}
+                      className="bg-ft-grey border-ft-grey rounded min-h-[10rem] h-auto"
+                    />
+                    <p className="uppercase font-medium mt-2 text-[2rem]">
+                      {item.title}
+                    </p>
+                    <p className="text-base text-ft-grey leading-loose tracking-wide font-light font-['Inter']">
+                      {item.description}
+                    </p>
                   </a>
                 </>
               )}
