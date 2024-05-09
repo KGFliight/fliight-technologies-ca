@@ -41,8 +41,8 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
 
   const getHeaderClass = () => {
     if (
-      location.pathname === '/drones/deltaquad-pro' ||
-      location.pathname === '/drones/deltaquad-evo'
+      location.pathname === '/aerial-platforms/deltaquad-pro' ||
+      location.pathname === '/aerial-platforms/deltaquad-evo'
     ) {
       return {
         background: 'bg-white',
@@ -112,14 +112,14 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
               item ? (
                 <animated.div style={style} className="flex flex-col gap-4">
                   <Link
-                    to="/drones/deltaquad-pro"
+                    to="/aerial-platforms/deltaquad-pro"
                     className="text-ft-grey py-1 pl-2 text-3xl"
                     onClick={handleMenuItemClick}
                   >
                     DeltaQuad Pro
                   </Link>
                   <Link
-                    to="/drones/deltaquad-evo"
+                    to="/aerial-platforms/deltaquad-evo"
                     className="text-ft-grey py-1 pl-2 text-3xl"
                     onClick={handleMenuItemClick}
                   >
