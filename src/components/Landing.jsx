@@ -143,6 +143,7 @@ function Landing() {
         <LandingIcons />
       </div>
       {/*<LandingWorkWithUs />*/}
+      {/*
       <div
         className="sm:my-40"
         data-aos="fade-zoom-in"
@@ -151,6 +152,7 @@ function Landing() {
         data-aos-offset="0"
         data-aos-duration="300"
       >
+        
         <div className="flex flex-col items-center justify-center text-center">
           <h2 className="uppercase px-12 text-4xl sm:text-5xl tracking-wide font-medium sm:tracking-widest sm:max-w-4xl">
             Class leading innovation
@@ -161,7 +163,9 @@ function Landing() {
         </div>
 
         <ReviewCarousel />
+        
       </div>
+      */}
       <div className="my-20 sm:my-0 sm:mb-20">
         <img
           src={landingWorkshopImage}

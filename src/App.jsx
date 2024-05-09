@@ -20,9 +20,9 @@ function App() {
         <ModalProvider>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/drones" element={<Drones />} />
-            <Route path="/drones/deltaquad-pro" element={<DeltaQuadPro />} />
-            <Route path="/drones/deltaquad-evo" element={<DeltaQuadEvo />} />
+            <Route path="/aerial-platforms" element={<Drones />} />
+            <Route path="/aerial-platforms/deltaquad-pro" element={<DeltaQuadPro />} />
+            <Route path="/aerial-platforms/deltaquad-evo" element={<DeltaQuadEvo />} />
             
             {/* 
             UNCOMMENT THIS TO SEE TEMPLATE PAGE

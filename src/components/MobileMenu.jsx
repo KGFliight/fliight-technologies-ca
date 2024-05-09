@@ -104,7 +104,7 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
               onClick={toggleTechDropdown}
             >
               <span className="">
-                Drones&nbsp;
+                Aerial Platforms&nbsp;
                 <FontAwesomeIcon icon={faChevronDown} className="text-2xl" />
               </span>
             </Link>

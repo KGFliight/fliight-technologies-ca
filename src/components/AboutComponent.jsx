@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import kit from '../assets/images/review-users/kit.jpeg'
+import john from '../assets/images/john.jpg'
+import kihan from '../assets/images/kihan.jpeg'
 import '../App.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -162,7 +164,7 @@ function AboutComponent() {
           <div className="flex flex-col sm:items-center lg:items-start lg:flex-row lg:justify-between my-20 font-['Inter'] font-light ">
             <div className="max-w-[368px] lg:min-w-[xl] lg:max-w-2xl pr-8 mt-0 flex-1">
               <div className="aspect-w-9 aspect-h-16 image-container z-50">
-                <img src={kit} className="w-full h-auto" />
+                <img src={kihan} alt="Khan Garcia" className="w-full h-auto" />
               </div>
 
               <div className="my-8">
@@ -204,7 +206,7 @@ function AboutComponent() {
             </div>
             <div className="max-w-[368px] lg:min-w-[xl] lg:max-w-2xl mt-24 pr-8 flex-1">
               <div className="aspect-w-9 aspect-h-16 image-container z-50">
-                <img src={kit} className="w-full h-auto rounded" />
+                <img src={john} alt="Jonathan Clark" className="w-full h-auto rounded" />
               </div>
               <div className="my-8">
                 <p className="my-2 text-3xl leading-loose tracking-wide">

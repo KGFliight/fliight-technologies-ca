@@ -20,13 +20,13 @@ function Header() {
     useContext(MobileMenuContext)
 
   const location = useLocation()
-  
+
   const getHeaderClass = () => {
     if (
-      location.pathname === '/drones/deltaquad-pro' ||
-      location.pathname === '/drones/deltaquad-evo' 
+      location.pathname === '/aerial-platforms/deltaquad-pro' ||
+      location.pathname === '/aerial-platforms/deltaquad-evo'
       // TEMPLATE if adding product can add here, be sure to also include || on the above line (27) if adding a new location.pathname. Location.pathname to match url on app.jsx
-      // this changes the colour of the header to match background 
+      // this changes the colour of the header to match background
     ) {
       return {
         background: 'bg-white',
@@ -64,8 +64,8 @@ function Header() {
   }
 
   const dronesDropdownItems = [
-    { name: 'DeltaQuad Pro', path: '/drones/deltaquad-pro' },
-    { name: 'DeltaQuad Evo', path: '/drones/deltaquad-evo' },
+    { name: 'DeltaQuad Pro', path: '/aerial-platforms/deltaquad-pro' },
+    { name: 'DeltaQuad Evo', path: '/aerial-platforms/deltaquad-evo' },
     //template product could go here, following the same configuration as the ones above. Be sure to adjust the path correctly
   ]
 
@@ -77,13 +77,11 @@ function Header() {
 
   AOS.init()
 
-
   return (
     <header className={`fixed-top h-16 w-full ${headerClasses.background}`}>
       {/* Desktop Navigation */}
       <div
         className={`hidden border-b ${headerClasses.borderColor} lg:flex md:flex w-full h-16 justify-between items-center pl-12 `}
-
       >
         {/* Home Logo */}
         <Link
@@ -108,17 +106,17 @@ function Header() {
               to=""
               className={`hover:opacity-80 ${headerClasses.textColor} transition duration-200`}
             >
-              Drones
+              Aerial Platforms
             </NavLink>
             {/* Dropdown Menu props */}
             <DropdownMenu
-              title="Drones"
+              title="Aerial Platforms"
               items={dronesDropdownItems}
               isOpen={isDronesDropdownOpen}
               setIsOpen={setIsDronesDropdownOpen}
             />
           </div>
-          
+
           {/*
           COMMENTED OUT 'SOLUTIONS' DROPDOWN MENU. CAN UNCOMMENT OR ADJUST FOR PRODUCTS. IF WANTING TO JUST HAVE SINGLE LINK, FOLLOW SAME CONFIGURATION AS 'ABOUT' NAVLINK BELOW
           <div

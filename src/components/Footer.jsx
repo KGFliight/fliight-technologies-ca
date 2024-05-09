@@ -39,15 +39,15 @@ function Footer() {
             <div className="flex my-4 w-full md:mx-8">
               <div className="flex flex-col w-[50%] sm:w-40">
                 <span className="uppercase mt-4 sm:my-4 text-sm leading-relaxed font-semibold text-ft-grey md:text-lg opacity-50">
-                  Drones
+                  Aerial Platforms
                 </span>
                 <ul className="text-sm leading-loose tracking-wide md:text-lg font-['Inter'] font-light">
-                  <NavLink to="/drones/deltaquad-pro">
+                  <NavLink to="/aerial-platforms/deltaquad-pro">
                     <li className="my-4  hover:underline hover:text-ft-white  transition duration-300">
                       DeltaQuad Pro
                     </li>
                   </NavLink>
-                  <NavLink to="/drones/deltaquad-evo">
+                  <NavLink to="/aerial-platforms/deltaquad-evo">
                     <li className="my-4  hover:underline hover:text-ft-white transition duration-300">
                       DeltaQuad Evo
                     </li>
