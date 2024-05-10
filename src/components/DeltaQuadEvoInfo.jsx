@@ -12,6 +12,8 @@ import iconPin from '../assets/images/icons/icon-pin.png'
 import iconPresentation from '../assets/images/icons/icon-presentation.png'
 import iconShield from '../assets/images/icons/icon-shield.png'
 import iconData from '../assets/images/icons/icon-data.png'
+import iconRetractable from '../assets/images/icons/icon-landing-gear.png'
+import iconDualPayload from '../assets/images/icons/icon-duel-payload.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import '../App.css'
@@ -45,7 +47,7 @@ function DeltaQuadEvoInfo() {
       heading: 'Retractable landing gear',
       contents:
         'The EVO automatically extends and retracts the landing gear. This alloes a diverse set of payloads to be installed both inside and underneath the platform.',
-      icon: iconDrone,
+      icon: iconRetractable,
     },
     {
       id: '3',
@@ -66,7 +68,7 @@ function DeltaQuadEvoInfo() {
       heading: 'Dual payload',
       contents:
         'The EVO is equipped with two fully integrated payload slots. They can be used to carry two sensors simultaneously, a single large payload, or to achieve extreme flight times with a second battery.',
-      icon: iconDrone,
+      icon: iconDualPayload,
     },
     {
       id: '6',
