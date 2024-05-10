@@ -228,7 +228,7 @@ function Landing() {
                 data-aos-offset="0"
                 data-aos-duration="300"
               >
-                Work with a team leading the way in for uav innovation.
+                Work with a team leading the way in uav innovation.
               </h2>
               <p
                 className="leading-normal tracking-wide px-6 my-4 lg:max-w-2xl text-xl font-light font-['Inter']"

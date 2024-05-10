@@ -21,7 +21,7 @@ function DeltaQuadXxxTechnical() {
                 <div className="flex-1 ml-8">235cm</div>
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
-                <div className="flex-1">Payload bay (cm)</div>
+                <div className="flex-1">Payload Bay (cm)</div>
                 <div className="flex-1 ml-8">15 * 10 * 10</div>
               </div>
             </div>
@@ -43,7 +43,7 @@ function DeltaQuadXxxTechnical() {
         <div className="flex flex-col md:flex-row my-2">
           <div className="flex-1 mr-2 md:mr-8">
             <div className="uppercase text-ft-black text-2xl md:text-4xl my-4">
-              Single Battery performance
+              Single Battery Performance
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded mt-6 font-light font-['Inter'] items-center">
                 <div className="flex-1">Maximum Flight Time</div>
                 <div className="flex-1 ml-8">110mins</div>
@@ -53,7 +53,7 @@ function DeltaQuadXxxTechnical() {
                 <div className="flex-1 ml-8">100km</div>
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
-                <div className="flex-1">Payload capacity</div>
+                <div className="flex-1">Payload Capacity</div>
                 <div className="flex-1 ml-8">1.2kg</div>
               </div>
             </div>
