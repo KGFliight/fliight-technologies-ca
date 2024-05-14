@@ -7,7 +7,7 @@ import dji from '../assets/images/logos/partner-logos/dji.png'
 import freespace from '../assets/images/logos/partner-logos/freespace.png'
 import nextvision from '../assets/images/logos/partner-logos/nextvision.png'
 import rajant from '../assets/images/logos/partner-logos/rajant.png'
-import rockRobotic from '../assets/images/logos/partner-logos/rock_robotic.png'
+import ardupilot from '../assets/images/logos/partner-logos/ardupilot.png'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -97,7 +97,7 @@ function PartnerLogos() {
           data-aos-offset="0"
           data-aos-duration="300"
         >
-          <img src={rockRobotic} alt="rock robotic logo" />
+          <img src={ardupilot} alt="rock robotic logo" />
         </li>
        
       </ul>
