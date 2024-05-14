@@ -9,7 +9,8 @@ import DeltaQuadPro from './pages/DeltaQuadPro'
 import DeltaQuadEvo from './pages/DeltaQuadEvo'
 import { MobileMenuProvider } from './components/MobileMenuContext'
 import { ModalProvider } from './components/LandingModalContext'
-
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 // CREATE A PATH IF MAKING ANOTHER PAGE (template)
 
@@ -18,12 +19,30 @@ function App() {
     <div className="bg-ft-black overflow-x-hidden text-ft-white">
       <MobileMenuProvider>
         <ModalProvider>
+          <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+          />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/aerial-platforms" element={<Drones />} />
-            <Route path="/aerial-platforms/deltaquad-pro" element={<DeltaQuadPro />} />
-            <Route path="/aerial-platforms/deltaquad-evo" element={<DeltaQuadEvo />} />
-            
+            <Route
+              path="/aerial-platforms/deltaquad-pro"
+              element={<DeltaQuadPro />}
+            />
+            <Route
+              path="/aerial-platforms/deltaquad-evo"
+              element={<DeltaQuadEvo />}
+            />
+
             {/* 
             UNCOMMENT THIS TO SEE TEMPLATE PAGE
             <Route

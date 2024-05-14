@@ -3,6 +3,7 @@ import 'aos/dist/aos.css'
 import emailjs from 'emailjs-com'
 import ReCAPTCHA from 'react-google-recaptcha'
 import React, { useState, useRef } from 'react'
+import { toast } from 'react-toastify'
 
 function RequestDemoForm() {
   AOS.init()
@@ -14,7 +15,7 @@ function RequestDemoForm() {
     e.preventDefault()
 
     if (!isVerified) {
-      alert('Please verify that you are not a robot.')
+      toast.error('Please verify that you are not a robot.')
       recaptchaRef.current.execute() // Trigger reCAPTCHA when verification is needed
     } else {
       emailjs
@@ -27,14 +28,14 @@ function RequestDemoForm() {
         .then(
           (result) => {
             console.log(result.text)
-            alert('Message sent successfully')
+            toast.success('Message sent successfully')
             e.target.reset() // Reset form fields
             recaptchaRef.current.reset() // Reset the reCAPTCHA
             setIsVerified(false) // Reset verification state
           },
           (error) => {
             console.log(error.text)
-            alert('Failed to send message. Please try again later.')
+            toast.error('Failed to send message. Please try again later.')
           }
         )
     }
@@ -45,7 +46,7 @@ function RequestDemoForm() {
       setIsVerified(true)
     } else {
       setIsVerified(false)
-      alert('reCAPTCHA expired, please verify again.')
+      toast.error('reCAPTCHA expired, please verify again.')
     }
   }
 
