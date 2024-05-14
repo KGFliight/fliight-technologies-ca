@@ -16,7 +16,7 @@ function ContactForm() {
     e.preventDefault()
 
     if (!isVerified) {
-      toast.error('Please verify you are not a robot.')
+      toast.error('Please verify that you are not a robot.')
       recaptchaRef.current.execute()
     } else {
       emailjs
