@@ -22,7 +22,6 @@ function Landing() {
   const { isModalOpen } = useContext(ModalContext)
   const { isMobileMenuOpen } = useContext(MobileMenuContext)
 
-
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 })
 
   useEffect(() => {
@@ -113,7 +112,7 @@ function Landing() {
         {!isMobileMenuOpen && (
           <NavLink to="/request-demo">
             <button
-              className="fixed-bottom w-full md:hidden bg-ft-red min-h-[2.rem] px-5 py-2 inline-flex justify-center items-center transition-ease duration-300"
+              className="fixed-bottom w-full md:hidden bg-ft-red min-h-[2rem] px-5 py-[10.5px] inline-flex justify-center items-center transition-ease duration-300"
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
               data-aos-delay="0"

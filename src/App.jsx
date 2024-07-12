@@ -11,6 +11,7 @@ import { MobileMenuProvider } from './components/MobileMenuContext'
 import { ModalProvider } from './components/LandingModalContext'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import NotFound from './pages/NotFound';
 
 // CREATE A PATH IF MAKING ANOTHER PAGE (template)
 
@@ -60,6 +61,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/request-demo" element={<RequestDemo />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </ModalProvider>
       </MobileMenuProvider>
