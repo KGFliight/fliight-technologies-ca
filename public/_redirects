@@ -2,4 +2,4 @@
 /rinex_tool/*    https://13.211.203.132:3000/map:splat   200
 /test/* https://example.com:splat 200
 /*    /index.html   200
-http://deltaquad.com.au/*    http://fliight.com.au/:splat   301!
+https://deltaquad.com.au/*    https://fliight.com.au/:splat   301!
