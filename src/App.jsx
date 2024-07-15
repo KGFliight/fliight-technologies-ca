@@ -35,13 +35,13 @@ function App() {
           />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/aerial-platforms" element={<Drones />} />
+            <Route path="/platforms" element={<Drones />} />
             <Route
-              path="/aerial-platforms/deltaquad-pro"
+              path="/platforms/deltaquad-pro"
               element={<DeltaQuadPro />}
             />
             <Route
-              path="/aerial-platforms/deltaquad-evo"
+              path="/platforms/deltaquad-evo"
               element={<DeltaQuadEvo />}
             />
 

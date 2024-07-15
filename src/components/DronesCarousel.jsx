@@ -54,7 +54,7 @@ function DronesCarousel() {
         className="media-scroller snaps-inline pl-32 md:auto-cols-[42%] w-full"
         ref={scrollRef}
       >
-        <NavLink to="/aerial-platforms/deltaquad-pro">
+        <NavLink to="/platforms/deltaquad-pro">
           <li className="media-element lg:px-4 lg:py-12 hover:opacity-80 hover:-translate-y-1 transition duration-300">
             <div className="bg-white rounded min-h-[10rem] sm:min-h-[300px] w-full flex items-center px-4">
               <img
@@ -68,7 +68,7 @@ function DronesCarousel() {
             </p>
           </li>
         </NavLink>
-        <NavLink to="/aerial-platforms/deltaquad-evo">
+        <NavLink to="/platforms/deltaquad-evo">
           <li className="media-element lg:px-4 lg:py-12 hover:opacity-80 hover:-translate-y-1 transition duration-300">
             <div className="bg-white border-ft-grey border rounded min-h-[10rem] sm:min-h-[300px] w-full flex items-center spx-4">
               <img

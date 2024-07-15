@@ -41,8 +41,8 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
 
   const getHeaderClass = () => {
     if (
-      location.pathname === '/aerial-platforms/deltaquad-pro' ||
-      location.pathname === '/aerial-platforms/deltaquad-evo'
+      location.pathname === '/platforms/deltaquad-pro' ||
+      location.pathname === '/platforms/deltaquad-evo'
     ) {
       return {
         background: 'bg-white',
@@ -104,22 +104,23 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
               onClick={toggleTechDropdown}
             >
               <span className="">
-                Aerial Platforms&nbsp;
+                Platforms&nbsp;
                 <FontAwesomeIcon icon={faChevronDown} className="text-2xl" />
               </span>
             </Link>
             {transitions((style, item) =>
               item ? (
                 <animated.div style={style} className="flex flex-col gap-4">
+                  <span className="text-ft-grey text-2xl">Aerial:</span>
                   <Link
-                    to="/aerial-platforms/deltaquad-pro"
+                    to="/platforms/deltaquad-pro"
                     className="text-ft-grey py-1 pl-2 text-3xl"
                     onClick={handleMenuItemClick}
                   >
                     DeltaQuad Pro
                   </Link>
                   <Link
-                    to="/aerial-platforms/deltaquad-evo"
+                    to="/platforms/deltaquad-evo"
                     className="text-ft-grey py-1 pl-2 text-3xl"
                     onClick={handleMenuItemClick}
                   >

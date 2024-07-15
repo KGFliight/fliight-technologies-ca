@@ -25,7 +25,7 @@ function DropdownMenu({ title, items, isOpen, setIsOpen }) {
       <div
         className={`px-4 py-2 mt-2 text-xs font-thin ${headerClasses.textColor} text-left leading-6 tracking-widest uppercase`}
       >
-        {title}
+       {title}
       </div>
       {items.map((item, index) => (
         <Link

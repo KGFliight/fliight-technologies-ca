@@ -42,12 +42,12 @@ function Footer() {
                   Aerial Platforms
                 </span>
                 <ul className="text-sm leading-loose tracking-wide md:text-lg font-['Inter'] font-light">
-                  <NavLink to="/aerial-platforms/deltaquad-pro">
+                  <NavLink to="/platforms/deltaquad-pro">
                     <li className="my-4  hover:underline hover:text-ft-white  transition duration-300">
                       DeltaQuad Pro
                     </li>
                   </NavLink>
-                  <NavLink to="/aerial-platforms/deltaquad-evo">
+                  <NavLink to="/platforms/deltaquad-evo">
                     <li className="my-4  hover:underline hover:text-ft-white transition duration-300">
                       DeltaQuad Evo
                     </li>
