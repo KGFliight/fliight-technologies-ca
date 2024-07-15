@@ -7,6 +7,7 @@ import RequestDemo from './pages/RequestDemo'
 import './App.css'
 import DeltaQuadPro from './pages/DeltaQuadPro'
 import DeltaQuadEvo from './pages/DeltaQuadEvo'
+import Fatam from './pages/Fatam'
 import { MobileMenuProvider } from './components/MobileMenuContext'
 import { ModalProvider } from './components/LandingModalContext'
 import { ToastContainer } from 'react-toastify'
@@ -61,6 +62,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/request-demo" element={<RequestDemo />} />
+            <Route path="firetech-fatam_v1_2" element={<Fatam/>}/>
             <Route path="*" element={<NotFound />} />
           </Routes>
         </ModalProvider>

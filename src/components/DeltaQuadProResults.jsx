@@ -16,7 +16,7 @@ const result = [
     title: 'Firetech Connect -  FATAM 1.2',
     description:
       '3D visualisation of realtime deconfliction of crewed and uncrewed aircraft in a live emergency response activity.',
-    url: 'https://firetech-fatam-1-2.glitch.me/',
+    url: 'https://fliight.com.au/firetech-fatam_v1_2/',
   },
   {
     image: shark,
