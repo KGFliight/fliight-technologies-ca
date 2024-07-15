@@ -91,7 +91,8 @@ function DeltaQuadProResults() {
                   href={item.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="no-underline hover:no-underline hover:opacity-80 hover:-translate-y-1"
+                  className="no-underline hover:no-underline hover:opacity-80 hover:-translate-y-1
+                  transition duration-300"
                 >
                   <img
                     src={item.image}
@@ -107,7 +108,7 @@ function DeltaQuadProResults() {
                 </a>
               ) : (
                 <>
-                  <a className="hover:-translate-y-1">
+                  <a className="hover:-translate-y-1 transition duration-300">
                     <img
                       src={item.image}
                       alt={item.alt}
