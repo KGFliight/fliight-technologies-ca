@@ -13,6 +13,7 @@ import { ModalProvider } from './components/LandingModalContext'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import NotFound from './pages/NotFound';
+import Shark from './pages/Shark'
 
 // CREATE A PATH IF MAKING ANOTHER PAGE (template)
 
@@ -62,7 +63,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/request-demo" element={<RequestDemo />} />
-            <Route path="firetech-fatam_v1_2" element={<Fatam/>}/>
+            <Route path="/firetech-fatam_v1_2" element={<Fatam/>}/>
+            <Route path="/sls-bvlos-shark" element={<Shark/>}/>
             <Route path="*" element={<NotFound />} />
           </Routes>
         </ModalProvider>

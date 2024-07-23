@@ -24,7 +24,7 @@ const result = [
     title: 'Surf Life Saving - Shark Spotting',
     description:
       'Demonstration of a remote command centre concept with real world data collected during the Surf Life Saving NSW Beyond Visual Line of Sight (BVLOS) trials in Northern NSW, Australia.',
-    url: 'https://sls-bvlos-shark.glitch.me/',
+    url: 'https://fliight.com.au/sls-bvlos-shark/',
   },
   {
     image: landscape,
