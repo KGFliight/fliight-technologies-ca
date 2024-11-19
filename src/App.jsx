@@ -7,6 +7,7 @@ import RequestDemo from './pages/RequestDemo'
 import './App.css'
 import DeltaQuadPro from './pages/DeltaQuadPro'
 import DeltaQuadEvo from './pages/DeltaQuadEvo'
+import AraceGriffin from './pages/AraceGriffin'
 import Fatam from './pages/Fatam'
 import { MobileMenuProvider } from './components/MobileMenuContext'
 import { ModalProvider } from './components/LandingModalContext'
@@ -44,6 +45,10 @@ function App() {
             <Route
               path="/platforms/deltaquad-evo"
               element={<DeltaQuadEvo />}
+            />
+            <Route
+              path="/platforms/arace-griffin"
+              element={<AraceGriffin />}
             />
 
             {/* 

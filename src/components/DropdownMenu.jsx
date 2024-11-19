@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 
 function DropdownMenu({ title, items, isOpen, setIsOpen }) {
-  const isDeltaQuadPath = location.pathname === '/drones/deltaquad-pro' || location.pathname === '/drones/deltaquad-evo';
+  const isDeltaQuadPath = location.pathname === '/drones/deltaquad-pro' || location.pathname === '/drones/deltaquad-evo'
 
   
 

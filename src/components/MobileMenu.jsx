@@ -42,7 +42,8 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
   const getHeaderClass = () => {
     if (
       location.pathname === '/platforms/deltaquad-pro' ||
-      location.pathname === '/platforms/deltaquad-evo'
+      location.pathname === '/platforms/deltaquad-evo' ||
+      location.pathname === '/platforms/arace-griffin'
     ) {
       return {
         background: 'bg-white',
