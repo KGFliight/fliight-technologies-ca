@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import iconDrone from '../assets/images/icons/icon-drone.png'
-import deltaQuadFlexibility from '../assets/images/deltaquad-evo-flexibility.png'
-import deltaQuadEvoGif from '../assets/images/dq-evo-intro.gif'
+import araceGriffin3 from '../assets/images/arace-griffin-3.png'
+import araceGriffin2 from '../assets/images/arace-griffin-2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import '../App.css'
@@ -25,49 +25,49 @@ function AraceGriffinProductInfo() {
   const technologyItems = [
     {
       id: '1',
-      heading: 'ROBUST AIRFRAME',
+      heading: 'Robust Airframe',
       contents:
         'Built with aerospace-grade composites and durable, high-density foam, the Griffin Pro is both rugged and lightweight. This design enhances handleability and repairability, ensuring consistent performance in harsh environments.',
     },
     {
       id: '2',
-      heading: 'TILT ROTOR PROPULSION',
+      heading: 'Tilt Rotor Propulsion',
       contents:
         'The Griffin Pro’s tilt-rotor system seamlessly transitions between vertical takeoff, hover, and efficient forward flight. This innovative design combines the agility of a multirotor with the range and speed of fixed-wing aircraft, making it ideal for diverse mission profiles.',
     },
     {
       id: '3',
-      heading: 'AUTO RECOVERY',
+      heading: 'Auto Recovery',
       contents:
         'The Griffin Pro optimises its return-to-base profile using real-time wind speed and direction data. With advanced autonomous decision-making, operators simply plan their mission, and the Griffin Pro ensures a safe and efficient return, even in challenging conditions.',
     },
     {
       id: '4',
-      heading: 'SEMI-SOLID LITHIUM BATTERY',
+      heading: 'Semi-solid Lithium Battery',
       contents:
         'Powered by next-generation semi-solid lithium batteries, the Griffin Pro delivers exceptional energy density and extended flight times. These batteries provide consistent performance, even in extreme temperatures, ensuring mission success.',
     },
     {
       id: '5',
-      heading: 'RETRACTABLE PAYLOADS',
+      heading: 'Retractable Payloads',
       contents:
         'Featuring an innovative retractable payload bay, the Griffin Pro protects sensitive equipment during takeoff, landing, and transit. This design enhances aerodynamics and safeguards critical sensors in the field.',
     },
     {
       id: '6',
-      heading: 'SWAPPABLE PAYLOADS',
+      heading: 'Swappable Payloads',
       contents:
         'Maximise operational flexibility with the Griffin Pro’s modular payload system. Quickly swap between sensors, cameras, or other equipment to adapt to any mission requirement without sacrificing downtime.',
     },
     {
       id: '7',
-      heading: 'SELF-MAINTENANCE',
+      heading: 'Self-Maintenance',
       contents:
         'Designed with simplicity in mind, the Griffin Pro features field-serviceable actuators and propellers. This ensures minimal disruption to operations and allows users to perform essential maintenance tasks directly in the field.',
     },
     {
       id: '8',
-      heading: 'OPEN DESIGN',
+      heading: 'Open Design',
       contents:
         'The Griffin Pro’s open architecture, powered by the versatile and widely adopted ArduPilot platform, fosters seamless third-party hardware and software integration. Customise and scale its capabilities to meet specific mission objectives or integrate effortlessly into existing workflows.',
     },
@@ -126,7 +126,7 @@ function AraceGriffinProductInfo() {
         <div className="flex flex-col items-center z-50">
           <div className="image-container m-0 md:mx-24 my-0 ">
             <img
-              src={deltaQuadEvoGif}
+              src={araceGriffin2}
               className="object-contain sm:object-cover rounded h-auto sm:h-[480px] w-full"
             />
           </div>
@@ -155,12 +155,12 @@ function AraceGriffinProductInfo() {
                 <div className="bg-ft-dark-grey p-2 rounded text-2xl font-medium">
                   <button
                     onClick={() => toggleTechItem(item.id)}
-                    className="flex items-center w-full text-left [&>*:nth-child(3)]:ml-auto [&>*:nth-child(3)]:p-2 text-sm md:text-lg font-light font-['Inter'] tracking-wide leading-loose"
+                    className="flex items-center w-full text-left [&>*:nth-child(3)]:ml-auto [&>*:nth-child(3)]:p-2 text-sm md:text-lg font-light font-['Inter'] tracking-wide leading-loose "
                   >
                     <img
                       src={iconDrone}
                       alt="drone icon"
-                      className="w-[40px] h-[40px] m-2 md:mr-4 inline-flex"
+                      className="w-[40px] h-[40px] m-2 md:mr-4 inline-flex "
                     />
                     {item.heading}
                     <FontAwesomeIcon
@@ -216,9 +216,9 @@ function AraceGriffinProductInfo() {
         </ul>
       </div>
       <div className="flex flex-col sm:flex-row justify-center gap-20 my-12 sm:my-40">
-        <div className="w-80 sm:w-[480px] items-center sm:items-start flex flex-col justify-center">
+        <div className="w-80 sm:w-[480px] items-start flex flex-col justify-center">
           <h3
-            className="text-5xl text-left uppercase w-auto my-8"
+            className="text-5xl text-left uppercase w-auto my-8 "
             data-aos="fade-down-in"
             data-aos-easing="ease-in-back"
             data-aos-delay="0"
@@ -243,8 +243,8 @@ function AraceGriffinProductInfo() {
         <div className="feathered-edge-container relative max-w-[384px] sm:max-w-[420px] max-h-[400px] sm:max-h-[600px] z-50 overflow-hidden ">
           <div className="overflow-hidden">
             <img
-              src={deltaQuadFlexibility}
-              alt="DeltaQuad Evo Propeller"
+              src={araceGriffin3}
+              alt="Arace Griffin"
               className="transform scale-[0.9] w-[384px] sm:w-[420px] object-cover h-[400px] sm:h-[600px] rounded overflow-visible"
             />
           </div>

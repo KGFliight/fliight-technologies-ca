@@ -1,7 +1,7 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import DeltaQuadBanner from '../components/DeltaQuadXxxBanner'
-import deltaQuadEvoBannerImage from '../assets/images/deltaquad-evo-banner.jpg'
+import araceGriffinBannerImage from '../assets/images/arace-griffin-banner.png'
 import { NavLink } from 'react-router-dom'
 import AraceGriffinProductInfo from '../components/AraceGriffinProductInfo'
 import AraceGriffinProductResults from '../components/AraceGriffinProductResults'
@@ -32,7 +32,7 @@ function AraceGriffin() {
       <div className="flex-1 flex flex-col items-center justify-center">
         <DeltaQuadBanner
           title="Arace Griffin Pro"
-          imageSrc={deltaQuadEvoBannerImage} // change this
+          imageSrc={araceGriffinBannerImage} // change this
           subheading="The VTOL system you have been searching for."
         />
       </div>

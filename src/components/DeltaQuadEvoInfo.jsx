@@ -37,14 +37,14 @@ function DeltaQuadEvoInfo() {
   const technologyItems = [
     {
       id: '1',
-      heading: 'Aerospace grade airframe',
+      heading: 'Aerospace Grade Airframe',
       contents:
         'The EVO is built from carbon, kevlar and fibreglass material. This provides an extremely robust. lightweight airframe that will last for years, even in the harshest conditions.',
       icon: iconAerospace,
     },
     {
       id: '2',
-      heading: 'Retractable landing gear',
+      heading: 'Retractable Landing Gear',
       contents:
         'The EVO automatically extends and retracts the landing gear. This alloes a diverse set of payloads to be installed both inside and underneath the platform.',
       icon: iconRetractable,
@@ -65,28 +65,28 @@ function DeltaQuadEvoInfo() {
     },
     {
       id: '5',
-      heading: 'Dual payload',
+      heading: 'Dual Payload',
       contents:
         'The EVO is equipped with two fully integrated payload slots. They can be used to carry two sensors simultaneously, a single large payload, or to achieve extreme flight times with a second battery.',
       icon: iconDualPayload,
     },
     {
       id: '6',
-      heading: 'Swappable payloads',
+      heading: 'Swappable Payloads',
       contents:
         'The EVO allows plug&play installation of an extensive range of payloads that can be swapped in the field without any tools. The Evo updates automatically to be compatible with future payloads.',
       icon: iconSwappable,
     },
     {
       id: '7',
-      heading: 'Military standards',
+      heading: 'Military Standards',
       contents:
         'The EVO is a multi-purpose platform that complies with military standards. It features several military options to ruggedize and protect data while providing diverse aerial intelligence.',
       icon: iconMilitary,
     },
     {
       id: '8',
-      heading: 'Open design',
+      heading: 'Open Design',
       contents:
         'The EVO comes with everything required to design and integrate your own payload. The required 3D models are freely available, and payload connectors are offered at a low cost.',
       icon: iconOpenDesign,

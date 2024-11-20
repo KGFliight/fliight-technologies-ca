@@ -1,12 +1,12 @@
-import evoDrawing from '../assets/images/evo-drawing.jpeg';
+import araceGriffinDrawing from '../assets/images/arace-griffin-5.png';
 
 
 function AraceGriffinProductTechnical() {
   return (
     <div className="pb-8 bg-white">
       <img
-        src={evoDrawing}
-        alt="Evo Drawing"
+        src={araceGriffinDrawing}
+        alt="Arace Griffin Drawing"
         className="pt-16 md:px-32 md:pt-16 flex justify-center w-full"
       />
       <div className="m-4 md:m-8 leading-loose tracking-wide px-8 md:px-20">
