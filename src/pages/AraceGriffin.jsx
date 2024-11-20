@@ -3,10 +3,10 @@ import Footer from '../components/Footer'
 import DeltaQuadBanner from '../components/DeltaQuadXxxBanner'
 import deltaQuadEvoBannerImage from '../assets/images/deltaquad-evo-banner.jpg'
 import { NavLink } from 'react-router-dom'
-import TemplateProductInfo from '../components/templateComponents/TemplateProductInfo'
-import TemplateProductPayloads from '../components/templateComponents/TemplateProductPayloads'
-import TemplateProductResults from '../components/templateComponents/TemplateProductResults'
-import TemplateProductTechnical from '../components/templateComponents/TemplateProductTechnical'
+import AraceGriffinProductInfo from '../components/AraceGriffinProductInfo'
+import AraceGriffinProductResults from '../components/AraceGriffinProductResults'
+import AraceGriffinProductTechnical from '../components/AraceGriffinProductTechnical'
+import AraceGriffinProductPayloads from '../components/AraceGriffinProductPayloads'
 
 //TEMPLATE PRODUCT PAGE BASED OFF OF THE DELTAQUAD EVO PAGE. SOME ASSETS (MAINLY THE IMAGES) HAVE REMAINED THE SAME BUT ARE INTERCHANGEABLE. MOST TEXT HAS BEEN CHANGED TO HELP. 
 // USE THE DELTAQUADEVO.JSX PAGE FILE FOR REFERENCE IF NEEDED. ALL TEMPLATE COMPONENTS ARE BASED OFF OF THE RESPONDING COMPONENTS BEGINNING WITH DELTAQUAD
@@ -31,20 +31,19 @@ function AraceGriffin() {
       <Header />
       <div className="flex-1 flex flex-col items-center justify-center">
         <DeltaQuadBanner
-          title="CHANGE ME"
+          title="Arace Griffin Pro"
           imageSrc={deltaQuadEvoBannerImage} // change this
-          subheading="I am a subheading. You can change me. Please change me. I need to change. Help."
+          subheading="The VTOL system you have been searching for."
         />
       </div>
-      <TemplateProductInfo />
-      <TemplateProductPayloads />
-      <TemplateProductResults />
-      <TemplateProductTechnical />
+      <AraceGriffinProductInfo />
+      <AraceGriffinProductPayloads />
+      <AraceGriffinProductResults />
+      <AraceGriffinProductTechnical />
       <div className="flex flex-col items-center text-center uppercase text-5xl tracking-widest my-40 mx-8">
         We offer onsite demos
         <div className="normal-case text-lg leading-loose tracking-wide max-w-lg my-8 font-light font-['Inter']">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
-          inventore mollitia illum? Corporis, sequi neque.
+        We let the technology speak for itself, and the best way to do that is for you to see it in action. Contact us today for an on site demonstration with your organisation.
         </div>
         <NavLink to="/request-demo">
           <button className="bg-ft-red uppercase rounded-3xl flex items-center justify-center w-72 h-8 sm:w-44 min-h-[2.75rem] text-base font-semibold leading-tight tracking-widest hover:opacity-90 hover:hover:bg-[#5b172c] transition duration-300">
