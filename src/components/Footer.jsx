@@ -57,6 +57,11 @@ function Footer() {
                       Arace Griffin
                     </li>
                   </NavLink>
+                  <NavLink to="/platforms/arace-angel">
+                    <li className="my-4  hover:underline hover:text-ft-white transition duration-300">
+                      Arace Angel
+                    </li>
+                  </NavLink>
                   {
                   /*<NavLink to="/template-product">
                     <li className="my-4  hover:underline hover:text-ft-white transition duration-300" >

@@ -77,7 +77,7 @@ const result = [
   },
 ]
 
-function AraceGriffinProductPayloadsCarousel() {
+function TemplateProductPayloadsCarousel() {
   const scrollRef = React.useRef(null)
 
   function slideToTheLeft() {
@@ -169,4 +169,4 @@ function AraceGriffinProductPayloadsCarousel() {
   )
 }
 
-export default AraceGriffinProductPayloadsCarousel
+export default TemplateProductPayloadsCarousel

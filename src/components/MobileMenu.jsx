@@ -43,7 +43,8 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
     if (
       location.pathname === '/platforms/deltaquad-pro' ||
       location.pathname === '/platforms/deltaquad-evo' ||
-      location.pathname === '/platforms/arace-griffin'
+      location.pathname === '/platforms/arace-griffin' ||
+      location.pathname === '/platforms/arace-angel'
     ) {
       return {
         background: 'bg-white',
@@ -119,6 +120,20 @@ function MobileMenu({ isMenuOpen, setMenuOpen }) {
                     onClick={handleMenuItemClick}
                   >
                     DeltaQuad Pro
+                  </Link>
+                  <Link
+                    to="/platforms/arace-griffin"
+                    className="text-ft-grey py-1 pl-2 text-3xl"
+                    onClick={handleMenuItemClick}
+                  >
+                    Arace Griffin Pro
+                  </Link>
+                  <Link
+                    to="/platforms/arace-angel"
+                    className="text-ft-grey py-1 pl-2 text-3xl"
+                    onClick={handleMenuItemClick}
+                  >
+                    Arace Angel
                   </Link>
                   <Link
                     to="/platforms/deltaquad-evo"

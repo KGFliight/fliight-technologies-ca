@@ -25,7 +25,8 @@ function Header() {
     if (
       location.pathname === '/platforms/deltaquad-pro' ||
       location.pathname === '/platforms/deltaquad-evo' ||
-      location.pathname === '/platforms/arace-griffin' 
+      location.pathname === '/platforms/arace-griffin' ||
+      location.pathname === '/platforms/arace-angel'
       // TEMPLATE if adding product can add here, be sure to also include || on the above line (27) if adding a new location.pathname. Location.pathname to match url on app.jsx
       // this changes the colour of the header to match background
     ) {
@@ -67,7 +68,8 @@ function Header() {
   const dronesDropdownItems = [
     { name: 'DeltaQuad Pro', path: '/platforms/deltaquad-pro' },
     { name: 'DeltaQuad Evo', path: '/platforms/deltaquad-evo' },
-    { name: 'Arace Griffin', path: '/platforms/arace-griffin' }
+    { name: 'Arace Griffin', path: '/platforms/arace-griffin' },
+    { name: 'Arace Angel', path: '/platforms/arace-angel' }
     //template product could go here, following the same configuration as the ones above. Be sure to adjust the path correctly
   ]
 
