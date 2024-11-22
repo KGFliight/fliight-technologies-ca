@@ -1,12 +1,12 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import DeltaQuadBanner from '../components/DeltaQuadXxxBanner'
-import araceGriffinBannerImage from '../assets/images/arace-griffin-banner.png'
+import araceAngelBannerImage from '../assets/images/arace-angel-banner.png'
 import { NavLink } from 'react-router-dom'
-import AraceGriffinProductInfo from '../components/AraceGriffinProductInfo'
-import AraceGriffinProductResults from '../components/AraceGriffinProductResults'
-import AraceGriffinProductTechnical from '../components/AraceGriffinProductTechnical'
-import AraceGriffinProductPayloads from '../components/AraceGriffinProductPayloads'
+import AraceAngelProductInfo from '../components/AraceAngelProductInfo'
+import AraceAngelProductResults from '../components/AraceAngelProductResults'
+import AraceAngelProductTechnical from '../components/AraceAngelProductTechnical'
+import AraceAngelProductPayloads from '../components/AraceAngelProductPayloads'
 
 //TEMPLATE PRODUCT PAGE BASED OFF OF THE DELTAQUAD EVO PAGE. SOME ASSETS (MAINLY THE IMAGES) HAVE REMAINED THE SAME BUT ARE INTERCHANGEABLE. MOST TEXT HAS BEEN CHANGED TO HELP. 
 // USE THE DELTAQUADEVO.JSX PAGE FILE FOR REFERENCE IF NEEDED. ALL TEMPLATE COMPONENTS ARE BASED OFF OF THE RESPONDING COMPONENTS BEGINNING WITH DELTAQUAD
@@ -32,14 +32,14 @@ function AraceAngel() {
       <div className="flex-1 flex flex-col items-center justify-center">
         <DeltaQuadBanner
           title="Arace Angel"
-          imageSrc={araceGriffinBannerImage} // change this
-          subheading="Rapid Deployment, Unparalleled Endurance, Exceptional Performance."
+          imageSrc={araceAngelBannerImage} // change this
+          subheading="Rapid deployment. Unparalleled endurance. Exceptional performance."
         />
       </div>
-      <AraceGriffinProductInfo />
-      <AraceGriffinProductPayloads />
-      <AraceGriffinProductResults />
-      <AraceGriffinProductTechnical />
+      <AraceAngelProductInfo />
+      <AraceAngelProductPayloads />
+      <AraceAngelProductResults />
+      <AraceAngelProductTechnical />
       <div className="flex flex-col items-center text-center uppercase text-5xl tracking-widest my-40 mx-8">
         We offer onsite demos
         <div className="normal-case text-lg leading-loose tracking-wide max-w-lg my-8 font-light font-['Inter']">

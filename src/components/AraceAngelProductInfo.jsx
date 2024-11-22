@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import iconDrone from '../assets/images/icons/icon-drone.png'
-import araceGriffin3 from '../assets/images/arace-griffin-3.png'
-import araceGriffin2 from '../assets/images/arace-griffin-2.png'
+import araceAngel3 from '../assets/images/arace-angel-3.png'
+import araceAngel2 from '../assets/images/arace-angel-2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import '../App.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useSpring, animated } from 'react-spring'
+import AraceAngelGraph from './AraceAngelGraph'
 
 function AraceAngelProductInfo() {
   AOS.init()
@@ -25,51 +26,39 @@ function AraceAngelProductInfo() {
   const technologyItems = [
     {
       id: '1',
-      heading: 'Robust Airframe',
+      heading: 'Aerospace Grade Airframe',
       contents:
-        'Built with aerospace-grade composites and durable, high-density foam, the Griffin Pro is both rugged and lightweight. This design enhances handleability and repairability, ensuring consistent performance in harsh environments.',
+        'Engineered for excellence, the Arace Angel’s airframe is crafted from aerospace-grade materials, combining exceptional strength with lightweight efficiency to ensure durability and superior flight performance.',
     },
     {
       id: '2',
-      heading: 'Tilt Rotor Propulsion',
+      heading: 'Industry Leading Endurance',
       contents:
-        'The Griffin Pro’s tilt-rotor system seamlessly transitions between vertical takeoff, hover, and efficient forward flight. This innovative design combines the agility of a multirotor with the range and speed of fixed-wing aircraft, making it ideal for diverse mission profiles.',
+        'Don’t settle for 30-minute flight times when the Arace Angel delivers up to 90 minutes of airtime with a 1 kg payload. Redefining endurance, it empowers you to complete longer missions with fewer interruptions, no matter the conditions.',
     },
     {
       id: '3',
-      heading: 'Auto Recovery',
+      heading: 'Semi-Solid Battery',
       contents:
-        'The Griffin Pro optimises its return-to-base profile using real-time wind speed and direction data. With advanced autonomous decision-making, operators simply plan their mission, and the Griffin Pro ensures a safe and efficient return, even in challenging conditions.',
+        'Powered by advanced semi-solid lithium batteries, the Arace Angel delivers outstanding energy density, providing consistent and reliable performance for extended missions.',
     },
     {
       id: '4',
-      heading: 'Semi-solid Lithium Battery',
+      heading: 'Compact Frame',
       contents:
-        'Powered by next-generation semi-solid lithium batteries, the Griffin Pro delivers exceptional energy density and extended flight times. These batteries provide consistent performance, even in extreme temperatures, ensuring mission success.',
+        'The Arace Angel is rapidly deployable from its briefcase-sized carry case, thanks to its innovative folding arms and landing gear, making transport and setup quick and effortless.',
     },
     {
       id: '5',
-      heading: 'Retractable Payloads',
+      heading: 'Field Serviceable',
       contents:
-        'Featuring an innovative retractable payload bay, the Griffin Pro protects sensitive equipment during takeoff, landing, and transit. This design enhances aerodynamics and safeguards critical sensors in the field.',
+        'Designed for real-world conditions, the Arace Angel is field-serviceable, allowing users to quickly replace or repair key components like propellers and actuators, keeping downtime to a minimum.',
     },
     {
       id: '6',
       heading: 'Swappable Payloads',
       contents:
-        'Maximise operational flexibility with the Griffin Pro’s modular payload system. Quickly swap between sensors, cameras, or other equipment to adapt to any mission requirement without sacrificing downtime.',
-    },
-    {
-      id: '7',
-      heading: 'Self-Maintenance',
-      contents:
-        'Designed with simplicity in mind, the Griffin Pro features field-serviceable actuators and propellers. This ensures minimal disruption to operations and allows users to perform essential maintenance tasks directly in the field.',
-    },
-    {
-      id: '8',
-      heading: 'Open Design',
-      contents:
-        'The Griffin Pro’s open architecture, powered by the versatile and widely adopted ArduPilot platform, fosters seamless third-party hardware and software integration. Customise and scale its capabilities to meet specific mission objectives or integrate effortlessly into existing workflows.',
+        'Adapt to any mission with ease. The Arace Angel’s swappable payload system lets you quickly switch between sensors and equipment, ensuring maximum flexibility in the field.',
     },
   ]
 
@@ -78,7 +67,7 @@ function AraceAngelProductInfo() {
     'Regulatory compliance packages',
     'Certified training',
     'Data processing and management',
-        // ... other items
+    // ... other items
   ]
 
   /*
@@ -108,7 +97,7 @@ function AraceAngelProductInfo() {
           data-aos-mirror="true"
           data-aos-duration="600"
         >
-          Ease of use meets unparalleled performance
+          Multirotor Capability, Fixed-Wing Endurance.
         </h2>
         <p
           className="tracking-wide leading-loose my-6 text-lg font-light font-['Inter']"
@@ -119,24 +108,47 @@ function AraceAngelProductInfo() {
           data-aos-mirror="true"
           data-aos-duration="600"
         >
-          The ARACE GRIFFIN Pro is a fully electric, fully autonomous VTOL platform designed for unmatched ease and performance in any environment. With its innovative tilt-rotor design, the Griffin Pro achieves remarkable wind resistance, withstanding speeds over 16 m/s—setting it apart from all other VTOLs. Designed for rapid deployment, it can be assembled and launched by a single person in under 2 minutes, requiring no tools and zero pre-flight calibration. Compact enough to fit in a single carry case, the Griffin Pro is ready to go wherever your mission takes you.
+          The Arace Angel boasts a remarkable payload capacity, supporting up to
+          1.9kg for versatile operational needs. Equipped with a powerful 35Ah
+          battery, this advanced platform achieves industry-leading endurance,
+          sustaining up to 85 minutes of flight time with a 1.3kg payload.
+          Designed for rapid response scenarios, the Angel is deployable in just
+          two minutes, minimising preparation time. With multiple radio link
+          options available, including a fully NATO-compliant model, the Arace
+          Angel offers a flexible and resilient solution tailored to demanding
+          operational standards.
         </p>
       </div>
       <div className="flex flex-col items-center my-24">
         <div className="flex flex-col items-center z-50">
           <div className="image-container m-0 md:mx-24 my-0 ">
             <img
-              src={araceGriffin2}
+              src={araceAngel2}
+              alt="Arace Angel"
               className="object-contain sm:object-cover rounded h-auto sm:h-[480px] w-full"
             />
           </div>
         </div>
       </div>
       <div className="mb-24">
-        <h3 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12">
-          Game changing technology
+        <h3 className="text-4xl md:text-5xl uppercase tracking-widest font-medium mt-12">
+          Under The Hood
         </h3>
-
+        <p
+          className="tracking-wide leading-loose my-6 text-lg font-light font-['Inter']"
+          data-aos="fade-down-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="0"
+          data-aos-offset="0"
+          data-aos-mirror="true"
+          data-aos-duration="600"
+        >
+          The Arace Angel redefines multirotor capabilities with
+          industry-leading endurance, seamless autonomy, and advanced
+          intelligence. Designed for a wide range of payloads and effortless
+          operation, it empowers users to tackle complex missions with unmatched
+          efficiency and reliability, all while being remarkably easy to use.
+        </p>
         <div className="flex flex-col md:flex-row flex-wrap tracking-wide leading-loose my-6 text-sm md:text-lg uppercase ">
           {technologyItems.map((item) => {
             // Determine if the current item is open
@@ -197,7 +209,8 @@ function AraceAngelProductInfo() {
           End-to-end deployment packages
         </h3>
         <p className="tracking-wide leading-loose my-6 font-light font-['Inter']">
-          Let us enable your vision for long range drone (RPAS) operations via our turnkey offerings with:
+          Let us enable your vision for long range drone (RPAS) operations via
+          our turnkey offerings with:
         </p>
         <ul className="flex flex-col md:flex-row flex-wrap tracking-wide leading-loose my-6 text-sm md:text-lg font-light font-['Inter']">
           {endToEndItems.map((item, index) => (
@@ -215,8 +228,8 @@ function AraceAngelProductInfo() {
           ))}
         </ul>
       </div>
-      <div className="flex flex-col sm:flex-row justify-center gap-20 my-12 sm:my-40">
-        <div className="w-80 sm:w-[480px] items-start flex flex-col justify-center">
+      <div className="flex flex-col lg:flex-row items-center lg:justify-center gap-20 my-12 sm:my-40">
+        <div className="w-80 sm:w-[600px] items-start flex flex-col justify-center">
           <h3
             className="text-5xl text-left uppercase w-auto my-8 "
             data-aos="fade-down-in"
@@ -226,10 +239,10 @@ function AraceAngelProductInfo() {
             data-aos-mirror="true"
             data-aos-duration="600"
           >
-            Built to work
+            A versatile workhorse
           </h3>
           <div
-            className="text-lg leading-loose tracking-wide font-light font-['Inter'] pr-6"
+            className="text-lg leading-loose tracking-wide font-light font-['Inter'] pr-6 mb-12"
             data-aos="fade-down-in"
             data-aos-easing="ease-in-back"
             data-aos-delay="0"
@@ -237,13 +250,23 @@ function AraceAngelProductInfo() {
             data-aos-mirror="true"
             data-aos-duration="600"
           >
-            The ARACE Griffin Pro is engineered for seamless, intuitive operation, making it exceptionally reliable in the field. Its rapid deployment capability means you can be mission-ready within moments, with easy, tool-free assembly by a single operator. Equipped with fully articulating antennas for RF performance and swappable payloads to match diverse mission needs, the Griffin Pro adapts effortlessly to changing operational demands. The onboard FPV camera provides excellent situational awareness and the the included handheld anemometer offers accurate ground-level wind readings for safe pre-flight planning. With a focus on user-friendly operation and consistent performance, the Griffin Pro ensures that every mission can be conducted with confidence and efficiency.
+            The Arace Angel stands in a league of its own with a substantial
+            1.9kg payload capacity and exceptional flight times of up to 120
+            minutes. Whether you need an advanced aerial platform for
+            photogrammetry, LIDAR, or ISR operations, the Angel offers unmatched
+            versatility and endurance. Nothing compares to the Angel’s
+            performance—don’t just take our word for it; check the graph below
+            to see how the Angel outperforms the competition, including the DJI
+            M350, IF800 Tomcat and Freefly Astro.
+          </div>
+          <div className="arace-angel-graph-wrapper">
+            <AraceAngelGraph />
           </div>
         </div>
-        <div className="feathered-edge-container relative max-w-[384px] sm:max-w-[420px] max-h-[400px] sm:max-h-[600px] z-50 overflow-hidden ">
+        <div className="feathered-edge-container relative max-w-[384px] sm:max-w-[420px] z-50 overflow-hidden flex items-center">
           <div className="overflow-hidden">
             <img
-              src={araceGriffin3}
+              src={araceAngel3}
               alt="Arace Angel"
               className="transform scale-[0.9] w-[384px] sm:w-[420px] object-cover h-[400px] sm:h-[600px] rounded overflow-visible"
             />
