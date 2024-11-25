@@ -243,10 +243,9 @@ html {
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .arace-angel-graph-wrapper {
-    margin-left: -12vw; /* Adjust margins to negate padding */
-    margin-right: -12vw;
     width: 100vw; /* Force full width */
   }
 }
+

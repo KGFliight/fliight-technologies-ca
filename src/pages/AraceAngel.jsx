@@ -33,7 +33,7 @@ function AraceAngel() {
         <DeltaQuadBanner
           title="Arace Angel"
           imageSrc={araceAngelBannerImage} // change this
-          subheading="Rapid deployment. Unparalleled endurance. Exceptional performance."
+          subheading="A next generation multirotor system that redefines the class."
         />
       </div>
       <AraceAngelProductInfo />

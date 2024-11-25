@@ -228,8 +228,8 @@ function AraceAngelProductInfo() {
           ))}
         </ul>
       </div>
-      <div className="flex flex-col lg:flex-row items-center lg:justify-center gap-20 my-12 sm:my-40">
-        <div className="w-80 sm:w-[600px] items-start flex flex-col justify-center">
+      <div className="flex flex-col lg:flex-row justify-center  gap-20 my-12 sm:mt-40 sm:mb-20">
+        <div className="w-80 sm:w-[480px] md:w-[600px] items-start flex flex-col justify-center">
           <h3
             className="text-5xl text-left uppercase w-auto my-8 "
             data-aos="fade-down-in"
@@ -259,10 +259,14 @@ function AraceAngelProductInfo() {
             to see how the Angel outperforms the competition, including the DJI
             M350, IF800 Tomcat and Freefly Astro.
           </div>
-          <div className="arace-angel-graph-wrapper">
+         
+          <div className="w-[100vw] sm:w-[80vw] lg:w-[600px] mr-[12vw] sm:mr-[0vw] sm:ml-[0vw] ml-[-12vw] flex justify-center">
+            <div className=".arace-angel-graph-wrapper w-full">
             <AraceAngelGraph />
           </div>
+          </div>
         </div>
+        <div className="lg:max-w-[420px] w-full flex justify-center">
         <div className="feathered-edge-container relative max-w-[384px] sm:max-w-[420px] z-50 overflow-hidden flex items-center">
           <div className="overflow-hidden">
             <img
@@ -271,6 +275,7 @@ function AraceAngelProductInfo() {
               className="transform scale-[0.9] w-[384px] sm:w-[420px] object-cover h-[400px] sm:h-[600px] rounded overflow-visible"
             />
           </div>
+        </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import iconDrone from '../assets/images/icons/icon-drone.png'
 import AraceGriffinProductPayloadsCarousel from './AraceGriffinProductPayloadsCarousel'
-import araceGriffin4 from '../assets/images/arace-griffin-4.png'
+import araceAngel4 from '../assets/images/arace-angel-4.png'
 import { NavLink } from 'react-router-dom'
 
 // THIS COMPONENT HOLDS TemplateProductPayloadsCarousel (see line 46)
@@ -53,12 +53,12 @@ function AraceAngelProductPayloads() {
         </p>
       </div>*/}
       <AraceGriffinProductPayloadsCarousel />
-      <div className="flex flex-col sm:flex-row justify-center gap-20 my-40 p-12 md:p-20">
-        <div className="image-container max-w-[384px] lg:max-w-[660px] max-h-[600px] z-50">
+      <div className="flex flex-col md:flex-row justify-center sm:items-center gap-20 my-40 p-12 md:p-20">
+        <div className="image-container max-w-96 lg:w-[540px] lg:max-w-[540px]  h-fit z-50">
           <img
-            src={araceGriffin4}
-            alt="Arace Griffin Custom Payload"
-            className="w-96 lg:w-[540px] lg:max-w-[540px] object-fit sm:h-[600px] rounded"
+            src={araceAngel4}
+            alt="Arace Angel Custom Payload"
+            className="w-96 lg max-w-96 lg:w-[540px] lg:max-w-[540px] object-contain lg:object-fit rounded"
           />
         </div>
         <div className="w-80 sm:w-[480px] items-center sm:items-start flex flex-col justify-center">
