@@ -183,7 +183,7 @@ function DeltaQuadEvoInfo() {
             })
 
             return (
-              <div key={item.id} className="md:w-[44%] lg:w-[48%] my-2 mr-4">
+              <div key={item.id} className="md:w-[44%] lg:w-[48%] my-2 md:mr-4">
                 <div className="bg-ft-dark-grey p-2 rounded text-2xl font-medium">
                   <button
                     onClick={() => toggleTechItem(item.id)}
@@ -255,7 +255,7 @@ function DeltaQuadEvoInfo() {
           {endToEndItems.map((item, index) => (
             <li
               key={index}
-              className="bg-ft-dark-grey p-2 my-2 mr-4 md:w-[44%] lg:w-[48%] rounded capitalize flex items-center"
+              className="bg-ft-dark-grey p-2 my-2 md:mr-4 md:w-[44%] lg:w-[48%] rounded capitalize flex items-center"
             >
               <img
                 src={item.img}

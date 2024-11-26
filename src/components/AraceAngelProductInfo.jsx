@@ -1,5 +1,15 @@
 import { useState } from 'react'
 import iconDrone from '../assets/images/icons/icon-drone.png'
+import iconAerospace from '../assets/images/icons/icon-aerospace.png'
+import iconEndurance from '../assets/images/icons/icon-endurance.png'
+import iconBattery from '../assets/images/icons/icon-battery.png'
+import iconCompact from '../assets/images/icons/icon-compact.png'
+import iconService from '../assets/images/icons/icon-service.png'
+import iconSwappable from '../assets/images/icons/icon-swappable.png'
+import iconPin from '../assets/images/icons/icon-pin.png'
+import iconPresentation from '../assets/images/icons/icon-presentation.png'
+import iconShield from '../assets/images/icons/icon-shield.png'
+import iconData from '../assets/images/icons/icon-data.png'
 import araceAngel3 from '../assets/images/arace-angel-3.png'
 import araceAngel2 from '../assets/images/arace-angel-2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -29,45 +39,50 @@ function AraceAngelProductInfo() {
       heading: 'Aerospace Grade Airframe',
       contents:
         'Engineered for excellence, the Arace Angel’s airframe is crafted from aerospace-grade materials, combining exceptional strength with lightweight efficiency to ensure durability and superior flight performance.',
+      icon: iconAerospace,
     },
     {
       id: '2',
       heading: 'Industry Leading Endurance',
       contents:
         'Don’t settle for 30-minute flight times when the Arace Angel delivers up to 90 minutes of airtime with a 1 kg payload. Redefining endurance, it empowers you to complete longer missions with fewer interruptions, no matter the conditions.',
+      icon: iconEndurance,
     },
     {
       id: '3',
       heading: 'Semi-Solid Battery',
       contents:
         'Powered by advanced semi-solid lithium batteries, the Arace Angel delivers outstanding energy density, providing consistent and reliable performance for extended missions.',
+      icon: iconBattery,
     },
     {
       id: '4',
       heading: 'Compact Frame',
       contents:
         'The Arace Angel is rapidly deployable from its briefcase-sized carry case, thanks to its innovative folding arms and landing gear, making transport and setup quick and effortless.',
+      icon: iconCompact,
     },
     {
       id: '5',
       heading: 'Field Serviceable',
       contents:
         'Designed for real-world conditions, the Arace Angel is field-serviceable, allowing users to quickly replace or repair key components like propellers and actuators, keeping downtime to a minimum.',
+      icon: iconService,
     },
     {
       id: '6',
       heading: 'Swappable Payloads',
       contents:
         'Adapt to any mission with ease. The Arace Angel’s swappable payload system lets you quickly switch between sensors and equipment, ensuring maximum flexibility in the field.',
+      icon: iconSwappable,
     },
   ]
 
   const endToEndItems = [
-    'Support and warranty',
-    'Regulatory compliance packages',
-    'Certified training',
-    'Data processing and management',
-    // ... other items
+    { img: iconPin, text: 'Support and warranty' },
+    { img: iconPresentation, text: 'Certified training' },
+    { img: iconShield, text: 'Regulatory compliance packages' },
+    { img: iconData, text: 'Data processing and management' },
   ]
 
   /*
@@ -163,21 +178,21 @@ function AraceAngelProductInfo() {
             })
 
             return (
-              <div key={item.id} className="md:w-[44%] lg:w-[48%] my-2 mr-4">
+              <div key={item.id} className="md:w-[44%] lg:w-[48%] my-2 md:mr-4">
                 <div className="bg-ft-dark-grey p-2 rounded text-2xl font-medium">
                   <button
                     onClick={() => toggleTechItem(item.id)}
                     className="flex items-center w-full text-left [&>*:nth-child(3)]:ml-auto [&>*:nth-child(3)]:p-2 text-sm md:text-lg font-light font-['Inter'] tracking-wide leading-loose "
                   >
                     <img
-                      src={iconDrone}
-                      alt="drone icon"
-                      className="w-[40px] h-[40px] m-2 md:mr-4 inline-flex "
+                      src={item.icon}
+                      alt="Under the hood"
+                      className="w-[40px] h-[40px] m-2 mr-4 inline-flex "
                     />
                     {item.heading}
                     <FontAwesomeIcon
                       icon={faChevronDown}
-                      className="text-2xl ml-auto"
+                      className="text-2xl ml-auto mr-4"
                     />
                   </button>
                   {/* Animated div for item content */}
@@ -216,14 +231,14 @@ function AraceAngelProductInfo() {
           {endToEndItems.map((item, index) => (
             <li
               key={index}
-              className="bg-ft-dark-grey p-2 my-2 mr-4 md:w-[44%] lg:w-[48%] rounded capitalize flex items-center"
+              className="bg-ft-dark-grey p-2 my-2 md:mr-4 md:w-[44%] lg:w-[48%] rounded capitalize flex items-center"
             >
               <img
-                src={iconDrone}
-                alt="drone icon"
-                className="w-[40px] h-[40px] m-2 md:mr-4 inline-flex"
+                src={item.img}
+                alt="end to end icon"
+                className="w-[40px] h-[40px] m-2 mr-4 inline-flex"
               />
-              <div className="flex-wrap">{item}</div>
+              <div className="flex-wrap">{item.text}</div>
             </li>
           ))}
         </ul>
@@ -259,23 +274,23 @@ function AraceAngelProductInfo() {
             to see how the Angel outperforms the competition, including the DJI
             M350, IF800 Tomcat and Freefly Astro.
           </div>
-         
+
           <div className="w-[100vw] sm:w-[80vw] lg:w-[600px] mr-[12vw] sm:mr-[0vw] sm:ml-[0vw] ml-[-12vw] flex justify-center">
             <div className=".arace-angel-graph-wrapper w-full">
-            <AraceAngelGraph />
-          </div>
+              <AraceAngelGraph />
+            </div>
           </div>
         </div>
         <div className="lg:max-w-[420px] w-full flex justify-center">
-        <div className="feathered-edge-container relative max-w-[384px] sm:max-w-[420px] z-50 overflow-hidden flex items-center">
-          <div className="overflow-hidden">
-            <img
-              src={araceAngel3}
-              alt="Arace Angel"
-              className="transform scale-[0.9] w-[384px] sm:w-[420px] object-cover h-[400px] sm:h-[600px] rounded overflow-visible"
-            />
+          <div className="feathered-edge-container relative max-w-[384px] sm:max-w-[420px] z-50 overflow-hidden flex items-center">
+            <div className="overflow-hidden">
+              <img
+                src={araceAngel3}
+                alt="Arace Angel"
+                className="transform scale-[0.9] w-[384px] sm:w-[420px] object-cover h-[400px] sm:h-[600px] rounded overflow-visible"
+              />
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </div>
