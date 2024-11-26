@@ -36,7 +36,7 @@ function AraceGriffinProductTechnical() {
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
                 <div className="flex-1">Airframe Weight</div>
-                <div className="flex-1 ml-8">6.5 kg</div>
+                <div className="flex-1 ml-8">6.5kg</div>
               </div>
             </div>
           </div>
@@ -51,11 +51,11 @@ function AraceGriffinProductTechnical() {
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
                 <div className="flex-1">Maximum Flight Range</div>
-                <div className="flex-1 ml-8">150 km</div>
+                <div className="flex-1 ml-8">150km</div>
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
                 <div className="flex-1">Payload capacity</div>
-                <div className="flex-1 ml-8">*do you want this row empty or gone*</div>
+                <div className="flex-1 ml-8">2kg</div>
               </div>
             </div>
           </div>

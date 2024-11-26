@@ -51,11 +51,11 @@ function DeltaQuadXxxTechnical() {
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
                 <div className="flex-1">Maximum Flight Range</div>
-                <div className="flex-1 ml-8">170 km</div>
+                <div className="flex-1 ml-8">170km</div>
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
                 <div className="flex-1">Payload Capacity</div>
-                <div className="flex-1 ml-8">3 kg</div>
+                <div className="flex-1 ml-8">3kg</div>
               </div>
             </div>
           </div>
@@ -68,11 +68,11 @@ function DeltaQuadXxxTechnical() {
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
                 <div className="flex-1">Maximum Flight Range</div>
-                <div className="flex-1 ml-8">280 km</div>
+                <div className="flex-1 ml-8">280km</div>
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
                 <div className="flex-1">Payload Capacity</div>
-                <div className="flex-1 ml-8">1 kg</div>
+                <div className="flex-1 ml-8">1kg</div>
               </div>
             </div>
           </div>
