@@ -5,75 +5,76 @@ import {
   faChevronRight,
   faChevronLeft,
 } from '@fortawesome/free-solid-svg-icons'
-import a7riv from '../assets/images/payloads/payloads-cropped-a7riv.jpg'
-import altum from '../assets/images/payloads/payloads-cropped-altum.jpg'
-import delivery from '../assets/images/payloads/payloads-cropped-delivery.jpg'
+import ilxLr1 from '../assets/images/payloads/payloads-cropped-ilx-lr1.jpg'
+import lr161mp from '../assets/images/payloads/payloads-cropped-lr1-61mp.png'
+import easyScanW30 from '../assets/images/payloads/payloads-cropped-easyscan-w30.png'
+import cm102 from '../assets/images/payloads/payloads-cropped-cm102.png'
+import eliteScanW50 from '../assets/images/payloads/payloads-cropped-elitescan-w50.png'
 import raptor from '../assets/images/payloads/payloads-cropped-raptor.jpg'
-import wris from '../assets/images/payloads/payloads-cropped-wris.jpg'
-import yellowscan from '../assets/images/payloads/payloads-cropped-yellowscan.jpg'
-
-// THIS COMPONENT IS USED IN TemplateProductPayloads
-// Note that bannertext allows for conditional rendering, see lines 138-151
+import x80 from '../assets/images/payloads/payloads-cropped-x80.png'
 
 const result = [
   {
-    image: a7riv,
-    alt: 'fill',
+    image: ilxLr1,
+    alt: 'ILX-LR1',
     category: 'RGB',
-    title: 'A74 MARK IVT',
+    title: 'ILX-LR1',
     maker: 'Sony',
     description:
-      'A fully integrated 61 megapixel mapping camera with an interchangeable lens',
-    bannerText: 'Two Single',
+      'A light weight, fully integrated 61 megapixel mapping camera with an interchangeable lens',
   },
   {
-    image: altum,
-    alt: 'fill',
+    image: lr161mp,
+    alt: 'LR1 61MP SEXTUPLE',
     category: 'RGB & MULTISPECTRAL',
-    title: 'MICASENSE ALTUM PT',
-    maker: 'AgEagle',
+    title: 'LR1 61MP SEXTUPLE',
+    maker: 'Agrowing',
     description:
-      'A six band synchronized thermal and multispectral sensor with panchromatic correction',
-    bannerText: 'One Double',
+      'A high-resolution, full-frame multispectral camera with 14 narrow bands (or 9 plus RGB) at 7.5MP per band, designed for precision mapping',
   },
   {
-    image: wris,
-    alt: 'fill',
-    category: 'RGB & THERMAL',
+    image: easyScanW30,
+    alt: 'EASYSCAN W30',
+    category: 'LIDAR',
     title: 'WRIS PRO',
-    maker: 'Workswell',
-    description: 'An integrated high-resolution thermal & RGB mapping sensor ',
-    bannerText: 'Two Single',
+    maker: 'Epic Lidar',
+    description: 'A compact, high-precision LiDar sensor offering up to 300m range and multi-target detection, ideal for applications requiring detailed 3D mapping and obstacle detection',
   },
   {
-    image: delivery,
-    alt: 'fill',
-    category: 'CARGO',
-    title: 'PAYLOAD DELIVERY',
-    maker: 'DeltaQuad',
+    image: eliteScanW50,
+    alt: 'ELITESCAN W50',
+    category: 'ISR',
+    title: 'ELITESCAN W50',
+    maker: 'Epic Lidar',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo.',
-    bannerText: 'Two Single',
+      'A highly integrated airborne line scanning LiDAR system with camera, capable of flying up to 400m, featuring strong vegetation penetration with 7 echo returns and a wide FOV',
+  },
+  {
+    image: cm102,
+    alt: 'CM102',
+    category: 'ISR',
+    title: 'CM102',
+    maker: 'AVT Australia',
+    description:
+      'A lightweight, gyro-stabilised gimbal system optimised for UAVs, providing high-definition imaging and thermal capabilities for precise aerial surveillance and reconnaissance',
   },
   {
     image: raptor,
-    alt: 'fill',
-    category: 'RAPTOR',
-    title: 'WORKING TITLE',
-    maker: 'Need info',
+    alt: 'RAPTOR',
+    category: 'ISR',
+    title: 'RAPTOR',
+    maker: 'NextVision',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo.',
-    bannerText: 'Two Single',
+      'A lightweight long range dual EO-IR stabilised camera turret featuring a significant IR range increase and X80 EO zoom',
   },
   {
-    image: yellowscan,
-    alt: 'fill',
-    category: 'YELLOWSCAN',
-    title: 'SOMETHING DELIVERY',
-    maker: 'Need info',
+    image: x80,
+    alt: 'X80',
+    category: 'ISR',
+    title: 'X80',
+    maker: 'NextVision',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo.',
-    bannerText: 'One Double',
+      'Named after its phenomenal zoom capability, the X80 is a light-weight long-ranged EO stabilised camera turret',
   },
 ]
 
@@ -127,7 +128,7 @@ function AraceGriffinProductPayloadsCarousel() {
           ref={scrollRef}
         >
           {result.map((item, index) => (
-            <li key={index} className="media-element lg:pr-6 lg:py-12 lg:pl-4">
+            <li key={index} className="media-element lg:pr-2 lg:py-12 lg:pl-4 md:pl-4">
               <div className="relative ">
                 <img
                   src={item.image}
@@ -150,17 +151,19 @@ function AraceGriffinProductPayloadsCarousel() {
                 )}
 
               </div>
-              <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter'] mt-4 mb-2">
+              <div className="">
+              <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter'] mt-4 mb-2 py-2">
                 {item.category}
               </p>
-              <p className="uppercase font-medium text-2xl lg:text-[2rem]">{item.title}</p>
-              <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter'] h-8">
+              <p className="uppercase font-medium text-2xl lg:text-[2rem] py-2">{item.title}</p>
+              <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter'] h-8 py-2 pb-8">
                 {item.maker}
               </p>
-              <div className="border-ft-dark-grey border-t h-0.5 w-full rounded"></div>
+              <div className="border-ft-dark-grey border-t h-0.5 w-full rounded py-2"></div>
               <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter'] min-h-[4rem]">
                 {item.description}
               </p>
+              </div>
             </li>
           ))}
         </ul>

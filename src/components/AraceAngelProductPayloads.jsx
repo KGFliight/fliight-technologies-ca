@@ -1,5 +1,5 @@
 import iconDrone from '../assets/images/icons/icon-drone.png'
-import AraceGriffinProductPayloadsCarousel from './AraceGriffinProductPayloadsCarousel'
+import AraceAngelProductPayloadsCarousel from './AraceAngelProductPayloadsCarousel'
 import araceAngel4 from '../assets/images/arace-angel-4.png'
 import { NavLink } from 'react-router-dom'
 
@@ -52,7 +52,7 @@ function AraceAngelProductPayloads() {
           corrupti quos totam assumenda. Voluptates, distinctio!
         </p>
       </div>*/}
-      <AraceGriffinProductPayloadsCarousel />
+      <AraceAngelProductPayloadsCarousel />
       <div className="flex flex-col md:flex-row justify-center sm:items-center gap-20 my-40 p-12 md:p-20">
         <div className="image-container max-w-96 lg:w-[540px] lg:max-w-[540px]  h-fit z-50">
           <img

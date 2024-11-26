@@ -157,17 +157,19 @@ function DeltaQuadPayloadsCarousel() {
                   <div className="p-2">One Double</div>
                 </div>*/}
               </div>
-              <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter'] mt-4 mb-1">
+              <div className="">
+              <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter'] mt-4 mb-2 py-2">
                 {item.category}
               </p>
-              <p className="uppercase font-medium text-2xl ">{item.title}</p>
-              <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter']">
+              <p className="uppercase font-medium text-2xl lg:text-[2rem] py-2">{item.title}</p>
+              <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter'] h-8 py-2 pb-8">
                 {item.maker}
               </p>
-              <div className="border-ft-dark-grey border-t h-0.5 w-full rounded"></div>
+              <div className="border-ft-dark-grey border-t h-0.5 w-full rounded py-2"></div>
               <p className="text-sm text-ft-grey leading-tight tracking-wide font-thin font-['Inter'] min-h-[4rem]">
                 {item.description}
               </p>
+              </div>
             </li>
           ))}
         </ul>
