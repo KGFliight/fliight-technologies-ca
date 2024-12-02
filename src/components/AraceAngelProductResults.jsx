@@ -1,7 +1,7 @@
 import '../App.css'
 import React, { useEffect, useRef, useState } from 'react'
-import software from '../assets/images/software-1.jpeg'
-
+import resultsLidar from '../assets/images/results-lidar.jpg'
+import resultsThumbnail1 from '../assets/images/results-thumbnail-1.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChevronRight,
@@ -10,26 +10,32 @@ import {
 
 const result = [
   {
-    type: "image",
-    image: software,
-    alt: "fill",
-    title: "Data Set 1",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo. Doloribus ex explicabo illum provident nisi modi repudiandae rerum maxime nesciunt. Laboriosam."
+    type: 'image',
+    image: resultsLidar,
+    alt: 'Colourised LiDAR - Bellambi Boat Ramp',
+    title: 'Colourised LiDAR - Bellambi Boat Ramp',
+    description:
+      'This dataset was collected with Arace Angel and Easyscan W30 LiDAR scanner. 100m Fliight height at 8m/s. Total flight time was 7 minutes. Processing, colourisation and classification generated locally.',
+    url: 'https://lidar.fliight.com.au/view/Bellambi_Boat_Ramp-Complete_2024_0918_073341',
   },
   {
-    type: "video",
-    videoUrl: "https://cdn.example.com/video1.mp4", // Replace with actual CDN URL
-    alt: "Video 1",
-    title: "Data Set 2",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo. Doloribus ex explicabo illum provident nisi modi repudiandae rerum maxime nesciunt. Laboriosam."
+    type: 'video',
+    videoUrl: 'https://cdn.example.com/video1.mp4', 
+    thumbnail: resultsThumbnail1,
+    alt: 'Video 1',
+    title: 'Data Set 2',
+    description:
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo. Doloribus ex explicabo illum provident nisi modi repudiandae rerum maxime nesciunt. Laboriosam.',
   },
   {
-    type: "video",
-    videoUrl: "https://cdn.example.com/video2.mp4", // Replace with actual CDN URL
-    alt: "Video 2",
-    title: "Data Set 3",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo. Doloribus ex explicabo illum provident nisi modi repudiandae rerum maxime nesciunt. Laboriosam."
-  }
+    type: 'video',
+    videoUrl: 'https://cdn.example.com/video2.mp4', 
+    thumbnail: resultsThumbnail1,
+    alt: 'Video 2',
+    title: 'Data Set 3',
+    description:
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo. Doloribus ex explicabo illum provident nisi modi repudiandae rerum maxime nesciunt. Laboriosam.',
+  },
 ]
 
 function AraceAngelProductResults() {
@@ -105,13 +111,20 @@ function AraceAngelProductResults() {
         >
           {result.map((item, index) => (
             <li key={index} className="media-element lg:pr-6 lg:py-12 lg:pl-4">
-              {item.type === "image" ? (
-                <img
-                  ref={index === 0 ? imageRef : null} // Reference the first image to capture its height
-                  src={item.image}
-                  alt={item.alt}
-                  className="bg-ft-grey border-ft-grey rounded w-full object-cover"
-                />
+              {item.type === 'image' ? (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="no-underline hover:no-underline hover:opacity-80 hover:-translate-y-1 transition duration-300"
+                >
+                  <img
+                    ref={index === 0 ? imageRef : null} // Reference the first image to capture its height
+                    src={item.image}
+                    alt={item.alt}
+                    className="bg-ft-grey border-ft-grey rounded w-full object-cover"
+                  />
+                </a>
               ) : (
                 <div
                   className="bg-ft-grey border-ft-grey rounded overflow-hidden"
@@ -120,13 +133,16 @@ function AraceAngelProductResults() {
                   <video
                     controls
                     src={item.videoUrl}
+                    poster={item.thumbnail}
                     className="w-full h-full object-cover"
                   >
                     Your browser does not support the video tag.
                   </video>
                 </div>
               )}
-              <p className="uppercase font-medium mt-2 text-[2rem]">{item.title}</p>
+              <p className="uppercase font-medium mt-2 text-[2rem]">
+                {item.title}
+              </p>
               <p className="text-base text-ft-grey leading-loose tracking-wide font-light font-['Inter']">
                 {item.description}
               </p>

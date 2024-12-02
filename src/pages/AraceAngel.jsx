@@ -7,7 +7,7 @@ import AraceAngelProductInfo from '../components/AraceAngelProductInfo'
 import AraceAngelProductResults from '../components/AraceAngelProductResults'
 import AraceAngelProductTechnical from '../components/AraceAngelProductTechnical'
 import AraceAngelProductPayloads from '../components/AraceAngelProductPayloads'
-
+import AraceAngelProductElevated from '../components/AraceAngelProductElevated'
 //TEMPLATE PRODUCT PAGE BASED OFF OF THE DELTAQUAD EVO PAGE. SOME ASSETS (MAINLY THE IMAGES) HAVE REMAINED THE SAME BUT ARE INTERCHANGEABLE. MOST TEXT HAS BEEN CHANGED TO HELP. 
 // USE THE DELTAQUADEVO.JSX PAGE FILE FOR REFERENCE IF NEEDED. ALL TEMPLATE COMPONENTS ARE BASED OFF OF THE RESPONDING COMPONENTS BEGINNING WITH DELTAQUAD
 // DELTAQUAD BANNER (line 29) IS A REUSABLE COMPONENT AS IS. CHANGE THE TITLE, IMAGE SOURCE AND SUBHEADING TO CHANGE THE BANNER
@@ -39,6 +39,7 @@ function AraceAngel() {
       <AraceAngelProductInfo />
       <AraceAngelProductPayloads />
       <AraceAngelProductResults />
+      <AraceAngelProductElevated />
       <AraceAngelProductTechnical />
       <div className="flex flex-col items-center text-center uppercase text-5xl tracking-widest my-40 mx-8">
         We offer onsite demos

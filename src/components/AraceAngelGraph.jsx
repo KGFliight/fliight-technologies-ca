@@ -39,8 +39,8 @@ const AraceAngelGraph = () => {
         text: 'Arace Angel vs the Competitors',
         font: { color: '#ffffff', family: 'Inter, sans-serif' },
       },
-      paper_bgcolor: '#121212',
-      plot_bgcolor: '#121212',
+      paper_bgcolor: '#26283B',
+      plot_bgcolor: '#26283B',
       xaxis: {
         title: { text: 'Payload Weight (kg)', font: { color: '#ffffff' } },
         color: '#ffffff',
