@@ -56,7 +56,7 @@ function DronesCarousel() {
             </div>
       </div>
       <ul
-        className="media-scroller pl-32 snaps-inline md:auto-cols-[42%]"
+        className="media-scroller pl-12 md:pl-32 snaps-inline md:auto-cols-[42%]"
         ref={scrollRef}
       >
         <NavLink to="/platforms/deltaquad-pro">

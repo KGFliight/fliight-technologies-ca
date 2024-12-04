@@ -18,6 +18,8 @@ main {
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  overscroll-behavior-x: none; /* Prevent horizontal elastic scrolling */
+  overscroll-behavior-y: auto; /* Allow normal vertical scrolling */
 }
 
 img,
