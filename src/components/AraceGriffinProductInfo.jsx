@@ -284,7 +284,7 @@ function AraceGriffinProductInfo() {
             <img
               src={araceGriffin3}
               alt="Arace Griffin"
-              className="transform scale-[0.9] w-[384px] sm:w-[420px] object-cover h-[400px] sm:h-[600px] rounded overflow-visible"
+              className="transform scale-[0.9] w-[384px] sm:w-[420px] object-cover h-[400px] sm:h-[600px] rounded overflow-visible feathered-edge-image"
             />
           </div>
         </div>

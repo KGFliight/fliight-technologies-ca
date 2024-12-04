@@ -41,28 +41,6 @@ const result = [
 
 function AraceAngelProductResults() {
   const scrollRef = React.useRef(null)
-  const imageRef = useRef(null)
-  const [imageHeight, setImageHeight] = useState('auto')
-
-  // Recalculate height dynamically on window resize
-  useEffect(() => {
-    const updateHeight = () => {
-      if (imageRef.current) {
-        setImageHeight(`${imageRef.current.offsetHeight}px`)
-      }
-    }
-
-    // Initial calculation
-    updateHeight()
-
-    // Add resize event listener
-    window.addEventListener('resize', updateHeight)
-
-    // Cleanup on component unmount
-    return () => {
-      window.removeEventListener('resize', updateHeight)
-    }
-  }, [])
 
   function slideToTheLeft() {
     if (scrollRef.current) {
@@ -123,13 +101,9 @@ function AraceAngelProductResults() {
           className="no-underline"
         >
           <img
-            ref={index === 0 ? imageRef : null} // Reference the first image to capture its height
             src={item.image}
             alt={item.alt}
-            className={`bg-ft-grey border-ft-grey rounded w-full object-cover ${
-              index === 2 ? 'h-auto' : ''
-            }`}
-            style={index === 2 && imageRef.current ? { height: imageHeight } : {}}
+            className={`bg-ft-grey border-ft-grey rounded w-full object-cover`}
           />
         </a>
       ) : (

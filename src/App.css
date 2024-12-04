@@ -224,7 +224,7 @@ html {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 30%; /* Adjust the width of the gradient effect */
+  width: 35%; /* Adjust the width of the gradient effect */
   z-index: 10;
   pointer-events: none; /* Allows clicks to pass through */
 }
@@ -238,6 +238,22 @@ html {
   right: 0;
   background: linear-gradient(to left, #1C1F2A, transparent);
 }
+
+.feathered-edge-image {
+  -webkit-mask-image: linear-gradient(to right, 
+    transparent 0%, 
+    black 20%, 
+    black 80%, 
+    transparent 100%
+  );
+  mask-image: linear-gradient(to right, 
+    transparent 0%, 
+    black 20%, 
+    black 80%, 
+    transparent 100%
+  );
+}
+
 
 .arace-angel-graph-wrapper {
   width: 100%;

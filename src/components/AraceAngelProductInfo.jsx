@@ -275,7 +275,15 @@ function AraceAngelProductInfo() {
             M350, IF800 Tomcat and Freefly Astro.
           </div>
 
-          <div className="w-[100vw] sm:w-[80vw] lg:w-[600px] mr-[12vw] sm:mr-[0vw] sm:ml-[0vw] ml-[-12vw] flex justify-center">
+          <div
+            className="w-[100vw] sm:w-[80vw] lg:w-[600px] mr-[12vw] sm:mr-[0vw] sm:ml-[0vw] ml-[-12vw] flex justify-center"
+            data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+          >
             <div className=".arace-angel-graph-wrapper w-full">
               <AraceAngelGraph />
             </div>
@@ -283,11 +291,19 @@ function AraceAngelProductInfo() {
         </div>
         <div className="lg:max-w-[420px] w-full flex justify-center">
           <div className="feathered-edge-container relative max-w-[384px] sm:max-w-[420px] z-50 overflow-hidden flex items-center">
-            <div className="overflow-hidden">
+            <div
+              className="overflow-hidden"
+              data-aos="fade-down-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="0"
+              data-aos-offset="0"
+              data-aos-mirror="true"
+              data-aos-duration="600"
+            >
               <img
                 src={araceAngel3}
                 alt="Arace Angel"
-                className="transform scale-[0.9] w-[384px] sm:w-[420px] object-cover h-[400px] sm:h-[600px] rounded overflow-visible"
+                className="transform scale-[0.9] w-[384px] sm:w-[420px] object-cover h-[400px] sm:h-[600px] rounded overflow-visible feathered-edge-image"
               />
             </div>
           </div>
