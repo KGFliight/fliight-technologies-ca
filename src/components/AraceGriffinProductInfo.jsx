@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import iconDrone from '../assets/images/icons/icon-drone.png'
 import iconAerospace from '../assets/images/icons/icon-aerospace.png'
 import iconTilt from '../assets/images/icons/icon-tilt.png'
 import iconRoute from '../assets/images/icons/icon-route.png'

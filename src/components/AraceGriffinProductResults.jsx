@@ -1,5 +1,5 @@
 import '../App.css'
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import resultsShowreel from '../assets/images/results-showreel-ag.png'
 import resultsReviewThumbnail from '../assets/images/results-review-thumbnail-ag.png'
 import resultsPowerline from '../assets/images/results-powerline-inspection-ag.png'

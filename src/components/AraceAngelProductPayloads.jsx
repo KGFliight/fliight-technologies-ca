@@ -1,4 +1,3 @@
-import iconDrone from '../assets/images/icons/icon-drone.png'
 import AraceAngelProductPayloadsCarousel from './AraceAngelProductPayloadsCarousel'
 import araceAngel4 from '../assets/images/arace-angel-4.png'
 import { NavLink } from 'react-router-dom'

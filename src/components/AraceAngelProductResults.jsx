@@ -1,5 +1,5 @@
 import '../App.css'
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import resultsLidar from '../assets/images/results-lidar.png'
 import resultsVideoThumbnail from '../assets/images/results-video-thumbnail-aa.png'
 import resultsReviewThumbnail from '../assets/images/results-review-thumbnail-aa.png'

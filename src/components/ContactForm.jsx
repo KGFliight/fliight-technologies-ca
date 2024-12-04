@@ -2,7 +2,7 @@ import emailjs from 'emailjs-com'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import ReCAPTCHA from 'react-google-recaptcha'
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { toast } from 'react-toastify'
 
 

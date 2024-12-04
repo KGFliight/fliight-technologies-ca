@@ -16,26 +16,22 @@ const MobileMenu = ({ isMenuOpen, setMenuOpen }) => {
   const [techDropdownOpen, setTechDropdownOpen] = useState(false);
   const location = useLocation();
 
-  const dropdownHeight = techDropdownOpen ? 'auto' : '0px';
-
   const transitions = useTransition(techDropdownOpen, {
     from: { 
       opacity: 0, 
-      height: '0px',
+      height: 0,
       transform: 'translateY(-20px)',
-      position: 'absolute',
-      pointerEvents: 'none'
+      overflow: 'hidden',
     },
     enter: { 
       opacity: 1, 
-      height: dropdownHeight,
+      height: 'auto',
       transform: 'translateY(0px)',
-      position: 'relative',
-      pointerEvents: 'auto'
+      overflow: 'visible',
     },
     leave: { 
       opacity: 0, 
-      height: '0px',
+      height: 0,
       transform: 'translateY(-20px)',
       position: 'absolute',
       pointerEvents: 'none'

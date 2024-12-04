@@ -70,7 +70,7 @@ function AraceAngelProductElevated() {
           </div>
           {/* List Items Section */}
           <div className="order-last lg:order-first w-full lg:w-1/2 lg:pr-8">
-            <p className="text-lg font-bold font-['Inter']">Key Features:</p>
+            <p className="text-lg font-bold font-['Inter'] leading-loose tracking-wide">Key Features:</p>
             <ul className="list-disc list-inside mt-2 ml-4 text-lg leading-loose tracking-wide font-light font-['Inter']">
               <li className="flex items-start mb-2">
                 <FontAwesomeIcon
@@ -97,7 +97,7 @@ function AraceAngelProductElevated() {
                 integrated directly into the flight control system.
               </li>
             </ul>
-            <p className="text-lg font-bold font-['Inter'] mt-16">
+            <p className="text-lg font-bold font-['Inter'] mt-16 leading-loose tracking-wide">
               Coming Soon:
             </p>
             <ul className="list-disc list-inside mt-2 ml-4 text-lg leading-loose tracking-wide font-light font-['Inter']">

@@ -4,7 +4,6 @@ import DeltaQuadBanner from '../components/DeltaQuadXxxBanner'
 import deltaQuadEvoBannerImage from '../assets/images/deltaquad-evo-banner.jpg'
 import DeltaQuadEvoInfo from '../components/DeltaQuadEvoInfo'
 import DeltaQuadEvoPayloads from '../components/DeltaQuadEvoPayloads'
-import DeltaQuadEvoResults from '../components/DeltaQuadXxxResults'
 import DeltaQuadEvoTechnical from '../components/DeltaQuadXxxTechnical'
 import { NavLink } from 'react-router-dom'
 

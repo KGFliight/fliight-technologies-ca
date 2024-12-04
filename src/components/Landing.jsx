@@ -1,6 +1,5 @@
 import LandingIcons from './LandingLogos'
 import LandingWorkWithUs from './LandingWorkWithUs'
-import ReviewCarousel from './ReviewCarousel'
 import DronesCarousel from './DronesCarousel'
 import LandingModal from './LandingModal'
 import landingWorkshopImage from '../assets/images/landing-workshop-image.jpeg'

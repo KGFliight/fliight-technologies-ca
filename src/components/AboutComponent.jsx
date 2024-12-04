@@ -1,9 +1,7 @@
 import fliightCrew from '../assets/images/thefliightcrew_cropped.jpg'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import kit from '../assets/images/review-users/kit.jpeg'
 import john from '../assets/images/john.jpg'
 import kihan from '../assets/images/kihan.jpeg'
 import '../App.css'

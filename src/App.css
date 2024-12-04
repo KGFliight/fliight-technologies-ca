@@ -15,6 +15,11 @@ main {
   margin-inline: auto;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 img,
 svg,
 video {
@@ -98,6 +103,7 @@ html {
   overscroll-behavior-inline: contain;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
+  
 }
 
 .media-scroller:active {
