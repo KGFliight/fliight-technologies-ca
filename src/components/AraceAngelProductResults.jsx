@@ -1,7 +1,8 @@
 import '../App.css'
 import React, { useEffect, useRef, useState } from 'react'
-import resultsLidar from '../assets/images/results-lidar.jpg'
-import resultsThumbnail1 from '../assets/images/results-thumbnail-1.jpg'
+import resultsLidar from '../assets/images/results-lidar.png'
+import resultsVideoThumbnail from '../assets/images/results-video-thumbnail-aa.png'
+import resultsReviewThumbnail from '../assets/images/results-review-thumbnail-aa.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChevronRight,
@@ -15,26 +16,26 @@ const result = [
     alt: 'Colourised LiDAR - Bellambi Boat Ramp',
     title: 'Colourised LiDAR - Bellambi Boat Ramp',
     description:
-      'This dataset was collected with Arace Angel and Easyscan W30 LiDAR scanner. 100m Fliight height at 8m/s. Total flight time was 7 minutes. Processing, colourisation and classification generated locally.',
+      'This dataset was collected with the Arace Angel and Easyscan W30 LiDAR in 7 minutes at 100m altitude operating at 8m/s flight speed. Processing, colourisation and classification generated locally.',
     url: 'https://lidar.fliight.com.au/view/Bellambi_Boat_Ramp-Complete_2024_0918_073341',
   },
   {
-    type: 'video',
-    videoUrl: 'https://cdn.example.com/video1.mp4', 
-    thumbnail: resultsThumbnail1,
-    alt: 'Video 1',
-    title: 'Data Set 2',
+    type: 'image',
+    url: 'https://dyupn21s2frgg.cloudfront.net/Angel_Demo.mp4',
+    image: resultsVideoThumbnail,
+    alt: 'Arace Angel - Rapid ISR Deployment Video',
+    title: 'Arace Angel - Rapid ISR Deployment',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo. Doloribus ex explicabo illum provident nisi modi repudiandae rerum maxime nesciunt. Laboriosam.',
+      'Watch the Arace Angel demonstrate its rapid setup and seamless transition to the skies, equipped with the advanced AVT CM62 payload. With up to 90 minutes of flight time, it delivers exceptional long-range surveillance and intelligence gathering capabilities.',
   },
   {
-    type: 'video',
-    videoUrl: 'https://cdn.example.com/video2.mp4', 
-    thumbnail: resultsThumbnail1,
-    alt: 'Video 2',
-    title: 'Data Set 3',
+    type: 'image',
+    image: resultsReviewThumbnail,
+    alt: 'Arace Angel Review by ArduPilot Pioneer, Dr Andrew Tridgell',
+    title: 'Arace Angel Review by ArduPilot Pioneer, Dr Andrew Tridgell',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam repellendus architecto nemo. Doloribus ex explicabo illum provident nisi modi repudiandae rerum maxime nesciunt. Laboriosam.',
+      'Discover what industry experts are saying about the Arace Angel. Read this in-depth, honest review highlighting the system’s remarkable long endurance, reliability, and cutting-edge capabilities for demanding missions.',
+    url: 'https://discuss.ardupilot.org/t/arace-angel-fantastic-long-endurance-copter/113998',
   },
 ]
 
@@ -106,49 +107,56 @@ function AraceAngelProductResults() {
           </div>
         </div>
         <ul
-          className="media-scroller snaps-inline md:auto-cols-[42%] pl-12 md:pl-20"
-          ref={scrollRef}
+  className="media-scroller snaps-inline md:auto-cols-[42%] pl-12 md:pl-20"
+  ref={scrollRef}
+>
+  {result.map((item, index) => (
+    <li
+      key={index}
+      className="media-element lg:pr-6 lg:py-12 lg:pl-4 hover:no-underline hover:opacity-80 hover:-translate-y-1 transition duration-300"
+    >
+      {item.type === 'image' ? (
+        <a
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="no-underline"
         >
-          {result.map((item, index) => (
-            <li key={index} className="media-element lg:pr-6 lg:py-12 lg:pl-4">
-              {item.type === 'image' ? (
-                <a
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="no-underline hover:no-underline hover:opacity-80 hover:-translate-y-1 transition duration-300"
-                >
-                  <img
-                    ref={index === 0 ? imageRef : null} // Reference the first image to capture its height
-                    src={item.image}
-                    alt={item.alt}
-                    className="bg-ft-grey border-ft-grey rounded w-full object-cover"
-                  />
-                </a>
-              ) : (
-                <div
-                  className="bg-ft-grey border-ft-grey rounded overflow-hidden"
-                  style={{ height: imageHeight }} // Dynamically set the height
-                >
-                  <video
-                    controls
-                    src={item.videoUrl}
-                    poster={item.thumbnail}
-                    className="w-full h-full object-cover"
-                  >
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              )}
-              <p className="uppercase font-medium mt-2 text-[2rem]">
-                {item.title}
-              </p>
-              <p className="text-base text-ft-grey leading-loose tracking-wide font-light font-['Inter']">
-                {item.description}
-              </p>
-            </li>
-          ))}
-        </ul>
+          <img
+            ref={index === 0 ? imageRef : null} // Reference the first image to capture its height
+            src={item.image}
+            alt={item.alt}
+            className={`bg-ft-grey border-ft-grey rounded w-full object-cover ${
+              index === 2 ? 'h-auto' : ''
+            }`}
+            style={index === 2 && imageRef.current ? { height: imageHeight } : {}}
+          />
+        </a>
+      ) : (
+        <div
+          className="bg-ft-grey border-ft-grey rounded overflow-hidden"
+          style={{ height: imageHeight }} // Dynamically set the height
+        >
+          <video
+            controls
+            src={item.videoUrl}
+            poster={item.thumbnail}
+            className="w-full h-full object-cover"
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      )}
+      <p className="uppercase font-medium mt-2 text-[2rem]">
+        {item.title}
+      </p>
+      <p className="text-base text-ft-grey leading-loose tracking-wide font-light font-['Inter']">
+        {item.description}
+      </p>
+    </li>
+  ))}
+</ul>
+
       </div>
     </div>
   )
