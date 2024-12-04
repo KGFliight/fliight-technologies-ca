@@ -156,7 +156,15 @@ function DeltaQuadEvoInfo() {
       </div>
       <div className="flex flex-col items-center my-24">
         <div className="flex flex-col items-center z-50">
-          <div className="image-container m-0 md:mx-24 my-0 ">
+          <div
+            className="image-container m-0 md:mx-24 my-0"
+            data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+          >
             <img
               src={deltaQuadEvoGif}
               className="object-contain sm:object-cover rounded h-auto sm:h-[480px] w-full"
@@ -165,11 +173,27 @@ function DeltaQuadEvoInfo() {
         </div>
       </div>
       <div className="mb-24">
-        <h3 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12">
+        <h3
+          className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12"
+          data-aos="fade-down-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="0"
+          data-aos-offset="0"
+          data-aos-mirror="true"
+          data-aos-duration="600"
+        >
           Game changing technology
         </h3>
 
-        <div className="flex flex-col md:flex-row flex-wrap tracking-wide leading-loose my-6 text-sm md:text-lg uppercase ">
+        <div
+          className="flex flex-col md:flex-row flex-wrap tracking-wide leading-loose my-6 text-sm md:text-lg uppercase"
+          data-aos="fade-down-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="0"
+          data-aos-offset="0"
+          data-aos-mirror="true"
+          data-aos-duration="600"
+        >
           {technologyItems.map((item) => {
             // Determine if the current item is open
             const isOpen = openTechItem === item.id
@@ -301,7 +325,15 @@ function DeltaQuadEvoInfo() {
           </div>
         </div>
         <div className="feathered-edge-container relative max-w-[384px] sm:max-w-[420px] max-h-[400px] sm:max-h-[600px] z-50 overflow-hidden ">
-          <div className="overflow-hidden">
+          <div
+            className="overflow-hidden"
+            data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+          >
             <img
               src={deltaQuadFlexibility}
               alt="DeltaQuad Evo Propeller"

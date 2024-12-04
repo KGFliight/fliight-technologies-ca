@@ -8,22 +8,6 @@ import AraceAngelProductResults from '../components/AraceAngelProductResults'
 import AraceAngelProductTechnical from '../components/AraceAngelProductTechnical'
 import AraceAngelProductPayloads from '../components/AraceAngelProductPayloads'
 import AraceAngelProductElevated from '../components/AraceAngelProductElevated'
-//TEMPLATE PRODUCT PAGE BASED OFF OF THE DELTAQUAD EVO PAGE. SOME ASSETS (MAINLY THE IMAGES) HAVE REMAINED THE SAME BUT ARE INTERCHANGEABLE. MOST TEXT HAS BEEN CHANGED TO HELP. 
-// USE THE DELTAQUADEVO.JSX PAGE FILE FOR REFERENCE IF NEEDED. ALL TEMPLATE COMPONENTS ARE BASED OFF OF THE RESPONDING COMPONENTS BEGINNING WITH DELTAQUAD
-// DELTAQUAD BANNER (line 29) IS A REUSABLE COMPONENT AS IS. CHANGE THE TITLE, IMAGE SOURCE AND SUBHEADING TO CHANGE THE BANNER
-// STYLING IS DONE IN TAILWIND
-
-// CHANGE THE COMPONENTS FROM COMPONENTS/templateComponents
-
-// IF IMPLEMENTING THIS TEMPLATE PAGE, BE SURE TO ADJUST THE FOLLOWING:
-// MENU ITEMS -> MobileMenu.jsx, Header.jsx, Footer.jsx
-// Nav links from App.jsx
-
-// TO START INTEGRATE TO START BUILDING:
-// Go to App.jsx
-// Uncomment the line which enables the route path /template-product
-// run in the terminal npm run dev and go to the url given with the suffix /template-product
-
 
 function AraceAngel() {
   return (

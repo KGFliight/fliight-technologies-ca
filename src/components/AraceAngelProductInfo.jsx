@@ -136,7 +136,12 @@ function AraceAngelProductInfo() {
       </div>
       <div className="flex flex-col items-center my-24">
         <div className="flex flex-col items-center z-50">
-          <div className="image-container m-0 md:mx-24 my-0 ">
+          <div className="image-container m-0 md:mx-24 my-0 " data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600">
             <img
               src={araceAngel2}
               alt="Arace Angel"
@@ -146,7 +151,12 @@ function AraceAngelProductInfo() {
         </div>
       </div>
       <div className="mb-24">
-        <h3 className="text-4xl md:text-5xl uppercase tracking-widest font-medium mt-12">
+        <h3 className="text-4xl md:text-5xl uppercase tracking-widest font-medium mt-12" data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600">
           Under The Hood
         </h3>
         <p
@@ -164,7 +174,12 @@ function AraceAngelProductInfo() {
           operation, it empowers users to tackle complex missions with unmatched
           efficiency and reliability, all while being remarkably easy to use.
         </p>
-        <div className="flex flex-col md:flex-row flex-wrap tracking-wide leading-loose my-6 text-sm md:text-lg uppercase ">
+        <div className="flex flex-col md:flex-row flex-wrap tracking-wide leading-loose my-6 text-sm md:text-lg uppercase " data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600">
           {technologyItems.map((item) => {
             // Determine if the current item is open
             const isOpen = openTechItem === item.id
@@ -220,7 +235,7 @@ function AraceAngelProductInfo() {
         data-aos-mirror="true"
         data-aos-duration="600"
       >
-        <h3 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12">
+        <h3 className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-12" >
           End-to-end deployment packages
         </h3>
         <p className="tracking-wide leading-loose my-6 font-light font-['Inter']">
@@ -289,7 +304,7 @@ function AraceAngelProductInfo() {
             </div>
           </div>
         </div>
-        <div className="lg:max-w-[420px] w-full flex justify-center">
+        <div className="lg:max-w-[420px] w-full flex justify-center mt-20">
           <div className="feathered-edge-container relative max-w-[384px] sm:max-w-[420px] z-50 overflow-hidden flex items-center">
             <div
               className="overflow-hidden"

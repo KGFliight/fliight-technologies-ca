@@ -10,7 +10,7 @@ function AraceAngelProductElevated() {
 
   return (
     <div className="m-12 md:m-20">
-      <div className="mb-20">
+      <div className="mt-20 mb-40">
         <h2
           className="text-4xl md:text-5xl uppercase tracking-widest font-medium my-0"
           data-aos="fade-down-in"
@@ -56,8 +56,20 @@ function AraceAngelProductElevated() {
           data-aos-mirror="true"
           data-aos-duration="600"
         >
+          {/* Image Section - Now with order classes */}
+          <div className="order-first lg:order-last w-full lg:w-1/2 flex justify-center my-6">
+            <div className="z-50">
+              <div className="image-container m-0 my-0">
+                <img
+                  src={resultsThumbnail}
+                  alt="Arace Angel"
+                  className="w-96 max-w-96 md:w-[540px] md:max-w-[540px] xl:w-[640px] xl:max-w-[640px] object-contain lg:object-fit rounded"
+                />
+              </div>
+            </div>
+          </div>
           {/* List Items Section */}
-          <div className="w-full lg:w-1/2 lg:pr-8">
+          <div className="order-last lg:order-first w-full lg:w-1/2 lg:pr-8">
             <p className="text-lg font-bold font-['Inter']">Key Features:</p>
             <ul className="list-disc list-inside mt-2 ml-4 text-lg leading-loose tracking-wide font-light font-['Inter']">
               <li className="flex items-start mb-2">
@@ -65,10 +77,8 @@ function AraceAngelProductElevated() {
                   icon={faPlus}
                   className="text-ft-red mr-4 mt-2.5 text-lg"
                 />
-                
-                  Intuitive Wind Visualisation: Easily monitor wind speed and
-                  direction with a user-friendly widget.
-  
+                Intuitive Wind Visualisation: Easily monitor wind speed and
+                direction with a user-friendly widget.
               </li>
               <li className="flex items-start mb-2">
                 <FontAwesomeIcon
@@ -91,7 +101,7 @@ function AraceAngelProductElevated() {
               Coming Soon:
             </p>
             <ul className="list-disc list-inside mt-2 ml-4 text-lg leading-loose tracking-wide font-light font-['Inter']">
-            <li className="flex items-start mb-2">
+              <li className="flex items-start mb-2">
                 <FontAwesomeIcon
                   icon={faPlus}
                   className="text-ft-red mr-4 mt-2.5 text-lg"
@@ -110,18 +120,6 @@ function AraceAngelProductElevated() {
             </ul>
           </div>
 
-          {/* Image Section */}
-          <div className="w-full lg:w-1/2 flex justify-center my-6">
-            <div className="z-50">
-              <div className="image-container m-0 my-0">
-                <img
-                  src={resultsThumbnail}
-                  alt="Arace Angel"
-                  className="w-96 max-w-96 md:w-[540px] md:max-w-[540px] xl:w-[640px] xl:max-w-[640px] object-contain lg:object-fit rounded"
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

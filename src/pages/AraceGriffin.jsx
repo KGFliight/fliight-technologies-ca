@@ -8,23 +8,6 @@ import AraceGriffinProductResults from '../components/AraceGriffinProductResults
 import AraceGriffinProductTechnical from '../components/AraceGriffinProductTechnical'
 import AraceGriffinProductPayloads from '../components/AraceGriffinProductPayloads'
 
-//TEMPLATE PRODUCT PAGE BASED OFF OF THE DELTAQUAD EVO PAGE. SOME ASSETS (MAINLY THE IMAGES) HAVE REMAINED THE SAME BUT ARE INTERCHANGEABLE. MOST TEXT HAS BEEN CHANGED TO HELP. 
-// USE THE DELTAQUADEVO.JSX PAGE FILE FOR REFERENCE IF NEEDED. ALL TEMPLATE COMPONENTS ARE BASED OFF OF THE RESPONDING COMPONENTS BEGINNING WITH DELTAQUAD
-// DELTAQUAD BANNER (line 29) IS A REUSABLE COMPONENT AS IS. CHANGE THE TITLE, IMAGE SOURCE AND SUBHEADING TO CHANGE THE BANNER
-// STYLING IS DONE IN TAILWIND
-
-// CHANGE THE COMPONENTS FROM COMPONENTS/templateComponents
-
-// IF IMPLEMENTING THIS TEMPLATE PAGE, BE SURE TO ADJUST THE FOLLOWING:
-// MENU ITEMS -> MobileMenu.jsx, Header.jsx, Footer.jsx
-// Nav links from App.jsx
-
-// TO START INTEGRATE TO START BUILDING:
-// Go to App.jsx
-// Uncomment the line which enables the route path /template-product
-// run in the terminal npm run dev and go to the url given with the suffix /template-product
-
-
 function AraceGriffin() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
