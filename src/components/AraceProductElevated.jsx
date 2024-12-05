@@ -5,7 +5,7 @@ import 'aos/dist/aos.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
-function AraceAngelProductElevated() {
+function AraceProductElevated() {
   AOS.init()
 
   return (
@@ -126,4 +126,4 @@ function AraceAngelProductElevated() {
   )
 }
 
-export default AraceAngelProductElevated
+export default AraceProductElevated

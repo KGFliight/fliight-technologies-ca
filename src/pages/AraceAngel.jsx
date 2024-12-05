@@ -7,7 +7,7 @@ import AraceAngelProductInfo from '../components/AraceAngelProductInfo'
 import AraceAngelProductResults from '../components/AraceAngelProductResults'
 import AraceAngelProductTechnical from '../components/AraceAngelProductTechnical'
 import AraceAngelProductPayloads from '../components/AraceAngelProductPayloads'
-import AraceAngelProductElevated from '../components/AraceAngelProductElevated'
+import AraceProductElevated from '../components/AraceProductElevated'
 
 function AraceAngel() {
   return (
@@ -23,7 +23,7 @@ function AraceAngel() {
       <AraceAngelProductInfo />
       <AraceAngelProductPayloads />
       <AraceAngelProductResults />
-      <AraceAngelProductElevated />
+      <AraceProductElevated />
       <AraceAngelProductTechnical />
       <div className="flex flex-col items-center text-center uppercase text-5xl tracking-widest my-40 mx-8">
         We offer onsite demos

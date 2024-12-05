@@ -7,6 +7,7 @@ import AraceGriffinProductInfo from '../components/AraceGriffinProductInfo'
 import AraceGriffinProductResults from '../components/AraceGriffinProductResults'
 import AraceGriffinProductTechnical from '../components/AraceGriffinProductTechnical'
 import AraceGriffinProductPayloads from '../components/AraceGriffinProductPayloads'
+import AraceProductElevated from '../components/AraceProductElevated'
 
 function AraceGriffin() {
   return (
@@ -22,6 +23,7 @@ function AraceGriffin() {
       <AraceGriffinProductInfo />
       <AraceGriffinProductPayloads />
       <AraceGriffinProductResults />
+      <AraceProductElevated />
       <AraceGriffinProductTechnical />
       <div className="flex flex-col items-center text-center uppercase text-5xl tracking-widest my-40 mx-8">
         We offer onsite demos
