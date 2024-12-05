@@ -35,15 +35,15 @@ const result = [
   {
     image: easyScanW30,
     alt: 'EASYSCAN W30',
-    category: 'LIDAR',
-    title: 'WRIS PRO',
+    category: 'LiDAR',
+    title: 'EASYSCAN W30',
     maker: 'Epic Lidar',
     description: 'A compact, high-precision LiDar sensor offering up to 300m range and multi-target detection, ideal for applications requiring detailed 3D mapping and obstacle detection',
   },
   {
     image: eliteScanW50,
     alt: 'ELITESCAN W50',
-    category: 'ISR',
+    category: 'LiDAR',
     title: 'ELITESCAN W50',
     maker: 'Epic Lidar',
     description:
