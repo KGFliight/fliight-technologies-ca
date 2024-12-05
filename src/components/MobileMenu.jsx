@@ -82,9 +82,9 @@ const MobileMenu = () => {
       pointerEvents: 'none',
     },
     config: {
-      tension: 280,
-      friction: 30,
-      duration: 300,
+      tension: 300,
+      friction: 20,
+      duration: 200,
     },
   })
 
