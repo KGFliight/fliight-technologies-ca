@@ -223,14 +223,14 @@ const MobileMenu = () => {
                         <animated.div style={style}>
                           <Link
                             to="/about"
-                            className="text-white py-2 block"
+                            className="text-white py-4 block"
                             onClick={handleMenuItemClick}
                           >
                             About
                           </Link>
                           <Link
                             to="/contact"
-                            className="text-white py-2 block"
+                            className="text-white py-4 block"
                             onClick={handleMenuItemClick}
                           >
                             Contact
