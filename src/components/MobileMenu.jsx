@@ -184,20 +184,6 @@ const MobileMenu = () => {
                         className="flex flex-col gap-1.5 mt-2 mb-4"
                       >
                         <Link
-                          to="/platforms/deltaquad-pro"
-                          className="text-ft-grey py-1 pl-2 text-2xl hover:text-white transition-colors"
-                          onClick={handleMenuItemClick}
-                        >
-                          DeltaQuad Pro
-                        </Link>
-                        <Link
-                          to="/platforms/deltaquad-evo"
-                          className="text-ft-grey py-1 pl-2 text-2xl hover:text-white transition-colors"
-                          onClick={handleMenuItemClick}
-                        >
-                          DeltaQuad Evo
-                        </Link>
-                        <Link
                           to="/platforms/arace-angel"
                           className="text-ft-grey py-1 pl-2 text-2xl hover:text-white transition-colors"
                           onClick={handleMenuItemClick}
@@ -210,6 +196,21 @@ const MobileMenu = () => {
                           onClick={handleMenuItemClick}
                         >
                           Arace Griffin Pro
+                        </Link>
+                        
+                        <Link
+                          to="/platforms/deltaquad-evo"
+                          className="text-ft-grey py-1 pl-2 text-2xl hover:text-white transition-colors"
+                          onClick={handleMenuItemClick}
+                        >
+                          DeltaQuad Evo
+                        </Link>
+                        <Link
+                          to="/platforms/deltaquad-pro"
+                          className="text-ft-grey py-1 pl-2 text-2xl hover:text-white transition-colors"
+                          onClick={handleMenuItemClick}
+                        >
+                          DeltaQuad Pro
                         </Link>
                       </animated.div>
                     ) : null

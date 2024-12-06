@@ -66,10 +66,10 @@ function Header() {
   }
 
   const dronesDropdownItems = [
-    { name: 'DeltaQuad Pro', path: '/platforms/deltaquad-pro' },
-    { name: 'DeltaQuad Evo', path: '/platforms/deltaquad-evo' },
     { name: 'Arace Angel', path: '/platforms/arace-angel' },
     { name: 'Arace Griffin Pro', path: '/platforms/arace-griffin-pro' },
+    { name: 'DeltaQuad Evo', path: '/platforms/deltaquad-evo' },
+    { name: 'DeltaQuad Pro', path: '/platforms/deltaquad-pro' },
 
     //template product could go here, following the same configuration as the ones above. Be sure to adjust the path correctly
   ]
