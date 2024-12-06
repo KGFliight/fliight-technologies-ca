@@ -52,14 +52,14 @@ function Footer() {
                       DeltaQuad Evo
                     </li>
                   </NavLink>
-                  <NavLink to="/platforms/arace-griffin">
-                    <li className="my-4  hover:underline hover:text-ft-white transition duration-300">
-                      Arace Griffin
-                    </li>
-                  </NavLink>
                   <NavLink to="/platforms/arace-angel">
                     <li className="my-4  hover:underline hover:text-ft-white transition duration-300">
                       Arace Angel
+                    </li>
+                  </NavLink>
+                  <NavLink to="/platforms/arace-griffin-pro">
+                    <li className="my-4  hover:underline hover:text-ft-white transition duration-300">
+                      Arace Griffin Pro
                     </li>
                   </NavLink>
                   {

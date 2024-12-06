@@ -39,21 +39,21 @@ function DronesCarousel() {
           AERIAL PLATFORMS
         </h3>
         <div className="max-md:hidden flex justify-end">
-        <div className="sm:w-full text-right text-3xl sm:p-4 flex gap-4 justify-end mr-4 my-3 sm:mx-1">
-              <button
-                className="border border-ft-dark-grey px-3 pt-2 pb-1 hover:bg-ft-red hover:border-ft-dark-grey  transition duration-300 rounded active:-translate-y-1 active:bg-ft-dark-grey"
-                onClick={slideToTheLeft}
-              >
-                <FontAwesomeIcon icon={faChevronLeft} />
-              </button>
-              <button
-                className="border border-ft-dark-grey px-3 pt-2 pb-1 hover:bg-ft-red hover:border-ft-dark-grey  transition duration-300 rounded active:-translate-y-1 active:bg-ft-dark-grey"
-                onClick={slideToTheRight}
-              >
-                <FontAwesomeIcon icon={faChevronRight} />
-              </button>
-            </div>
-            </div>
+          <div className="sm:w-full text-right text-3xl sm:p-4 flex gap-4 justify-end mr-4 my-3 sm:mx-1">
+            <button
+              className="border border-ft-dark-grey px-3 pt-2 pb-1 hover:bg-ft-red hover:border-ft-dark-grey  transition duration-300 rounded active:-translate-y-1 active:bg-ft-dark-grey"
+              onClick={slideToTheLeft}
+            >
+              <FontAwesomeIcon icon={faChevronLeft} />
+            </button>
+            <button
+              className="border border-ft-dark-grey px-3 pt-2 pb-1 hover:bg-ft-red hover:border-ft-dark-grey  transition duration-300 rounded active:-translate-y-1 active:bg-ft-dark-grey"
+              onClick={slideToTheRight}
+            >
+              <FontAwesomeIcon icon={faChevronRight} />
+            </button>
+          </div>
+        </div>
       </div>
       <ul
         className="media-scroller pl-12 md:pl-32 snaps-inline md:auto-cols-[42%]"
@@ -87,20 +87,6 @@ function DronesCarousel() {
             </p>
           </li>
         </NavLink>
-        <NavLink to="/platforms/arace-griffin">
-          <li className="media-element lg:px-4 lg:py-12 hover:opacity-80 hover:-translate-y-1 transition duration-300">
-            <div className="bg-white border-ft-grey border rounded min-h-[10rem] sm:min-h-[300px] w-full flex items-center spx-4">
-              <img
-                src={araceGriffinImage}
-                alt="Arace Griffin"
-                className="bg-white rounded min-h-[10rem] h-auto object-contain sm:object-fit"
-              />
-            </div>
-            <p className="uppercase leading-10 text-2xl sm:text-4xl font-medium">
-              Arace Griffin
-            </p>
-          </li>
-        </NavLink>
         <NavLink to="/platforms/arace-angel">
           <li className="media-element lg:px-4 lg:py-12 hover:opacity-80 hover:-translate-y-1 transition duration-300">
             <div className="bg-white border-ft-grey border rounded min-h-[10rem] sm:min-h-[300px] w-full flex items-center spx-4">
@@ -112,6 +98,20 @@ function DronesCarousel() {
             </div>
             <p className="uppercase leading-10 text-2xl sm:text-4xl font-medium">
               Arace Angel
+            </p>
+          </li>
+        </NavLink>
+        <NavLink to="/platforms/arace-griffin-pro">
+          <li className="media-element lg:px-4 lg:py-12 hover:opacity-80 hover:-translate-y-1 transition duration-300">
+            <div className="bg-white border-ft-grey border rounded min-h-[10rem] sm:min-h-[300px] w-full flex items-center spx-4">
+              <img
+                src={araceGriffinImage}
+                alt="Arace Griffin Pro"
+                className="bg-white rounded min-h-[10rem] h-auto object-contain sm:object-fit"
+              />
+            </div>
+            <p className="uppercase leading-10 text-2xl sm:text-4xl font-medium">
+              Arace Griffin Pro
             </p>
           </li>
         </NavLink>
@@ -149,7 +149,6 @@ function DronesCarousel() {
           </li>
           */}
       </ul>
-      
     </div>
   )
 }

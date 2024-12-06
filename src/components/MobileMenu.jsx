@@ -108,8 +108,8 @@ const MobileMenu = () => {
     const platformPaths = [
       '/platforms/deltaquad-pro',
       '/platforms/deltaquad-evo',
-      '/platforms/arace-griffin',
       '/platforms/arace-angel',
+      '/platforms/arace-griffin-pro',
     ]
 
     if (platformPaths.includes(location.pathname)) {
@@ -198,18 +198,18 @@ const MobileMenu = () => {
                           DeltaQuad Evo
                         </Link>
                         <Link
-                          to="/platforms/arace-griffin"
-                          className="text-ft-grey py-1 pl-2 text-2xl hover:text-white transition-colors"
-                          onClick={handleMenuItemClick}
-                        >
-                          Arace Griffin Pro
-                        </Link>
-                        <Link
                           to="/platforms/arace-angel"
                           className="text-ft-grey py-1 pl-2 text-2xl hover:text-white transition-colors"
                           onClick={handleMenuItemClick}
                         >
                           Arace Angel
+                        </Link>
+                        <Link
+                          to="/platforms/arace-griffin-pro"
+                          className="text-ft-grey py-1 pl-2 text-2xl hover:text-white transition-colors"
+                          onClick={handleMenuItemClick}
+                        >
+                          Arace Griffin Pro
                         </Link>
                       </animated.div>
                     ) : null

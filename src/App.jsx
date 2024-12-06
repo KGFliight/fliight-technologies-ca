@@ -48,7 +48,7 @@ function App() {
               element={<DeltaQuadEvo />}
             />
             <Route
-              path="/platforms/arace-griffin"
+              path="/platforms/arace-griffin-pro"
               element={<AraceGriffin />}
             />
             <Route
