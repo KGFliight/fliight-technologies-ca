@@ -2,15 +2,12 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 
 function DropdownMenu({ title, items, isOpen, setIsOpen }) {
-  const isDeltaQuadPath = location.pathname === '/drones/deltaquad-pro' || location.pathname === '/drones/deltaquad-evo'
-
-  
 
   const headerClasses = {
-    background: isDeltaQuadPath ? 'bg-ft-grey' : 'bg-[#272B3A]',
-    textColor: isDeltaQuadPath ? 'text-ft-black' : 'text-ft-white',
-    hoverColor: isDeltaQuadPath ? 'hover:bg-ft-white' : 'hover:bg-ft-grey',
-    hoverTextColor: isDeltaQuadPath ? 'hover:text-ft-black' : 'hover:text-ft-black', // Update this as needed
+    background: 'bg-[#272B3A]',
+    textColor: 'text-ft-white',
+    hoverColor:  'hover:bg-ft-grey',
+    hoverTextColor:  'hover:text-ft-black',
   };
 
   return (
@@ -18,7 +15,7 @@ function DropdownMenu({ title, items, isOpen, setIsOpen }) {
       className={`absolute left-1/2 transform -translate-x-1/2 mt-[18px] custom-border rounded ${
         isOpen ? 'block' : 'hidden'
       } ${headerClasses.background} ${headerClasses.textColor} shadow-md`}
-      onClick={() => setIsOpen(!isOpen)} // Toggle on click for tablets
+      onClick={() => setIsOpen(!isOpen)}
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
@@ -31,7 +28,7 @@ function DropdownMenu({ title, items, isOpen, setIsOpen }) {
         <Link
           key={index}
           to={item.path}
-          className={`block px-4 py-2 text-sm w-40 ${headerClasses.textColor} text-left leading-loose tracking-widest ${headerClasses.hoverColor} ${headerClasses.hoverTextColor} transition duration-200`}
+          className={`block px-4 py-2 text-sm w-44 whitespace-nowrap overflow-hidden text-ellipsis ${headerClasses.textColor} text-left leading-loose tracking-widest ${headerClasses.hoverColor} ${headerClasses.hoverTextColor} transition duration-200`}
         >
           {item.name}
         </Link>
