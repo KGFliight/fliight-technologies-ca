@@ -17,7 +17,6 @@ function RequestDemoForm() {
   const HUBSPOT_PORTAL_ID = import.meta.env.VITE_HUBSPOT_PORTAL_ID 
   const HUBSPOT_FORM_GUID_DEMO = import.meta.env.VITE_HUBSPOT_FORM_GUID_DEMO 
   const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY 
-  const ENABLE_RECAPTCHA = 'true'
 
   // Function to submit data to HubSpot
   const sendToHubSpot = async (formData) => {
@@ -88,13 +87,12 @@ function RequestDemoForm() {
   const sendEmail = async (e) => {
     e.preventDefault()
 
-    if (ENABLE_RECAPTCHA) {
       if (!isVerified) {
         toast.error('Please verify that you are not a robot.')
         recaptchaRef.current.execute()
         return
       }
-    }
+
 
     const formData = {
       firstname: formRef.current.firstname.value,
@@ -108,9 +106,9 @@ function RequestDemoForm() {
       await sendToHubSpot(formData)
       toast.success('Message sent successfully')
       formRef.current.reset()
-      if (ENABLE_RECAPTCHA) {
+    
         recaptchaRef.current.reset()
-      }
+
       setIsVerified(false)
     } catch (error) {
       console.error(error)
@@ -118,9 +116,9 @@ function RequestDemoForm() {
         'Failed to send message. Please try again later or contact us directly.'
       )
     } finally {
-      if (ENABLE_RECAPTCHA) {
+
         recaptchaRef.current.reset()
-      }
+
     }
   }
 
@@ -203,7 +201,7 @@ function RequestDemoForm() {
         </label>
 
         {/* ReCAPTCHA and Submit Button */}
-        {ENABLE_RECAPTCHA ? (
+    
           <div className="w-full justify-center items-center my-4 flex flex-col">
             <ReCAPTCHA
               ref={recaptchaRef}
@@ -226,24 +224,6 @@ function RequestDemoForm() {
               </span>
             </button>
           </div>
-        ) : (
-          <div className="w-full flex justify-center items-center my-4">
-            <button
-              type="submit"
-              className="cursor-pointer bg-ft-red rounded-3xl w-72 h-12 sm:w-44 min-h-[2.75rem] hover:opacity-90 hover:bg-[#5b172c] transition duration-300 active:bg-ft-dark-grey"
-              data-aos="fade-down-in"
-              data-aos-easing="ease-in-back"
-              data-aos-delay="0"
-              data-aos-offset="0"
-              data-aos-mirror="true"
-              data-aos-duration="600"
-            >
-              <span className="uppercase text-base font-semibold leading-tight tracking-widest">
-                Send
-              </span>
-            </button>
-          </div>
-        )}
       </form>
     </div>
   )

@@ -53,14 +53,19 @@ function ContactForm() {
   const sendToHubSpot = async (formData) => {
     const url = `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL_ID}/${HUBSPOT_FORM_GUID}`
 
+    const interestedProductsFields = formData.interested_products.map((product) => ({
+      name: 'interested_products',
+      value: product,
+    }))
+
     const payload = {
       fields: [
         {
-          name: 'firstname', // Ensure this matches the internal name in HubSpot
+          name: 'firstname', 
           value: formData.firstname,
         },
         {
-          name: 'lastname', // Ensure this matches the internal name in HubSpot
+          name: 'lastname', 
           value: formData.lastname,
         },
         {
@@ -71,10 +76,7 @@ function ContactForm() {
           name: 'phone',
           value: formData.phone,
         },
-        {
-          name: 'interested_products', // New field name
-          value: formData.interested_products.join(', '), // Array of selected products
-        },
+        ...interestedProductsFields,
         {
           name: 'message',
           value: formData.message,
@@ -85,6 +87,9 @@ function ContactForm() {
         pageName: document.title,
       },
     }
+
+    // Debugging
+  console.log('HubSpot Payload:', JSON.stringify(payload, null, 2))
 
     const response = await fetch(url, {
       method: 'POST',
