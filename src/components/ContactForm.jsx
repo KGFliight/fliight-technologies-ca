@@ -73,7 +73,7 @@ function ContactForm() {
         },
         {
           name: 'interested_products', // New field name
-          value: formData.interested_products, // Array of selected products
+          value: formData.interested_products.join(', '), // Array of selected products
         },
         {
           name: 'message',
@@ -170,10 +170,6 @@ function ContactForm() {
       setSelectedProducts((prev) => prev.filter((product) => product !== value))
     }
   }
-
-  console.log('HubSpot Portal ID:', HUBSPOT_PORTAL_ID)
-  console.log('HubSpot Form GUID:', HUBSPOT_FORM_GUID)
-  console.log('ReCAPTCHA Site Key:', RECAPTCHA_SITE_KEY)
 
   return (
     <div className="my-12 font-['Inter'] font-light">
