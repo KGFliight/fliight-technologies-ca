@@ -19,8 +19,6 @@ function ContactForm() {
   const HUBSPOT_FORM_GUID = import.meta.env.VITE_HUBSPOT_FORM_GUID
   const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY
 
-  
-
   // Define product options with separate labels and values
   const productOptions = [
     {
@@ -53,19 +51,21 @@ function ContactForm() {
   const sendToHubSpot = async (formData) => {
     const url = `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL_ID}/${HUBSPOT_FORM_GUID}`
 
-    const interestedProductsFields = formData.interested_products.map((product) => ({
-      name: 'interested_products',
-      value: product,
-    }))
+    const interestedProductsFields = formData.interested_products.map(
+      (product) => ({
+        name: 'interested_products',
+        value: product,
+      })
+    )
 
     const payload = {
       fields: [
         {
-          name: 'firstname', 
+          name: 'firstname',
           value: formData.firstname,
         },
         {
-          name: 'lastname', 
+          name: 'lastname',
           value: formData.lastname,
         },
         {
@@ -89,7 +89,7 @@ function ContactForm() {
     }
 
     // Debugging
-  console.log('HubSpot Payload:', JSON.stringify(payload, null, 2))
+    //console.log('HubSpot Payload:', JSON.stringify(payload, null, 2))
 
     const response = await fetch(url, {
       method: 'POST',
@@ -262,28 +262,28 @@ function ContactForm() {
         </label>
 
         {/* ReCAPTCHA and Submit Button */}
-          <div className="w-full justify-center items-center my-4 flex flex-col">
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey={RECAPTCHA_SITE_KEY}
-              onChange={onReCAPTCHAChange}
-              className="w-full flex justify-center my-4 mb-8"
-            />
-            <button
-              type="submit"
-              className="cursor-pointer bg-ft-red rounded-3xl w-72 h-12 sm:w-44 min-h-[2.75rem] hover:opacity-90 hover:bg-[#5b172c] transition duration-300 active:bg-ft-dark-grey"
-              data-aos="fade-down-in"
-              data-aos-easing="ease-in-back"
-              data-aos-delay="0"
-              data-aos-offset="0"
-              data-aos-mirror="true"
-              data-aos-duration="600"
-            >
-              <span className="uppercase text-base font-semibold leading-tight tracking-widest">
-                Send
-              </span>
-            </button>
-          </div>
+        <div className="w-full justify-center items-center my-4 flex flex-col">
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey={RECAPTCHA_SITE_KEY}
+            onChange={onReCAPTCHAChange}
+            className="w-full flex justify-center my-4 mb-8"
+          />
+          <button
+            type="submit"
+            className="cursor-pointer bg-ft-red rounded-3xl w-72 h-12 sm:w-44 min-h-[2.75rem] hover:opacity-90 hover:bg-[#5b172c] transition duration-300 active:bg-ft-dark-grey"
+            data-aos="fade-down-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+          >
+            <span className="uppercase text-base font-semibold leading-tight tracking-widest">
+              Send
+            </span>
+          </button>
+        </div>
       </form>
     </div>
   )
