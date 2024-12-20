@@ -18,11 +18,8 @@ function ContactForm() {
   const HUBSPOT_PORTAL_ID = import.meta.env.VITE_HUBSPOT_PORTAL_ID
   const HUBSPOT_FORM_GUID = import.meta.env.VITE_HUBSPOT_FORM_GUID
   const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY
-  const ENABLE_RECAPTCHA = 'true'
 
-  console.log('HubSpot Portal ID:', HUBSPOT_PORTAL_ID)
-  console.log('HubSpot Form GUID:', HUBSPOT_FORM_GUID)
-  console.log('ReCAPTCHA Site Key:', RECAPTCHA_SITE_KEY)
+  
 
   // Define product options with separate labels and values
   const productOptions = [
@@ -119,12 +116,10 @@ function ContactForm() {
       return
     }
 
-    if (ENABLE_RECAPTCHA === 'true') {
-      if (!isVerified) {
-        toast.error('Please verify that you are not a robot.')
-        recaptchaRef.current.execute()
-        return
-      }
+    if (!isVerified) {
+      toast.error('Please verify that you are not a robot.')
+      recaptchaRef.current.execute()
+      return
     }
 
     const formData = {
@@ -143,10 +138,8 @@ function ContactForm() {
       await sendToHubSpot(formData)
       toast.success('Message sent successfully')
       formRef.current.reset()
-      setSelectedProducts([]) // Reset selected products
-      if (ENABLE_RECAPTCHA === 'true') {
-        recaptchaRef.current.reset()
-      }
+      setSelectedProducts([])
+      recaptchaRef.current.reset()
       setIsVerified(false)
     } catch (error) {
       console.error(error)
@@ -154,9 +147,7 @@ function ContactForm() {
         'Failed to send message. Please try again later or contact us directly.'
       )
     } finally {
-      if (ENABLE_RECAPTCHA === 'true') {
-        recaptchaRef.current.reset()
-      }
+      recaptchaRef.current.reset()
     }
   }
 
@@ -179,6 +170,10 @@ function ContactForm() {
       setSelectedProducts((prev) => prev.filter((product) => product !== value))
     }
   }
+
+  console.log('HubSpot Portal ID:', HUBSPOT_PORTAL_ID)
+  console.log('HubSpot Form GUID:', HUBSPOT_FORM_GUID)
+  console.log('ReCAPTCHA Site Key:', RECAPTCHA_SITE_KEY)
 
   return (
     <div className="my-12 font-['Inter'] font-light">
@@ -266,7 +261,6 @@ function ContactForm() {
         </label>
 
         {/* ReCAPTCHA and Submit Button */}
-        {ENABLE_RECAPTCHA === 'true' && (
           <div className="w-full justify-center items-center my-4 flex flex-col">
             <ReCAPTCHA
               ref={recaptchaRef}
@@ -289,27 +283,6 @@ function ContactForm() {
               </span>
             </button>
           </div>
-        )}
-
-        {/* Submit Button without ReCAPTCHA (for development) */}
-        {ENABLE_RECAPTCHA !== 'true' && (
-          <div className="w-full justify-center items-center my-4 flex flex-col">
-            <button
-              type="submit"
-              className="cursor-pointer bg-ft-red rounded-3xl w-72 h-12 sm:w-44 min-h-[2.75rem] hover:opacity-90 hover:bg-[#5b172c] transition duration-300 active:bg-ft-dark-grey"
-              data-aos="fade-down-in"
-              data-aos-easing="ease-in-back"
-              data-aos-delay="0"
-              data-aos-offset="0"
-              data-aos-mirror="true"
-              data-aos-duration="600"
-            >
-              <span className="uppercase text-base font-semibold leading-tight tracking-widest">
-                Send
-              </span>
-            </button>
-          </div>
-        )}
       </form>
     </div>
   )
