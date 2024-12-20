@@ -15,36 +15,40 @@ function ContactForm() {
   const [selectedProducts, setSelectedProducts] = useState([]) // State for selected products
 
   // Retrieve environment variables
-  const HUBSPOT_PORTAL_ID = import.meta.env.VITE_HUBSPOT_PORTAL_ID 
-  const HUBSPOT_FORM_GUID = import.meta.env.VITE_HUBSPOT_FORM_GUID 
-  const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY 
+  const HUBSPOT_PORTAL_ID = import.meta.env.VITE_HUBSPOT_PORTAL_ID
+  const HUBSPOT_FORM_GUID = import.meta.env.VITE_HUBSPOT_FORM_GUID
+  const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY
   const ENABLE_RECAPTCHA = 'true'
+
+  console.log('HubSpot Portal ID:', HUBSPOT_PORTAL_ID)
+  console.log('HubSpot Form GUID:', HUBSPOT_FORM_GUID)
+  console.log('ReCAPTCHA Site Key:', RECAPTCHA_SITE_KEY)
 
   // Define product options with separate labels and values
   const productOptions = [
     {
-      label: "Aircraft (RPAS/Drones)",
-      value: "Aircraft (RPAS/ Drones)",
+      label: 'Aircraft (RPAS/Drones)',
+      value: 'Aircraft (RPAS/ Drones)',
     },
     {
-      label: "Payloads (LiDAR/ISR/Survey)",
-      value: "Payloads (LiDAR/ISR/Survey)",
+      label: 'Payloads (LiDAR/ISR/Survey)',
+      value: 'Payloads (LiDAR/ISR/Survey)',
     },
     {
-      label: "Software (Aerowhere, Voyance, NTRIP)",
-      value: "Software (Aerowhere, Voyance, NTRIP)",
+      label: 'Software (Aerowhere, Voyance, NTRIP)',
+      value: 'Software (Aerowhere, Voyance, NTRIP)',
     },
     {
-      label: "Training (RePL/Type/Application)",
-      value: "Training (RePL/ Type / Application)",
+      label: 'Training (RePL/Type/Application)',
+      value: 'Training (RePL/ Type / Application)',
     },
     {
-      label: "Mining Solutions (Argus VTS)",
-      value: "Mining Solutions (Argus VTS)",
+      label: 'Mining Solutions (Argus VTS)',
+      value: 'Mining Solutions (Argus VTS)',
     },
     {
-      label: "Rajant Solutions",
-      value: "Rajant Solutions",
+      label: 'Rajant Solutions',
+      value: 'Rajant Solutions',
     },
   ]
 
@@ -96,7 +100,9 @@ function ContactForm() {
     if (!response.ok) {
       const errorDetail = await response.json()
       throw new Error(
-        `HubSpot submission failed: ${errorDetail.message || response.statusText}`
+        `HubSpot submission failed: ${
+          errorDetail.message || response.statusText
+        }`
       )
     }
 
@@ -176,11 +182,7 @@ function ContactForm() {
 
   return (
     <div className="my-12 font-['Inter'] font-light">
-      <form
-        className="flex flex-col gap-4"
-        onSubmit={sendEmail}
-        ref={formRef}
-      >
+      <form className="flex flex-col gap-4" onSubmit={sendEmail} ref={formRef}>
         {/* First Name Field */}
         <label className="flex flex-col">
           First Name*
@@ -245,7 +247,8 @@ function ContactForm() {
                   onChange={handleCheckboxChange}
                   className="form-checkbox h-4 w-4 text-green-500"
                 />
-                <span className="ml-2">{product.label}</span> {/* Display label */}
+                <span className="ml-2">{product.label}</span>{' '}
+                {/* Display label */}
               </label>
             ))}
           </div>
