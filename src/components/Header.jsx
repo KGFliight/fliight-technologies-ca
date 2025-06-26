@@ -26,7 +26,8 @@ function Header() {
       location.pathname === '/platforms/deltaquad-pro' ||
       location.pathname === '/platforms/deltaquad-evo' ||
       location.pathname === '/platforms/arace-griffin-pro' ||
-      location.pathname === '/platforms/arace-angel'
+      location.pathname === '/platforms/arace-angel' ||
+      location.pathname === '/platforms/arace-phoenix'
       // TEMPLATE if adding product can add here, be sure to also include || on the above line (27) if adding a new location.pathname. Location.pathname to match url on app.jsx
       // this changes the colour of the header to match background
     ) {
@@ -66,11 +67,11 @@ function Header() {
   }
 
   const dronesDropdownItems = [
+    { name: 'Arace Phoenix', path: '/platforms/arace-phoenix' },
     { name: 'Arace Angel', path: '/platforms/arace-angel' },
     { name: 'Arace Griffin Pro', path: '/platforms/arace-griffin-pro' },
     { name: 'DeltaQuad Evo', path: '/platforms/deltaquad-evo' },
     { name: 'DeltaQuad Pro', path: '/platforms/deltaquad-pro' },
-
     //template product could go here, following the same configuration as the ones above. Be sure to adjust the path correctly
   ]
 
@@ -86,7 +87,7 @@ function Header() {
     <header className={`fixed-top h-16 w-full ${headerClasses.background}`}>
       {/* Desktop Navigation */}
       <div
-        className={`hidden border-b ${headerClasses.borderColor} lg:flex md:flex w-full h-16 justify-between items-center pl-12 `}
+        className={`hidden lg:flex md:flex w-full h-16 justify-between items-center pl-12 `}
       >
         {/* Home Logo */}
         <Link
@@ -166,11 +167,11 @@ function Header() {
 
         {/* Request a Demo */}
         <div
-          className={`h-16 w-48 lg:w-[240px] bg-ft-red border-b ${headerClasses.borderColor} flex items-center justify-center hover:bg-[#5b172c] hover:opacity-90  transition duration-300  active:bg-ft-dark-grey text-ft-white`}
+          className={`h-full w-48 lg:w-[240px] bg-ft-red flex items-center justify-center hover:bg-[#5b172c] hover:opacity-90 transition duration-300 active:bg-ft-dark-grey text-ft-white`}
         >
           <Link
             to="/request-demo"
-            className="text-lg font-rajdhani font-semibold uppercase text-ft-white"
+            className="h-full flex items-center justify-center text-lg font-rajdhani font-semibold uppercase text-ft-white"
           >
             Request a Demo
           </Link>

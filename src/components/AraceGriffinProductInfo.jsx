@@ -45,7 +45,7 @@ function AraceGriffinProductInfo() {
       id: '2',
       heading: 'Tilt Rotor Propulsion',
       contents:
-        'The Griffin Pro’s tilt-rotor system seamlessly transitions between vertical takeoff, hover, and efficient forward flight. This innovative design combines the agility of a multirotor with the range and speed of fixed-wing aircraft, making it ideal for diverse mission profiles.',
+        "The Griffin Pro's tilt-rotor system seamlessly transitions between vertical takeoff, hover, and efficient forward flight. This innovative design combines the agility of a multirotor with the range and speed of fixed-wing aircraft, making it ideal for diverse mission profiles.",
       icon: iconTilt,
     },
     {
@@ -73,7 +73,7 @@ function AraceGriffinProductInfo() {
       id: '6',
       heading: 'Swappable Payloads',
       contents:
-        'Maximise operational flexibility with the Griffin Pro’s modular payload system. Quickly swap between sensors, cameras, or other equipment to adapt to any mission requirement without sacrificing downtime.',
+        "Maximise operational flexibility with the Griffin Pro's modular payload system. Quickly swap between sensors, cameras, or other equipment to adapt to any mission requirement without sacrificing downtime.",
       icon: iconSwappable,
     },
     {
@@ -87,7 +87,7 @@ function AraceGriffinProductInfo() {
       id: '8',
       heading: 'Open Design',
       contents:
-        'The Griffin Pro’s open architecture, powered by the versatile and widely adopted ArduPilot platform, fosters seamless third-party hardware and software integration. Customise and scale its capabilities to meet specific mission objectives or integrate effortlessly into existing workflows.',
+        "The Griffin Pro's open architecture, powered by the versatile and widely adopted ArduPilot platform, fosters seamless third-party hardware and software integration. Customise and scale its capabilities to meet specific mission objectives or integrate effortlessly into existing workflows.",
       icon: iconOpenDesign,
     },
   ]
@@ -137,15 +137,7 @@ function AraceGriffinProductInfo() {
           data-aos-mirror="true"
           data-aos-duration="600"
         >
-          The ARACE GRIFFIN Pro is a fully electric, fully autonomous VTOL
-          platform designed for unmatched ease and performance in any
-          environment. With its innovative tilt-rotor design, the Griffin Pro
-          achieves remarkable wind resistance, withstanding speeds over 16
-          m/s—setting it apart from all other VTOLs. Designed for rapid
-          deployment, it can be assembled and launched by a single person in
-          under 2 minutes, requiring no tools and zero pre-flight calibration.
-          Compact enough to fit in a single carry case, the Griffin Pro is ready
-          to go wherever your mission takes you.
+          The ARACE GRIFFIN Pro is a fully electric, fully autonomous VTOL platform designed for unmatched ease and performance in any environment. With its innovative tilt-rotor design, the Griffin Pro achieves remarkable wind resistance, withstanding speeds over 16 m/s—setting it apart from all other VTOLs. Designed for rapid deployment, it can be assembled and launched by a single person in under 2 minutes, requiring no tools and zero pre-flight calibration. Compact enough to fit in a single carry case, the Griffin Pro is ready to go wherever your mission takes you.
         </p>
       </div>
       <div className="flex flex-col items-center my-24">

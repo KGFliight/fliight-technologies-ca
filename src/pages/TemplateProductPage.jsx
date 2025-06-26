@@ -29,11 +29,12 @@ function DeltaQuadEvo() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <Header />
-      <div className="flex-1 flex flex-col items-center justify-center">
+      <div className="min-h-[100vh] w-full bg-white pt-16 flex flex-col items-center justify-center">
         <DeltaQuadBanner
           title="CHANGE ME"
-          imageSrc={deltaQuadEvoBannerImage} // change this
+          imageSrc={deltaQuadEvoBannerImage}
           subheading="I am a subheading. You can change me. Please change me. I need to change. Help."
+          className="mb-2"
         />
       </div>
       <TemplateProductInfo />

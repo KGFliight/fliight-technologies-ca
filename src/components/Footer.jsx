@@ -42,7 +42,12 @@ function Footer() {
                   Aerial Platforms
                 </span>
                 <ul className="text-sm leading-loose tracking-wide md:text-lg font-['Inter'] font-light">
-                <NavLink to="/platforms/arace-angel">
+                  <NavLink to="/platforms/arace-phoenix">
+                    <li className="my-4 hover:underline hover:text-ft-white transition duration-300">
+                      Arace Phoenix
+                    </li>
+                  </NavLink>
+                  <NavLink to="/platforms/arace-angel">
                     <li className="my-4  hover:underline hover:text-ft-white transition duration-300">
                       Arace Angel
                     </li>

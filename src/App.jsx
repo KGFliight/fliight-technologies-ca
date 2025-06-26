@@ -16,6 +16,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import NotFound from './pages/NotFound';
 import Shark from './pages/Shark'
+import AracePhoenix from './pages/AracePhoenix'
 
 // CREATE A PATH IF MAKING ANOTHER PAGE (template)
 
@@ -54,6 +55,10 @@ function App() {
             <Route
               path="/platforms/arace-angel"
               element={<AraceAngel />}
+            />
+            <Route
+              path="/platforms/arace-phoenix"
+              element={<AracePhoenix />}
             />
 
             {/* 

@@ -14,11 +14,12 @@ function DeltaQuadPro() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <Header />
-      <div className="flex-1 flex flex-col items-center justify-center">
+      <div className="min-h-[100vh] w-full bg-white flex flex-col items-center justify-center">
         <DeltaQuadProBanner
           title="DeltaQuad Pro"
           imageSrc={deltaQuadProBannerImage}
           subheading="A powerful fixed-wing drone designed to maximise commercial drone operations."
+          className=""
         />
       </div>
       <DeltaQuadProInfo />

@@ -13,11 +13,12 @@ function AraceAngel() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <Header />
-      <div className="flex-1 flex flex-col items-center justify-center">
+      <div className="min-h-[100vh] w-full bg-white flex flex-col items-center justify-center">
         <DeltaQuadBanner
           title="Arace Angel"
-          imageSrc={araceAngelBannerImage} // change this
+          imageSrc={araceAngelBannerImage}
           subheading="A next generation multirotor system that redefines the class."
+          className=""
         />
       </div>
       <AraceAngelProductInfo />
