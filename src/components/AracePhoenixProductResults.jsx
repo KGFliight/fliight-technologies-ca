@@ -13,10 +13,10 @@ const result = [
   {
     type: 'image',
     image: resultsShowreel,
-    alt: 'Arace Griffin VTOL Show Reel',
-    title: 'Arace Griffin VTOL Show Reel',
+    alt: 'Arace Griffin Pro VTOL – Show Reel',
+    title: 'Arace Griffin Pro VTOL – Show Reel',
     description:
-      'Showcasing the Griffins exceptional autonomy, unmatched wind resistance, and reliability across diverse missions, including remote sensing, precision mapping, and long-range surveillance (ISR).',
+      'Showcasing the Griffin Pro’s exceptional autonomy, unmatched wind resistance, and reliability across diverse missions, including remote sensing, precision mapping, and long-range surveillance (ISR).',
     url: 'https://dyupn21s2frgg.cloudfront.net/Griffin_Pro_Demo.mp4',
   },
   {
