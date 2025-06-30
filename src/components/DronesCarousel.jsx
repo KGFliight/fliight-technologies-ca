@@ -5,6 +5,7 @@ import deltaQuadProImage from '../assets/images/deltaquad-pro-banner.jpg'
 import deltaQuadEvoImage from '../assets/images/deltaquad-evo-banner.jpg'
 import araceGriffinImage from '../assets/images/arace-griffin-banner.png'
 import araceAngelImage from '../assets/images/arace-angel-banner.png'
+import phoenixFrontImage from '../assets/images/Phoenix-front.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChevronRight,
@@ -59,7 +60,20 @@ function DronesCarousel() {
         className="media-scroller pl-12 md:pl-32 snaps-inline md:auto-cols-[42%]"
         ref={scrollRef}
       >
-        
+        <NavLink to="/platforms/arace-phoenix">
+          <li className="media-element lg:px-4 lg:py-12 hover:opacity-80 hover:-translate-y-1 transition duration-300">
+            <div className="bg-white border-ft-grey border rounded min-h-[10rem] sm:min-h-[300px] w-full flex items-center spx-4">
+              <img
+                src={phoenixFrontImage}
+                alt="Arace Phoenix"
+                className="bg-white rounded min-h-[10rem] h-auto object-contain sm:object-fit"
+              />
+            </div>
+            <p className="uppercase leading-10 text-2xl sm:text-4xl font-medium">
+              Arace Phoenix
+            </p>
+          </li>
+        </NavLink>
         <NavLink to="/platforms/arace-angel">
           <li className="media-element lg:px-4 lg:py-12 hover:opacity-80 hover:-translate-y-1 transition duration-300">
             <div className="bg-white border-ft-grey border rounded min-h-[10rem] sm:min-h-[300px] w-full flex items-center spx-4">
