@@ -5,7 +5,7 @@ import {
   faChevronRight,
   faChevronLeft,
 } from '@fortawesome/free-solid-svg-icons'
-import ilxLr1 from '../assets/images/payloads/payloads-cropped-ilx-lr1.jpg'
+import agrowing from '../assets/images/payloads/payloads-cropped-lr1-61mp.png'
 import cm102 from '../assets/images/payloads/payloads-cropped-cm102.png'
 import eliteScanW50 from '../assets/images/payloads/payloads-cropped-elitescan-w50.png'
 import raptor from '../assets/images/payloads/payloads-cropped-raptor.jpg'
@@ -21,13 +21,13 @@ const result = [
       'A lightweight, gyro-stabilised gimbal system optimised for UAVs, providing high-definition imaging and thermal capabilities for precise aerial surveillance and reconnaissance',
   },
   {
-    image: ilxLr1,
-    alt: 'ILX-LR1',
-    category: 'RGB',
-    title: 'ILX-LR1',
-    maker: 'Sony',
+    image: agrowing,
+    alt: 'LR1 61MP SEXTUPLE',
+    category: 'RGB & MULTISPECTRAL',
+    title: 'LR1 61MP SEXTUPLE',
+    maker: 'Sony/Agrowing',
     description:
-      'A light weight, fully integrated 61 megapixel mapping camera with an interchangeable lens',
+      'A high-resolution, full-frame multispectral camera with 14 narrow bands (or 9 plus RGB) at 7.5MP per band, designed for precision mapping. Easily swap out the multispectral lens for a 61MP RGB lens for high resolution mapping',
   },
   {
     image: eliteScanW50,

@@ -6,7 +6,7 @@ function AracePhoenixProductTechnical() {
       <img
         src={phoenixDrawing}
         alt="Arace Phoenix Drawing"
-        className="pt-16 md:px-32 md:pt-16 flex justify-center w-full"
+        className="pt-16 md:px-32 md:pt-16 flex justify-center w-full max-w-[520px] md:max-w-[1200px] mx-auto"
       />
       <div className="m-4 md:m-8 leading-loose tracking-wide px-8 md:px-20">
         <h3 className="uppercase text-ft-black text-3xl md:text-5xl my-4">
@@ -39,7 +39,7 @@ function AracePhoenixProductTechnical() {
             <div className="uppercase text-ft-black text-2xl md:text-4xl my-4">Performance
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded mt-6 font-light font-['Inter'] items-center">
                 <div className="flex-1">Maximum Flight Time</div>
-                <div className="flex-1 ml-8">Up to 6 hours (350 min)</div>
+                <div className="flex-1 ml-8">Up to 6 hours (360 min)</div>
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
                 <div className="flex-1">Most Efficient Cruise Speed</div>
@@ -56,7 +56,7 @@ function AracePhoenixProductTechnical() {
             </div>
           </div>
           <div className="flex-1 mr-2 md:mr-8">
-            <div className="uppercase text-ft-black text-2xl md:text-4xl my-4">Other
+            <div className="uppercase text-ft-black text-2xl md:text-4xl my-4">
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded mt-6 font-light font-['Inter'] items-center">
                 <div className="flex-1">Wind resistance at ground level</div>
                 <div className="flex-1 ml-8">14 m/s</div>
@@ -71,7 +71,7 @@ function AracePhoenixProductTechnical() {
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
                 <div className="flex-1">Autonomy</div>
-                <div className="flex-1 ml-8">Full autonomous capabilities with high-end components</div>
+                <div className="flex-1 ml-8">Full autonomous capabilities with manual override</div>
               </div>
             </div>
           </div>

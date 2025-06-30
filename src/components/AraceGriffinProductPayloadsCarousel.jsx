@@ -15,30 +15,22 @@ import x80 from '../assets/images/payloads/payloads-cropped-x80.png'
 
 const result = [
   {
-    image: ilxLr1,
-    alt: 'ILX-LR1',
-    category: 'RGB',
-    title: 'ILX-LR1',
-    maker: 'Sony',
+    image: cm102,
+    alt: 'CM102',
+    category: 'ISR',
+    title: 'CM102',
+    maker: 'AVT Australia',
     description:
-      'A light weight, fully integrated 61 megapixel mapping camera with an interchangeable lens',
+      'A lightweight, gyro-stabilised gimbal system optimised for UAVs, providing high-definition imaging and thermal capabilities for precise aerial surveillance and reconnaissance. Combining 80x EO and HD IR ',
   },
   {
     image: lr161mp,
     alt: 'LR1 61MP SEXTUPLE',
     category: 'RGB & MULTISPECTRAL',
     title: 'LR1 61MP SEXTUPLE',
-    maker: 'Agrowing',
+    maker: 'Sony/Agrowing',
     description:
-      'A high-resolution, full-frame multispectral camera with 14 narrow bands (or 9 plus RGB) at 7.5MP per band, designed for precision mapping',
-  },
-  {
-    image: easyScanW30,
-    alt: 'EASYSCAN W30',
-    category: 'LiDAR',
-    title: 'EASYSCAN W30',
-    maker: 'Epic Lidar',
-    description: 'A compact, high-precision LiDar sensor offering up to 300m range and multi-target detection, ideal for applications requiring detailed 3D mapping and obstacle detection',
+      'A high-resolution, full-frame multispectral camera with 14 narrow bands (or 9 plus RGB) at 7.5MP per band, designed for precision mapping. Easily swap out the multispectral lens for a 61MP RGB lens for high resolution mapping',
   },
   {
     image: eliteScanW50,
@@ -50,13 +42,12 @@ const result = [
       'A highly integrated airborne line scanning LiDAR system with camera, capable of flying up to 400m, featuring strong vegetation penetration with 7 echo returns and a wide FOV',
   },
   {
-    image: cm102,
-    alt: 'CM102',
-    category: 'ISR',
-    title: 'CM102',
-    maker: 'AVT Australia',
-    description:
-      'A lightweight, gyro-stabilised gimbal system optimised for UAVs, providing high-definition imaging and thermal capabilities for precise aerial surveillance and reconnaissance',
+    image: easyScanW30,
+    alt: 'EASYSCAN W30',
+    category: 'LiDAR',
+    title: 'EASYSCAN W30',
+    maker: 'Epic Lidar',
+    description: 'A compact, high-precision LiDar sensor offering up to 120m range and multi-target detection, ideal for applications requiring detailed 3D mapping and obstacle detection',
   },
   {
     image: raptor,
