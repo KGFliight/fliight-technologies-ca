@@ -5,8 +5,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import RequestDemo from './pages/RequestDemo'
 import './App.css'
-import DeltaQuadPro from './pages/DeltaQuadPro'
-import DeltaQuadEvo from './pages/DeltaQuadEvo'
+
 import AraceGriffin from './pages/AraceGriffin'
 import AraceAngel from './pages/AraceAngel'
 import Fatam from './pages/Fatam'
@@ -40,14 +39,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/platforms" element={<Drones />} />
-            <Route
-              path="/platforms/deltaquad-pro"
-              element={<DeltaQuadPro />}
-            />
-            <Route
-              path="/platforms/deltaquad-evo"
-              element={<DeltaQuadEvo />}
-            />
+
             <Route
               path="/platforms/arace-griffin-pro"
               element={<AraceGriffin />}

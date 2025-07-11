@@ -57,16 +57,7 @@ function Footer() {
                       Arace Griffin Pro
                     </li>
                   </NavLink>
-                  <NavLink to="/platforms/deltaquad-evo">
-                    <li className="my-4  hover:underline hover:text-ft-white transition duration-300">
-                      DeltaQuad Evo
-                    </li>
-                  </NavLink>
-                  <NavLink to="/platforms/deltaquad-pro">
-                    <li className="my-4  hover:underline hover:text-ft-white  transition duration-300">
-                      DeltaQuad Pro
-                    </li>
-                  </NavLink>
+
                   
                   {
                   /*<NavLink to="/template-product">
@@ -115,13 +106,13 @@ function Footer() {
         <div className="flex items-center gap-4 ml-4">
           <FontAwesomeIcon icon={faMapMarkerAlt} className="self-center w-12" />
           <span className="text-sm leading-loose tracking-widest">
-            Wollongong, Australia
+            Toronto, Canada
           </span>
         </div>
         <div className="flex items-center gap-4 ml-4">
           <FontAwesomeIcon icon={faEnvelope} className="self-center w-12" />
           <span className="text-sm leading-loose tracking-widest hover:underline hover:text-ft-white transition duration-300">
-            <a href="mailto:info@fliight.com.au">info@fliight.com.au</a>
+            <a href="mailto:info@fliight.ca">info@fliight.ca</a>
           </span>
         </div>
       </div>

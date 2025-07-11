@@ -23,8 +23,6 @@ function Header() {
 
   const getHeaderClass = () => {
     if (
-      location.pathname === '/platforms/deltaquad-pro' ||
-      location.pathname === '/platforms/deltaquad-evo' ||
       location.pathname === '/platforms/arace-griffin-pro' ||
       location.pathname === '/platforms/arace-angel' ||
       location.pathname === '/platforms/arace-phoenix'
@@ -70,8 +68,6 @@ function Header() {
     { name: 'Arace Phoenix', path: '/platforms/arace-phoenix' },
     { name: 'Arace Angel', path: '/platforms/arace-angel' },
     { name: 'Arace Griffin Pro', path: '/platforms/arace-griffin-pro' },
-    { name: 'DeltaQuad Evo', path: '/platforms/deltaquad-evo' },
-    { name: 'DeltaQuad Pro', path: '/platforms/deltaquad-pro' },
     //template product could go here, following the same configuration as the ones above. Be sure to adjust the path correctly
   ]
 

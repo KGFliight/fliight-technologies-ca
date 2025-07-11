@@ -148,7 +148,7 @@ function AboutComponent() {
               data-aos-mirror="true"
               data-aos-duration="600"
             >
-              We aim to push Australian UAV technologies to the bleeding edge
+              We aim to push UAV technologies to the bleeding edge
               globally. We don&apos;t just do sales and support. We are constantly
               looking for opportunities to develop products and packages that
               solve real world problems. If you&apos;re interested in joining the

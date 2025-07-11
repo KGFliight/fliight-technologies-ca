@@ -1,7 +1,7 @@
-# Fliight Technologies Website
+# Fliight Technologies Website - Canadian Market
 
 ## Overview
-This is the official marketing and product website for **Fliight Technologies**. The site showcases our advanced drone platforms, payloads, and solutions, and provides information for customers, partners, and the broader UAV community.
+This is the official marketing and product website for **Fliight Technologies Canada**. The site showcases our advanced Arace drone platforms, payloads, and solutions, and provides information for customers, partners, and the broader UAV community in the Canadian market.
 
 ## Tech Stack
 - **React** (Vite)
@@ -11,7 +11,7 @@ This is the official marketing and product website for **Fliight Technologies**.
 
 ## Main Features
 - Responsive, modern design for all devices
-- Detailed product pages for each drone platform (Phoenix, Griffin, Angel, DeltaQuad, etc.)
+- Detailed product pages for each Arace drone platform (Phoenix, Griffin, Angel)
 - Technical specifications, payloads, and results sections for each product
 - Contact and demo request forms
 - Partner and customer logos
@@ -34,14 +34,14 @@ This is the official marketing and product website for **Fliight Technologies**.
 4. Open your browser to the local address shown in the terminal (usually `http://localhost:5173/`).
 
 ## Project Goals
-- Present Fliight Technologies' products and capabilities with clarity and visual impact
+- Present Fliight Technologies Canada's Arace products and capabilities with clarity and visual impact
 - Ensure all product pages are consistent, easy to update, and mobile-friendly
 - Make technical data and payload options easily accessible to customers
 - Provide a foundation for future content and feature expansion
 
 ## Contributing
-This project is maintained by the Fliight Technologies team. For feature requests, bug reports, or partnership inquiries, please use the contact form on the website or reach out via our official channels.
+This project is maintained by the Fliight Technologies Canada team. For feature requests, bug reports, or partnership inquiries, please use the contact form on the website or reach out via our official channels.
 
 ---
 
-© Fliight Technologies. All rights reserved. 
+© Fliight Technologies Canada. All rights reserved. 

@@ -1,8 +1,7 @@
 import '../App.css'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import deltaQuadProImage from '../assets/images/deltaquad-pro-banner.jpg'
-import deltaQuadEvoImage from '../assets/images/deltaquad-evo-banner.jpg'
+
 import araceGriffinImage from '../assets/images/arace-griffin-banner.png'
 import araceAngelImage from '../assets/images/arace-angel-banner.png'
 import phoenixFrontImage from '../assets/images/Phoenix-front.png'
@@ -102,34 +101,7 @@ function DronesCarousel() {
             </p>
           </li>
         </NavLink>
-        <NavLink to="/platforms/deltaquad-pro">
-          <li className="media-element lg:px-4 lg:py-12 hover:opacity-80 hover:-translate-y-1 transition duration-300">
-            <div className="bg-white rounded min-h-[10rem] sm:min-h-[300px] w-full flex items-center px-4">
-              <img
-                src={deltaQuadProImage}
-                alt="DeltaQuad Pro"
-                className="border-ft-grey rounded min-h-[10rem] bg-white w-full object-contain sm:object-fit"
-              />
-            </div>
-            <p className="uppercase leading-10 text-2xl sm:text-4xl font-medium">
-              Deltaquad Pro
-            </p>
-          </li>
-        </NavLink>
-        <NavLink to="/platforms/deltaquad-evo">
-          <li className="media-element lg:px-4 lg:py-12 hover:opacity-80 hover:-translate-y-1 transition duration-300">
-            <div className="bg-white border-ft-grey border rounded min-h-[10rem] sm:min-h-[300px] w-full flex items-center spx-4">
-              <img
-                src={deltaQuadEvoImage}
-                alt="DeltaQuad Evo"
-                className="bg-white rounded min-h-[10rem] h-auto object-contain sm:object-fit"
-              />
-            </div>
-            <p className="uppercase leading-10 text-2xl sm:text-4xl font-medium">
-              Deltaquad Evo
-            </p>
-          </li>
-        </NavLink>
+
         
         {/*<li className="media-element lg:px-6 lg:py-12">
             <img
