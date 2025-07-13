@@ -77,7 +77,7 @@ const SEOHead = ({
     
     // Track page view in Google Analytics
     if (window.gtag) {
-      window.gtag('config', 'GA_MEASUREMENT_ID', {
+      window.gtag('config', 'G-7XY08GK076', {
         page_title: title,
         page_location: `https://fliight.ca${location.pathname}`,
         page_path: location.pathname
