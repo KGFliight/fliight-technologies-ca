@@ -71,18 +71,9 @@ function LandingModal() {
                   <FontAwesomeIcon icon={faTimes} className="" />
                 </button>
                 <div className="aspect-w-16 aspect-h-9 z-40 max-lg:pt-12">
-                  <iframe
-                    className="h-[270px] w-full sm:h-[463px]  z-40"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/xJ2aFkWXlcE?si=8EQzuT2mRrTMx0gv"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay gyroscope; picture-in-picture"
-                    allowFullScreen
-                    data-aos="fade-in"
-                    data-aos-easing="ease-in-out"
-                    data-aos-delay="150"
-                  ></iframe>
+                  <div style={{padding:'56.25% 0 0 0',position:'relative'}}>
+                    <iframe src="https://player.vimeo.com/video/1100952513?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} title="Phoenix Reveal (2)"></iframe>
+                  </div>
                 </div>
               </div>
             </div>
