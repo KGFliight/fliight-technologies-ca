@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import RequestDemoForm from '../components/RequestDemoForm'
+import SEOHead from '../components/SEOHead'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -9,6 +10,11 @@ function RequestDemo() {
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
+      <SEOHead 
+        title="Request VTOL Drone Demo - Fliight Technologies Canada | Arace Drones"
+        description="Request a professional VTOL drone demo from Fliight Technologies Canada. Experience Arace Phoenix, Angel, and Griffin Pro drones in action for your specific needs."
+        keywords="request drone demo, VTOL demo, Arace drone demo, Canadian drone demo, UAV demonstration, professional drone demo, Toronto drone demo, aerial demo"
+      />
       <Header />
       <div className="px-12 py-6 flex-1 flex items-center justify-center">
         <div

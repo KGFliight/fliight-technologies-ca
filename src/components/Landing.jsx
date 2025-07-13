@@ -57,9 +57,9 @@ function Landing() {
                 isModalOpen ? 'blur-sm' : ''
               } transition duration-700`}
             >
-              UAV SOLUTIONS
+              ADVANCED VTOL DRONES
               <br />
-              WORKING FOR YOU
+              & UAV SOLUTIONS
             </div>
             {/*<div
               className="md:ml-4 h-60 text-sm md:text-lg lg:text-2xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white transition-ease duration-300 mt-4"
@@ -95,16 +95,15 @@ function Landing() {
           data-aos-offset="0"
           data-aos-duration="900"
         >
-          <div
-            className={`${
-              isModalOpen ? 'blur-sm' : ''
-            } transition duration-700`}
-          >
-            A Wollongong based company.
-            <br />
-            Providing integrated drones solutions to enterprise and government
-            clients.
-          </div>
+                      <div
+              className={`${
+                isModalOpen ? 'blur-sm' : ''
+              } transition duration-700`}
+            >
+              Leading Canadian VTOL drone company.
+              <br />
+              Specializing in long-range ISR, firefighting, mapping, and surveillance solutions.
+            </div>
         </div>
 
         <div className="bg-deltaquad min-h-[50%] sm:min-h-[66%] md:min-h-[75%] max-h-screen xl:min-h-screen max-w-full min-w-full bg-cover flex justify-start items-start mt-44 xl:mt-[-3rem] ml-auto transition-ease duration-300"></div>
@@ -134,8 +133,7 @@ function Landing() {
             data-aos-offset="0"
             data-aos-duration="300"
           >
-            We serve clients worldwide, providing specialised solutions to
-            unique problems.
+            Professional VTOL drone solutions for long-range ISR, firefighting, mapping, and surveillance across Canada.
           </p>
         </div>
         <LandingIcons />

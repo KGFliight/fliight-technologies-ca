@@ -8,10 +8,16 @@ import AraceGriffinProductResults from '../components/AraceGriffinProductResults
 import AraceGriffinProductTechnical from '../components/AraceGriffinProductTechnical'
 import AraceGriffinProductPayloads from '../components/AraceGriffinProductPayloads'
 import AraceProductElevated from '../components/AraceProductElevated'
+import SEOHead from '../components/SEOHead'
 
 function AraceGriffin() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
+      <SEOHead 
+        title="Arace Griffin Pro VTOL Drone - Professional Mapping & Surveying | Fliight Technologies Canada"
+        description="The Arace Griffin Pro VTOL drone excels in professional mapping and surveying applications. Advanced payload systems for high-precision aerial data collection."
+        keywords="Arace Griffin Pro, VTOL drone, mapping drone, surveying drone, Griffin Pro drone, Canadian VTOL, aerial mapping, professional UAV, surveying solutions, mapping technology"
+      />
       <Header />
       <div className="min-h-[100vh] w-full bg-white flex flex-col items-center justify-center">
         <DeltaQuadBanner

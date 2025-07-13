@@ -8,10 +8,16 @@ import AraceAngelProductResults from '../components/AraceAngelProductResults'
 import AraceAngelProductTechnical from '../components/AraceAngelProductTechnical'
 import AraceAngelProductPayloads from '../components/AraceAngelProductPayloads'
 import AraceProductElevated from '../components/AraceProductElevated'
+import SEOHead from '../components/SEOHead'
 
 function AraceAngel() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
+      <SEOHead 
+        title="Arace Angel VTOL Drone - Long Endurance Surveillance | Fliight Technologies Canada"
+        description="The Arace Angel VTOL drone offers exceptional long-endurance capabilities for extended surveillance operations. Advanced multirotor system for professional aerial missions."
+        keywords="Arace Angel, VTOL drone, long endurance drone, surveillance drone, Angel drone, Canadian VTOL, extended flight time, professional UAV, multirotor drone, aerial surveillance"
+      />
       <Header />
       <div className="min-h-[100vh] w-full bg-white flex flex-col items-center justify-center">
         <DeltaQuadBanner

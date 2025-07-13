@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import ContactForm from '../components/ContactForm'
+import SEOHead from '../components/SEOHead'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -9,6 +10,11 @@ function Contact() {
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
+      <SEOHead 
+        title="Contact Fliight Technologies Canada - VTOL Drone Solutions | Toronto UAV Company"
+        description="Contact Fliight Technologies Canada for professional VTOL drone solutions, long-range ISR, firefighting, mapping, and surveillance services. Get in touch today."
+        keywords="contact Fliight Technologies, Canadian drone company contact, Toronto UAV services, VTOL drone consultation, drone solutions contact, UAV company Canada"
+      />
       <Header />
       <div className="px-12 py-6 flex-1 flex items-center justify-center">
         <div
