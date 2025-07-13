@@ -61,19 +61,7 @@ function Landing() {
               <br />
               WORKING FOR YOU
             </div>
-            <div
-              className="md:ml-4 h-60 text-sm md:text-lg lg:text-2xl font-rajdhani font-regular uppercase leading-20 tracking-widest text-ft-white transition-ease duration-300 mt-4"
-              data-aos="fade-zoom-in"
-              data-aos-easing="ease-in-back"
-              data-aos-delay="600"
-              data-aos-offset="0"
-              data-aos-duration="1200"
-            >
-              <div style={{padding:'56.25% 0 0 0',position:'relative'}}>
-                <iframe src="https://player.vimeo.com/video/1100952513?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} title="Phoenix Reveal (2)"></iframe>
-              </div>
-              {/* Vimeo player script is loaded automatically by the iframe */}
-            </div>
+            {/* Remove any direct video embed here. Only LandingModal should remain. */}
             <LandingModal />
           </div>
         </div>
