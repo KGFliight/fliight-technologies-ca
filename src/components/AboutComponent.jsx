@@ -4,6 +4,7 @@ import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import john from '../assets/images/john.jpg'
 import kihan from '../assets/images/kihan.jpeg'
+import patrick from '../assets/images/patrick.jpg'
 import '../App.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -157,7 +158,49 @@ function AboutComponent() {
           </div>
 
           <h3 className="uppercase text-5xl tracking-widest text-left my-8 ">
-            Meet the founders
+            Fliight Technologies Canada
+          </h3>
+          <div className="flex flex-col sm:items-center lg:items-start lg:flex-row lg:justify-between my-20 font-['Inter'] font-light ">
+            <div className="max-w-[368px] lg:min-w-[xl] lg:max-w-2xl pr-8 mt-0 flex-1">
+              <div className="aspect-w-9 aspect-h-16 image-container z-50">
+                <img src={patrick} alt="Patrick Hinchey" className="w-full h-auto" />
+              </div>
+
+              <div className="my-8">
+                <p className="my-2 text-3xl leading-loose tracking-wide">
+                  Patrick Hinchey
+                </p>
+                <p className="my-2 text-xl leading-loose tracking-wide">
+                  Director, Canadian Operations
+                </p>
+                <p className="my-4 leading-loose tracking-wide">
+                  Patrick is an aerospace systems engineer with over a decade of experience designing uncrewed systems with heavy-hitters
+                  like Amazon Prime Air, Zipline International and Horizon Aircraft. He has a real-world, cross-functional understanding of
+                  the challenges and opportunities in the UAS industry, and is passionate about advancing autonomous vehicle adoption in North America and globally.
+                  <br />
+                  Patrick has experience deploying UAVs around the world in challenging locations from the Amazon Rainforest to mountain galciers, dense urban environments to shipborne operations,
+                  and navigating the complex regulatory hurdles associated with these operations.
+                </p>
+                <span className="hover:opacity-50 transition duration-300">
+                  <a
+                    href="https://www.linkedin.com/in/patrickhinchey/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="leading-loose tracking-wide font-['rajdhani'] font-medium inline-flex items-center"
+                  >
+                    Connect{' '}
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      className="text-ft-red text-2xl pl-2 rounded"
+                    />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <h3 className="uppercase text-5xl tracking-widest text-left my-8 ">
+            Fliight Technologies Australia
           </h3>
           <div className="flex flex-col sm:items-center lg:items-start lg:flex-row lg:justify-between my-20 font-['Inter'] font-light ">
             <div className="max-w-[368px] lg:min-w-[xl] lg:max-w-2xl pr-8 mt-0 flex-1">

@@ -73,7 +73,7 @@ function LandingWorkWithUs() {
             UAV Consulting
           </h4>
           <p className="text-base font-light leading-7 tracking-wide font-['Inter']">
-            With a combined 15 years in the Unmanned Aerial Vehicles (UAV)
+            With a combined 25 years in the Unmanned Aerial Vehicles (UAV)
             industry, Fliight Technologies possess the expertise to identify the
             perfect UAV solution to suit each clients unique use case. Whether
             it be long range operations (BVLOS), Custom System Integration,

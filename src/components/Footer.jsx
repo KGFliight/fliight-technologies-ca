@@ -100,7 +100,7 @@ function Footer() {
         <div className="flex items-center gap-4 ml-4">
           <FontAwesomeIcon icon={faPhone} className="self-center w-12" />
           <span className="text-sm leading-loose tracking-wides  hover:underline hover:text-ft-white transition duration-300">
-            <a href="tel:+61429279876">+(61) 428 279 876</a>
+            <a href="tel:+61429279876">+1 289 244 2504</a>
           </span>
         </div>
         <div className="flex items-center gap-4 ml-4">
