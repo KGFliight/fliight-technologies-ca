@@ -62,7 +62,7 @@
 ### 📞 Contact Information
 - **Location**: Toronto, Canada
 - **Email**: info@fliight.ca
-- **Phone**: +(61) 428 279 876 (unchanged as per requirements)
+- **Phone**: +1 289 244 2504 (Patrick's number)
 
 ### 🎯 Next Steps
 - Deploy to Netlify
