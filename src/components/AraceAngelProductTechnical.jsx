@@ -58,7 +58,7 @@ function AraceAngelProductTechnical() {
                 <div className="flex-1 ml-8">20km</div>
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
-                <div className="flex-1">Payload capacity</div>
+                <div className="flex-1">Payload Capacity</div>
                 <div className="flex-1 ml-8">1.9kg</div>
               </div>
             </div>
