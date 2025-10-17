@@ -50,11 +50,15 @@ function AraceAngelProductTechnical() {
                 <div className="flex-1 ml-8">100 mins @ 0.5kg Payload</div>
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
-                <div className="flex-1">Maximum Flight Range</div>
-                <div className="flex-1 ml-8">132km</div>
+                <div className="flex-1">Maximum Flight Path Length</div>
+                <div className="flex-1 ml-8">64km</div>
               </div>
               <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
-                <div className="flex-1">Payload capacity</div>
+                <div className="flex-1">Controller Range</div>
+                <div className="flex-1 ml-8">20km</div>
+              </div>
+              <div className="bg-ft-white p-4 my-2 flex text-lg normal-case rounded font-light font-['Inter'] items-center">
+                <div className="flex-1">Payload Capacity</div>
                 <div className="flex-1 ml-8">1.9kg</div>
               </div>
             </div>
